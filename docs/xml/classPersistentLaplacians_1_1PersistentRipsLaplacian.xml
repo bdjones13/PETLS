@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classPersistentLaplacians_1_1PersistentRipsLaplacian" kind="class" language="C++" prot="public">
+    <compoundname>PersistentLaplacians::PersistentRipsLaplacian</compoundname>
+    <basecompoundref refid="classPersistentLaplacians_1_1PersistentLaplacian" prot="public" virt="non-virtual">PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;</basecompoundref>
+    <includes refid="PersistentRipsLaplacian_8hpp" local="no">PersistentRipsLaplacian.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename eigs_Algorithm</type>
+      </param>
+      <param>
+        <type>typename up_Algorithm</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPersistentLaplacians_1_1PersistentRipsLaplacian_1a765a6ce41f0f51f2b1ebe66aa687ac92" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PersistentLaplacians::PersistentRipsLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::PersistentRipsLaplacian</definition>
+        <argsstring>(const char *filename, int max_dim)</argsstring>
+        <name>PersistentRipsLaplacian</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_dim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/PersistentRipsLaplacian.hpp" line="14" column="13" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/PersistentRipsLaplacian.hpp" bodystart="14" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersistentLaplacians_1_1PersistentRipsLaplacian_1aae8a8e6e17a94e1fd27950145a690024" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PersistentLaplacians::PersistentRipsLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::PersistentRipsLaplacian</definition>
+        <argsstring>(const char *filename, int max_dim, float threshold)</argsstring>
+        <name>PersistentRipsLaplacian</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_dim</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/PersistentRipsLaplacian.hpp" line="31" column="13" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/PersistentRipsLaplacian.hpp" bodystart="31" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersistentLaplacians_1_1PersistentRipsLaplacian_1accf3550da4b6f14a026215ffda71ec48" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PersistentLaplacians::PersistentRipsLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::PersistentRipsLaplacian</definition>
+        <argsstring>(std::vector&lt; std::vector&lt; double &gt;&gt; points, int max_dim)</argsstring>
+        <name>PersistentRipsLaplacian</name>
+        <param>
+          <type>std::vector&lt; std::vector&lt; double &gt;&gt;</type>
+          <declname>points</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_dim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/PersistentRipsLaplacian.hpp" line="44" column="13" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/PersistentRipsLaplacian.hpp" bodystart="44" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersistentLaplacians_1_1PersistentRipsLaplacian_1abec85d9590f3caf7f509ec904f1dd2c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PersistentLaplacians::PersistentRipsLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::PersistentRipsLaplacian</definition>
+        <argsstring>(std::vector&lt; std::vector&lt; double &gt;&gt; points, int max_dim, float threshold)</argsstring>
+        <name>PersistentRipsLaplacian</name>
+        <param>
+          <type>std::vector&lt; std::vector&lt; double &gt;&gt;</type>
+          <declname>points</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_dim</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/PersistentRipsLaplacian.hpp" line="56" column="13" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/PersistentRipsLaplacian.hpp" bodystart="56" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>PersistentLaplacians::PersistentRipsLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;</label>
+        <link refid="classPersistentLaplacians_1_1PersistentRipsLaplacian"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;</label>
+        <link refid="classPersistentLaplacians_1_1PersistentLaplacian"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>PersistentLaplacians::PersistentRipsLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;</label>
+        <link refid="classPersistentLaplacians_1_1PersistentRipsLaplacian"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;</label>
+        <link refid="classPersistentLaplacians_1_1PersistentLaplacian"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/PersistentRipsLaplacian.hpp" line="10" column="5" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/PersistentRipsLaplacian.hpp" bodystart="10" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1ad01968f2ccb10c8a0346a378038ad82f" prot="protected" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>dummy_d0</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a28609766ed890efa3a7b83244d9ec262" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>eigenpairs</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1ade633c893ce727d35cb7539ec205f5cd" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>eigenpairs</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a2afd5704a3e0bd94d898008b5de61f1b" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>eigenpairs</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1ac25930bc9649cce4e2cca1fb99f13ad7" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>eigenvalues_summarize</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a79e6ff1bde28006145eceaa5674d9020" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>filtered_boundaries</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1ad76f65268220edd384945c5f40835615" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>filtration_list_to_spectra_request</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a454440d87e8ae8ebddfb7229733a4675" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>get_all_filtrations</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1aa891f790594c6da1ae402540ebd185d2" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>get_down</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1ae0f660133fa717d1822f7628bb03fc96" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>get_down</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a1e23706e72d592f27a108cc7d075d48a" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>get_L</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a2e8b3d1b21217f6bf2970da9bf30c816" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>get_L</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a27163d1d4c3ca3016927695064c1f8d6" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>get_L_top_dim_flipped</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1ad46319b5bde9cdd9eccb99969a3b465e" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>get_L_top_dim_flipped</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1ac660b1a316536cd404fc03e2d6ebc91b" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>get_up</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a453c5a826140c67cae47df6e14ce1b58" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>get_up</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a240e9d30eb215e1a9cca99381327d28e" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>nonzero_spectra</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a55e983673494944131ff4ea0eb300ab2" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>PersistentLaplacian</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a6edcfb7daaa0df8c9b69d01b28932dbc" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>PersistentLaplacian</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentRipsLaplacian_1a765a6ce41f0f51f2b1ebe66aa687ac92" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>PersistentRipsLaplacian</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentRipsLaplacian_1aae8a8e6e17a94e1fd27950145a690024" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>PersistentRipsLaplacian</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentRipsLaplacian_1accf3550da4b6f14a026215ffda71ec48" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>PersistentRipsLaplacian</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentRipsLaplacian_1abec85d9590f3caf7f509ec904f1dd2c7" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>PersistentRipsLaplacian</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1af4c865863604dfede94edecd1b9ccf27" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>print_boundaries</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a973c01d03d177e2116f0a1ec173a93be" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>profile</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1ae1d2e11b09e891608b6332f88cfb431d" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>set_boundaries_filtrations</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1acf0f8a6cf4b4b49447871a9b5f04d856" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>set_flipped</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a9fbc57f868cb9d1c6ec951692f1b71ae" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>set_verbose</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a9999ae6549e0e813b87e2f5a6784c803" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>spectra</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a75744761caf09e38b6b592e75d95d5d0" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>spectra</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a6d1df94a4250f2508812de09babaac9a" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>spectra</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a2279f3ac44df29f3c6296a679c06399b" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>store_L</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a13cba8d7973e9512cf12976b57938576" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>store_spectra</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a055a3a3e17b0a6090427ea178140e5d3" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>store_spectra_summary</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a8f319d5a99becc40eccf3c349ba9f6d0" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>top_dim</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1af9fb8be1b79c7e75293720cafa6c9a26" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>use_flipped</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a8da20628a8cd90cf31f86020a6c6fc15" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>verbose</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1ab2f8ae87e04008134820ba126ac25937" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentRipsLaplacian</scope><name>~PersistentLaplacian</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

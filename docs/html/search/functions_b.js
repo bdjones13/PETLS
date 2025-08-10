@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['set_5fboundaries_5ffiltrations_224',['set_boundaries_filtrations',['../classPersistentLaplacians_1_1PersistentLaplacian.html#ae1d2e11b09e891608b6332f88cfb431d',1,'PersistentLaplacians::PersistentLaplacian']]],
+  ['set_5fflipped_225',['set_flipped',['../classPersistentLaplacians_1_1PersistentLaplacian.html#acf0f8a6cf4b4b49447871a9b5f04d856',1,'PersistentLaplacians::PersistentLaplacian']]],
+  ['set_5fverbose_226',['set_verbose',['../classPersistentLaplacians_1_1PersistentLaplacian.html#a9fbc57f868cb9d1c6ec951692f1b71ae',1,'PersistentLaplacians::PersistentLaplacian']]],
+  ['sheaf_5fsimplex_5ftree_227',['sheaf_simplex_tree',['../classPersistentLaplacians_1_1sheaf__simplex__tree.html#aea312dada2187d15d71f790248377124',1,'PersistentLaplacians::sheaf_simplex_tree']]],
+  ['spectra_228',['spectra',['../classPersistentLaplacians_1_1PersistentLaplacian.html#a9999ae6549e0e813b87e2f5a6784c803',1,'PersistentLaplacians::PersistentLaplacian::spectra(int dim, filtration_type a, filtration_type b)'],['../classPersistentLaplacians_1_1PersistentLaplacian.html#a75744761caf09e38b6b592e75d95d5d0',1,'PersistentLaplacians::PersistentLaplacian::spectra()'],['../classPersistentLaplacians_1_1PersistentLaplacian.html#a6d1df94a4250f2508812de09babaac9a',1,'PersistentLaplacians::PersistentLaplacian::spectra(std::vector&lt; std::tuple&lt; int, filtration_type, filtration_type &gt;&gt; spectra_request_list)']]],
+  ['start_229',['start',['../structPersistentLaplacians_1_1timer.html#a555a1420f81dddf5cb3874e2c04e7ed2',1,'PersistentLaplacians::timer']]],
+  ['start_5fall_230',['start_all',['../structPersistentLaplacians_1_1Profile.html#a8f2c2810743e4ce3a765bb6551252108',1,'PersistentLaplacians::Profile']]],
+  ['start_5feigs_231',['start_eigs',['../structPersistentLaplacians_1_1Profile.html#ab233b235f48d25c9d8f5e6c010a5ffe5',1,'PersistentLaplacians::Profile']]],
+  ['start_5fl_232',['start_L',['../structPersistentLaplacians_1_1Profile.html#a33070f90a3270bb4c91534ca7f42628a',1,'PersistentLaplacians::Profile']]],
+  ['start_5fl_5fdown_233',['start_L_down',['../structPersistentLaplacians_1_1Profile.html#a3008950ecb438faf065963302a3a947d',1,'PersistentLaplacians::Profile']]],
+  ['start_5fl_5fup_234',['start_L_up',['../structPersistentLaplacians_1_1Profile.html#a47dff11c3099c75bde4f047564af3bdf',1,'PersistentLaplacians::Profile']]],
+  ['start_5fsum_5fup_5fdown_235',['start_sum_up_down',['../structPersistentLaplacians_1_1Profile.html#acb6f84452faf504b9ab3b096a745af72',1,'PersistentLaplacians::Profile']]],
+  ['stop_236',['stop',['../structPersistentLaplacians_1_1timer.html#afbee23e392e7a08575bb1c3010015b08',1,'PersistentLaplacians::timer']]],
+  ['stop_5fall_237',['stop_all',['../structPersistentLaplacians_1_1Profile.html#ad7cbaf77704acf5830d7e4790b2fb00f',1,'PersistentLaplacians::Profile']]],
+  ['stop_5feigs_238',['stop_eigs',['../structPersistentLaplacians_1_1Profile.html#afc41817d218b5b818080ce76709f814c',1,'PersistentLaplacians::Profile']]],
+  ['stop_5fl_239',['stop_L',['../structPersistentLaplacians_1_1Profile.html#a5af1c264ba40ffddb4ae382c9fa4e85f',1,'PersistentLaplacians::Profile']]],
+  ['stop_5fl_5fdown_240',['stop_L_down',['../structPersistentLaplacians_1_1Profile.html#aca2648e63d0c747eebe1639bb794e0c7',1,'PersistentLaplacians::Profile']]],
+  ['stop_5fl_5fup_241',['stop_L_up',['../structPersistentLaplacians_1_1Profile.html#afa4171ec301ef5e0c0bdd058d6e92a68',1,'PersistentLaplacians::Profile']]],
+  ['stop_5fsum_5fup_5fdown_242',['stop_sum_up_down',['../structPersistentLaplacians_1_1Profile.html#a03e0a99902d31b730d295d5d48f5a813',1,'PersistentLaplacians::Profile']]],
+  ['store_5fl_243',['store_L',['../classPersistentLaplacians_1_1PersistentLaplacian.html#a2279f3ac44df29f3c6296a679c06399b',1,'PersistentLaplacians::PersistentLaplacian']]],
+  ['store_5fspectra_244',['store_spectra',['../classPersistentLaplacians_1_1PersistentLaplacian.html#a13cba8d7973e9512cf12976b57938576',1,'PersistentLaplacians::PersistentLaplacian']]],
+  ['store_5fspectra_5fsummary_245',['store_spectra_summary',['../classPersistentLaplacians_1_1PersistentLaplacian.html#a055a3a3e17b0a6090427ea178140e5d3',1,'PersistentLaplacians::PersistentLaplacian']]],
+  ['submatrix_5fat_5ffiltration_246',['submatrix_at_filtration',['../classPersistentLaplacians_1_1FilteredBoundaryMatrix.html#a5df12d25ca80eb5d1c0d9dcb58e0e67c',1,'PersistentLaplacians::FilteredBoundaryMatrix']]]
+];

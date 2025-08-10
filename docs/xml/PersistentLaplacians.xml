@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="PersistentLaplacians" kind="file" language="C++">
+    <compoundname>PersistentLaplacians</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#ifndef<sp/>PERSISTENTLAPLACIANS_LIBRARY_H</highlight></codeline>
+<codeline><highlight class="normal">#define<sp/>PERSISTENTLAPLACIANS_LIBRARY_H</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#include<sp/>&quot;PersistentLaplacians_headers/typedefs.hpp&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#include<sp/>&quot;PersistentLaplacians_headers/PersistentLaplacians.hpp&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#include<sp/>&quot;PersistentLaplacians_headers/core/PersistentLaplacian.hpp&quot;</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&quot;PersistentLaplacians_headers/core/FilteredBoundaryMatrix.hpp&quot;</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&quot;PersistentLaplacians_headers/core/Filtration_Index_Pair.hpp&quot;</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>#include<sp/>&quot;PersistentLaplacians_headers/core/Simplex.hpp&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#include<sp/>&quot;PersistentLaplacians_headers/eigenvalues/eigs_algorithms.hpp&quot;</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&quot;PersistentLaplacians_headers/core/up_algorithms.hpp&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>#include<sp/>&quot;PersistentLaplacians_headers/variants/PersistentAlphaLaplacian.hpp&quot;</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&quot;PersistentLaplacians_headers/variants/PersistentDirectedFlagLaplacian.hpp&quot;</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>#include<sp/>&quot;PersistentLaplacians_headers/variants/PersistentHyperdigraphLaplacian.hpp&quot;</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>#include<sp/>&quot;PersistentLaplacians_headers/variants/PersistentHypergraphLaplacian.hpp&quot;</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>#include<sp/>&quot;PersistentLaplacians_headers/variants/PersistentPathLaplacian.hpp&quot;</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&quot;PersistentLaplacians_headers/variants/PersistentRipsLaplacian.hpp&quot;</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&quot;PersistentLaplacians_headers/variants/PersistentSheafLaplacian.hpp&quot;</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&quot;PersistentLaplacians_headers/variants/sheaf_simplex_tree.hpp&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians"/>
+  </compounddef>
+</doxygen>

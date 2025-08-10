@@ -1,0 +1,28 @@
+[build-system]
+requires = ["scikit-build-core>=0.3.3", "pybind11", "pytest"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "petls"
+version = "0.0.0"
+description="PErsistent Topological Laplacian Software: a Python Library to Compute Persistent Topological Laplacians"
+readme = "README.md"
+authors = [
+  { name = "Benjamin Jones", email = "jones657@msu.edu" },
+]
+requires-python = ">=3.10"
+dependencies = [
+  "pytest>=8.3.5",
+  "scipy>= 1.15.2",
+  "gudhi>=3.11.0",
+  "numpy>=2.2.5",
+  "matplotlib"
+]
+
+
+[tool.scikit-build]
+cmake.verbose = true
+wheel.expand-macos-universal-tags = true
+
+[tool.cibuildwheel]
+before-all = "uname -a"

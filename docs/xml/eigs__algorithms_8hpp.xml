@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="eigs__algorithms_8hpp" kind="file" language="C++">
+    <compoundname>eigs_algorithms.hpp</compoundname>
+    <includes refid="typedefs_8hpp" local="yes">../typedefs.hpp</includes>
+    <includes local="yes">Eigen/Eigenvalues</includes>
+    <includes local="yes">Eigen/SVD</includes>
+    <includes refid="PersistentLaplacians_8hpp" local="yes">../PersistentLaplacians.hpp</includes>
+    <includedby refid="PersistentLaplacian_8hpp" local="yes">/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/eigenvalues/eigs_algorithms.hpp</label>
+        <link refid="eigs__algorithms_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>Eigen/Eigenvalues</label>
+      </node>
+      <node id="6">
+        <label>../PersistentLaplacians.hpp</label>
+        <link refid="PersistentLaplacians_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>../typedefs.hpp</label>
+        <link refid="typedefs_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vector</label>
+      </node>
+      <node id="3">
+        <label>Eigen/SparseCore</label>
+      </node>
+      <node id="9">
+        <label>chrono</label>
+      </node>
+      <node id="5">
+        <label>Eigen/SVD</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="6">
+        <label>/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/PersistentRipsLaplacian.hpp</label>
+        <link refid="PersistentRipsLaplacian_8hpp"/>
+      </node>
+      <node id="1">
+        <label>/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/eigenvalues/eigs_algorithms.hpp</label>
+        <link refid="eigs__algorithms_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp</label>
+        <link refid="PersistentAlphaLaplacian_8cpp"/>
+      </node>
+      <node id="5">
+        <label>/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/PersistentDirectedFlagLaplacian.hpp</label>
+        <link refid="PersistentDirectedFlagLaplacian_8hpp"/>
+      </node>
+      <node id="2">
+        <label>/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp</label>
+        <link refid="PersistentLaplacian_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/PersistentSheafLaplacian.hpp</label>
+        <link refid="PersistentSheafLaplacian_8hpp"/>
+      </node>
+      <node id="3">
+        <label>/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/PersistentAlphaLaplacian.hpp</label>
+        <link refid="PersistentAlphaLaplacian_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classPersistentLaplacians_1_1selfadjoint" prot="public">PersistentLaplacians::selfadjoint</innerclass>
+    <innerclass refid="classPersistentLaplacians_1_1eigensolver" prot="public">PersistentLaplacians::eigensolver</innerclass>
+    <innerclass refid="classPersistentLaplacians_1_1bdcsvd" prot="public">PersistentLaplacians::bdcsvd</innerclass>
+    <innernamespace refid="namespacePersistentLaplacians">PersistentLaplacians</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>eigs_algs_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>eigs_algs_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../typedefs.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Eigen/Eigenvalues&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Eigen/SVD&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../PersistentLaplacians.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacePersistentLaplacians" kindref="compound">PersistentLaplacians</ref>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>wrapper<sp/>classes<sp/>for<sp/>all<sp/>algorithms<sp/>to<sp/>compute<sp/>eigenvalues.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>just<sp/>need<sp/>to<sp/>implement<sp/>at<sp/>least<sp/>one<sp/>of<sp/>the<sp/>following<sp/>signatures<sp/>(or<sp/>both<sp/>if<sp/>wrapping<sp/>with<sp/>python):</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>spectra_vec<sp/>eigenvalues(DenseMatrix_PL<sp/>&amp;L);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>std::pair&lt;spectra_vec,DenseMatrix_spectra_PL&gt;<sp/>eigenpairs(DenseMatrix_PL<sp/>&amp;L);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>&quot;eigenvalues&quot;<sp/>function<sp/>is<sp/>necessary<sp/>if<sp/>you<sp/>call<sp/>the<sp/>&quot;spectra&quot;<sp/>function<sp/>of<sp/>a<sp/>PersistentLaplacian,<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>&quot;eigenpairs&quot;<sp/>function<sp/>is<sp/>necessary<sp/>if<sp/>you<sp/>call<sp/>the<sp/>&quot;eigenpairs&quot;<sp/>function<sp/>of<sp/>a<sp/>PersistentLaplacian.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>python<sp/>wrapping<sp/>code<sp/>requires<sp/>both,<sp/>but<sp/>for<sp/>a<sp/>c++<sp/>only<sp/>version<sp/>you<sp/>can<sp/>just<sp/>use<sp/>one.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Wrapper<sp/>for<sp/>Eigen&apos;s<sp/>SelfAdjointEigenSolver</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classPersistentLaplacians_1_1selfadjoint" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classPersistentLaplacians_1_1selfadjoint" kindref="compound">selfadjoint</ref>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24" refid="classPersistentLaplacians_1_1selfadjoint_1a442267ea1ddc08752c1efdff480590d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="typedefs_8hpp_1a27a64e317582fd2a2dbdc95fa84b7ebd" kindref="member">spectra_vec</ref><sp/><ref refid="classPersistentLaplacians_1_1selfadjoint_1a442267ea1ddc08752c1efdff480590d8" kindref="member">eigenvalues</ref>(<ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref><sp/>&amp;L){</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Eigen::SelfAdjointEigenSolver&lt;DenseMatrix_PL&gt;<sp/>es<sp/>=<sp/>Eigen::SelfAdjointEigenSolver&lt;DenseMatrix_PL&gt;(L,<sp/>Eigen::EigenvaluesOnly);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="typedefs_8hpp_1a27a64e317582fd2a2dbdc95fa84b7ebd" kindref="member">spectra_vec</ref><sp/>eigs<sp/>=<sp/>es.eigenvalues();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePersistentLaplacians_1a5e90134767fdfde516979022489d8202" kindref="member">round_zeros</ref>(eigs,<sp/>1e-3);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>eigs;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30" refid="classPersistentLaplacians_1_1selfadjoint_1ac686b1467618bf76394cde66d3b9a35d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::pair&lt;spectra_vec,DenseMatrix_spectra_PL&gt;<sp/><ref refid="classPersistentLaplacians_1_1selfadjoint_1ac686b1467618bf76394cde66d3b9a35d" kindref="member">eigenpairs</ref>(<ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref><sp/>&amp;L){</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Eigen::SelfAdjointEigenSolver&lt;DenseMatrix_PL&gt;<sp/>es<sp/>=<sp/>Eigen::SelfAdjointEigenSolver&lt;DenseMatrix_PL&gt;(L);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="typedefs_8hpp_1a27a64e317582fd2a2dbdc95fa84b7ebd" kindref="member">spectra_vec</ref><sp/>eigs<sp/>=<sp/>es.eigenvalues();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="typedefs_8hpp_1ab1b02c8ebcde7779bc2d81fedc0a2d35" kindref="member">DenseMatrix_spectra_PL</ref><sp/>eigvs<sp/>=<sp/>es.eigenvectors();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePersistentLaplacians_1a5e90134767fdfde516979022489d8202" kindref="member">round_zeros</ref>(eigs,<sp/>1e-3);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::pair&lt;spectra_vec,DenseMatrix_spectra_PL&gt;(eigs,<sp/>eigvs);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Wrapper<sp/>for<sp/>Eigen&apos;s<sp/>standard<sp/>EigenSolver<sp/>(does<sp/>not<sp/>assume<sp/>self-adjoint)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="classPersistentLaplacians_1_1eigensolver" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classPersistentLaplacians_1_1eigensolver" kindref="compound">eigensolver</ref>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="42" refid="classPersistentLaplacians_1_1eigensolver_1a3c434d8ed423aa2312253c0008de8564" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="typedefs_8hpp_1a27a64e317582fd2a2dbdc95fa84b7ebd" kindref="member">spectra_vec</ref><sp/><ref refid="classPersistentLaplacians_1_1eigensolver_1a3c434d8ed423aa2312253c0008de8564" kindref="member">eigenvalues</ref>(<ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref><sp/>&amp;L){</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Eigen::EigenSolver&lt;DenseMatrix_PL&gt;<sp/>es<sp/>=<sp/>Eigen::EigenSolver&lt;DenseMatrix_PL&gt;(L,<sp/>Eigen::EigenvaluesOnly);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="typedefs_8hpp_1a27a64e317582fd2a2dbdc95fa84b7ebd" kindref="member">spectra_vec</ref><sp/>eigs<sp/>=<sp/>es.eigenvalues().real();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePersistentLaplacians_1a5e90134767fdfde516979022489d8202" kindref="member">round_zeros</ref>(eigs,<sp/>1e-3);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::sort(eigs.begin(),<sp/>eigs.end());<sp/></highlight><highlight class="comment">//<sp/>Eigen::Eigensolver<sp/>returns<sp/>unsorted</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>eigs;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>this<sp/>is<sp/>placeholder</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="classPersistentLaplacians_1_1eigensolver_1a7b1384f543e3145e796a4aec91f8890c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::pair&lt;spectra_vec,DenseMatrix_spectra_PL&gt;<sp/><ref refid="classPersistentLaplacians_1_1eigensolver_1a7b1384f543e3145e796a4aec91f8890c" kindref="member">eigenpairs</ref>(<ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref><sp/>&amp;L){</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Eigen::SelfAdjointEigenSolver&lt;DenseMatrix_PL&gt;<sp/>es<sp/>=<sp/>Eigen::SelfAdjointEigenSolver&lt;DenseMatrix_PL&gt;(L);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="typedefs_8hpp_1a27a64e317582fd2a2dbdc95fa84b7ebd" kindref="member">spectra_vec</ref><sp/>eigs<sp/>=<sp/>es.eigenvalues();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="typedefs_8hpp_1ab1b02c8ebcde7779bc2d81fedc0a2d35" kindref="member">DenseMatrix_spectra_PL</ref><sp/>eigvs<sp/>=<sp/>es.eigenvectors();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePersistentLaplacians_1a5e90134767fdfde516979022489d8202" kindref="member">round_zeros</ref>(eigs,<sp/>1e-3);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::pair&lt;spectra_vec,DenseMatrix_spectra_PL&gt;(eigs,<sp/>eigvs);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>//<sp/>Wrapper<sp/>for<sp/>Eigen&apos;s<sp/>standard<sp/>EigenSolver<sp/>(does<sp/>not<sp/>assume<sp/>self-adjoint)<sp/>that<sp/>gives<sp/>eigenvectors<sp/>too</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>class<sp/>eigensolver_v{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>public:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::pair&lt;spectra_vec,DenseMatrix_spectra_PL&gt;<sp/>operator()(DenseMatrix_PL<sp/>&amp;L){</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Eigen::EigenSolver&lt;DenseMatrix_PL&gt;<sp/>es<sp/>=<sp/>Eigen::EigenSolver&lt;DenseMatrix_PL&gt;(L);<sp/>//<sp/>Eigen::Eigensolver<sp/>returns<sp/>unsorted</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spectra_vec<sp/>eigs<sp/>=<sp/>es.eigenvalues().real();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DenseMatrix_spectra_PL<sp/>eigvs<sp/>=<sp/>es.eigenvectors().real();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>sort<sp/>eigenvectors<sp/>and<sp/>eigenvalues<sp/>together<sp/>-<sp/>wrap<sp/>in<sp/>custom<sp/>struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>num_eigs<sp/>=<sp/>eigs.size();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;Eigenpair&gt;<sp/>eigenpairs;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eigenpairs.reserve(num_eigs);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(int<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>num_eigs;<sp/>i++){</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Eigenpair<sp/>p<sp/>=<sp/>{eigs[i],<sp/>eigvs.col(i)};</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eigenpairs.push_back(p);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>round_zeros(eigs,<sp/>1e-3);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::sort(eigenpairs.begin(),<sp/>eigenpairs.end(),</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[](const<sp/>auto&amp;<sp/>a,<sp/>const<sp/>auto&amp;<sp/>b)<sp/>{return<sp/>a.eig<sp/>&lt;<sp/>b.eig;});<sp/>//<sp/>custom<sp/>comparator<sp/>for<sp/>sorting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spectra_vec<sp/>eigs_sorted(num_eigs);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DenseMatrix_spectra_PL<sp/>eigvs_sorted(eigvs.rows(),eigvs.cols());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(int<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>num_eigs;<sp/>i++){</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eigs_sorted[i]<sp/>=<sp/>eigenpairs[i].eig;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eigvs_sorted.col(i)<sp/>=<sp/>eigenpairs[i].eigv;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>std::pair&lt;spectra_vec,DenseMatrix_spectra_PL&gt;(eigs_sorted,<sp/>eigvs_sorted);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>private:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>struct<sp/>Eigenpair{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spectra_type<sp/>eig;//<sp/>one<sp/>eigenvalue</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DenseMatrix_spectra_PL<sp/>eigv;<sp/>//<sp/>one<sp/>eigenvector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>};</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Wrapper<sp/>for<sp/>Eigen&apos;s<sp/>BDCSVD<sp/>singular<sp/>value<sp/>decomposition<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="classPersistentLaplacians_1_1bdcsvd" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classPersistentLaplacians_1_1bdcsvd" kindref="compound">bdcsvd</ref>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="103" refid="classPersistentLaplacians_1_1bdcsvd_1ae1df6b21a63374278a6a84f5503444ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="typedefs_8hpp_1a27a64e317582fd2a2dbdc95fa84b7ebd" kindref="member">spectra_vec</ref><sp/><ref refid="classPersistentLaplacians_1_1bdcsvd_1ae1df6b21a63374278a6a84f5503444ae" kindref="member">eigenvalues</ref>(<ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref><sp/>&amp;L){</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Eigen::BDCSVD&lt;DenseMatrix_PL&gt;<sp/><ref refid="classPersistentLaplacians_1_1bdcsvd" kindref="compound">bdcsvd</ref>(L.rows(),<sp/>L.cols());</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classPersistentLaplacians_1_1bdcsvd" kindref="compound">bdcsvd</ref>.compute(L);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="typedefs_8hpp_1a27a64e317582fd2a2dbdc95fa84b7ebd" kindref="member">spectra_vec</ref><sp/>eigs<sp/>=<sp/><ref refid="classPersistentLaplacians_1_1bdcsvd" kindref="compound">bdcsvd</ref>.singularValues();</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePersistentLaplacians_1a5e90134767fdfde516979022489d8202" kindref="member">round_zeros</ref>(eigs,<sp/>1e-3);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::sort(eigs.begin(),<sp/>eigs.end());</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>eigs;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>this<sp/>is<sp/>placeholder</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="classPersistentLaplacians_1_1bdcsvd_1a3a0a4926249ecd0b85668e898f7362f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::pair&lt;spectra_vec,DenseMatrix_spectra_PL&gt;<sp/><ref refid="classPersistentLaplacians_1_1bdcsvd_1a3a0a4926249ecd0b85668e898f7362f7" kindref="member">eigenpairs</ref>(<ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref><sp/>&amp;L){</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Eigen::SelfAdjointEigenSolver&lt;DenseMatrix_PL&gt;<sp/>es<sp/>=<sp/>Eigen::SelfAdjointEigenSolver&lt;DenseMatrix_PL&gt;(L);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="typedefs_8hpp_1a27a64e317582fd2a2dbdc95fa84b7ebd" kindref="member">spectra_vec</ref><sp/>eigs<sp/>=<sp/>es.eigenvalues();</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="typedefs_8hpp_1ab1b02c8ebcde7779bc2d81fedc0a2d35" kindref="member">DenseMatrix_spectra_PL</ref><sp/>eigvs<sp/>=<sp/>es.eigenvectors();</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePersistentLaplacians_1a5e90134767fdfde516979022489d8202" kindref="member">round_zeros</ref>(eigs,<sp/>1e-3);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::pair&lt;spectra_vec,DenseMatrix_spectra_PL&gt;(eigs,<sp/>eigvs);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/eigenvalues/eigs_algorithms.hpp"/>
+  </compounddef>
+</doxygen>

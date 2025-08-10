@@ -1,0 +1,229 @@
+\hypertarget{namespacePersistentLaplacians}{}\doxysection{Persistent\+Laplacians Namespace Reference}
+\label{namespacePersistentLaplacians}\index{PersistentLaplacians@{PersistentLaplacians}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classPersistentLaplacians_1_1FilteredBoundaryMatrix}{Filtered\+Boundary\+Matrix}}
+\item 
+class \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacian}}
+\item 
+class \mbox{\hyperlink{classPersistentLaplacians_1_1schur}{schur}}
+\item 
+class \mbox{\hyperlink{classPersistentLaplacians_1_1ortho}{ortho}}
+\item 
+class \mbox{\hyperlink{classPersistentLaplacians_1_1selfadjoint}{selfadjoint}}
+\item 
+class \mbox{\hyperlink{classPersistentLaplacians_1_1eigensolver}{eigensolver}}
+\item 
+class \mbox{\hyperlink{classPersistentLaplacians_1_1bdcsvd}{bdcsvd}}
+\item 
+struct \mbox{\hyperlink{structPersistentLaplacians_1_1timer}{timer}}
+\item 
+struct \mbox{\hyperlink{structPersistentLaplacians_1_1Profile}{Profile}}
+\item 
+class \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentAlphaLaplacian}{Persistent\+Alpha\+Laplacian}}
+\item 
+class \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentDirectedFlagLaplacian}{Persistent\+Directed\+Flag\+Laplacian}}
+\item 
+class \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentRipsLaplacian}{Persistent\+Rips\+Laplacian}}
+\item 
+class \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentSheafLaplacian}{Persistent\+Sheaf\+Laplacian}}
+\item 
+class \mbox{\hyperlink{classPersistentLaplacians_1_1sheaf__simplex__tree}{sheaf\+\_\+simplex\+\_\+tree}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{namespacePersistentLaplacians_af5a05e44b87981109cce88070677b6f1}{Simplex\+\_\+tree}} = Gudhi\+::\+Simplex\+\_\+tree$<$ Gudhi\+::\+Simplex\+\_\+tree\+\_\+options\+\_\+default $>$
+\item 
+using \mbox{\hyperlink{namespacePersistentLaplacians_a58c490a6ba7bc8547c4d686ce660e806}{Filtration\+\_\+value}} = Simplex\+\_\+tree\+::\+Filtration\+\_\+value
+\item 
+using \mbox{\hyperlink{namespacePersistentLaplacians_a751679cfa9745a7e47c310947521b59e}{Distance\+\_\+matrix}} = std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{namespacePersistentLaplacians_a58c490a6ba7bc8547c4d686ce660e806}{Filtration\+\_\+value}} $>$ $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespacePersistentLaplacians_a5e90134767fdfde516979022489d8202}{round\+\_\+zeros}} (\mbox{\hyperlink{typedefs_8hpp_a27a64e317582fd2a2dbdc95fa84b7ebd}{spectra\+\_\+vec}} \&inout, \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}} threshold)
+\item 
+void \mbox{\hyperlink{namespacePersistentLaplacians_a112d702a171a0032f30409e7de3532ea}{print\+\_\+full\+\_\+matrix\+\_\+precise}} (\mbox{\hyperlink{typedefs_8hpp_af75f469c1ca3f8752d6f67a115e57af4}{Sparse\+Matrix\+Int}} m)
+\item 
+void \mbox{\hyperlink{namespacePersistentLaplacians_aa2ceec6e0a53a2780e0b5655d79dbca4}{print\+\_\+full\+\_\+matrix\+\_\+precise}} (Eigen\+::\+Matrix\+Xi m)
+\item 
+void \mbox{\hyperlink{namespacePersistentLaplacians_a05153ba21964d638315e6dcbadfd4ebd}{print\+\_\+full\+\_\+matrix\+\_\+precise}} (\mbox{\hyperlink{typedefs_8hpp_aa0b819682f9cdac0ae1234aed46106e6}{Sparse\+Matrix\+\_\+\+PL}} m)
+\item 
+void \mbox{\hyperlink{namespacePersistentLaplacians_a94948fb7f8d8894648fbdf7ac11870e6}{print\+\_\+full\+\_\+matrix\+\_\+precise}} (\mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}} m)
+\item 
+void \mbox{\hyperlink{namespacePersistentLaplacians_a6a6d1cace8ac4c62b88ce5140f3b98da}{print\+\_\+vector\+\_\+precise}} (Eigen\+::\+Vector\+Xd v)
+\item 
+void \mbox{\hyperlink{namespacePersistentLaplacians_a9384228573917582462e538376d385b5}{print\+\_\+vector\+\_\+precise}} (Eigen\+::\+Vector\+Xf v)
+\item 
+void \mbox{\hyperlink{namespacePersistentLaplacians_aa8ee555e30135133715db05dd7b35ed3}{print\+\_\+spectra}} (std\+::vector$<$ std\+::tuple$<$ int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}} $>$$>$$>$ spectra)
+\item 
+void \mbox{\hyperlink{namespacePersistentLaplacians_ac97e07389e2c5d1f9dec664e271cd59b}{reindex\+\_\+boundaries\+\_\+map}} (std\+::vector$<$ std\+::vector$<$ std\+::tuple$<$ int64\+\_\+t, int64\+\_\+t, int $>$$>$$>$ \&boundaries\+\_\+triples, std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_af75f469c1ca3f8752d6f67a115e57af4}{Sparse\+Matrix\+Int}} $>$ \&reindexed\+\_\+boundaries, int dummy\+\_\+remove)
+\item 
+void \mbox{\hyperlink{namespacePersistentLaplacians_a2c6b429935449ff2010770034b5e9ff2}{reindex\+\_\+boundaries}} (std\+::vector$<$ std\+::vector$<$ std\+::tuple$<$ int, int, int $>$$>$$>$ \&boundaries\+\_\+triples, std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_af75f469c1ca3f8752d6f67a115e57af4}{Sparse\+Matrix\+Int}} $>$ \&reindexed\+\_\+boundaries, int dim\+\_\+0\+\_\+rows)
+\item 
+void \mbox{\hyperlink{namespacePersistentLaplacians_ae854648cbdf91ceb16c6fe07a6801989}{alpha\+\_\+points}} (std\+::vector$<$ \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a34f5250ef707a575baad36c8a213ba4a}{Point}} $>$ \&points, int dim\+\_\+max, std\+::vector$<$ std\+::vector$<$ std\+::tuple$<$ int, int, int $>$$>$$>$ \&boundaries\+\_\+triples, std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$$>$ \&filtrations)
+\item 
+void \mbox{\hyperlink{namespacePersistentLaplacians_aa8578e00f53b31867376ac329cd8b9eb}{alpha\+\_\+\+OFF}} (const char $\ast$filename, int dim\+\_\+max, std\+::vector$<$ std\+::vector$<$ std\+::tuple$<$ int, int, int $>$$>$$>$ \&boundaries\+\_\+triples, std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$$>$ \&filtrations)
+\item 
+\mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a35b212c9d8294610f52745b5a555c5ed}{Vertex\+\_\+list}} \mbox{\hyperlink{namespacePersistentLaplacians_a06d02bd9fe76eee39b28d8b672df0ca3}{from}} (const \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a29ee975320b9ec3b14074ce336d7b88c}{Cell\+\_\+handle}} \&ch)
+\item 
+\mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a35b212c9d8294610f52745b5a555c5ed}{Vertex\+\_\+list}} \mbox{\hyperlink{namespacePersistentLaplacians_a1a687cbb13d72b6c94ff1e6a7414648a}{from}} (const \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_ab757b57094db65647a1f51c793464240}{Facet}} \&fct)
+\item 
+\mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a35b212c9d8294610f52745b5a555c5ed}{Vertex\+\_\+list}} \mbox{\hyperlink{namespacePersistentLaplacians_a1ccbae2ac3385b0b00fbcf791101763c}{from}} (const \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a059d548004c91470f1bf1df952e0b531}{Edge}} \&edg)
+\item 
+\mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a35b212c9d8294610f52745b5a555c5ed}{Vertex\+\_\+list}} \mbox{\hyperlink{namespacePersistentLaplacians_a8b6dc89cc0afd68c219f8ebdaaa490f2}{from}} (const Alpha\+\_\+shape\+\_\+3\+::\+Vertex\+\_\+handle \&vh)
+\item 
+void \mbox{\hyperlink{namespacePersistentLaplacians_aaea7b6de09ffe44b94fcaa130f68b378}{get\+\_\+boundaries\+\_\+and\+\_\+filtrations}} (\mbox{\hyperlink{namespacePersistentLaplacians_af5a05e44b87981109cce88070677b6f1}{Simplex\+\_\+tree}} simplex\+\_\+tree, int dim\+\_\+max, std\+::vector$<$ std\+::vector$<$ std\+::tuple$<$ int, int, int $>$$>$$>$ \&boundaries\+\_\+triples, std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$$>$ \&filtrations)
+\item 
+void \mbox{\hyperlink{namespacePersistentLaplacians_ac9b7a3c77f8eb773c3bded878909fe1e}{print\+\_\+full\+\_\+matrix\+\_\+precise}} (Eigen\+::\+Matrix\+Xf m)
+\item 
+void \mbox{\hyperlink{namespacePersistentLaplacians_a690d31305b1585081c4f16bb703f5bd4}{print\+\_\+vector\+\_\+precise}} (\mbox{\hyperlink{typedefs_8hpp_a27a64e317582fd2a2dbdc95fa84b7ebd}{spectra\+\_\+vec}} v)
+\item 
+\mbox{\hyperlink{classPersistentLaplacians_1_1sheaf__simplex__tree}{Persistent\+Laplacians\+::sheaf\+\_\+simplex\+\_\+tree}} \mbox{\hyperlink{namespacePersistentLaplacians_a723613a2af1a0651a29f8f34a44b3f1f}{rips\+\_\+sheaf\+\_\+simplex\+\_\+tree}} (std\+::vector$<$ std\+::vector$<$ float $>$$>$ points, \mbox{\hyperlink{namespacePersistentLaplacians_a58c490a6ba7bc8547c4d686ce660e806}{Filtration\+\_\+value}} max\+\_\+length, std\+::function$<$ float(Simplex\+\_\+tree\+::\+Simplex\+\_\+handle, Simplex\+\_\+tree\+::\+Simplex\+\_\+handle, \mbox{\hyperlink{classPersistentLaplacians_1_1sheaf__simplex__tree}{sheaf\+\_\+simplex\+\_\+tree}} \&)$>$ restriction)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{namespacePersistentLaplacians_a751679cfa9745a7e47c310947521b59e}\label{namespacePersistentLaplacians_a751679cfa9745a7e47c310947521b59e}} 
+\index{PersistentLaplacians@{PersistentLaplacians}!Distance\_matrix@{Distance\_matrix}}
+\index{Distance\_matrix@{Distance\_matrix}!PersistentLaplacians@{PersistentLaplacians}}
+\doxysubsubsection{\texorpdfstring{Distance\_matrix}{Distance\_matrix}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespacePersistentLaplacians_a751679cfa9745a7e47c310947521b59e}{Persistent\+Laplacians\+::\+Distance\+\_\+matrix}} = typedef std\+::vector$<$std\+::vector$<$\mbox{\hyperlink{namespacePersistentLaplacians_a58c490a6ba7bc8547c4d686ce660e806}{Filtration\+\_\+value}}$>$ $>$}
+
+\mbox{\Hypertarget{namespacePersistentLaplacians_a58c490a6ba7bc8547c4d686ce660e806}\label{namespacePersistentLaplacians_a58c490a6ba7bc8547c4d686ce660e806}} 
+\index{PersistentLaplacians@{PersistentLaplacians}!Filtration\_value@{Filtration\_value}}
+\index{Filtration\_value@{Filtration\_value}!PersistentLaplacians@{PersistentLaplacians}}
+\doxysubsubsection{\texorpdfstring{Filtration\_value}{Filtration\_value}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespacePersistentLaplacians_a58c490a6ba7bc8547c4d686ce660e806}{Persistent\+Laplacians\+::\+Filtration\+\_\+value}} = typedef Simplex\+\_\+tree\+::\+Filtration\+\_\+value}
+
+\mbox{\Hypertarget{namespacePersistentLaplacians_af5a05e44b87981109cce88070677b6f1}\label{namespacePersistentLaplacians_af5a05e44b87981109cce88070677b6f1}} 
+\index{PersistentLaplacians@{PersistentLaplacians}!Simplex\_tree@{Simplex\_tree}}
+\index{Simplex\_tree@{Simplex\_tree}!PersistentLaplacians@{PersistentLaplacians}}
+\doxysubsubsection{\texorpdfstring{Simplex\_tree}{Simplex\_tree}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespacePersistentLaplacians_af5a05e44b87981109cce88070677b6f1}{Persistent\+Laplacians\+::\+Simplex\+\_\+tree}} = typedef Gudhi\+::\+Simplex\+\_\+tree$<$Gudhi\+::\+Simplex\+\_\+tree\+\_\+options\+\_\+default$>$}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacePersistentLaplacians_aa8578e00f53b31867376ac329cd8b9eb}\label{namespacePersistentLaplacians_aa8578e00f53b31867376ac329cd8b9eb}} 
+\index{PersistentLaplacians@{PersistentLaplacians}!alpha\_OFF@{alpha\_OFF}}
+\index{alpha\_OFF@{alpha\_OFF}!PersistentLaplacians@{PersistentLaplacians}}
+\doxysubsubsection{\texorpdfstring{alpha\_OFF()}{alpha\_OFF()}}
+{\footnotesize\ttfamily void Persistent\+Laplacians\+::alpha\+\_\+\+OFF (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename,  }\item[{int}]{dim\+\_\+max,  }\item[{std\+::vector$<$ std\+::vector$<$ std\+::tuple$<$ int, int, int $>$$>$$>$ \&}]{boundaries\+\_\+triples,  }\item[{std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$$>$ \&}]{filtrations }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacePersistentLaplacians_ae854648cbdf91ceb16c6fe07a6801989}\label{namespacePersistentLaplacians_ae854648cbdf91ceb16c6fe07a6801989}} 
+\index{PersistentLaplacians@{PersistentLaplacians}!alpha\_points@{alpha\_points}}
+\index{alpha\_points@{alpha\_points}!PersistentLaplacians@{PersistentLaplacians}}
+\doxysubsubsection{\texorpdfstring{alpha\_points()}{alpha\_points()}}
+{\footnotesize\ttfamily void Persistent\+Laplacians\+::alpha\+\_\+points (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a34f5250ef707a575baad36c8a213ba4a}{Point}} $>$ \&}]{points,  }\item[{int}]{dim\+\_\+max,  }\item[{std\+::vector$<$ std\+::vector$<$ std\+::tuple$<$ int, int, int $>$$>$$>$ \&}]{boundaries\+\_\+triples,  }\item[{std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$$>$ \&}]{filtrations }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacePersistentLaplacians_a8b6dc89cc0afd68c219f8ebdaaa490f2}\label{namespacePersistentLaplacians_a8b6dc89cc0afd68c219f8ebdaaa490f2}} 
+\index{PersistentLaplacians@{PersistentLaplacians}!from@{from}}
+\index{from@{from}!PersistentLaplacians@{PersistentLaplacians}}
+\doxysubsubsection{\texorpdfstring{from()}{from()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a35b212c9d8294610f52745b5a555c5ed}{Vertex\+\_\+list}} Persistent\+Laplacians\+::from (\begin{DoxyParamCaption}\item[{const Alpha\+\_\+shape\+\_\+3\+::\+Vertex\+\_\+handle \&}]{vh }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacePersistentLaplacians_a06d02bd9fe76eee39b28d8b672df0ca3}\label{namespacePersistentLaplacians_a06d02bd9fe76eee39b28d8b672df0ca3}} 
+\index{PersistentLaplacians@{PersistentLaplacians}!from@{from}}
+\index{from@{from}!PersistentLaplacians@{PersistentLaplacians}}
+\doxysubsubsection{\texorpdfstring{from()}{from()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a35b212c9d8294610f52745b5a555c5ed}{Vertex\+\_\+list}} Persistent\+Laplacians\+::from (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a29ee975320b9ec3b14074ce336d7b88c}{Cell\+\_\+handle}} \&}]{ch }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacePersistentLaplacians_a1ccbae2ac3385b0b00fbcf791101763c}\label{namespacePersistentLaplacians_a1ccbae2ac3385b0b00fbcf791101763c}} 
+\index{PersistentLaplacians@{PersistentLaplacians}!from@{from}}
+\index{from@{from}!PersistentLaplacians@{PersistentLaplacians}}
+\doxysubsubsection{\texorpdfstring{from()}{from()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a35b212c9d8294610f52745b5a555c5ed}{Vertex\+\_\+list}} Persistent\+Laplacians\+::from (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a059d548004c91470f1bf1df952e0b531}{Edge}} \&}]{edg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacePersistentLaplacians_a1a687cbb13d72b6c94ff1e6a7414648a}\label{namespacePersistentLaplacians_a1a687cbb13d72b6c94ff1e6a7414648a}} 
+\index{PersistentLaplacians@{PersistentLaplacians}!from@{from}}
+\index{from@{from}!PersistentLaplacians@{PersistentLaplacians}}
+\doxysubsubsection{\texorpdfstring{from()}{from()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a35b212c9d8294610f52745b5a555c5ed}{Vertex\+\_\+list}} Persistent\+Laplacians\+::from (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_ab757b57094db65647a1f51c793464240}{Facet}} \&}]{fct }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacePersistentLaplacians_aaea7b6de09ffe44b94fcaa130f68b378}\label{namespacePersistentLaplacians_aaea7b6de09ffe44b94fcaa130f68b378}} 
+\index{PersistentLaplacians@{PersistentLaplacians}!get\_boundaries\_and\_filtrations@{get\_boundaries\_and\_filtrations}}
+\index{get\_boundaries\_and\_filtrations@{get\_boundaries\_and\_filtrations}!PersistentLaplacians@{PersistentLaplacians}}
+\doxysubsubsection{\texorpdfstring{get\_boundaries\_and\_filtrations()}{get\_boundaries\_and\_filtrations()}}
+{\footnotesize\ttfamily void Persistent\+Laplacians\+::get\+\_\+boundaries\+\_\+and\+\_\+filtrations (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacePersistentLaplacians_af5a05e44b87981109cce88070677b6f1}{Simplex\+\_\+tree}}}]{simplex\+\_\+tree,  }\item[{int}]{dim\+\_\+max,  }\item[{std\+::vector$<$ std\+::vector$<$ std\+::tuple$<$ int, int, int $>$$>$$>$ \&}]{boundaries\+\_\+triples,  }\item[{std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$$>$ \&}]{filtrations }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacePersistentLaplacians_a94948fb7f8d8894648fbdf7ac11870e6}\label{namespacePersistentLaplacians_a94948fb7f8d8894648fbdf7ac11870e6}} 
+\index{PersistentLaplacians@{PersistentLaplacians}!print\_full\_matrix\_precise@{print\_full\_matrix\_precise}}
+\index{print\_full\_matrix\_precise@{print\_full\_matrix\_precise}!PersistentLaplacians@{PersistentLaplacians}}
+\doxysubsubsection{\texorpdfstring{print\_full\_matrix\_precise()}{print\_full\_matrix\_precise()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily void Persistent\+Laplacians\+::print\+\_\+full\+\_\+matrix\+\_\+precise (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}}}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacePersistentLaplacians_ac9b7a3c77f8eb773c3bded878909fe1e}\label{namespacePersistentLaplacians_ac9b7a3c77f8eb773c3bded878909fe1e}} 
+\index{PersistentLaplacians@{PersistentLaplacians}!print\_full\_matrix\_precise@{print\_full\_matrix\_precise}}
+\index{print\_full\_matrix\_precise@{print\_full\_matrix\_precise}!PersistentLaplacians@{PersistentLaplacians}}
+\doxysubsubsection{\texorpdfstring{print\_full\_matrix\_precise()}{print\_full\_matrix\_precise()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily void Persistent\+Laplacians\+::print\+\_\+full\+\_\+matrix\+\_\+precise (\begin{DoxyParamCaption}\item[{Eigen\+::\+Matrix\+Xf}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacePersistentLaplacians_aa2ceec6e0a53a2780e0b5655d79dbca4}\label{namespacePersistentLaplacians_aa2ceec6e0a53a2780e0b5655d79dbca4}} 
+\index{PersistentLaplacians@{PersistentLaplacians}!print\_full\_matrix\_precise@{print\_full\_matrix\_precise}}
+\index{print\_full\_matrix\_precise@{print\_full\_matrix\_precise}!PersistentLaplacians@{PersistentLaplacians}}
+\doxysubsubsection{\texorpdfstring{print\_full\_matrix\_precise()}{print\_full\_matrix\_precise()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily void Persistent\+Laplacians\+::print\+\_\+full\+\_\+matrix\+\_\+precise (\begin{DoxyParamCaption}\item[{Eigen\+::\+Matrix\+Xi}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacePersistentLaplacians_a05153ba21964d638315e6dcbadfd4ebd}\label{namespacePersistentLaplacians_a05153ba21964d638315e6dcbadfd4ebd}} 
+\index{PersistentLaplacians@{PersistentLaplacians}!print\_full\_matrix\_precise@{print\_full\_matrix\_precise}}
+\index{print\_full\_matrix\_precise@{print\_full\_matrix\_precise}!PersistentLaplacians@{PersistentLaplacians}}
+\doxysubsubsection{\texorpdfstring{print\_full\_matrix\_precise()}{print\_full\_matrix\_precise()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily void Persistent\+Laplacians\+::print\+\_\+full\+\_\+matrix\+\_\+precise (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8hpp_aa0b819682f9cdac0ae1234aed46106e6}{Sparse\+Matrix\+\_\+\+PL}}}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacePersistentLaplacians_a112d702a171a0032f30409e7de3532ea}\label{namespacePersistentLaplacians_a112d702a171a0032f30409e7de3532ea}} 
+\index{PersistentLaplacians@{PersistentLaplacians}!print\_full\_matrix\_precise@{print\_full\_matrix\_precise}}
+\index{print\_full\_matrix\_precise@{print\_full\_matrix\_precise}!PersistentLaplacians@{PersistentLaplacians}}
+\doxysubsubsection{\texorpdfstring{print\_full\_matrix\_precise()}{print\_full\_matrix\_precise()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily void Persistent\+Laplacians\+::print\+\_\+full\+\_\+matrix\+\_\+precise (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8hpp_af75f469c1ca3f8752d6f67a115e57af4}{Sparse\+Matrix\+Int}}}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacePersistentLaplacians_aa8ee555e30135133715db05dd7b35ed3}\label{namespacePersistentLaplacians_aa8ee555e30135133715db05dd7b35ed3}} 
+\index{PersistentLaplacians@{PersistentLaplacians}!print\_spectra@{print\_spectra}}
+\index{print\_spectra@{print\_spectra}!PersistentLaplacians@{PersistentLaplacians}}
+\doxysubsubsection{\texorpdfstring{print\_spectra()}{print\_spectra()}}
+{\footnotesize\ttfamily void Persistent\+Laplacians\+::print\+\_\+spectra (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::tuple$<$ int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}} $>$$>$$>$}]{spectra }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacePersistentLaplacians_a6a6d1cace8ac4c62b88ce5140f3b98da}\label{namespacePersistentLaplacians_a6a6d1cace8ac4c62b88ce5140f3b98da}} 
+\index{PersistentLaplacians@{PersistentLaplacians}!print\_vector\_precise@{print\_vector\_precise}}
+\index{print\_vector\_precise@{print\_vector\_precise}!PersistentLaplacians@{PersistentLaplacians}}
+\doxysubsubsection{\texorpdfstring{print\_vector\_precise()}{print\_vector\_precise()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Persistent\+Laplacians\+::print\+\_\+vector\+\_\+precise (\begin{DoxyParamCaption}\item[{Eigen\+::\+Vector\+Xd}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacePersistentLaplacians_a9384228573917582462e538376d385b5}\label{namespacePersistentLaplacians_a9384228573917582462e538376d385b5}} 
+\index{PersistentLaplacians@{PersistentLaplacians}!print\_vector\_precise@{print\_vector\_precise}}
+\index{print\_vector\_precise@{print\_vector\_precise}!PersistentLaplacians@{PersistentLaplacians}}
+\doxysubsubsection{\texorpdfstring{print\_vector\_precise()}{print\_vector\_precise()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Persistent\+Laplacians\+::print\+\_\+vector\+\_\+precise (\begin{DoxyParamCaption}\item[{Eigen\+::\+Vector\+Xf}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacePersistentLaplacians_a690d31305b1585081c4f16bb703f5bd4}\label{namespacePersistentLaplacians_a690d31305b1585081c4f16bb703f5bd4}} 
+\index{PersistentLaplacians@{PersistentLaplacians}!print\_vector\_precise@{print\_vector\_precise}}
+\index{print\_vector\_precise@{print\_vector\_precise}!PersistentLaplacians@{PersistentLaplacians}}
+\doxysubsubsection{\texorpdfstring{print\_vector\_precise()}{print\_vector\_precise()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Persistent\+Laplacians\+::print\+\_\+vector\+\_\+precise (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8hpp_a27a64e317582fd2a2dbdc95fa84b7ebd}{spectra\+\_\+vec}}}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacePersistentLaplacians_a2c6b429935449ff2010770034b5e9ff2}\label{namespacePersistentLaplacians_a2c6b429935449ff2010770034b5e9ff2}} 
+\index{PersistentLaplacians@{PersistentLaplacians}!reindex\_boundaries@{reindex\_boundaries}}
+\index{reindex\_boundaries@{reindex\_boundaries}!PersistentLaplacians@{PersistentLaplacians}}
+\doxysubsubsection{\texorpdfstring{reindex\_boundaries()}{reindex\_boundaries()}}
+{\footnotesize\ttfamily void Persistent\+Laplacians\+::reindex\+\_\+boundaries (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::vector$<$ std\+::tuple$<$ int, int, int $>$$>$$>$ \&}]{boundaries\+\_\+triples,  }\item[{std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_af75f469c1ca3f8752d6f67a115e57af4}{Sparse\+Matrix\+Int}} $>$ \&}]{reindexed\+\_\+boundaries,  }\item[{int}]{dim\+\_\+0\+\_\+rows }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacePersistentLaplacians_ac97e07389e2c5d1f9dec664e271cd59b}\label{namespacePersistentLaplacians_ac97e07389e2c5d1f9dec664e271cd59b}} 
+\index{PersistentLaplacians@{PersistentLaplacians}!reindex\_boundaries\_map@{reindex\_boundaries\_map}}
+\index{reindex\_boundaries\_map@{reindex\_boundaries\_map}!PersistentLaplacians@{PersistentLaplacians}}
+\doxysubsubsection{\texorpdfstring{reindex\_boundaries\_map()}{reindex\_boundaries\_map()}}
+{\footnotesize\ttfamily void Persistent\+Laplacians\+::reindex\+\_\+boundaries\+\_\+map (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::vector$<$ std\+::tuple$<$ int64\+\_\+t, int64\+\_\+t, int $>$$>$$>$ \&}]{boundaries\+\_\+triples,  }\item[{std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_af75f469c1ca3f8752d6f67a115e57af4}{Sparse\+Matrix\+Int}} $>$ \&}]{reindexed\+\_\+boundaries,  }\item[{int}]{dummy\+\_\+remove }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacePersistentLaplacians_a723613a2af1a0651a29f8f34a44b3f1f}\label{namespacePersistentLaplacians_a723613a2af1a0651a29f8f34a44b3f1f}} 
+\index{PersistentLaplacians@{PersistentLaplacians}!rips\_sheaf\_simplex\_tree@{rips\_sheaf\_simplex\_tree}}
+\index{rips\_sheaf\_simplex\_tree@{rips\_sheaf\_simplex\_tree}!PersistentLaplacians@{PersistentLaplacians}}
+\doxysubsubsection{\texorpdfstring{rips\_sheaf\_simplex\_tree()}{rips\_sheaf\_simplex\_tree()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPersistentLaplacians_1_1sheaf__simplex__tree}{Persistent\+Laplacians\+::sheaf\+\_\+simplex\+\_\+tree}} Persistent\+Laplacians\+::rips\+\_\+sheaf\+\_\+simplex\+\_\+tree (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::vector$<$ float $>$$>$}]{points,  }\item[{\mbox{\hyperlink{namespacePersistentLaplacians_a58c490a6ba7bc8547c4d686ce660e806}{Filtration\+\_\+value}}}]{max\+\_\+length,  }\item[{std\+::function$<$ float(Simplex\+\_\+tree\+::\+Simplex\+\_\+handle, Simplex\+\_\+tree\+::\+Simplex\+\_\+handle, \mbox{\hyperlink{classPersistentLaplacians_1_1sheaf__simplex__tree}{sheaf\+\_\+simplex\+\_\+tree}} \&)$>$}]{restriction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacePersistentLaplacians_a5e90134767fdfde516979022489d8202}\label{namespacePersistentLaplacians_a5e90134767fdfde516979022489d8202}} 
+\index{PersistentLaplacians@{PersistentLaplacians}!round\_zeros@{round\_zeros}}
+\index{round\_zeros@{round\_zeros}!PersistentLaplacians@{PersistentLaplacians}}
+\doxysubsubsection{\texorpdfstring{round\_zeros()}{round\_zeros()}}
+{\footnotesize\ttfamily void Persistent\+Laplacians\+::round\+\_\+zeros (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8hpp_a27a64e317582fd2a2dbdc95fa84b7ebd}{spectra\+\_\+vec}} \&}]{inout,  }\item[{\mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}}}]{threshold }\end{DoxyParamCaption})}
+

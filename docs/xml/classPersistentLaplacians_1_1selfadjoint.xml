@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classPersistentLaplacians_1_1selfadjoint" kind="class" language="C++" prot="public">
+    <compoundname>PersistentLaplacians::selfadjoint</compoundname>
+    <includes refid="eigs__algorithms_8hpp" local="no">eigs_algorithms.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPersistentLaplacians_1_1selfadjoint_1a442267ea1ddc08752c1efdff480590d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="typedefs_8hpp_1a27a64e317582fd2a2dbdc95fa84b7ebd" kindref="member">spectra_vec</ref></type>
+        <definition>spectra_vec PersistentLaplacians::selfadjoint::eigenvalues</definition>
+        <argsstring>(DenseMatrix_PL &amp;L)</argsstring>
+        <name>eigenvalues</name>
+        <param>
+          <type><ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref> &amp;</type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/eigenvalues/eigs_algorithms.hpp" line="24" column="25" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/eigenvalues/eigs_algorithms.hpp" bodystart="24" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersistentLaplacians_1_1selfadjoint_1ac686b1467618bf76394cde66d3b9a35d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::pair&lt; <ref refid="typedefs_8hpp_1a27a64e317582fd2a2dbdc95fa84b7ebd" kindref="member">spectra_vec</ref>, <ref refid="typedefs_8hpp_1ab1b02c8ebcde7779bc2d81fedc0a2d35" kindref="member">DenseMatrix_spectra_PL</ref> &gt;</type>
+        <definition>std::pair&lt;spectra_vec,DenseMatrix_spectra_PL&gt; PersistentLaplacians::selfadjoint::eigenpairs</definition>
+        <argsstring>(DenseMatrix_PL &amp;L)</argsstring>
+        <name>eigenpairs</name>
+        <param>
+          <type><ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref> &amp;</type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/eigenvalues/eigs_algorithms.hpp" line="30" column="23" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/eigenvalues/eigs_algorithms.hpp" bodystart="30" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>PersistentLaplacians::selfadjoint</label>
+        <link refid="classPersistentLaplacians_1_1selfadjoint"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/eigenvalues/eigs_algorithms.hpp" line="22" column="5" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/eigenvalues/eigs_algorithms.hpp" bodystart="22" bodyend="37"/>
+    <listofallmembers>
+      <member refid="classPersistentLaplacians_1_1selfadjoint_1ac686b1467618bf76394cde66d3b9a35d" prot="public" virt="non-virtual"><scope>PersistentLaplacians::selfadjoint</scope><name>eigenpairs</name></member>
+      <member refid="classPersistentLaplacians_1_1selfadjoint_1a442267ea1ddc08752c1efdff480590d8" prot="public" virt="non-virtual"><scope>PersistentLaplacians::selfadjoint</scope><name>eigenvalues</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

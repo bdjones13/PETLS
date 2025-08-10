@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classPersistentLaplacians_1_1sheaf__simplex__tree" kind="class" language="C++" prot="public">
+    <compoundname>PersistentLaplacians::sheaf_simplex_tree</compoundname>
+    <includes refid="sheaf__simplex__tree_8hpp" local="no">sheaf_simplex_tree.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classPersistentLaplacians_1_1sheaf__simplex__tree_1a0dc5341545d584cdae8322877229994c" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacePersistentLaplacians_1af5a05e44b87981109cce88070677b6f1" kindref="member">Simplex_tree</ref></type>
+        <definition>Simplex_tree PersistentLaplacians::sheaf_simplex_tree::st</definition>
+        <argsstring></argsstring>
+        <name>st</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/sheaf_simplex_tree.hpp" line="22" column="26" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/sheaf_simplex_tree.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPersistentLaplacians_1_1sheaf__simplex__tree_1adc412faedc0144197325f165c01d88d4" prot="public" static="no" mutable="no">
+        <type>std::unordered_map&lt; Simplex_tree::Simplex_key, std::vector&lt; float &gt; &gt;</type>
+        <definition>std::unordered_map&lt;Simplex_tree::Simplex_key, std::vector&lt;float&gt; &gt; PersistentLaplacians::sheaf_simplex_tree::extra_data</definition>
+        <argsstring></argsstring>
+        <name>extra_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/sheaf_simplex_tree.hpp" line="23" column="32" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/sheaf_simplex_tree.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPersistentLaplacians_1_1sheaf__simplex__tree_1a204374a03b3336ee01b709329f04c0fc" prot="public" static="no" mutable="no">
+        <type>std::function&lt; float(Simplex_tree::Simplex_handle, Simplex_tree::Simplex_handle, <ref refid="classPersistentLaplacians_1_1sheaf__simplex__tree" kindref="compound">sheaf_simplex_tree</ref> &amp;)&gt;</type>
+        <definition>std::function&lt;float(Simplex_tree::Simplex_handle, Simplex_tree::Simplex_handle, sheaf_simplex_tree&amp;)&gt; PersistentLaplacians::sheaf_simplex_tree::restriction</definition>
+        <argsstring></argsstring>
+        <name>restriction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/sheaf_simplex_tree.hpp" line="24" column="27" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/sheaf_simplex_tree.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPersistentLaplacians_1_1sheaf__simplex__tree_1aea312dada2187d15d71f790248377124" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PersistentLaplacians::sheaf_simplex_tree::sheaf_simplex_tree</definition>
+        <argsstring>(Simplex_tree _st, std::unordered_map&lt; Simplex_tree::Simplex_key, std::vector&lt; float &gt;&gt; _extra_data, std::function&lt; float(Simplex_tree::Simplex_handle, Simplex_tree::Simplex_handle, sheaf_simplex_tree &amp;)&gt; _restriction)</argsstring>
+        <name>sheaf_simplex_tree</name>
+        <param>
+          <type><ref refid="namespacePersistentLaplacians_1af5a05e44b87981109cce88070677b6f1" kindref="member">Simplex_tree</ref></type>
+          <declname>_st</declname>
+        </param>
+        <param>
+          <type>std::unordered_map&lt; Simplex_tree::Simplex_key, std::vector&lt; float &gt;&gt;</type>
+          <declname>_extra_data</declname>
+        </param>
+        <param>
+          <type>std::function&lt; float(Simplex_tree::Simplex_handle, Simplex_tree::Simplex_handle, <ref refid="classPersistentLaplacians_1_1sheaf__simplex__tree" kindref="compound">sheaf_simplex_tree</ref> &amp;)&gt;</type>
+          <declname>_restriction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/sheaf_simplex_tree.hpp" line="25" column="13" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/sheaf_simplex_tree.hpp" bodystart="25" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersistentLaplacians_1_1sheaf__simplex__tree_1ab96d531bd1a66382b08c7ecb49acd7fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int PersistentLaplacians::sheaf_simplex_tree::coface_index</definition>
+        <argsstring>(Simplex_tree::Simplex_handle simplex, Simplex_tree::Simplex_handle coface)</argsstring>
+        <name>coface_index</name>
+        <param>
+          <type>Simplex_tree::Simplex_handle</type>
+          <declname>simplex</declname>
+        </param>
+        <param>
+          <type>Simplex_tree::Simplex_handle</type>
+          <declname>coface</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/sheaf_simplex_tree.hpp" line="32" column="17" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/sheaf_simplex_tree.hpp" bodystart="32" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersistentLaplacians_1_1sheaf__simplex__tree_1ab950d0672d2d3f747e60df61b15c8ea4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classPersistentLaplacians_1_1FilteredBoundaryMatrix" kindref="compound">FilteredBoundaryMatrix</ref>&lt; float &gt; &gt;</type>
+        <definition>std::vector&lt;FilteredBoundaryMatrix&lt;float&gt; &gt; PersistentLaplacians::sheaf_simplex_tree::apply_restriction_function</definition>
+        <argsstring>()</argsstring>
+        <name>apply_restriction_function</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/sheaf_simplex_tree.hpp" line="53" column="25" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/sheaf_simplex_tree.hpp" bodystart="53" bodyend="108"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classPersistentLaplacians_1_1sheaf__simplex__tree_1aefe17736b40850d852d581b023b064fb" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PersistentLaplacians::sheaf_simplex_tree::reindex_boundaries_map</definition>
+        <argsstring>(std::vector&lt; std::vector&lt; std::tuple&lt; int64_t, int64_t, float &gt;&gt;&gt; &amp;boundaries_triples, std::vector&lt; SparseMatrixFloat &gt; &amp;reindexed_boundaries, std::vector&lt; std::vector&lt; std::pair&lt; int, double &gt;&gt;&gt; &amp;filtrations, std::vector&lt; std::vector&lt; double &gt;&gt; &amp;reindexed_filtrations)</argsstring>
+        <name>reindex_boundaries_map</name>
+        <param>
+          <type>std::vector&lt; std::vector&lt; std::tuple&lt; int64_t, int64_t, float &gt;&gt;&gt; &amp;</type>
+          <declname>boundaries_triples</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="typedefs_8hpp_1a36861f68d1eb98f57ea27b47bd45fc37" kindref="member">SparseMatrixFloat</ref> &gt; &amp;</type>
+          <declname>reindexed_boundaries</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; std::pair&lt; int, double &gt;&gt;&gt; &amp;</type>
+          <declname>filtrations</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; double &gt;&gt; &amp;</type>
+          <declname>reindexed_filtrations</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/sheaf_simplex_tree.hpp" line="110" column="18" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/sheaf_simplex_tree.hpp" bodystart="110" bodyend="172"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>PersistentLaplacians::sheaf_simplex_tree</label>
+        <link refid="classPersistentLaplacians_1_1sheaf__simplex__tree"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/sheaf_simplex_tree.hpp" line="20" column="5" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/sheaf_simplex_tree.hpp" bodystart="20" bodyend="174"/>
+    <listofallmembers>
+      <member refid="classPersistentLaplacians_1_1sheaf__simplex__tree_1ab950d0672d2d3f747e60df61b15c8ea4" prot="public" virt="non-virtual"><scope>PersistentLaplacians::sheaf_simplex_tree</scope><name>apply_restriction_function</name></member>
+      <member refid="classPersistentLaplacians_1_1sheaf__simplex__tree_1ab96d531bd1a66382b08c7ecb49acd7fc" prot="public" virt="non-virtual"><scope>PersistentLaplacians::sheaf_simplex_tree</scope><name>coface_index</name></member>
+      <member refid="classPersistentLaplacians_1_1sheaf__simplex__tree_1adc412faedc0144197325f165c01d88d4" prot="public" virt="non-virtual"><scope>PersistentLaplacians::sheaf_simplex_tree</scope><name>extra_data</name></member>
+      <member refid="classPersistentLaplacians_1_1sheaf__simplex__tree_1aefe17736b40850d852d581b023b064fb" prot="private" virt="non-virtual"><scope>PersistentLaplacians::sheaf_simplex_tree</scope><name>reindex_boundaries_map</name></member>
+      <member refid="classPersistentLaplacians_1_1sheaf__simplex__tree_1a204374a03b3336ee01b709329f04c0fc" prot="public" virt="non-virtual"><scope>PersistentLaplacians::sheaf_simplex_tree</scope><name>restriction</name></member>
+      <member refid="classPersistentLaplacians_1_1sheaf__simplex__tree_1aea312dada2187d15d71f790248377124" prot="public" virt="non-virtual"><scope>PersistentLaplacians::sheaf_simplex_tree</scope><name>sheaf_simplex_tree</name></member>
+      <member refid="classPersistentLaplacians_1_1sheaf__simplex__tree_1a0dc5341545d584cdae8322877229994c" prot="public" virt="non-virtual"><scope>PersistentLaplacians::sheaf_simplex_tree</scope><name>st</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

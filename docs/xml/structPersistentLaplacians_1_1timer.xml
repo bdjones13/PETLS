@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structPersistentLaplacians_1_1timer" kind="struct" language="C++" prot="public">
+    <compoundname>PersistentLaplacians::timer</compoundname>
+    <includes refid="PersistentLaplacians_8hpp" local="no">PersistentLaplacians.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structPersistentLaplacians_1_1timer_1acff399cee3e0c168bbf4a6cab9348158" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PersistentLaplacians::timer::duration</definition>
+        <argsstring></argsstring>
+        <name>duration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="32" column="17" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPersistentLaplacians_1_1timer_1a9fbe8840ab78aa95649fe072880ed31c" prot="public" static="no" mutable="no">
+        <type>std::chrono::_V2::steady_clock::time_point</type>
+        <definition>std::chrono::_V2::steady_clock::time_point PersistentLaplacians::timer::start_t</definition>
+        <argsstring></argsstring>
+        <name>start_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="33" column="56" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structPersistentLaplacians_1_1timer_1a555a1420f81dddf5cb3874e2c04e7ed2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PersistentLaplacians::timer::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="34" column="18" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="structPersistentLaplacians_1_1timer_1afbee23e392e7a08575bb1c3010015b08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PersistentLaplacians::timer::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="37" column="18" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="37" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>PersistentLaplacians::timer</label>
+        <link refid="structPersistentLaplacians_1_1timer"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="30" column="5" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="30" bodyend="41"/>
+    <listofallmembers>
+      <member refid="structPersistentLaplacians_1_1timer_1acff399cee3e0c168bbf4a6cab9348158" prot="public" virt="non-virtual"><scope>PersistentLaplacians::timer</scope><name>duration</name></member>
+      <member refid="structPersistentLaplacians_1_1timer_1a555a1420f81dddf5cb3874e2c04e7ed2" prot="public" virt="non-virtual"><scope>PersistentLaplacians::timer</scope><name>start</name></member>
+      <member refid="structPersistentLaplacians_1_1timer_1a9fbe8840ab78aa95649fe072880ed31c" prot="public" virt="non-virtual"><scope>PersistentLaplacians::timer</scope><name>start_t</name></member>
+      <member refid="structPersistentLaplacians_1_1timer_1afbee23e392e7a08575bb1c3010015b08" prot="public" virt="non-virtual"><scope>PersistentLaplacians::timer</scope><name>stop</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,474 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structPersistentLaplacians_1_1Profile" kind="struct" language="C++" prot="public">
+    <compoundname>PersistentLaplacians::Profile</compoundname>
+    <includes refid="PersistentLaplacians_8hpp" local="no">PersistentLaplacians.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structPersistentLaplacians_1_1Profile_1adb71605b3344fd4d71b6ce24bbe82485" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; PersistentLaplacians::Profile::dims</definition>
+        <argsstring></argsstring>
+        <name>dims</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="45" column="25" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPersistentLaplacians_1_1Profile_1a89701f8f5a3d05b91598b3a2f8d699ec" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref> &gt;</type>
+        <definition>std::vector&lt;filtration_type&gt; PersistentLaplacians::Profile::filtration_a</definition>
+        <argsstring></argsstring>
+        <name>filtration_a</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="46" column="25" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPersistentLaplacians_1_1Profile_1a175ae62343ee0e593757f0289f1ad3ba" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref> &gt;</type>
+        <definition>std::vector&lt;filtration_type&gt; PersistentLaplacians::Profile::filtration_b</definition>
+        <argsstring></argsstring>
+        <name>filtration_b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="47" column="25" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPersistentLaplacians_1_1Profile_1a93fdfa3ebf795554d497250f95570e6c" prot="public" static="no" mutable="no">
+        <type><ref refid="structPersistentLaplacians_1_1timer" kindref="compound">timer</ref></type>
+        <definition>timer PersistentLaplacians::Profile::all</definition>
+        <argsstring></argsstring>
+        <name>all</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="48" column="19" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPersistentLaplacians_1_1Profile_1a6b292ba7886ad13588c3eedb5305a60a" prot="public" static="no" mutable="no">
+        <type><ref refid="structPersistentLaplacians_1_1timer" kindref="compound">timer</ref></type>
+        <definition>timer PersistentLaplacians::Profile::eigs</definition>
+        <argsstring></argsstring>
+        <name>eigs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="49" column="19" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPersistentLaplacians_1_1Profile_1a94fd89e72aeb3165ea510b05f90032eb" prot="public" static="no" mutable="no">
+        <type><ref refid="structPersistentLaplacians_1_1timer" kindref="compound">timer</ref></type>
+        <definition>timer PersistentLaplacians::Profile::L</definition>
+        <argsstring></argsstring>
+        <name>L</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="50" column="19" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPersistentLaplacians_1_1Profile_1a231007bb7d0349bce00f0bd05f2f8736" prot="public" static="no" mutable="no">
+        <type><ref refid="structPersistentLaplacians_1_1timer" kindref="compound">timer</ref></type>
+        <definition>timer PersistentLaplacians::Profile::L_up</definition>
+        <argsstring></argsstring>
+        <name>L_up</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="51" column="19" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPersistentLaplacians_1_1Profile_1a6378e79ea2d549a41faf98646f03cf9c" prot="public" static="no" mutable="no">
+        <type><ref refid="structPersistentLaplacians_1_1timer" kindref="compound">timer</ref></type>
+        <definition>timer PersistentLaplacians::Profile::L_down</definition>
+        <argsstring></argsstring>
+        <name>L_down</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="52" column="19" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPersistentLaplacians_1_1Profile_1acda96b63f99c8fdfcf8123f03a072a5d" prot="public" static="no" mutable="no">
+        <type><ref refid="structPersistentLaplacians_1_1timer" kindref="compound">timer</ref></type>
+        <definition>timer PersistentLaplacians::Profile::sum_up_down</definition>
+        <argsstring></argsstring>
+        <name>sum_up_down</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="53" column="19" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPersistentLaplacians_1_1Profile_1a6b8e3b8c92b8cb33c2da32f20b019545" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; PersistentLaplacians::Profile::durations_all</definition>
+        <argsstring></argsstring>
+        <name>durations_all</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="54" column="25" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPersistentLaplacians_1_1Profile_1a30f7a63a1d89020a3cf7215c0ec272e5" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; PersistentLaplacians::Profile::durations_eigs</definition>
+        <argsstring></argsstring>
+        <name>durations_eigs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="55" column="25" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPersistentLaplacians_1_1Profile_1ad927e0f3af19a21fb915f2e12785fc2e" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; PersistentLaplacians::Profile::durations_L</definition>
+        <argsstring></argsstring>
+        <name>durations_L</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="56" column="25" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPersistentLaplacians_1_1Profile_1a304826cf0c22453e164d9213d45744db" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; PersistentLaplacians::Profile::durations_L_up</definition>
+        <argsstring></argsstring>
+        <name>durations_L_up</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="57" column="25" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPersistentLaplacians_1_1Profile_1a403c1b5f2a4257c16c52cc23b9b848b5" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; PersistentLaplacians::Profile::durations_L_down</definition>
+        <argsstring></argsstring>
+        <name>durations_L_down</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="58" column="25" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPersistentLaplacians_1_1Profile_1aef222c7fa8771ad5c1f21c426c52c4dc" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; PersistentLaplacians::Profile::durations_sum_up_down</definition>
+        <argsstring></argsstring>
+        <name>durations_sum_up_down</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="59" column="25" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPersistentLaplacians_1_1Profile_1ad2a58fa6977029fbb2f5dd038899a3af" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; PersistentLaplacians::Profile::L_rows</definition>
+        <argsstring></argsstring>
+        <name>L_rows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="61" column="25" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPersistentLaplacians_1_1Profile_1a8e7b5298493204f2ad0f92d85e16f561" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; PersistentLaplacians::Profile::bettis</definition>
+        <argsstring></argsstring>
+        <name>bettis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="62" column="25" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPersistentLaplacians_1_1Profile_1a4dc87e427d1612c31f9495d8296ce05a" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="typedefs_8hpp_1ac240cc0d46f103fa1a410237a0b8853f" kindref="member">spectra_type</ref> &gt;</type>
+        <definition>std::vector&lt;spectra_type&gt; PersistentLaplacians::Profile::lambdas</definition>
+        <argsstring></argsstring>
+        <name>lambdas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="63" column="25" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structPersistentLaplacians_1_1Profile_1a7e04f47c782cac174fd6d5b265482559" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PersistentLaplacians::Profile::to_csv</definition>
+        <argsstring>(std::string filename)</argsstring>
+        <name>to_csv</name>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="67" column="18" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/PersistentLaplacians.cpp" bodystart="174" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="structPersistentLaplacians_1_1Profile_1a8f2c2810743e4ce3a765bb6551252108" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PersistentLaplacians::Profile::start_all</definition>
+        <argsstring>()</argsstring>
+        <name>start_all</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="69" column="18" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="structPersistentLaplacians_1_1Profile_1ab233b235f48d25c9d8f5e6c010a5ffe5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PersistentLaplacians::Profile::start_eigs</definition>
+        <argsstring>()</argsstring>
+        <name>start_eigs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="70" column="18" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="structPersistentLaplacians_1_1Profile_1a33070f90a3270bb4c91534ca7f42628a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PersistentLaplacians::Profile::start_L</definition>
+        <argsstring>()</argsstring>
+        <name>start_L</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="71" column="18" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="71" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="structPersistentLaplacians_1_1Profile_1a47dff11c3099c75bde4f047564af3bdf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PersistentLaplacians::Profile::start_L_up</definition>
+        <argsstring>()</argsstring>
+        <name>start_L_up</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="72" column="18" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="72" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="structPersistentLaplacians_1_1Profile_1a3008950ecb438faf065963302a3a947d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PersistentLaplacians::Profile::start_L_down</definition>
+        <argsstring>()</argsstring>
+        <name>start_L_down</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="73" column="18" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="73" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="structPersistentLaplacians_1_1Profile_1acb6f84452faf504b9ab3b096a745af72" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PersistentLaplacians::Profile::start_sum_up_down</definition>
+        <argsstring>()</argsstring>
+        <name>start_sum_up_down</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="74" column="18" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="structPersistentLaplacians_1_1Profile_1ad7cbaf77704acf5830d7e4790b2fb00f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PersistentLaplacians::Profile::stop_all</definition>
+        <argsstring>()</argsstring>
+        <name>stop_all</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="76" column="18" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="76" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="structPersistentLaplacians_1_1Profile_1afc41817d218b5b818080ce76709f814c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PersistentLaplacians::Profile::stop_eigs</definition>
+        <argsstring>()</argsstring>
+        <name>stop_eigs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="77" column="18" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="77" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="structPersistentLaplacians_1_1Profile_1a5af1c264ba40ffddb4ae382c9fa4e85f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PersistentLaplacians::Profile::stop_L</definition>
+        <argsstring>()</argsstring>
+        <name>stop_L</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="78" column="18" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="structPersistentLaplacians_1_1Profile_1afa4171ec301ef5e0c0bdd058d6e92a68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PersistentLaplacians::Profile::stop_L_up</definition>
+        <argsstring>()</argsstring>
+        <name>stop_L_up</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="79" column="18" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="79" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="structPersistentLaplacians_1_1Profile_1aca2648e63d0c747eebe1639bb794e0c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PersistentLaplacians::Profile::stop_L_down</definition>
+        <argsstring>()</argsstring>
+        <name>stop_L_down</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="80" column="18" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="80" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="structPersistentLaplacians_1_1Profile_1a03e0a99902d31b730d295d5d48f5a813" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PersistentLaplacians::Profile::stop_sum_up_down</definition>
+        <argsstring>()</argsstring>
+        <name>stop_sum_up_down</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="81" column="18" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="81" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>PersistentLaplacians::Profile</label>
+        <link refid="structPersistentLaplacians_1_1Profile"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>+L</edgelabel>
+          <edgelabel>+L_down</edgelabel>
+          <edgelabel>+L_up</edgelabel>
+          <edgelabel>+all</edgelabel>
+          <edgelabel>+eigs</edgelabel>
+          <edgelabel>+sum_up_down</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PersistentLaplacians::timer</label>
+        <link refid="structPersistentLaplacians_1_1timer"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" line="43" column="5" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp" bodystart="43" bodyend="83"/>
+    <listofallmembers>
+      <member refid="structPersistentLaplacians_1_1Profile_1a93fdfa3ebf795554d497250f95570e6c" prot="public" virt="non-virtual"><scope>PersistentLaplacians::Profile</scope><name>all</name></member>
+      <member refid="structPersistentLaplacians_1_1Profile_1a8e7b5298493204f2ad0f92d85e16f561" prot="public" virt="non-virtual"><scope>PersistentLaplacians::Profile</scope><name>bettis</name></member>
+      <member refid="structPersistentLaplacians_1_1Profile_1adb71605b3344fd4d71b6ce24bbe82485" prot="public" virt="non-virtual"><scope>PersistentLaplacians::Profile</scope><name>dims</name></member>
+      <member refid="structPersistentLaplacians_1_1Profile_1a6b8e3b8c92b8cb33c2da32f20b019545" prot="public" virt="non-virtual"><scope>PersistentLaplacians::Profile</scope><name>durations_all</name></member>
+      <member refid="structPersistentLaplacians_1_1Profile_1a30f7a63a1d89020a3cf7215c0ec272e5" prot="public" virt="non-virtual"><scope>PersistentLaplacians::Profile</scope><name>durations_eigs</name></member>
+      <member refid="structPersistentLaplacians_1_1Profile_1ad927e0f3af19a21fb915f2e12785fc2e" prot="public" virt="non-virtual"><scope>PersistentLaplacians::Profile</scope><name>durations_L</name></member>
+      <member refid="structPersistentLaplacians_1_1Profile_1a403c1b5f2a4257c16c52cc23b9b848b5" prot="public" virt="non-virtual"><scope>PersistentLaplacians::Profile</scope><name>durations_L_down</name></member>
+      <member refid="structPersistentLaplacians_1_1Profile_1a304826cf0c22453e164d9213d45744db" prot="public" virt="non-virtual"><scope>PersistentLaplacians::Profile</scope><name>durations_L_up</name></member>
+      <member refid="structPersistentLaplacians_1_1Profile_1aef222c7fa8771ad5c1f21c426c52c4dc" prot="public" virt="non-virtual"><scope>PersistentLaplacians::Profile</scope><name>durations_sum_up_down</name></member>
+      <member refid="structPersistentLaplacians_1_1Profile_1a6b292ba7886ad13588c3eedb5305a60a" prot="public" virt="non-virtual"><scope>PersistentLaplacians::Profile</scope><name>eigs</name></member>
+      <member refid="structPersistentLaplacians_1_1Profile_1a89701f8f5a3d05b91598b3a2f8d699ec" prot="public" virt="non-virtual"><scope>PersistentLaplacians::Profile</scope><name>filtration_a</name></member>
+      <member refid="structPersistentLaplacians_1_1Profile_1a175ae62343ee0e593757f0289f1ad3ba" prot="public" virt="non-virtual"><scope>PersistentLaplacians::Profile</scope><name>filtration_b</name></member>
+      <member refid="structPersistentLaplacians_1_1Profile_1a94fd89e72aeb3165ea510b05f90032eb" prot="public" virt="non-virtual"><scope>PersistentLaplacians::Profile</scope><name>L</name></member>
+      <member refid="structPersistentLaplacians_1_1Profile_1a6378e79ea2d549a41faf98646f03cf9c" prot="public" virt="non-virtual"><scope>PersistentLaplacians::Profile</scope><name>L_down</name></member>
+      <member refid="structPersistentLaplacians_1_1Profile_1ad2a58fa6977029fbb2f5dd038899a3af" prot="public" virt="non-virtual"><scope>PersistentLaplacians::Profile</scope><name>L_rows</name></member>
+      <member refid="structPersistentLaplacians_1_1Profile_1a231007bb7d0349bce00f0bd05f2f8736" prot="public" virt="non-virtual"><scope>PersistentLaplacians::Profile</scope><name>L_up</name></member>
+      <member refid="structPersistentLaplacians_1_1Profile_1a4dc87e427d1612c31f9495d8296ce05a" prot="public" virt="non-virtual"><scope>PersistentLaplacians::Profile</scope><name>lambdas</name></member>
+      <member refid="structPersistentLaplacians_1_1Profile_1a8f2c2810743e4ce3a765bb6551252108" prot="public" virt="non-virtual"><scope>PersistentLaplacians::Profile</scope><name>start_all</name></member>
+      <member refid="structPersistentLaplacians_1_1Profile_1ab233b235f48d25c9d8f5e6c010a5ffe5" prot="public" virt="non-virtual"><scope>PersistentLaplacians::Profile</scope><name>start_eigs</name></member>
+      <member refid="structPersistentLaplacians_1_1Profile_1a33070f90a3270bb4c91534ca7f42628a" prot="public" virt="non-virtual"><scope>PersistentLaplacians::Profile</scope><name>start_L</name></member>
+      <member refid="structPersistentLaplacians_1_1Profile_1a3008950ecb438faf065963302a3a947d" prot="public" virt="non-virtual"><scope>PersistentLaplacians::Profile</scope><name>start_L_down</name></member>
+      <member refid="structPersistentLaplacians_1_1Profile_1a47dff11c3099c75bde4f047564af3bdf" prot="public" virt="non-virtual"><scope>PersistentLaplacians::Profile</scope><name>start_L_up</name></member>
+      <member refid="structPersistentLaplacians_1_1Profile_1acb6f84452faf504b9ab3b096a745af72" prot="public" virt="non-virtual"><scope>PersistentLaplacians::Profile</scope><name>start_sum_up_down</name></member>
+      <member refid="structPersistentLaplacians_1_1Profile_1ad7cbaf77704acf5830d7e4790b2fb00f" prot="public" virt="non-virtual"><scope>PersistentLaplacians::Profile</scope><name>stop_all</name></member>
+      <member refid="structPersistentLaplacians_1_1Profile_1afc41817d218b5b818080ce76709f814c" prot="public" virt="non-virtual"><scope>PersistentLaplacians::Profile</scope><name>stop_eigs</name></member>
+      <member refid="structPersistentLaplacians_1_1Profile_1a5af1c264ba40ffddb4ae382c9fa4e85f" prot="public" virt="non-virtual"><scope>PersistentLaplacians::Profile</scope><name>stop_L</name></member>
+      <member refid="structPersistentLaplacians_1_1Profile_1aca2648e63d0c747eebe1639bb794e0c7" prot="public" virt="non-virtual"><scope>PersistentLaplacians::Profile</scope><name>stop_L_down</name></member>
+      <member refid="structPersistentLaplacians_1_1Profile_1afa4171ec301ef5e0c0bdd058d6e92a68" prot="public" virt="non-virtual"><scope>PersistentLaplacians::Profile</scope><name>stop_L_up</name></member>
+      <member refid="structPersistentLaplacians_1_1Profile_1a03e0a99902d31b730d295d5d48f5a813" prot="public" virt="non-virtual"><scope>PersistentLaplacians::Profile</scope><name>stop_sum_up_down</name></member>
+      <member refid="structPersistentLaplacians_1_1Profile_1acda96b63f99c8fdfcf8123f03a072a5d" prot="public" virt="non-virtual"><scope>PersistentLaplacians::Profile</scope><name>sum_up_down</name></member>
+      <member refid="structPersistentLaplacians_1_1Profile_1a7e04f47c782cac174fd6d5b265482559" prot="public" virt="non-virtual"><scope>PersistentLaplacians::Profile</scope><name>to_csv</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

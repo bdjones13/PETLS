@@ -1,0 +1,1277 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classPersistentLaplacians_1_1PersistentLaplacian" kind="class" language="C++" prot="public">
+    <compoundname>PersistentLaplacians::PersistentLaplacian</compoundname>
+    <derivedcompoundref refid="classPersistentLaplacians_1_1PersistentAlphaLaplacian" prot="public" virt="non-virtual">PersistentLaplacians::PersistentAlphaLaplacian</derivedcompoundref>
+    <includes refid="PersistentLaplacian_8hpp" local="no">PersistentLaplacian.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename eigs_Algorithm</type>
+        <defval><ref refid="classPersistentLaplacians_1_1selfadjoint" kindref="compound">PersistentLaplacians::selfadjoint</ref></defval>
+      </param>
+      <param>
+        <type>typename up_Algorithm</type>
+        <defval><ref refid="classPersistentLaplacians_1_1schur" kindref="compound">PersistentLaplacians::schur</ref></defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classPersistentLaplacians_1_1PersistentLaplacian_1a8f319d5a99becc40eccf3c349ba9f6d0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::top_dim</definition>
+        <argsstring></argsstring>
+        <name>top_dim</name>
+        <briefdescription>
+<para>Top dimension of the complex. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" line="37" column="13" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPersistentLaplacians_1_1PersistentLaplacian_1a79e6ff1bde28006145eceaa5674d9020" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classPersistentLaplacians_1_1FilteredBoundaryMatrix" kindref="compound">FilteredBoundaryMatrix</ref>&lt; <ref refid="typedefs_8hpp_1af7d5e90927b3e42d710237198c3582d5" kindref="member">storage</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;FilteredBoundaryMatrix&lt;storage&gt; &gt; PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::filtered_boundaries</definition>
+        <argsstring></argsstring>
+        <name>filtered_boundaries</name>
+        <briefdescription>
+<para>Boundary matrix assuming real (or integer) coefficients. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" line="38" column="21" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPersistentLaplacians_1_1PersistentLaplacian_1a8da20628a8cd90cf31f86020a6c6fc15" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::verbose</definition>
+        <argsstring></argsstring>
+        <name>verbose</name>
+        <briefdescription>
+<para>Print progress if <ref refid="classPersistentLaplacians_1_1PersistentLaplacian_1a75744761caf09e38b6b592e75d95d5d0" kindref="member">spectra()</ref> is called. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" line="39" column="14" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPersistentLaplacians_1_1PersistentLaplacian_1af9fb8be1b79c7e75293720cafa6c9a26" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::use_flipped</definition>
+        <argsstring></argsstring>
+        <name>use_flipped</name>
+        <briefdescription>
+<para>Compute the top-dimensional Laplacian&apos;s eigenvalues in spectra function via the eigenvalues of the smaller of B_N B_N^T or B_N^T B_N and possible zero-padding. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" line="40" column="14" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPersistentLaplacians_1_1PersistentLaplacian_1a973c01d03d177e2116f0a1ec173a93be" prot="public" static="no" mutable="no">
+        <type><ref refid="structPersistentLaplacians_1_1Profile" kindref="compound">Profile</ref></type>
+        <definition>Profile PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::profile</definition>
+        <argsstring></argsstring>
+        <name>profile</name>
+        <briefdescription>
+<para>Profiler to track time usage of various steps. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" line="41" column="17" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPersistentLaplacians_1_1PersistentLaplacian_1a55e983673494944131ff4ea0eb300ab2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::PersistentLaplacian</definition>
+        <argsstring>()</argsstring>
+        <name>PersistentLaplacian</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor with no boundary maps or simplices. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" line="50" column="9" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" bodystart="50" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersistentLaplacians_1_1PersistentLaplacian_1a6edcfb7daaa0df8c9b69d01b28932dbc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::PersistentLaplacian</definition>
+        <argsstring>(std::vector&lt; SparseMatrixInt &gt; boundaries, std::vector&lt; std::vector&lt; filtration_type &gt;&gt; filtrations)</argsstring>
+        <name>PersistentLaplacian</name>
+        <param>
+          <type>std::vector&lt; <ref refid="typedefs_8hpp_1af75f469c1ca3f8752d6f67a115e57af4" kindref="member">SparseMatrixInt</ref> &gt;</type>
+          <declname>boundaries</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref> &gt;&gt;</type>
+          <declname>filtrations</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>boundaries</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a vector of Eigen::SparseMatrix of type int. Boundaries must be sorted in order of dimension. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filtrations</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a vector of vector of filtrations. filtrations[dim] is a list of all filtrations of simplices in dimension dim. filtrations must be sorted in order of dimension, each filtrations[i] must be sorted in order of filtration</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Primary constructor. Important Assumptions: 1) Boundary matrix has real coefficients stored as integers (but not mod 2!) 2) Boundary matrix dimensions agree with filtrations sizes 3) Length(filtrations) = Length(boundaries) + 1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" line="67" column="9" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" bodystart="67" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersistentLaplacians_1_1PersistentLaplacian_1ab2f8ae87e04008134820ba126ac25937" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::~PersistentLaplacian</definition>
+        <argsstring>()</argsstring>
+        <name>~PersistentLaplacian</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" line="79" column="9" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" bodystart="79" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersistentLaplacians_1_1PersistentLaplacian_1ae1d2e11b09e891608b6332f88cfb431d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::set_boundaries_filtrations</definition>
+        <argsstring>(std::vector&lt; SparseMatrixInt &gt; boundaries, std::vector&lt; std::vector&lt; filtration_type &gt;&gt; filtrations)</argsstring>
+        <name>set_boundaries_filtrations</name>
+        <param>
+          <type>std::vector&lt; <ref refid="typedefs_8hpp_1af75f469c1ca3f8752d6f67a115e57af4" kindref="member">SparseMatrixInt</ref> &gt;</type>
+          <declname>boundaries</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref> &gt;&gt;</type>
+          <declname>filtrations</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the boundaries and filtrations of a complex, particularly if the default constructor was called. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>boundaries</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a vector of Eigen::SparseMatrix of type int. Boundaries must be sorted in order of dimension. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filtrations</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a vector of vector of filtrations. filtrations[dim] is a list of all filtrations of simplices in dimension dim. filtrations must be sorted in order of dimension, each filtrations[i] must be sorted in order of filtration. Important Assumptions: 1) Boundary matrix has real coefficients stored as integers (but not mod 2!), 2) Boundary matrix dimensions agree with filtrations sizes, 3) Length(filtrations) = Length(boundaries) + 1. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" line="95" column="14" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" bodystart="95" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersistentLaplacians_1_1PersistentLaplacian_1a9fbc57f868cb9d1c6ec951692f1b71ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::set_verbose</definition>
+        <argsstring>(bool verbose)</argsstring>
+        <name>set_verbose</name>
+        <param>
+          <type>bool</type>
+          <declname>verbose</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set verbose <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>verbose</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New setting. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" line="135" column="14" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" bodystart="135" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersistentLaplacians_1_1PersistentLaplacian_1acf0f8a6cf4b4b49447871a9b5f04d856" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::set_flipped</definition>
+        <argsstring>(bool use_flipped)</argsstring>
+        <name>set_flipped</name>
+        <param>
+          <type>bool</type>
+          <declname>use_flipped</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set flipped <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>use_flipped</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New setting </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" line="141" column="14" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" bodystart="141" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersistentLaplacians_1_1PersistentLaplacian_1a1e23706e72d592f27a108cc7d075d48a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::get_L</definition>
+        <argsstring>(int dim, filtration_type a, filtration_type b, DenseMatrix_PL &amp;L)</argsstring>
+        <name>get_L</name>
+        <param>
+          <type>int</type>
+          <declname>dim</declname>
+        </param>
+        <param>
+          <type><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref></type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref> &amp;</type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the Persistent Laplacian Matrix (by reference). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>start filtration value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>end filtration value (must be &gt;= a) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the matrix where the persistent Laplacian will be stored (by reference). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" line="155" column="14" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" bodystart="155" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersistentLaplacians_1_1PersistentLaplacian_1a2e8b3d1b21217f6bf2970da9bf30c816" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref></type>
+        <definition>DenseMatrix_PL PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::get_L</definition>
+        <argsstring>(int dim, filtration_type a, filtration_type b)</argsstring>
+        <name>get_L</name>
+        <param>
+          <type>int</type>
+          <declname>dim</declname>
+        </param>
+        <param>
+          <type><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the Persistent Laplacian Matrix (by value).</para>
+<para>Warning: this does a potentially expensive copy. The primary reason this function exists is to provide reasonable python binding access to the matrix L itself. If you do not need the persistent Laplacian matrix directly in python (e.g. you want its eigenvalues) it will be more efficient to compute by reference via <ref refid="classPersistentLaplacians_1_1PersistentLaplacian_1a1e23706e72d592f27a108cc7d075d48a" kindref="member">get_L(int dim, filtration_type a, filtration_type b, DenseMatrix_PL &amp;L)</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>start filtration value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>end filtration value (must be &gt;= a) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>L the persistent Laplacian matrix. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" line="241" column="24" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" bodystart="241" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersistentLaplacians_1_1PersistentLaplacian_1a27163d1d4c3ca3016927695064c1f8d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::get_L_top_dim_flipped</definition>
+        <argsstring>(filtration_type a, SparseMatrix_PL &amp;L)</argsstring>
+        <name>get_L_top_dim_flipped</name>
+        <param>
+          <type><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="typedefs_8hpp_1aa0b819682f9cdac0ae1234aed46106e6" kindref="member">SparseMatrix_PL</ref> &amp;</type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a matrix with the same nonzero eigenvalues as the top-dimensional Persistent Laplacian Matrix (by reference). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>start filtration value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the matrix (by reference) that has the same eigenvalues as the top-dimensional Persistent Laplacian </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" line="252" column="14" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" bodystart="252" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersistentLaplacians_1_1PersistentLaplacian_1ad46319b5bde9cdd9eccb99969a3b465e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="typedefs_8hpp_1aa0b819682f9cdac0ae1234aed46106e6" kindref="member">SparseMatrix_PL</ref></type>
+        <definition>SparseMatrix_PL PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::get_L_top_dim_flipped</definition>
+        <argsstring>(filtration_type a)</argsstring>
+        <name>get_L_top_dim_flipped</name>
+        <param>
+          <type><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref></type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a matrix with the same nonzero eigenvalues as the top-dimensional Persistent Laplacian Matrix (by value).</para>
+<para>Warning: this does a potentially expensive copy. The primary reason this function exists is to provide reasonable python binding access to the matrix itself. If you do not need this matrix directly in python (e.g. you want its eigenvalues) it will be more efficient to compute by reference via <ref refid="classPersistentLaplacians_1_1PersistentLaplacian_1a27163d1d4c3ca3016927695064c1f8d6" kindref="member">get_L_top_dim_flipped(filtration_type a, SparseMatrix_PL &amp;L)</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>start filtration value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A matrix with the same nonzero eigenvalues as the top-dimensional persistent Laplacian (but not the persistent Laplacian itself). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" line="268" column="25" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" bodystart="268" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersistentLaplacians_1_1PersistentLaplacian_1ac660b1a316536cd404fc03e2d6ebc91b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::get_up</definition>
+        <argsstring>(int dim, filtration_type a, filtration_type b, DenseMatrix_PL &amp;L_up)</argsstring>
+        <name>get_up</name>
+        <param>
+          <type>int</type>
+          <declname>dim</declname>
+        </param>
+        <param>
+          <type><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref></type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref> &amp;</type>
+          <declname>L_up</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the up persistent Laplacian (by reference). The algorithm used is determined by the template parameter. See <ref refid="up__algorithms_8hpp" kindref="compound">up_algorithms.hpp</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>start filtration value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>end filtration value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">L_up</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>up persistent Laplacian (by reference) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" line="284" column="14" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" bodystart="284" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersistentLaplacians_1_1PersistentLaplacian_1a453c5a826140c67cae47df6e14ce1b58" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref></type>
+        <definition>DenseMatrix_PL PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::get_up</definition>
+        <argsstring>(int dim, filtration_type a, filtration_type b)</argsstring>
+        <name>get_up</name>
+        <param>
+          <type>int</type>
+          <declname>dim</declname>
+        </param>
+        <param>
+          <type><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the up persistent Laplacian (by value). The algorithm used is determined by the template parameter. See <ref refid="up__algorithms_8hpp" kindref="compound">up_algorithms.hpp</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>start filtration value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>end filtration value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>up persistent Laplacian </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" line="298" column="24" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" bodystart="298" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersistentLaplacians_1_1PersistentLaplacian_1aa891f790594c6da1ae402540ebd185d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::get_down</definition>
+        <argsstring>(int dim, filtration_type a, SparseMatrix_storage &amp;L_down)</argsstring>
+        <name>get_down</name>
+        <param>
+          <type>int</type>
+          <declname>dim</declname>
+        </param>
+        <param>
+          <type><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="typedefs_8hpp_1a696f33453207d73162f781efad58d040" kindref="member">SparseMatrix_storage</ref> &amp;</type>
+          <declname>L_down</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the down persistent Laplacian (by reference). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>start filtration value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">L_down</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the matrix (by reference) of the down presistent Laplacian <linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" line="310" column="14" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" bodystart="310" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersistentLaplacians_1_1PersistentLaplacian_1ae0f660133fa717d1822f7628bb03fc96" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="typedefs_8hpp_1a696f33453207d73162f781efad58d040" kindref="member">SparseMatrix_storage</ref></type>
+        <definition>SparseMatrix_storage PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::get_down</definition>
+        <argsstring>(int dim, filtration_type a)</argsstring>
+        <name>get_down</name>
+        <param>
+          <type>int</type>
+          <declname>dim</declname>
+        </param>
+        <param>
+          <type><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref></type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the down persistent Laplacian (by value).</para>
+<para>Warning: this does a potentially expensive copy. The primary reason this function exists is to provide reasonable python binding access to the matrix itself. If you do not need this matrix directly in python (e.g. you want its eigenvalues) it will be more efficient to compute by reference via <ref refid="classPersistentLaplacians_1_1PersistentLaplacian_1aa891f790594c6da1ae402540ebd185d2" kindref="member">get_down(int dim, filtration_type a, SparseMatrix_storage &amp;L_down)</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>start filtration value \return The matrix (by value) of the down presistent Laplacian <linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" line="330" column="30" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" bodystart="330" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersistentLaplacians_1_1PersistentLaplacian_1a240e9d30eb215e1a9cca99381327d28e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="typedefs_8hpp_1ac240cc0d46f103fa1a410237a0b8853f" kindref="member">spectra_type</ref> &gt;</type>
+        <definition>std::vector&lt;spectra_type&gt; PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::nonzero_spectra</definition>
+        <argsstring>(int dim, filtration_type a, filtration_type b, SparseMatrixFloat PH_basis, bool use_dummy_harmonic_basis)</argsstring>
+        <name>nonzero_spectra</name>
+        <param>
+          <type>int</type>
+          <declname>dim</declname>
+        </param>
+        <param>
+          <type><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref></type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="typedefs_8hpp_1a36861f68d1eb98f57ea27b47bd45fc37" kindref="member">SparseMatrixFloat</ref></type>
+          <declname>PH_basis</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>use_dummy_harmonic_basis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute the nonzero eigenvalues of a persistent Laplacian using Schur restriction with the null space, either given by Persistent Homology representatives or by computing the null space. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>start filtration level </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>end filtration level </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>(optional)</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PH_basis Basis for the null space of the Laplacian, possibly obtained through persistent homology </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>use_dummy_harmonic_basis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Compute the null space of the Laplacian here, then do the same projected as if we had been given the null space </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>sorted vector of real, positive eigenvalues </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" line="345" column="21" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" bodystart="345" bodyend="428"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersistentLaplacians_1_1PersistentLaplacian_1a9999ae6549e0e813b87e2f5a6784c803" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="typedefs_8hpp_1ac240cc0d46f103fa1a410237a0b8853f" kindref="member">spectra_type</ref> &gt;</type>
+        <definition>std::vector&lt;spectra_type&gt; PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::spectra</definition>
+        <argsstring>(int dim, filtration_type a, filtration_type b)</argsstring>
+        <name>spectra</name>
+        <param>
+          <type>int</type>
+          <declname>dim</declname>
+        </param>
+        <param>
+          <type><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the Persistent Laplacian&apos;s eigenvalues at a given dimension and filtration. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>start filtration level </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>end filtration level </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>sorted vector of real, nonnegative eigenvalues </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" line="442" column="21" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" bodystart="442" bodyend="535"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersistentLaplacians_1_1PersistentLaplacian_1a75744761caf09e38b6b592e75d95d5d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::tuple&lt; int, <ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref>, <ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref>, std::vector&lt; <ref refid="typedefs_8hpp_1ac240cc0d46f103fa1a410237a0b8853f" kindref="member">spectra_type</ref> &gt; &gt; &gt;</type>
+        <definition>std::vector&lt;std::tuple&lt;int, filtration_type, filtration_type, std::vector&lt;spectra_type&gt; &gt; &gt; PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::spectra</definition>
+        <argsstring>()</argsstring>
+        <name>spectra</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get all eigenvalues for all combinations of dimension and successive filtration values: a=filtrations[i] and b=filtrations[i+1]. Note: the caller does not know what spectra to expect from this. <linebreak/>
+ <simplesect kind="return"><para>vector of tuples (dim, a, b, eigenvalues) where &quot;eigenvalues&quot; is a sorted vector of real, nonnegative eigenvalues. <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" line="541" column="21" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" bodystart="541" bodyend="574"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersistentLaplacians_1_1PersistentLaplacian_1a6d1df94a4250f2508812de09babaac9a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::tuple&lt; int, <ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref>, <ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref>, std::vector&lt; <ref refid="typedefs_8hpp_1ac240cc0d46f103fa1a410237a0b8853f" kindref="member">spectra_type</ref> &gt; &gt; &gt;</type>
+        <definition>std::vector&lt;std::tuple&lt;int, filtration_type, filtration_type, std::vector&lt;spectra_type&gt; &gt; &gt; PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::spectra</definition>
+        <argsstring>(std::vector&lt; std::tuple&lt; int, filtration_type, filtration_type &gt;&gt; spectra_request_list)</argsstring>
+        <name>spectra</name>
+        <param>
+          <type>std::vector&lt; std::tuple&lt; int, <ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref>, <ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref> &gt;&gt;</type>
+          <declname>spectra_request_list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function essentially just calls spectra(dim, a, b) in a loop. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>spectra_quest_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector of tuples (dim, a, b) to compute the eigenvalues of L_{dim}^{a,b}. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>vector of tuples (dim, a, b, eigenvalues), where eigenvalues it istelf a vector of real, nonnegative eigenvalues. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" line="581" column="21" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" bodystart="581" bodyend="607"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersistentLaplacians_1_1PersistentLaplacian_1a28609766ed890efa3a7b83244d9ec262" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::pair&lt; std::vector&lt; <ref refid="typedefs_8hpp_1ac240cc0d46f103fa1a410237a0b8853f" kindref="member">spectra_type</ref> &gt;, <ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref> &gt;</type>
+        <definition>std::pair&lt;std::vector&lt;spectra_type&gt;,DenseMatrix_PL&gt; PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::eigenpairs</definition>
+        <argsstring>(int dim, filtration_type a, filtration_type b)</argsstring>
+        <name>eigenpairs</name>
+        <param>
+          <type>int</type>
+          <declname>dim</declname>
+        </param>
+        <param>
+          <type><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the Persistent Laplacian&apos;s eigenvalues and eigenvectors at a given dimension and filtration. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>start filtration level </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>end filtration level </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>sorted pair of: vector of real, nonnegative eigenvalues and Eigen matrix where column i is the eigenvector for eigenvalue i </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" line="621" column="19" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" bodystart="621" bodyend="668"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersistentLaplacians_1_1PersistentLaplacian_1ade633c893ce727d35cb7539ec205f5cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::tuple&lt; int, <ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref>, <ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref>, std::vector&lt; <ref refid="typedefs_8hpp_1ac240cc0d46f103fa1a410237a0b8853f" kindref="member">spectra_type</ref> &gt;, <ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::tuple&lt;int, filtration_type, filtration_type, std::vector&lt;spectra_type&gt;,DenseMatrix_PL&gt; &gt; PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::eigenpairs</definition>
+        <argsstring>()</argsstring>
+        <name>eigenpairs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get all eigenvalues for all combinations of dimension and successive filtration values: a=filtrations[i] and b=filtrations[i+1]. Note: the caller does not know what spectra to expect from this. <linebreak/>
+ <simplesect kind="return"><para>vector of tuples (dim, a, b, eigenvalues, eigenvectors) where &quot;eigenvalues&quot; is a sorted vector of real, nonnegative eigenvalues and &quot;eigenvectors&quot; is an Eigen::MatrixXf where column i is the eigenvector for eigenvalue i </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" line="674" column="21" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" bodystart="674" bodyend="704"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersistentLaplacians_1_1PersistentLaplacian_1a2afd5704a3e0bd94d898008b5de61f1b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::tuple&lt; int, <ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref>, <ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref>, std::vector&lt; <ref refid="typedefs_8hpp_1ac240cc0d46f103fa1a410237a0b8853f" kindref="member">spectra_type</ref> &gt;, <ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::tuple&lt;int, filtration_type, filtration_type, std::vector&lt;spectra_type&gt;, DenseMatrix_PL&gt; &gt; PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::eigenpairs</definition>
+        <argsstring>(std::vector&lt; std::tuple&lt; int, filtration_type, filtration_type &gt;&gt; spectra_request_list)</argsstring>
+        <name>eigenpairs</name>
+        <param>
+          <type>std::vector&lt; std::tuple&lt; int, <ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref>, <ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref> &gt;&gt;</type>
+          <declname>spectra_request_list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function essentially just calls eigenpairs(dim, a, b) in a loop. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>spectra_quest_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector of tuples (dim, a, b) to compute the eigenvalues of L_{dim}^{a,b}. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>vector of tuples (dim, a, b, eigenvalues, eigenvalues), where eigenvalues it istelf a vector of real, nonnegative eigenvalues and &quot;eigenvectors&quot; is an Eigen::MatrixXf where column i is the eigenvector for eigenvalue i. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" line="711" column="21" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" bodystart="711" bodyend="740"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersistentLaplacians_1_1PersistentLaplacian_1ac25930bc9649cce4e2cca1fb99f13ad7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::pair&lt; int, <ref refid="typedefs_8hpp_1ac240cc0d46f103fa1a410237a0b8853f" kindref="member">spectra_type</ref> &gt;</type>
+        <definition>std::pair&lt;int, spectra_type&gt; PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::eigenvalues_summarize</definition>
+        <argsstring>(std::vector&lt; spectra_type &gt; eigenvalues)</argsstring>
+        <name>eigenvalues_summarize</name>
+        <param>
+          <type>std::vector&lt; <ref refid="typedefs_8hpp_1ac240cc0d46f103fa1a410237a0b8853f" kindref="member">spectra_type</ref> &gt;</type>
+          <declname>eigenvalues</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Utility function to get the Betti number and least nonzero eigenvalue form a vector of eigenvalues. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>eigenvalues</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>eigenvalues </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pair of (Betti number, least nonzero eigenvalue) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" line="748" column="19" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" bodystart="748" bodyend="768"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersistentLaplacians_1_1PersistentLaplacian_1a2279f3ac44df29f3c6296a679c06399b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::store_L</definition>
+        <argsstring>(int dim, filtration_type a, filtration_type b, std::string filename)</argsstring>
+        <name>store_L</name>
+        <param>
+          <type>int</type>
+          <declname>dim</declname>
+        </param>
+        <param>
+          <type><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref></type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute and store a persistent Laplacian matrix in a file in matrix market format. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>start filtration value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>end filtration value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file to store matrix (typically .mtx extension) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" line="782" column="14" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" bodystart="782" bodyend="794"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersistentLaplacians_1_1PersistentLaplacian_1af4c865863604dfede94edecd1b9ccf27" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::print_boundaries</definition>
+        <argsstring>()</argsstring>
+        <name>print_boundaries</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Print all boundaries and corresponding filtrations. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" line="799" column="14" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" bodystart="799" bodyend="805"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersistentLaplacians_1_1PersistentLaplacian_1a13cba8d7973e9512cf12976b57938576" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::store_spectra</definition>
+        <argsstring>(std::vector&lt; std::tuple&lt; int, filtration_type, filtration_type, std::vector&lt; spectra_type &gt;&gt;&gt; spectra, std::string out_prefix)</argsstring>
+        <name>store_spectra</name>
+        <param>
+          <type>std::vector&lt; std::tuple&lt; int, <ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref>, <ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref>, std::vector&lt; <ref refid="typedefs_8hpp_1ac240cc0d46f103fa1a410237a0b8853f" kindref="member">spectra_type</ref> &gt;&gt;&gt;</type>
+          <declname>spectra</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>out_prefix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write spectra to files.</para>
+<para>for each dimension dim of the complex, files write &quot;{out_prefix}_spectra_{dim}.txt&quot;. Each line of the file is a space-separated list of eigenvalues. Lines may be empty. Note the filtration values are not reported.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>spectra</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tuples (dim, a, b, eigenvalues) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_prefix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Eigenvalues will be written to &quot;{out_prefix}_spectra_{dim}.txt&quot; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" line="817" column="14" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" bodystart="817" bodyend="838"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersistentLaplacians_1_1PersistentLaplacian_1a055a3a3e17b0a6090427ea178140e5d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::store_spectra_summary</definition>
+        <argsstring>(std::vector&lt; std::tuple&lt; int, filtration_type, filtration_type, std::vector&lt; spectra_type &gt;&gt;&gt; spectra, std::string out_prefix)</argsstring>
+        <name>store_spectra_summary</name>
+        <param>
+          <type>std::vector&lt; std::tuple&lt; int, <ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref>, <ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref>, std::vector&lt; <ref refid="typedefs_8hpp_1ac240cc0d46f103fa1a410237a0b8853f" kindref="member">spectra_type</ref> &gt;&gt;&gt;</type>
+          <declname>spectra</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>out_prefix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write spectra summary to files &quot;{out_prefix}_spectra_summary.txt&quot;</para>
+<para>Each line is a space-separated list of filtrations, bettti numbers, and least nonzero eigenvalues: (filtration a) (filtration b) (betti 0) ... (betti top_dim) (lambda 0) ... (lambda top_dim) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>spectra</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tuples (dim, a, b, eigenvalues) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_prefix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Eigenvalues will be written to &quot;{out_prefix}_spectra_summary.txt&quot; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" line="848" column="14" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" bodystart="848" bodyend="916"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersistentLaplacians_1_1PersistentLaplacian_1ad76f65268220edd384945c5f40835615" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::tuple&lt; int, <ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref>, <ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::tuple&lt;int, filtration_type, filtration_type&gt; &gt; PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::filtration_list_to_spectra_request</definition>
+        <argsstring>(std::vector&lt; filtration_type &gt; filtrations, std::vector&lt; int &gt; dims)</argsstring>
+        <name>filtration_list_to_spectra_request</name>
+        <param>
+          <type>std::vector&lt; <ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref> &gt;</type>
+          <declname>filtrations</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>dims</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get tuples (dim, a, b) for all combinations of dimension and successive filtration values: a=filtrations[i], b=filtrations[i+1]. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filtrations</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector of filtration values </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dims</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector of dimensions </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>tuples (dim, a, b) for all combinations of dimension and successive filtration values: a=filtrations[i], b=filtrations[i+1]. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" line="925" column="21" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" bodystart="925" bodyend="952"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersistentLaplacians_1_1PersistentLaplacian_1a454440d87e8ae8ebddfb7229733a4675" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref> &gt;</type>
+        <definition>std::vector&lt;filtration_type&gt; PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::get_all_filtrations</definition>
+        <argsstring>()</argsstring>
+        <name>get_all_filtrations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get all unique filtration values in the complex. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" line="957" column="21" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" bodystart="957" bodyend="975"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classPersistentLaplacians_1_1PersistentLaplacian_1ad01968f2ccb10c8a0346a378038ad82f" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classPersistentLaplacians_1_1FilteredBoundaryMatrix" kindref="compound">PersistentLaplacians::FilteredBoundaryMatrix</ref>&lt; <ref refid="typedefs_8hpp_1af7d5e90927b3e42d710237198c3582d5" kindref="member">storage</ref> &gt;</type>
+        <definition>PersistentLaplacians::FilteredBoundaryMatrix&lt;storage&gt; PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;::dummy_d0</definition>
+        <argsstring>()</argsstring>
+        <name>dummy_d0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" line="979" column="54" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" bodystart="979" bodyend="986"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Primary class for computing persistent Laplacians <parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>eigs_Algorithm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Algorithm wrapper class to use for computing eigenvalues of the Laplacian in the spectra family of functions. Default is a wrapper for Eigen::SelfAdjointEigenSolver. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>up_Algorithm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Algorithm wrapper class to use for computing the up-Laplacian. Default is the Schur complement algorithm presented in Memoli, Wan, and Wang 2020. //TODO: \see up_algorithms and eigs_algorithms </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;</label>
+        <link refid="classPersistentLaplacians_1_1PersistentLaplacian"/>
+      </node>
+      <node id="2">
+        <label>PersistentLaplacians::PersistentAlphaLaplacian</label>
+        <link refid="classPersistentLaplacians_1_1PersistentAlphaLaplacian"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PersistentLaplacians::Profile</label>
+        <link refid="structPersistentLaplacians_1_1Profile"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+L</edgelabel>
+          <edgelabel>+L_down</edgelabel>
+          <edgelabel>+L_up</edgelabel>
+          <edgelabel>+all</edgelabel>
+          <edgelabel>+eigs</edgelabel>
+          <edgelabel>+sum_up_down</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>PersistentLaplacians::PersistentLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;</label>
+        <link refid="classPersistentLaplacians_1_1PersistentLaplacian"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>+profile</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>PersistentLaplacians::timer</label>
+        <link refid="structPersistentLaplacians_1_1timer"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" line="30" column="1" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp" bodystart="30" bodyend="987"/>
+    <listofallmembers>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1ad01968f2ccb10c8a0346a378038ad82f" prot="protected" virt="non-virtual"><scope>PersistentLaplacians::PersistentLaplacian</scope><name>dummy_d0</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a28609766ed890efa3a7b83244d9ec262" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentLaplacian</scope><name>eigenpairs</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1ade633c893ce727d35cb7539ec205f5cd" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentLaplacian</scope><name>eigenpairs</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a2afd5704a3e0bd94d898008b5de61f1b" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentLaplacian</scope><name>eigenpairs</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1ac25930bc9649cce4e2cca1fb99f13ad7" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentLaplacian</scope><name>eigenvalues_summarize</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a79e6ff1bde28006145eceaa5674d9020" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentLaplacian</scope><name>filtered_boundaries</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1ad76f65268220edd384945c5f40835615" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentLaplacian</scope><name>filtration_list_to_spectra_request</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a454440d87e8ae8ebddfb7229733a4675" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentLaplacian</scope><name>get_all_filtrations</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1aa891f790594c6da1ae402540ebd185d2" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentLaplacian</scope><name>get_down</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1ae0f660133fa717d1822f7628bb03fc96" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentLaplacian</scope><name>get_down</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a1e23706e72d592f27a108cc7d075d48a" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentLaplacian</scope><name>get_L</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a2e8b3d1b21217f6bf2970da9bf30c816" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentLaplacian</scope><name>get_L</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a27163d1d4c3ca3016927695064c1f8d6" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentLaplacian</scope><name>get_L_top_dim_flipped</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1ad46319b5bde9cdd9eccb99969a3b465e" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentLaplacian</scope><name>get_L_top_dim_flipped</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1ac660b1a316536cd404fc03e2d6ebc91b" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentLaplacian</scope><name>get_up</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a453c5a826140c67cae47df6e14ce1b58" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentLaplacian</scope><name>get_up</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a240e9d30eb215e1a9cca99381327d28e" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentLaplacian</scope><name>nonzero_spectra</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a55e983673494944131ff4ea0eb300ab2" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentLaplacian</scope><name>PersistentLaplacian</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a6edcfb7daaa0df8c9b69d01b28932dbc" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentLaplacian</scope><name>PersistentLaplacian</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1af4c865863604dfede94edecd1b9ccf27" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentLaplacian</scope><name>print_boundaries</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a973c01d03d177e2116f0a1ec173a93be" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentLaplacian</scope><name>profile</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1ae1d2e11b09e891608b6332f88cfb431d" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentLaplacian</scope><name>set_boundaries_filtrations</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1acf0f8a6cf4b4b49447871a9b5f04d856" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentLaplacian</scope><name>set_flipped</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a9fbc57f868cb9d1c6ec951692f1b71ae" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentLaplacian</scope><name>set_verbose</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a9999ae6549e0e813b87e2f5a6784c803" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentLaplacian</scope><name>spectra</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a75744761caf09e38b6b592e75d95d5d0" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentLaplacian</scope><name>spectra</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a6d1df94a4250f2508812de09babaac9a" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentLaplacian</scope><name>spectra</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a2279f3ac44df29f3c6296a679c06399b" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentLaplacian</scope><name>store_L</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a13cba8d7973e9512cf12976b57938576" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentLaplacian</scope><name>store_spectra</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a055a3a3e17b0a6090427ea178140e5d3" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentLaplacian</scope><name>store_spectra_summary</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a8f319d5a99becc40eccf3c349ba9f6d0" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentLaplacian</scope><name>top_dim</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1af9fb8be1b79c7e75293720cafa6c9a26" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentLaplacian</scope><name>use_flipped</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a8da20628a8cd90cf31f86020a6c6fc15" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentLaplacian</scope><name>verbose</name></member>
+      <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1ab2f8ae87e04008134820ba126ac25937" prot="public" virt="non-virtual"><scope>PersistentLaplacians::PersistentLaplacian</scope><name>~PersistentLaplacian</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

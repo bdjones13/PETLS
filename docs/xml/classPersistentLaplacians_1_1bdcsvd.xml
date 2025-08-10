@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classPersistentLaplacians_1_1bdcsvd" kind="class" language="C++" prot="public">
+    <compoundname>PersistentLaplacians::bdcsvd</compoundname>
+    <includes refid="eigs__algorithms_8hpp" local="no">eigs_algorithms.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPersistentLaplacians_1_1bdcsvd_1ae1df6b21a63374278a6a84f5503444ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="typedefs_8hpp_1a27a64e317582fd2a2dbdc95fa84b7ebd" kindref="member">spectra_vec</ref></type>
+        <definition>spectra_vec PersistentLaplacians::bdcsvd::eigenvalues</definition>
+        <argsstring>(DenseMatrix_PL &amp;L)</argsstring>
+        <name>eigenvalues</name>
+        <param>
+          <type><ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref> &amp;</type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/eigenvalues/eigs_algorithms.hpp" line="103" column="25" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/eigenvalues/eigs_algorithms.hpp" bodystart="103" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersistentLaplacians_1_1bdcsvd_1a3a0a4926249ecd0b85668e898f7362f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::pair&lt; <ref refid="typedefs_8hpp_1a27a64e317582fd2a2dbdc95fa84b7ebd" kindref="member">spectra_vec</ref>, <ref refid="typedefs_8hpp_1ab1b02c8ebcde7779bc2d81fedc0a2d35" kindref="member">DenseMatrix_spectra_PL</ref> &gt;</type>
+        <definition>std::pair&lt;spectra_vec,DenseMatrix_spectra_PL&gt; PersistentLaplacians::bdcsvd::eigenpairs</definition>
+        <argsstring>(DenseMatrix_PL &amp;L)</argsstring>
+        <name>eigenpairs</name>
+        <param>
+          <type><ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref> &amp;</type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/eigenvalues/eigs_algorithms.hpp" line="112" column="23" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/eigenvalues/eigs_algorithms.hpp" bodystart="112" bodyend="118"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>PersistentLaplacians::bdcsvd</label>
+        <link refid="classPersistentLaplacians_1_1bdcsvd"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/eigenvalues/eigs_algorithms.hpp" line="101" column="5" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/eigenvalues/eigs_algorithms.hpp" bodystart="101" bodyend="119"/>
+    <listofallmembers>
+      <member refid="classPersistentLaplacians_1_1bdcsvd_1a3a0a4926249ecd0b85668e898f7362f7" prot="public" virt="non-virtual"><scope>PersistentLaplacians::bdcsvd</scope><name>eigenpairs</name></member>
+      <member refid="classPersistentLaplacians_1_1bdcsvd_1ae1df6b21a63374278a6a84f5503444ae" prot="public" virt="non-virtual"><scope>PersistentLaplacians::bdcsvd</scope><name>eigenvalues</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

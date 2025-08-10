@@ -1,0 +1,272 @@
+\hypertarget{structPersistentLaplacians_1_1Profile}{}\doxysection{Persistent\+Laplacians\+::Profile Struct Reference}
+\label{structPersistentLaplacians_1_1Profile}\index{PersistentLaplacians::Profile@{PersistentLaplacians::Profile}}
+
+
+{\ttfamily \#include $<$Persistent\+Laplacians.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{structPersistentLaplacians_1_1Profile_a7e04f47c782cac174fd6d5b265482559}{to\+\_\+csv}} (std\+::string filename)
+\item 
+void \mbox{\hyperlink{structPersistentLaplacians_1_1Profile_a8f2c2810743e4ce3a765bb6551252108}{start\+\_\+all}} ()
+\item 
+void \mbox{\hyperlink{structPersistentLaplacians_1_1Profile_ab233b235f48d25c9d8f5e6c010a5ffe5}{start\+\_\+eigs}} ()
+\item 
+void \mbox{\hyperlink{structPersistentLaplacians_1_1Profile_a33070f90a3270bb4c91534ca7f42628a}{start\+\_\+L}} ()
+\item 
+void \mbox{\hyperlink{structPersistentLaplacians_1_1Profile_a47dff11c3099c75bde4f047564af3bdf}{start\+\_\+\+L\+\_\+up}} ()
+\item 
+void \mbox{\hyperlink{structPersistentLaplacians_1_1Profile_a3008950ecb438faf065963302a3a947d}{start\+\_\+\+L\+\_\+down}} ()
+\item 
+void \mbox{\hyperlink{structPersistentLaplacians_1_1Profile_acb6f84452faf504b9ab3b096a745af72}{start\+\_\+sum\+\_\+up\+\_\+down}} ()
+\item 
+void \mbox{\hyperlink{structPersistentLaplacians_1_1Profile_ad7cbaf77704acf5830d7e4790b2fb00f}{stop\+\_\+all}} ()
+\item 
+void \mbox{\hyperlink{structPersistentLaplacians_1_1Profile_afc41817d218b5b818080ce76709f814c}{stop\+\_\+eigs}} ()
+\item 
+void \mbox{\hyperlink{structPersistentLaplacians_1_1Profile_a5af1c264ba40ffddb4ae382c9fa4e85f}{stop\+\_\+L}} ()
+\item 
+void \mbox{\hyperlink{structPersistentLaplacians_1_1Profile_afa4171ec301ef5e0c0bdd058d6e92a68}{stop\+\_\+\+L\+\_\+up}} ()
+\item 
+void \mbox{\hyperlink{structPersistentLaplacians_1_1Profile_aca2648e63d0c747eebe1639bb794e0c7}{stop\+\_\+\+L\+\_\+down}} ()
+\item 
+void \mbox{\hyperlink{structPersistentLaplacians_1_1Profile_a03e0a99902d31b730d295d5d48f5a813}{stop\+\_\+sum\+\_\+up\+\_\+down}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{structPersistentLaplacians_1_1Profile_adb71605b3344fd4d71b6ce24bbe82485}{dims}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$ \mbox{\hyperlink{structPersistentLaplacians_1_1Profile_a89701f8f5a3d05b91598b3a2f8d699ec}{filtration\+\_\+a}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$ \mbox{\hyperlink{structPersistentLaplacians_1_1Profile_a175ae62343ee0e593757f0289f1ad3ba}{filtration\+\_\+b}}
+\item 
+\mbox{\hyperlink{structPersistentLaplacians_1_1timer}{timer}} \mbox{\hyperlink{structPersistentLaplacians_1_1Profile_a93fdfa3ebf795554d497250f95570e6c}{all}}
+\item 
+\mbox{\hyperlink{structPersistentLaplacians_1_1timer}{timer}} \mbox{\hyperlink{structPersistentLaplacians_1_1Profile_a6b292ba7886ad13588c3eedb5305a60a}{eigs}}
+\item 
+\mbox{\hyperlink{structPersistentLaplacians_1_1timer}{timer}} \mbox{\hyperlink{structPersistentLaplacians_1_1Profile_a94fd89e72aeb3165ea510b05f90032eb}{L}}
+\item 
+\mbox{\hyperlink{structPersistentLaplacians_1_1timer}{timer}} \mbox{\hyperlink{structPersistentLaplacians_1_1Profile_a231007bb7d0349bce00f0bd05f2f8736}{L\+\_\+up}}
+\item 
+\mbox{\hyperlink{structPersistentLaplacians_1_1timer}{timer}} \mbox{\hyperlink{structPersistentLaplacians_1_1Profile_a6378e79ea2d549a41faf98646f03cf9c}{L\+\_\+down}}
+\item 
+\mbox{\hyperlink{structPersistentLaplacians_1_1timer}{timer}} \mbox{\hyperlink{structPersistentLaplacians_1_1Profile_acda96b63f99c8fdfcf8123f03a072a5d}{sum\+\_\+up\+\_\+down}}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{structPersistentLaplacians_1_1Profile_a6b8e3b8c92b8cb33c2da32f20b019545}{durations\+\_\+all}}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{structPersistentLaplacians_1_1Profile_a30f7a63a1d89020a3cf7215c0ec272e5}{durations\+\_\+eigs}}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{structPersistentLaplacians_1_1Profile_ad927e0f3af19a21fb915f2e12785fc2e}{durations\+\_\+L}}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{structPersistentLaplacians_1_1Profile_a304826cf0c22453e164d9213d45744db}{durations\+\_\+\+L\+\_\+up}}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{structPersistentLaplacians_1_1Profile_a403c1b5f2a4257c16c52cc23b9b848b5}{durations\+\_\+\+L\+\_\+down}}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{structPersistentLaplacians_1_1Profile_aef222c7fa8771ad5c1f21c426c52c4dc}{durations\+\_\+sum\+\_\+up\+\_\+down}}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{structPersistentLaplacians_1_1Profile_ad2a58fa6977029fbb2f5dd038899a3af}{L\+\_\+rows}}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{structPersistentLaplacians_1_1Profile_a8e7b5298493204f2ad0f92d85e16f561}{bettis}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}} $>$ \mbox{\hyperlink{structPersistentLaplacians_1_1Profile_a4dc87e427d1612c31f9495d8296ce05a}{lambdas}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structPersistentLaplacians_1_1Profile_a8f2c2810743e4ce3a765bb6551252108}\label{structPersistentLaplacians_1_1Profile_a8f2c2810743e4ce3a765bb6551252108}} 
+\index{PersistentLaplacians::Profile@{PersistentLaplacians::Profile}!start\_all@{start\_all}}
+\index{start\_all@{start\_all}!PersistentLaplacians::Profile@{PersistentLaplacians::Profile}}
+\doxysubsubsection{\texorpdfstring{start\_all()}{start\_all()}}
+{\footnotesize\ttfamily void Persistent\+Laplacians\+::\+Profile\+::start\+\_\+all (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPersistentLaplacians_1_1Profile_ab233b235f48d25c9d8f5e6c010a5ffe5}\label{structPersistentLaplacians_1_1Profile_ab233b235f48d25c9d8f5e6c010a5ffe5}} 
+\index{PersistentLaplacians::Profile@{PersistentLaplacians::Profile}!start\_eigs@{start\_eigs}}
+\index{start\_eigs@{start\_eigs}!PersistentLaplacians::Profile@{PersistentLaplacians::Profile}}
+\doxysubsubsection{\texorpdfstring{start\_eigs()}{start\_eigs()}}
+{\footnotesize\ttfamily void Persistent\+Laplacians\+::\+Profile\+::start\+\_\+eigs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPersistentLaplacians_1_1Profile_a33070f90a3270bb4c91534ca7f42628a}\label{structPersistentLaplacians_1_1Profile_a33070f90a3270bb4c91534ca7f42628a}} 
+\index{PersistentLaplacians::Profile@{PersistentLaplacians::Profile}!start\_L@{start\_L}}
+\index{start\_L@{start\_L}!PersistentLaplacians::Profile@{PersistentLaplacians::Profile}}
+\doxysubsubsection{\texorpdfstring{start\_L()}{start\_L()}}
+{\footnotesize\ttfamily void Persistent\+Laplacians\+::\+Profile\+::start\+\_\+L (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPersistentLaplacians_1_1Profile_a3008950ecb438faf065963302a3a947d}\label{structPersistentLaplacians_1_1Profile_a3008950ecb438faf065963302a3a947d}} 
+\index{PersistentLaplacians::Profile@{PersistentLaplacians::Profile}!start\_L\_down@{start\_L\_down}}
+\index{start\_L\_down@{start\_L\_down}!PersistentLaplacians::Profile@{PersistentLaplacians::Profile}}
+\doxysubsubsection{\texorpdfstring{start\_L\_down()}{start\_L\_down()}}
+{\footnotesize\ttfamily void Persistent\+Laplacians\+::\+Profile\+::start\+\_\+\+L\+\_\+down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPersistentLaplacians_1_1Profile_a47dff11c3099c75bde4f047564af3bdf}\label{structPersistentLaplacians_1_1Profile_a47dff11c3099c75bde4f047564af3bdf}} 
+\index{PersistentLaplacians::Profile@{PersistentLaplacians::Profile}!start\_L\_up@{start\_L\_up}}
+\index{start\_L\_up@{start\_L\_up}!PersistentLaplacians::Profile@{PersistentLaplacians::Profile}}
+\doxysubsubsection{\texorpdfstring{start\_L\_up()}{start\_L\_up()}}
+{\footnotesize\ttfamily void Persistent\+Laplacians\+::\+Profile\+::start\+\_\+\+L\+\_\+up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPersistentLaplacians_1_1Profile_acb6f84452faf504b9ab3b096a745af72}\label{structPersistentLaplacians_1_1Profile_acb6f84452faf504b9ab3b096a745af72}} 
+\index{PersistentLaplacians::Profile@{PersistentLaplacians::Profile}!start\_sum\_up\_down@{start\_sum\_up\_down}}
+\index{start\_sum\_up\_down@{start\_sum\_up\_down}!PersistentLaplacians::Profile@{PersistentLaplacians::Profile}}
+\doxysubsubsection{\texorpdfstring{start\_sum\_up\_down()}{start\_sum\_up\_down()}}
+{\footnotesize\ttfamily void Persistent\+Laplacians\+::\+Profile\+::start\+\_\+sum\+\_\+up\+\_\+down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPersistentLaplacians_1_1Profile_ad7cbaf77704acf5830d7e4790b2fb00f}\label{structPersistentLaplacians_1_1Profile_ad7cbaf77704acf5830d7e4790b2fb00f}} 
+\index{PersistentLaplacians::Profile@{PersistentLaplacians::Profile}!stop\_all@{stop\_all}}
+\index{stop\_all@{stop\_all}!PersistentLaplacians::Profile@{PersistentLaplacians::Profile}}
+\doxysubsubsection{\texorpdfstring{stop\_all()}{stop\_all()}}
+{\footnotesize\ttfamily void Persistent\+Laplacians\+::\+Profile\+::stop\+\_\+all (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPersistentLaplacians_1_1Profile_afc41817d218b5b818080ce76709f814c}\label{structPersistentLaplacians_1_1Profile_afc41817d218b5b818080ce76709f814c}} 
+\index{PersistentLaplacians::Profile@{PersistentLaplacians::Profile}!stop\_eigs@{stop\_eigs}}
+\index{stop\_eigs@{stop\_eigs}!PersistentLaplacians::Profile@{PersistentLaplacians::Profile}}
+\doxysubsubsection{\texorpdfstring{stop\_eigs()}{stop\_eigs()}}
+{\footnotesize\ttfamily void Persistent\+Laplacians\+::\+Profile\+::stop\+\_\+eigs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPersistentLaplacians_1_1Profile_a5af1c264ba40ffddb4ae382c9fa4e85f}\label{structPersistentLaplacians_1_1Profile_a5af1c264ba40ffddb4ae382c9fa4e85f}} 
+\index{PersistentLaplacians::Profile@{PersistentLaplacians::Profile}!stop\_L@{stop\_L}}
+\index{stop\_L@{stop\_L}!PersistentLaplacians::Profile@{PersistentLaplacians::Profile}}
+\doxysubsubsection{\texorpdfstring{stop\_L()}{stop\_L()}}
+{\footnotesize\ttfamily void Persistent\+Laplacians\+::\+Profile\+::stop\+\_\+L (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPersistentLaplacians_1_1Profile_aca2648e63d0c747eebe1639bb794e0c7}\label{structPersistentLaplacians_1_1Profile_aca2648e63d0c747eebe1639bb794e0c7}} 
+\index{PersistentLaplacians::Profile@{PersistentLaplacians::Profile}!stop\_L\_down@{stop\_L\_down}}
+\index{stop\_L\_down@{stop\_L\_down}!PersistentLaplacians::Profile@{PersistentLaplacians::Profile}}
+\doxysubsubsection{\texorpdfstring{stop\_L\_down()}{stop\_L\_down()}}
+{\footnotesize\ttfamily void Persistent\+Laplacians\+::\+Profile\+::stop\+\_\+\+L\+\_\+down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPersistentLaplacians_1_1Profile_afa4171ec301ef5e0c0bdd058d6e92a68}\label{structPersistentLaplacians_1_1Profile_afa4171ec301ef5e0c0bdd058d6e92a68}} 
+\index{PersistentLaplacians::Profile@{PersistentLaplacians::Profile}!stop\_L\_up@{stop\_L\_up}}
+\index{stop\_L\_up@{stop\_L\_up}!PersistentLaplacians::Profile@{PersistentLaplacians::Profile}}
+\doxysubsubsection{\texorpdfstring{stop\_L\_up()}{stop\_L\_up()}}
+{\footnotesize\ttfamily void Persistent\+Laplacians\+::\+Profile\+::stop\+\_\+\+L\+\_\+up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPersistentLaplacians_1_1Profile_a03e0a99902d31b730d295d5d48f5a813}\label{structPersistentLaplacians_1_1Profile_a03e0a99902d31b730d295d5d48f5a813}} 
+\index{PersistentLaplacians::Profile@{PersistentLaplacians::Profile}!stop\_sum\_up\_down@{stop\_sum\_up\_down}}
+\index{stop\_sum\_up\_down@{stop\_sum\_up\_down}!PersistentLaplacians::Profile@{PersistentLaplacians::Profile}}
+\doxysubsubsection{\texorpdfstring{stop\_sum\_up\_down()}{stop\_sum\_up\_down()}}
+{\footnotesize\ttfamily void Persistent\+Laplacians\+::\+Profile\+::stop\+\_\+sum\+\_\+up\+\_\+down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPersistentLaplacians_1_1Profile_a7e04f47c782cac174fd6d5b265482559}\label{structPersistentLaplacians_1_1Profile_a7e04f47c782cac174fd6d5b265482559}} 
+\index{PersistentLaplacians::Profile@{PersistentLaplacians::Profile}!to\_csv@{to\_csv}}
+\index{to\_csv@{to\_csv}!PersistentLaplacians::Profile@{PersistentLaplacians::Profile}}
+\doxysubsubsection{\texorpdfstring{to\_csv()}{to\_csv()}}
+{\footnotesize\ttfamily void Persistent\+Laplacians\+::\+Profile\+::to\+\_\+csv (\begin{DoxyParamCaption}\item[{std\+::string}]{filename }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structPersistentLaplacians_1_1Profile_a93fdfa3ebf795554d497250f95570e6c}\label{structPersistentLaplacians_1_1Profile_a93fdfa3ebf795554d497250f95570e6c}} 
+\index{PersistentLaplacians::Profile@{PersistentLaplacians::Profile}!all@{all}}
+\index{all@{all}!PersistentLaplacians::Profile@{PersistentLaplacians::Profile}}
+\doxysubsubsection{\texorpdfstring{all}{all}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPersistentLaplacians_1_1timer}{timer}} Persistent\+Laplacians\+::\+Profile\+::all}
+
+\mbox{\Hypertarget{structPersistentLaplacians_1_1Profile_a8e7b5298493204f2ad0f92d85e16f561}\label{structPersistentLaplacians_1_1Profile_a8e7b5298493204f2ad0f92d85e16f561}} 
+\index{PersistentLaplacians::Profile@{PersistentLaplacians::Profile}!bettis@{bettis}}
+\index{bettis@{bettis}!PersistentLaplacians::Profile@{PersistentLaplacians::Profile}}
+\doxysubsubsection{\texorpdfstring{bettis}{bettis}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ Persistent\+Laplacians\+::\+Profile\+::bettis}
+
+\mbox{\Hypertarget{structPersistentLaplacians_1_1Profile_adb71605b3344fd4d71b6ce24bbe82485}\label{structPersistentLaplacians_1_1Profile_adb71605b3344fd4d71b6ce24bbe82485}} 
+\index{PersistentLaplacians::Profile@{PersistentLaplacians::Profile}!dims@{dims}}
+\index{dims@{dims}!PersistentLaplacians::Profile@{PersistentLaplacians::Profile}}
+\doxysubsubsection{\texorpdfstring{dims}{dims}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ Persistent\+Laplacians\+::\+Profile\+::dims}
+
+\mbox{\Hypertarget{structPersistentLaplacians_1_1Profile_a6b8e3b8c92b8cb33c2da32f20b019545}\label{structPersistentLaplacians_1_1Profile_a6b8e3b8c92b8cb33c2da32f20b019545}} 
+\index{PersistentLaplacians::Profile@{PersistentLaplacians::Profile}!durations\_all@{durations\_all}}
+\index{durations\_all@{durations\_all}!PersistentLaplacians::Profile@{PersistentLaplacians::Profile}}
+\doxysubsubsection{\texorpdfstring{durations\_all}{durations\_all}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ Persistent\+Laplacians\+::\+Profile\+::durations\+\_\+all}
+
+\mbox{\Hypertarget{structPersistentLaplacians_1_1Profile_a30f7a63a1d89020a3cf7215c0ec272e5}\label{structPersistentLaplacians_1_1Profile_a30f7a63a1d89020a3cf7215c0ec272e5}} 
+\index{PersistentLaplacians::Profile@{PersistentLaplacians::Profile}!durations\_eigs@{durations\_eigs}}
+\index{durations\_eigs@{durations\_eigs}!PersistentLaplacians::Profile@{PersistentLaplacians::Profile}}
+\doxysubsubsection{\texorpdfstring{durations\_eigs}{durations\_eigs}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ Persistent\+Laplacians\+::\+Profile\+::durations\+\_\+eigs}
+
+\mbox{\Hypertarget{structPersistentLaplacians_1_1Profile_ad927e0f3af19a21fb915f2e12785fc2e}\label{structPersistentLaplacians_1_1Profile_ad927e0f3af19a21fb915f2e12785fc2e}} 
+\index{PersistentLaplacians::Profile@{PersistentLaplacians::Profile}!durations\_L@{durations\_L}}
+\index{durations\_L@{durations\_L}!PersistentLaplacians::Profile@{PersistentLaplacians::Profile}}
+\doxysubsubsection{\texorpdfstring{durations\_L}{durations\_L}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ Persistent\+Laplacians\+::\+Profile\+::durations\+\_\+L}
+
+\mbox{\Hypertarget{structPersistentLaplacians_1_1Profile_a403c1b5f2a4257c16c52cc23b9b848b5}\label{structPersistentLaplacians_1_1Profile_a403c1b5f2a4257c16c52cc23b9b848b5}} 
+\index{PersistentLaplacians::Profile@{PersistentLaplacians::Profile}!durations\_L\_down@{durations\_L\_down}}
+\index{durations\_L\_down@{durations\_L\_down}!PersistentLaplacians::Profile@{PersistentLaplacians::Profile}}
+\doxysubsubsection{\texorpdfstring{durations\_L\_down}{durations\_L\_down}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ Persistent\+Laplacians\+::\+Profile\+::durations\+\_\+\+L\+\_\+down}
+
+\mbox{\Hypertarget{structPersistentLaplacians_1_1Profile_a304826cf0c22453e164d9213d45744db}\label{structPersistentLaplacians_1_1Profile_a304826cf0c22453e164d9213d45744db}} 
+\index{PersistentLaplacians::Profile@{PersistentLaplacians::Profile}!durations\_L\_up@{durations\_L\_up}}
+\index{durations\_L\_up@{durations\_L\_up}!PersistentLaplacians::Profile@{PersistentLaplacians::Profile}}
+\doxysubsubsection{\texorpdfstring{durations\_L\_up}{durations\_L\_up}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ Persistent\+Laplacians\+::\+Profile\+::durations\+\_\+\+L\+\_\+up}
+
+\mbox{\Hypertarget{structPersistentLaplacians_1_1Profile_aef222c7fa8771ad5c1f21c426c52c4dc}\label{structPersistentLaplacians_1_1Profile_aef222c7fa8771ad5c1f21c426c52c4dc}} 
+\index{PersistentLaplacians::Profile@{PersistentLaplacians::Profile}!durations\_sum\_up\_down@{durations\_sum\_up\_down}}
+\index{durations\_sum\_up\_down@{durations\_sum\_up\_down}!PersistentLaplacians::Profile@{PersistentLaplacians::Profile}}
+\doxysubsubsection{\texorpdfstring{durations\_sum\_up\_down}{durations\_sum\_up\_down}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ Persistent\+Laplacians\+::\+Profile\+::durations\+\_\+sum\+\_\+up\+\_\+down}
+
+\mbox{\Hypertarget{structPersistentLaplacians_1_1Profile_a6b292ba7886ad13588c3eedb5305a60a}\label{structPersistentLaplacians_1_1Profile_a6b292ba7886ad13588c3eedb5305a60a}} 
+\index{PersistentLaplacians::Profile@{PersistentLaplacians::Profile}!eigs@{eigs}}
+\index{eigs@{eigs}!PersistentLaplacians::Profile@{PersistentLaplacians::Profile}}
+\doxysubsubsection{\texorpdfstring{eigs}{eigs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPersistentLaplacians_1_1timer}{timer}} Persistent\+Laplacians\+::\+Profile\+::eigs}
+
+\mbox{\Hypertarget{structPersistentLaplacians_1_1Profile_a89701f8f5a3d05b91598b3a2f8d699ec}\label{structPersistentLaplacians_1_1Profile_a89701f8f5a3d05b91598b3a2f8d699ec}} 
+\index{PersistentLaplacians::Profile@{PersistentLaplacians::Profile}!filtration\_a@{filtration\_a}}
+\index{filtration\_a@{filtration\_a}!PersistentLaplacians::Profile@{PersistentLaplacians::Profile}}
+\doxysubsubsection{\texorpdfstring{filtration\_a}{filtration\_a}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}$>$ Persistent\+Laplacians\+::\+Profile\+::filtration\+\_\+a}
+
+\mbox{\Hypertarget{structPersistentLaplacians_1_1Profile_a175ae62343ee0e593757f0289f1ad3ba}\label{structPersistentLaplacians_1_1Profile_a175ae62343ee0e593757f0289f1ad3ba}} 
+\index{PersistentLaplacians::Profile@{PersistentLaplacians::Profile}!filtration\_b@{filtration\_b}}
+\index{filtration\_b@{filtration\_b}!PersistentLaplacians::Profile@{PersistentLaplacians::Profile}}
+\doxysubsubsection{\texorpdfstring{filtration\_b}{filtration\_b}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}$>$ Persistent\+Laplacians\+::\+Profile\+::filtration\+\_\+b}
+
+\mbox{\Hypertarget{structPersistentLaplacians_1_1Profile_a94fd89e72aeb3165ea510b05f90032eb}\label{structPersistentLaplacians_1_1Profile_a94fd89e72aeb3165ea510b05f90032eb}} 
+\index{PersistentLaplacians::Profile@{PersistentLaplacians::Profile}!L@{L}}
+\index{L@{L}!PersistentLaplacians::Profile@{PersistentLaplacians::Profile}}
+\doxysubsubsection{\texorpdfstring{L}{L}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPersistentLaplacians_1_1timer}{timer}} Persistent\+Laplacians\+::\+Profile\+::L}
+
+\mbox{\Hypertarget{structPersistentLaplacians_1_1Profile_a6378e79ea2d549a41faf98646f03cf9c}\label{structPersistentLaplacians_1_1Profile_a6378e79ea2d549a41faf98646f03cf9c}} 
+\index{PersistentLaplacians::Profile@{PersistentLaplacians::Profile}!L\_down@{L\_down}}
+\index{L\_down@{L\_down}!PersistentLaplacians::Profile@{PersistentLaplacians::Profile}}
+\doxysubsubsection{\texorpdfstring{L\_down}{L\_down}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPersistentLaplacians_1_1timer}{timer}} Persistent\+Laplacians\+::\+Profile\+::\+L\+\_\+down}
+
+\mbox{\Hypertarget{structPersistentLaplacians_1_1Profile_ad2a58fa6977029fbb2f5dd038899a3af}\label{structPersistentLaplacians_1_1Profile_ad2a58fa6977029fbb2f5dd038899a3af}} 
+\index{PersistentLaplacians::Profile@{PersistentLaplacians::Profile}!L\_rows@{L\_rows}}
+\index{L\_rows@{L\_rows}!PersistentLaplacians::Profile@{PersistentLaplacians::Profile}}
+\doxysubsubsection{\texorpdfstring{L\_rows}{L\_rows}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ Persistent\+Laplacians\+::\+Profile\+::\+L\+\_\+rows}
+
+\mbox{\Hypertarget{structPersistentLaplacians_1_1Profile_a231007bb7d0349bce00f0bd05f2f8736}\label{structPersistentLaplacians_1_1Profile_a231007bb7d0349bce00f0bd05f2f8736}} 
+\index{PersistentLaplacians::Profile@{PersistentLaplacians::Profile}!L\_up@{L\_up}}
+\index{L\_up@{L\_up}!PersistentLaplacians::Profile@{PersistentLaplacians::Profile}}
+\doxysubsubsection{\texorpdfstring{L\_up}{L\_up}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPersistentLaplacians_1_1timer}{timer}} Persistent\+Laplacians\+::\+Profile\+::\+L\+\_\+up}
+
+\mbox{\Hypertarget{structPersistentLaplacians_1_1Profile_a4dc87e427d1612c31f9495d8296ce05a}\label{structPersistentLaplacians_1_1Profile_a4dc87e427d1612c31f9495d8296ce05a}} 
+\index{PersistentLaplacians::Profile@{PersistentLaplacians::Profile}!lambdas@{lambdas}}
+\index{lambdas@{lambdas}!PersistentLaplacians::Profile@{PersistentLaplacians::Profile}}
+\doxysubsubsection{\texorpdfstring{lambdas}{lambdas}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}}$>$ Persistent\+Laplacians\+::\+Profile\+::lambdas}
+
+\mbox{\Hypertarget{structPersistentLaplacians_1_1Profile_acda96b63f99c8fdfcf8123f03a072a5d}\label{structPersistentLaplacians_1_1Profile_acda96b63f99c8fdfcf8123f03a072a5d}} 
+\index{PersistentLaplacians::Profile@{PersistentLaplacians::Profile}!sum\_up\_down@{sum\_up\_down}}
+\index{sum\_up\_down@{sum\_up\_down}!PersistentLaplacians::Profile@{PersistentLaplacians::Profile}}
+\doxysubsubsection{\texorpdfstring{sum\_up\_down}{sum\_up\_down}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPersistentLaplacians_1_1timer}{timer}} Persistent\+Laplacians\+::\+Profile\+::sum\+\_\+up\+\_\+down}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/jones657/\+Persistent\+Laplacians/cpp/include/\+Persistent\+Laplacians\+\_\+headers/\mbox{\hyperlink{PersistentLaplacians_8hpp}{Persistent\+Laplacians.\+hpp}}\item 
+/home/jones657/\+Persistent\+Laplacians/cpp/src/\mbox{\hyperlink{PersistentLaplacians_8cpp}{Persistent\+Laplacians.\+cpp}}\end{DoxyCompactItemize}

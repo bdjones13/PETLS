@@ -1,0 +1,362 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="typedefs_8hpp" kind="file" language="C++">
+    <compoundname>typedefs.hpp</compoundname>
+    <includes local="yes">Eigen/SparseCore</includes>
+    <includedby refid="FilteredBoundaryMatrix_8hpp" local="yes">/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/FilteredBoundaryMatrix.hpp</includedby>
+    <includedby refid="PersistentLaplacian_8hpp" local="yes">/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp</includedby>
+    <includedby refid="up__algorithms_8hpp" local="yes">/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/up_algorithms.hpp</includedby>
+    <includedby refid="eigs__algorithms_8hpp" local="yes">/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/eigenvalues/eigs_algorithms.hpp</includedby>
+    <includedby refid="PersistentLaplacians_8hpp" local="yes">/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/typedefs.hpp</label>
+        <link refid="typedefs_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Eigen/SparseCore</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="13">
+        <label>/home/jones657/PersistentLaplacians/cpp/src/PersistentLaplacians.cpp</label>
+        <link refid="PersistentLaplacians_8cpp"/>
+      </node>
+      <node id="2">
+        <label>/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/FilteredBoundaryMatrix.hpp</label>
+        <link refid="FilteredBoundaryMatrix_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/PersistentRipsLaplacian.hpp</label>
+        <link refid="PersistentRipsLaplacian_8hpp"/>
+      </node>
+      <node id="10">
+        <label>/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/sheaf_simplex_tree.hpp</label>
+        <link refid="sheaf__simplex__tree_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/eigenvalues/eigs_algorithms.hpp</label>
+        <link refid="eigs__algorithms_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/up_algorithms.hpp</label>
+        <link refid="up__algorithms_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp</label>
+        <link refid="PersistentLaplacians_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp</label>
+        <link refid="PersistentAlphaLaplacian_8cpp"/>
+      </node>
+      <node id="6">
+        <label>/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/PersistentDirectedFlagLaplacian.hpp</label>
+        <link refid="PersistentDirectedFlagLaplacian_8hpp"/>
+      </node>
+      <node id="1">
+        <label>/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/typedefs.hpp</label>
+        <link refid="typedefs_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp</label>
+        <link refid="PersistentLaplacian_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/PersistentSheafLaplacian.hpp</label>
+        <link refid="PersistentSheafLaplacian_8hpp"/>
+      </node>
+      <node id="4">
+        <label>/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/PersistentAlphaLaplacian.hpp</label>
+        <link refid="PersistentAlphaLaplacian_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="typedefs_8hpp_1a479ee4600a6441dbaef402db186dd0ae" prot="public" static="no">
+        <name>PRUNE_CONSTANT</name>
+        <initializer>0.0000001</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/typedefs.hpp" line="40" column="9" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/typedefs.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="typedefs_8hpp_1a09e36216a82b7355c90a8d6bdde28b10" prot="public" static="no">
+        <type>float</type>
+        <definition>typedef float coefficient_type</definition>
+        <argsstring></argsstring>
+        <name>coefficient_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/typedefs.hpp" line="13" column="15" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/typedefs.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="typedefs_8hpp_1ac240cc0d46f103fa1a410237a0b8853f" prot="public" static="no">
+        <type>float</type>
+        <definition>typedef float spectra_type</definition>
+        <argsstring></argsstring>
+        <name>spectra_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/typedefs.hpp" line="14" column="15" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/typedefs.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="typedefs_8hpp_1af7d5e90927b3e42d710237198c3582d5" prot="public" static="no">
+        <type>float</type>
+        <definition>typedef float storage</definition>
+        <argsstring></argsstring>
+        <name>storage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/typedefs.hpp" line="20" column="15" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/typedefs.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="typedefs_8hpp_1a696f33453207d73162f781efad58d040" prot="public" static="no">
+        <type>Eigen::SparseMatrix&lt; <ref refid="typedefs_8hpp_1af7d5e90927b3e42d710237198c3582d5" kindref="member">storage</ref>, Eigen::ColMajor &gt;</type>
+        <definition>typedef Eigen::SparseMatrix&lt;storage, Eigen::ColMajor&gt; SparseMatrix_storage</definition>
+        <argsstring></argsstring>
+        <name>SparseMatrix_storage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/typedefs.hpp" line="21" column="29" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/typedefs.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="typedefs_8hpp_1aa0b819682f9cdac0ae1234aed46106e6" prot="public" static="no">
+        <type>Eigen::SparseMatrix&lt; <ref refid="typedefs_8hpp_1a09e36216a82b7355c90a8d6bdde28b10" kindref="member">coefficient_type</ref>, Eigen::ColMajor &gt;</type>
+        <definition>typedef Eigen::SparseMatrix&lt;coefficient_type, Eigen::ColMajor&gt; SparseMatrix_PL</definition>
+        <argsstring></argsstring>
+        <name>SparseMatrix_PL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/typedefs.hpp" line="23" column="29" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/typedefs.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" prot="public" static="no">
+        <type>Eigen::Matrix&lt; <ref refid="typedefs_8hpp_1a09e36216a82b7355c90a8d6bdde28b10" kindref="member">coefficient_type</ref>, Eigen::Dynamic, Eigen::Dynamic &gt;</type>
+        <definition>typedef Eigen::Matrix&lt;coefficient_type, Eigen::Dynamic, Eigen::Dynamic&gt; DenseMatrix_PL</definition>
+        <argsstring></argsstring>
+        <name>DenseMatrix_PL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/typedefs.hpp" line="24" column="23" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/typedefs.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="typedefs_8hpp_1a030e5ac5de56ef32415d87cfb7e1cc8f" prot="public" static="no">
+        <type>Eigen::Matrix&lt; <ref refid="typedefs_8hpp_1ac240cc0d46f103fa1a410237a0b8853f" kindref="member">spectra_type</ref>, Eigen::Dynamic, Eigen::Dynamic &gt;</type>
+        <definition>typedef Eigen::Matrix&lt;spectra_type, Eigen::Dynamic, Eigen::Dynamic&gt; SparseMatrix_spectra_PL</definition>
+        <argsstring></argsstring>
+        <name>SparseMatrix_spectra_PL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/typedefs.hpp" line="25" column="23" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/typedefs.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="typedefs_8hpp_1ab1b02c8ebcde7779bc2d81fedc0a2d35" prot="public" static="no">
+        <type>Eigen::Matrix&lt; <ref refid="typedefs_8hpp_1ac240cc0d46f103fa1a410237a0b8853f" kindref="member">spectra_type</ref>, Eigen::Dynamic, Eigen::Dynamic &gt;</type>
+        <definition>typedef Eigen::Matrix&lt;spectra_type, Eigen::Dynamic, Eigen::Dynamic&gt; DenseMatrix_spectra_PL</definition>
+        <argsstring></argsstring>
+        <name>DenseMatrix_spectra_PL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/typedefs.hpp" line="26" column="23" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/typedefs.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="typedefs_8hpp_1a27a64e317582fd2a2dbdc95fa84b7ebd" prot="public" static="no">
+        <type>Eigen::Matrix&lt; <ref refid="typedefs_8hpp_1ac240cc0d46f103fa1a410237a0b8853f" kindref="member">spectra_type</ref>, Eigen::Dynamic, 1 &gt;</type>
+        <definition>typedef Eigen::Matrix&lt;spectra_type, Eigen::Dynamic, 1&gt; spectra_vec</definition>
+        <argsstring></argsstring>
+        <name>spectra_vec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/typedefs.hpp" line="27" column="23" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/typedefs.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="typedefs_8hpp_1af75f469c1ca3f8752d6f67a115e57af4" prot="public" static="no">
+        <type>Eigen::SparseMatrix&lt; int, Eigen::ColMajor &gt;</type>
+        <definition>typedef Eigen::SparseMatrix&lt;int, Eigen::ColMajor&gt; SparseMatrixInt</definition>
+        <argsstring></argsstring>
+        <name>SparseMatrixInt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/typedefs.hpp" line="29" column="29" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/typedefs.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="typedefs_8hpp_1aa38aa00f5d649a8f0714186a48035c80" prot="public" static="no">
+        <type>Eigen::SparseMatrix&lt; double, Eigen::ColMajor &gt;</type>
+        <definition>typedef Eigen::SparseMatrix&lt;double, Eigen::ColMajor&gt; SparseMatrixDouble</definition>
+        <argsstring></argsstring>
+        <name>SparseMatrixDouble</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/typedefs.hpp" line="30" column="29" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/typedefs.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="typedefs_8hpp_1a36861f68d1eb98f57ea27b47bd45fc37" prot="public" static="no">
+        <type>Eigen::SparseMatrix&lt; float, Eigen::ColMajor &gt;</type>
+        <definition>typedef Eigen::SparseMatrix&lt;float, Eigen::ColMajor&gt; SparseMatrixFloat</definition>
+        <argsstring></argsstring>
+        <name>SparseMatrixFloat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/typedefs.hpp" line="31" column="29" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/typedefs.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" prot="public" static="no">
+        <type>double</type>
+        <definition>typedef double filtration_type</definition>
+        <argsstring></argsstring>
+        <name>filtration_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/typedefs.hpp" line="34" column="16" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/typedefs.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="typedefs_8hpp_1aa511d4e3e646072967e8a42dc6c54194" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int index_type</definition>
+        <argsstring></argsstring>
+        <name>index_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/typedefs.hpp" line="35" column="13" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/typedefs.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>typedefs_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>typedefs_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#include<sp/>&quot;Eigen/src/Core/DenseBase.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Eigen/SparseCore&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//also<sp/>includes<sp/>core</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#include<sp/>&quot;Eigen/Sparse&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#include<sp/>&quot;Eigen/Dense&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#include<sp/>&lt;Eigen/Sparse&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#include<sp/>&lt;Eigen/Dense&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="typedefs_8hpp_1a09e36216a82b7355c90a8d6bdde28b10" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="typedefs_8hpp_1a09e36216a82b7355c90a8d6bdde28b10" kindref="member">coefficient_type</ref>;</highlight></codeline>
+<codeline lineno="14" refid="typedefs_8hpp_1ac240cc0d46f103fa1a410237a0b8853f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="typedefs_8hpp_1ac240cc0d46f103fa1a410237a0b8853f" kindref="member">spectra_type</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Sheaf<sp/>requires<sp/>boundary<sp/>matrices<sp/>as<sp/>real<sp/>numbers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Others<sp/>take<sp/>advantage<sp/>of<sp/>integer<sp/>storage<sp/>efficiency,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>this<sp/>allows<sp/>an<sp/>easy<sp/>toggle<sp/>between.<sp/>(if<sp/>using<sp/>int,<sp/>sheaf<sp/>will<sp/>fail<sp/>to<sp/>compile)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>typedef<sp/>int<sp/>storage;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="typedefs_8hpp_1af7d5e90927b3e42d710237198c3582d5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="typedefs_8hpp_1af7d5e90927b3e42d710237198c3582d5" kindref="member">storage</ref>;</highlight></codeline>
+<codeline lineno="21" refid="typedefs_8hpp_1a696f33453207d73162f781efad58d040" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Eigen::SparseMatrix&lt;storage,<sp/>Eigen::ColMajor&gt;<sp/><ref refid="typedefs_8hpp_1a696f33453207d73162f781efad58d040" kindref="member">SparseMatrix_storage</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="typedefs_8hpp_1aa0b819682f9cdac0ae1234aed46106e6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Eigen::SparseMatrix&lt;coefficient_type,<sp/>Eigen::ColMajor&gt;<sp/><ref refid="typedefs_8hpp_1aa0b819682f9cdac0ae1234aed46106e6" kindref="member">SparseMatrix_PL</ref>;</highlight></codeline>
+<codeline lineno="24" refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Eigen::Matrix&lt;coefficient_type,<sp/>Eigen::Dynamic,<sp/>Eigen::Dynamic&gt;<sp/><ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref>;</highlight></codeline>
+<codeline lineno="25" refid="typedefs_8hpp_1a030e5ac5de56ef32415d87cfb7e1cc8f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Eigen::Matrix&lt;spectra_type,<sp/>Eigen::Dynamic,<sp/>Eigen::Dynamic&gt;<sp/><ref refid="typedefs_8hpp_1a030e5ac5de56ef32415d87cfb7e1cc8f" kindref="member">SparseMatrix_spectra_PL</ref>;</highlight></codeline>
+<codeline lineno="26" refid="typedefs_8hpp_1ab1b02c8ebcde7779bc2d81fedc0a2d35" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Eigen::Matrix&lt;spectra_type,<sp/>Eigen::Dynamic,<sp/>Eigen::Dynamic&gt;<sp/><ref refid="typedefs_8hpp_1ab1b02c8ebcde7779bc2d81fedc0a2d35" kindref="member">DenseMatrix_spectra_PL</ref>;</highlight></codeline>
+<codeline lineno="27" refid="typedefs_8hpp_1a27a64e317582fd2a2dbdc95fa84b7ebd" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Eigen::Matrix&lt;spectra_type,<sp/>Eigen::Dynamic,<sp/>1&gt;<sp/><ref refid="typedefs_8hpp_1a27a64e317582fd2a2dbdc95fa84b7ebd" kindref="member">spectra_vec</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="typedefs_8hpp_1af75f469c1ca3f8752d6f67a115e57af4" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Eigen::SparseMatrix&lt;int,<sp/>Eigen::ColMajor&gt;<sp/><ref refid="typedefs_8hpp_1af75f469c1ca3f8752d6f67a115e57af4" kindref="member">SparseMatrixInt</ref>;</highlight></codeline>
+<codeline lineno="30" refid="typedefs_8hpp_1aa38aa00f5d649a8f0714186a48035c80" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Eigen::SparseMatrix&lt;double,<sp/>Eigen::ColMajor&gt;<sp/><ref refid="typedefs_8hpp_1aa38aa00f5d649a8f0714186a48035c80" kindref="member">SparseMatrixDouble</ref>;</highlight></codeline>
+<codeline lineno="31" refid="typedefs_8hpp_1a36861f68d1eb98f57ea27b47bd45fc37" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Eigen::SparseMatrix&lt;float,<sp/>Eigen::ColMajor&gt;<sp/><ref refid="typedefs_8hpp_1a36861f68d1eb98f57ea27b47bd45fc37" kindref="member">SparseMatrixFloat</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref>;<sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>single<sp/>precision</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="typedefs_8hpp_1aa511d4e3e646072967e8a42dc6c54194" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="typedefs_8hpp_1aa511d4e3e646072967e8a42dc6c54194" kindref="member">index_type</ref>;<sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>change<sp/>from<sp/>int<sp/>to<sp/>uint</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//TODO:<sp/>remove<sp/>PRUNE_CONSTANT<sp/>or<sp/>determine<sp/>a<sp/>justified<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="typedefs_8hpp_1a479ee4600a6441dbaef402db186dd0ae" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PRUNE_CONSTANT<sp/>0.0000001</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/typedefs.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="PersistentLaplacians_8hpp" kind="file" language="C++">
+    <compoundname>PersistentLaplacians.hpp</compoundname>
+    <includes refid="typedefs_8hpp" local="yes">typedefs.hpp</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">chrono</includes>
+    <includedby refid="PersistentLaplacians_8cpp" local="yes">/home/jones657/PersistentLaplacians/cpp/src/PersistentLaplacians.cpp</includedby>
+    <includedby refid="PersistentLaplacian_8hpp" local="yes">/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp</includedby>
+    <includedby refid="eigs__algorithms_8hpp" local="yes">/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/eigenvalues/eigs_algorithms.hpp</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="1">
+        <label>/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp</label>
+        <link refid="PersistentLaplacians_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>typedefs.hpp</label>
+        <link refid="typedefs_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vector</label>
+      </node>
+      <node id="3">
+        <label>Eigen/SparseCore</label>
+      </node>
+      <node id="6">
+        <label>chrono</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/jones657/PersistentLaplacians/cpp/src/PersistentLaplacians.cpp</label>
+        <link refid="PersistentLaplacians_8cpp"/>
+      </node>
+      <node id="7">
+        <label>/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/PersistentRipsLaplacian.hpp</label>
+        <link refid="PersistentRipsLaplacian_8hpp"/>
+      </node>
+      <node id="9">
+        <label>/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/eigenvalues/eigs_algorithms.hpp</label>
+        <link refid="eigs__algorithms_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp</label>
+        <link refid="PersistentLaplacians_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp</label>
+        <link refid="PersistentAlphaLaplacian_8cpp"/>
+      </node>
+      <node id="6">
+        <label>/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/PersistentDirectedFlagLaplacian.hpp</label>
+        <link refid="PersistentDirectedFlagLaplacian_8hpp"/>
+      </node>
+      <node id="3">
+        <label>/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core/PersistentLaplacian.hpp</label>
+        <link refid="PersistentLaplacian_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/PersistentSheafLaplacian.hpp</label>
+        <link refid="PersistentSheafLaplacian_8hpp"/>
+      </node>
+      <node id="4">
+        <label>/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/PersistentAlphaLaplacian.hpp</label>
+        <link refid="PersistentAlphaLaplacian_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structPersistentLaplacians_1_1timer" prot="public">PersistentLaplacians::timer</innerclass>
+    <innerclass refid="structPersistentLaplacians_1_1Profile" prot="public">PersistentLaplacians::Profile</innerclass>
+    <innernamespace refid="namespacePersistentLaplacians">PersistentLaplacians</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>PLs_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PLs_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="typedefs_8hpp" kindref="compound">typedefs.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#include<sp/>&lt;set&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacePersistentLaplacians" kindref="compound">PersistentLaplacians</ref><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>https://stackoverflow.com/questions/54503795/rounding-numbers-below-a-certain-threshold-to-zero-in-eigen</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacePersistentLaplacians_1a5e90134767fdfde516979022489d8202" kindref="member">round_zeros</ref>(<ref refid="typedefs_8hpp_1a27a64e317582fd2a2dbdc95fa84b7ebd" kindref="member">spectra_vec</ref>&amp;<sp/>inout,<sp/><ref refid="typedefs_8hpp_1ac240cc0d46f103fa1a410237a0b8853f" kindref="member">spectra_type</ref><sp/>threshold);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacePersistentLaplacians_1a112d702a171a0032f30409e7de3532ea" kindref="member">print_full_matrix_precise</ref>(<ref refid="typedefs_8hpp_1af75f469c1ca3f8752d6f67a115e57af4" kindref="member">SparseMatrixInt</ref><sp/>m);</highlight></codeline>
+<codeline lineno="18" refid="namespacePersistentLaplacians_1ac9b7a3c77f8eb773c3bded878909fe1e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacePersistentLaplacians_1a112d702a171a0032f30409e7de3532ea" kindref="member">print_full_matrix_precise</ref>(Eigen::MatrixXf<sp/>m);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacePersistentLaplacians_1a112d702a171a0032f30409e7de3532ea" kindref="member">print_full_matrix_precise</ref>(Eigen::MatrixXi<sp/>m);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>void<sp/>print_full_matrix_precise(SparseMatrixInt<sp/>m);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacePersistentLaplacians_1a112d702a171a0032f30409e7de3532ea" kindref="member">print_full_matrix_precise</ref>(<ref refid="typedefs_8hpp_1aa0b819682f9cdac0ae1234aed46106e6" kindref="member">SparseMatrix_PL</ref><sp/>m);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacePersistentLaplacians_1a112d702a171a0032f30409e7de3532ea" kindref="member">print_full_matrix_precise</ref>(<ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref><sp/>m);</highlight></codeline>
+<codeline lineno="23" refid="namespacePersistentLaplacians_1a690d31305b1585081c4f16bb703f5bd4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacePersistentLaplacians_1a6a6d1cace8ac4c62b88ce5140f3b98da" kindref="member">print_vector_precise</ref>(<ref refid="typedefs_8hpp_1a27a64e317582fd2a2dbdc95fa84b7ebd" kindref="member">spectra_vec</ref><sp/>v);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacePersistentLaplacians_1aa8ee555e30135133715db05dd7b35ed3" kindref="member">print_spectra</ref>(std::vector&lt;std::tuple&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref>,<sp/><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref>,<sp/>std::vector&lt;spectra_type&gt;&gt;&gt;<sp/>spectra);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacePersistentLaplacians_1a2c6b429935449ff2010770034b5e9ff2" kindref="member">reindex_boundaries</ref>(std::vector&lt;std::vector&lt;std::tuple&lt;int,int,int&gt;&gt;&gt;<sp/>&amp;boundaries_triples,std::vector&lt;SparseMatrixInt&gt;<sp/>&amp;reindexed_boundaries,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim_0_rows);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacePersistentLaplacians_1ac97e07389e2c5d1f9dec664e271cd59b" kindref="member">reindex_boundaries_map</ref>(std::vector&lt;std::vector&lt;std::tuple&lt;int64_t,int64_t,int&gt;&gt;&gt;<sp/>&amp;boundaries_triples,std::vector&lt;SparseMatrixInt&gt;<sp/>&amp;reindexed_boundaries,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim_0_rows);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="structPersistentLaplacians_1_1timer" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structPersistentLaplacians_1_1timer" kindref="compound">timer</ref>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="32" refid="structPersistentLaplacians_1_1timer_1acff399cee3e0c168bbf4a6cab9348158" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structPersistentLaplacians_1_1timer_1acff399cee3e0c168bbf4a6cab9348158" kindref="member">duration</ref>;</highlight></codeline>
+<codeline lineno="33" refid="structPersistentLaplacians_1_1timer_1a9fbe8840ab78aa95649fe072880ed31c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::chrono::_V2::steady_clock::time_point<sp/><ref refid="structPersistentLaplacians_1_1timer_1a9fbe8840ab78aa95649fe072880ed31c" kindref="member">start_t</ref>;</highlight></codeline>
+<codeline lineno="34" refid="structPersistentLaplacians_1_1timer_1a555a1420f81dddf5cb3874e2c04e7ed2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structPersistentLaplacians_1_1timer_1a555a1420f81dddf5cb3874e2c04e7ed2" kindref="member">start</ref>(){</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPersistentLaplacians_1_1timer_1a9fbe8840ab78aa95649fe072880ed31c" kindref="member">start_t</ref><sp/>=<sp/>std::chrono::steady_clock::now();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37" refid="structPersistentLaplacians_1_1timer_1afbee23e392e7a08575bb1c3010015b08" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structPersistentLaplacians_1_1timer_1afbee23e392e7a08575bb1c3010015b08" kindref="member">stop</ref>(){</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>end_t<sp/>=<sp/>std::chrono::steady_clock::now();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPersistentLaplacians_1_1timer_1acff399cee3e0c168bbf4a6cab9348158" kindref="member">duration</ref><sp/>=<sp/>(std::chrono::duration_cast&lt;std::chrono::milliseconds&gt;(end_t<sp/>-<sp/><ref refid="structPersistentLaplacians_1_1timer_1a9fbe8840ab78aa95649fe072880ed31c" kindref="member">start_t</ref>)).count();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="structPersistentLaplacians_1_1Profile" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structPersistentLaplacians_1_1Profile" kindref="compound">Profile</ref>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="45" refid="structPersistentLaplacians_1_1Profile_1adb71605b3344fd4d71b6ce24bbe82485" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/><ref refid="structPersistentLaplacians_1_1Profile_1adb71605b3344fd4d71b6ce24bbe82485" kindref="member">dims</ref>;</highlight></codeline>
+<codeline lineno="46" refid="structPersistentLaplacians_1_1Profile_1a89701f8f5a3d05b91598b3a2f8d699ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;filtration_type&gt;<sp/><ref refid="structPersistentLaplacians_1_1Profile_1a89701f8f5a3d05b91598b3a2f8d699ec" kindref="member">filtration_a</ref>;</highlight></codeline>
+<codeline lineno="47" refid="structPersistentLaplacians_1_1Profile_1a175ae62343ee0e593757f0289f1ad3ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;filtration_type&gt;<sp/><ref refid="structPersistentLaplacians_1_1Profile_1a175ae62343ee0e593757f0289f1ad3ba" kindref="member">filtration_b</ref>;</highlight></codeline>
+<codeline lineno="48" refid="structPersistentLaplacians_1_1Profile_1a93fdfa3ebf795554d497250f95570e6c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPersistentLaplacians_1_1timer" kindref="compound">timer</ref><sp/><ref refid="structPersistentLaplacians_1_1Profile_1a93fdfa3ebf795554d497250f95570e6c" kindref="member">all</ref>;</highlight></codeline>
+<codeline lineno="49" refid="structPersistentLaplacians_1_1Profile_1a6b292ba7886ad13588c3eedb5305a60a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPersistentLaplacians_1_1timer" kindref="compound">timer</ref><sp/><ref refid="structPersistentLaplacians_1_1Profile_1a6b292ba7886ad13588c3eedb5305a60a" kindref="member">eigs</ref>;</highlight></codeline>
+<codeline lineno="50" refid="structPersistentLaplacians_1_1Profile_1a94fd89e72aeb3165ea510b05f90032eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPersistentLaplacians_1_1timer" kindref="compound">timer</ref><sp/><ref refid="structPersistentLaplacians_1_1Profile_1a94fd89e72aeb3165ea510b05f90032eb" kindref="member">L</ref>;</highlight></codeline>
+<codeline lineno="51" refid="structPersistentLaplacians_1_1Profile_1a231007bb7d0349bce00f0bd05f2f8736" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPersistentLaplacians_1_1timer" kindref="compound">timer</ref><sp/><ref refid="structPersistentLaplacians_1_1Profile_1a231007bb7d0349bce00f0bd05f2f8736" kindref="member">L_up</ref>;</highlight></codeline>
+<codeline lineno="52" refid="structPersistentLaplacians_1_1Profile_1a6378e79ea2d549a41faf98646f03cf9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPersistentLaplacians_1_1timer" kindref="compound">timer</ref><sp/><ref refid="structPersistentLaplacians_1_1Profile_1a6378e79ea2d549a41faf98646f03cf9c" kindref="member">L_down</ref>;</highlight></codeline>
+<codeline lineno="53" refid="structPersistentLaplacians_1_1Profile_1acda96b63f99c8fdfcf8123f03a072a5d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPersistentLaplacians_1_1timer" kindref="compound">timer</ref><sp/><ref refid="structPersistentLaplacians_1_1Profile_1acda96b63f99c8fdfcf8123f03a072a5d" kindref="member">sum_up_down</ref>;</highlight></codeline>
+<codeline lineno="54" refid="structPersistentLaplacians_1_1Profile_1a6b8e3b8c92b8cb33c2da32f20b019545" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/><ref refid="structPersistentLaplacians_1_1Profile_1a6b8e3b8c92b8cb33c2da32f20b019545" kindref="member">durations_all</ref>;</highlight></codeline>
+<codeline lineno="55" refid="structPersistentLaplacians_1_1Profile_1a30f7a63a1d89020a3cf7215c0ec272e5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/><ref refid="structPersistentLaplacians_1_1Profile_1a30f7a63a1d89020a3cf7215c0ec272e5" kindref="member">durations_eigs</ref>;</highlight></codeline>
+<codeline lineno="56" refid="structPersistentLaplacians_1_1Profile_1ad927e0f3af19a21fb915f2e12785fc2e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/><ref refid="structPersistentLaplacians_1_1Profile_1ad927e0f3af19a21fb915f2e12785fc2e" kindref="member">durations_L</ref>;</highlight></codeline>
+<codeline lineno="57" refid="structPersistentLaplacians_1_1Profile_1a304826cf0c22453e164d9213d45744db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/><ref refid="structPersistentLaplacians_1_1Profile_1a304826cf0c22453e164d9213d45744db" kindref="member">durations_L_up</ref>;</highlight></codeline>
+<codeline lineno="58" refid="structPersistentLaplacians_1_1Profile_1a403c1b5f2a4257c16c52cc23b9b848b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/><ref refid="structPersistentLaplacians_1_1Profile_1a403c1b5f2a4257c16c52cc23b9b848b5" kindref="member">durations_L_down</ref>;</highlight></codeline>
+<codeline lineno="59" refid="structPersistentLaplacians_1_1Profile_1aef222c7fa8771ad5c1f21c426c52c4dc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/><ref refid="structPersistentLaplacians_1_1Profile_1aef222c7fa8771ad5c1f21c426c52c4dc" kindref="member">durations_sum_up_down</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61" refid="structPersistentLaplacians_1_1Profile_1ad2a58fa6977029fbb2f5dd038899a3af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/><ref refid="structPersistentLaplacians_1_1Profile_1ad2a58fa6977029fbb2f5dd038899a3af" kindref="member">L_rows</ref>;</highlight></codeline>
+<codeline lineno="62" refid="structPersistentLaplacians_1_1Profile_1a8e7b5298493204f2ad0f92d85e16f561" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/><ref refid="structPersistentLaplacians_1_1Profile_1a8e7b5298493204f2ad0f92d85e16f561" kindref="member">bettis</ref>;</highlight></codeline>
+<codeline lineno="63" refid="structPersistentLaplacians_1_1Profile_1a4dc87e427d1612c31f9495d8296ce05a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;spectra_type&gt;<sp/><ref refid="structPersistentLaplacians_1_1Profile_1a4dc87e427d1612c31f9495d8296ce05a" kindref="member">lambdas</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>std::vector&lt;double&gt;<sp/>sparsity_L;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>std::vector&lt;int&gt;<sp/>simplices_added;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structPersistentLaplacians_1_1Profile_1a7e04f47c782cac174fd6d5b265482559" kindref="member">to_csv</ref>(std::string<sp/>filename);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69" refid="structPersistentLaplacians_1_1Profile_1a8f2c2810743e4ce3a765bb6551252108" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structPersistentLaplacians_1_1Profile_1a8f2c2810743e4ce3a765bb6551252108" kindref="member">start_all</ref>(){this-&gt;all.<ref refid="structPersistentLaplacians_1_1timer_1a555a1420f81dddf5cb3874e2c04e7ed2" kindref="member">start</ref>();}</highlight></codeline>
+<codeline lineno="70" refid="structPersistentLaplacians_1_1Profile_1ab233b235f48d25c9d8f5e6c010a5ffe5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structPersistentLaplacians_1_1Profile_1ab233b235f48d25c9d8f5e6c010a5ffe5" kindref="member">start_eigs</ref>(){<ref refid="structPersistentLaplacians_1_1Profile_1a6b292ba7886ad13588c3eedb5305a60a" kindref="member">eigs</ref>.<ref refid="structPersistentLaplacians_1_1timer_1a555a1420f81dddf5cb3874e2c04e7ed2" kindref="member">start</ref>();}</highlight></codeline>
+<codeline lineno="71" refid="structPersistentLaplacians_1_1Profile_1a33070f90a3270bb4c91534ca7f42628a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structPersistentLaplacians_1_1Profile_1a33070f90a3270bb4c91534ca7f42628a" kindref="member">start_L</ref>(){<ref refid="structPersistentLaplacians_1_1Profile_1a94fd89e72aeb3165ea510b05f90032eb" kindref="member">L</ref>.<ref refid="structPersistentLaplacians_1_1timer_1a555a1420f81dddf5cb3874e2c04e7ed2" kindref="member">start</ref>();}</highlight></codeline>
+<codeline lineno="72" refid="structPersistentLaplacians_1_1Profile_1a47dff11c3099c75bde4f047564af3bdf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structPersistentLaplacians_1_1Profile_1a47dff11c3099c75bde4f047564af3bdf" kindref="member">start_L_up</ref>(){<ref refid="structPersistentLaplacians_1_1Profile_1a231007bb7d0349bce00f0bd05f2f8736" kindref="member">L_up</ref>.<ref refid="structPersistentLaplacians_1_1timer_1a555a1420f81dddf5cb3874e2c04e7ed2" kindref="member">start</ref>();}</highlight></codeline>
+<codeline lineno="73" refid="structPersistentLaplacians_1_1Profile_1a3008950ecb438faf065963302a3a947d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structPersistentLaplacians_1_1Profile_1a3008950ecb438faf065963302a3a947d" kindref="member">start_L_down</ref>(){<ref refid="structPersistentLaplacians_1_1Profile_1a6378e79ea2d549a41faf98646f03cf9c" kindref="member">L_down</ref>.<ref refid="structPersistentLaplacians_1_1timer_1a555a1420f81dddf5cb3874e2c04e7ed2" kindref="member">start</ref>();}</highlight></codeline>
+<codeline lineno="74" refid="structPersistentLaplacians_1_1Profile_1acb6f84452faf504b9ab3b096a745af72" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structPersistentLaplacians_1_1Profile_1acb6f84452faf504b9ab3b096a745af72" kindref="member">start_sum_up_down</ref>(){<ref refid="structPersistentLaplacians_1_1Profile_1acda96b63f99c8fdfcf8123f03a072a5d" kindref="member">sum_up_down</ref>.<ref refid="structPersistentLaplacians_1_1timer_1a555a1420f81dddf5cb3874e2c04e7ed2" kindref="member">start</ref>();}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="structPersistentLaplacians_1_1Profile_1ad7cbaf77704acf5830d7e4790b2fb00f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structPersistentLaplacians_1_1Profile_1ad7cbaf77704acf5830d7e4790b2fb00f" kindref="member">stop_all</ref>(){<ref refid="structPersistentLaplacians_1_1Profile_1a93fdfa3ebf795554d497250f95570e6c" kindref="member">all</ref>.<ref refid="structPersistentLaplacians_1_1timer_1afbee23e392e7a08575bb1c3010015b08" kindref="member">stop</ref>();<sp/><ref refid="structPersistentLaplacians_1_1Profile_1a6b8e3b8c92b8cb33c2da32f20b019545" kindref="member">durations_all</ref>.push_back(<ref refid="structPersistentLaplacians_1_1Profile_1a93fdfa3ebf795554d497250f95570e6c" kindref="member">all</ref>.<ref refid="structPersistentLaplacians_1_1timer_1acff399cee3e0c168bbf4a6cab9348158" kindref="member">duration</ref>);}</highlight></codeline>
+<codeline lineno="77" refid="structPersistentLaplacians_1_1Profile_1afc41817d218b5b818080ce76709f814c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structPersistentLaplacians_1_1Profile_1afc41817d218b5b818080ce76709f814c" kindref="member">stop_eigs</ref>(){<ref refid="structPersistentLaplacians_1_1Profile_1a6b292ba7886ad13588c3eedb5305a60a" kindref="member">eigs</ref>.<ref refid="structPersistentLaplacians_1_1timer_1afbee23e392e7a08575bb1c3010015b08" kindref="member">stop</ref>();<sp/><ref refid="structPersistentLaplacians_1_1Profile_1a30f7a63a1d89020a3cf7215c0ec272e5" kindref="member">durations_eigs</ref>.push_back(<ref refid="structPersistentLaplacians_1_1Profile_1a6b292ba7886ad13588c3eedb5305a60a" kindref="member">eigs</ref>.<ref refid="structPersistentLaplacians_1_1timer_1acff399cee3e0c168bbf4a6cab9348158" kindref="member">duration</ref>);}</highlight></codeline>
+<codeline lineno="78" refid="structPersistentLaplacians_1_1Profile_1a5af1c264ba40ffddb4ae382c9fa4e85f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structPersistentLaplacians_1_1Profile_1a5af1c264ba40ffddb4ae382c9fa4e85f" kindref="member">stop_L</ref>(){<ref refid="structPersistentLaplacians_1_1Profile_1a94fd89e72aeb3165ea510b05f90032eb" kindref="member">L</ref>.<ref refid="structPersistentLaplacians_1_1timer_1afbee23e392e7a08575bb1c3010015b08" kindref="member">stop</ref>();<sp/><ref refid="structPersistentLaplacians_1_1Profile_1ad927e0f3af19a21fb915f2e12785fc2e" kindref="member">durations_L</ref>.push_back(<ref refid="structPersistentLaplacians_1_1Profile_1a94fd89e72aeb3165ea510b05f90032eb" kindref="member">L</ref>.<ref refid="structPersistentLaplacians_1_1timer_1acff399cee3e0c168bbf4a6cab9348158" kindref="member">duration</ref>);}</highlight></codeline>
+<codeline lineno="79" refid="structPersistentLaplacians_1_1Profile_1afa4171ec301ef5e0c0bdd058d6e92a68" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structPersistentLaplacians_1_1Profile_1afa4171ec301ef5e0c0bdd058d6e92a68" kindref="member">stop_L_up</ref>(){<ref refid="structPersistentLaplacians_1_1Profile_1a231007bb7d0349bce00f0bd05f2f8736" kindref="member">L_up</ref>.<ref refid="structPersistentLaplacians_1_1timer_1afbee23e392e7a08575bb1c3010015b08" kindref="member">stop</ref>();<sp/><ref refid="structPersistentLaplacians_1_1Profile_1a304826cf0c22453e164d9213d45744db" kindref="member">durations_L_up</ref>.push_back(<ref refid="structPersistentLaplacians_1_1Profile_1a231007bb7d0349bce00f0bd05f2f8736" kindref="member">L_up</ref>.<ref refid="structPersistentLaplacians_1_1timer_1acff399cee3e0c168bbf4a6cab9348158" kindref="member">duration</ref>);}</highlight></codeline>
+<codeline lineno="80" refid="structPersistentLaplacians_1_1Profile_1aca2648e63d0c747eebe1639bb794e0c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structPersistentLaplacians_1_1Profile_1aca2648e63d0c747eebe1639bb794e0c7" kindref="member">stop_L_down</ref>(){<ref refid="structPersistentLaplacians_1_1Profile_1a6378e79ea2d549a41faf98646f03cf9c" kindref="member">L_down</ref>.<ref refid="structPersistentLaplacians_1_1timer_1afbee23e392e7a08575bb1c3010015b08" kindref="member">stop</ref>();<sp/><ref refid="structPersistentLaplacians_1_1Profile_1a403c1b5f2a4257c16c52cc23b9b848b5" kindref="member">durations_L_down</ref>.push_back(<ref refid="structPersistentLaplacians_1_1Profile_1a6378e79ea2d549a41faf98646f03cf9c" kindref="member">L_down</ref>.<ref refid="structPersistentLaplacians_1_1timer_1acff399cee3e0c168bbf4a6cab9348158" kindref="member">duration</ref>);}</highlight></codeline>
+<codeline lineno="81" refid="structPersistentLaplacians_1_1Profile_1a03e0a99902d31b730d295d5d48f5a813" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structPersistentLaplacians_1_1Profile_1a03e0a99902d31b730d295d5d48f5a813" kindref="member">stop_sum_up_down</ref>(){<ref refid="structPersistentLaplacians_1_1Profile_1acda96b63f99c8fdfcf8123f03a072a5d" kindref="member">sum_up_down</ref>.<ref refid="structPersistentLaplacians_1_1timer_1afbee23e392e7a08575bb1c3010015b08" kindref="member">stop</ref>();<sp/><ref refid="structPersistentLaplacians_1_1Profile_1aef222c7fa8771ad5c1f21c426c52c4dc" kindref="member">durations_sum_up_down</ref>.push_back(<ref refid="structPersistentLaplacians_1_1Profile_1acda96b63f99c8fdfcf8123f03a072a5d" kindref="member">sum_up_down</ref>.<ref refid="structPersistentLaplacians_1_1timer_1acff399cee3e0c168bbf4a6cab9348158" kindref="member">duration</ref>);}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/PersistentLaplacians.hpp"/>
+  </compounddef>
+</doxygen>

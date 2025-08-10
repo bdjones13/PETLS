@@ -1,0 +1,152 @@
+\hypertarget{classPersistentLaplacians_1_1Filtered__Boundary__Matrix}{}\doxysection{Persistent\+Laplacians\+::Filtered\+\_\+\+Boundary\+\_\+\+Matrix$<$ FBMcoeff $>$ Class Template Reference}
+\label{classPersistentLaplacians_1_1Filtered__Boundary__Matrix}\index{PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$@{PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$}}
+
+
+{\ttfamily \#include $<$Filtered\+\_\+\+Boundary\+\_\+\+Matrix.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPersistentLaplacians_1_1Filtered__Boundary__Matrix_a3af3bd80e65070ffbdb4f6dd0492a6bf}{Filtered\+\_\+\+Boundary\+\_\+\+Matrix}} (Eigen\+::\+Sparse\+Matrix$<$ FBMcoeff, Eigen\+::\+Col\+Major $>$ \+\_\+matrix, std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$ \+\_\+domain\+\_\+filtrations, std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$ \+\_\+range\+\_\+filtrations)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$ \mbox{\hyperlink{classPersistentLaplacians_1_1Filtered__Boundary__Matrix_ae6eabc0d3c585e00c146cd16c5c2d329}{get\+\_\+domain\+\_\+filtrations}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$ \mbox{\hyperlink{classPersistentLaplacians_1_1Filtered__Boundary__Matrix_af94694009a63d5cd8854f13a13460425}{get\+\_\+range\+\_\+filtrations}} ()
+\item 
+\mbox{\hyperlink{classPersistentLaplacians_1_1Filtered__Boundary__Matrix}{Filtered\+\_\+\+Boundary\+\_\+\+Matrix}} \mbox{\hyperlink{classPersistentLaplacians_1_1Filtered__Boundary__Matrix_a2da3d56bc02514ede2c0bc86fee105ba}{transpose}} ()
+\item 
+int \mbox{\hyperlink{classPersistentLaplacians_1_1Filtered__Boundary__Matrix_a7a51d6737bd92e62532d1de92cd836b6}{index\+\_\+of\+\_\+filtration}} (bool use\+\_\+domain\+\_\+filtrations, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} a)
+\item 
+int \mbox{\hyperlink{classPersistentLaplacians_1_1Filtered__Boundary__Matrix_afd9ce3c544e436c00f3a36525169f930}{get\+\_\+low}} (\mbox{\hyperlink{typedefs_8hpp_aa0b819682f9cdac0ae1234aed46106e6}{Sparse\+Matrix\+\_\+\+PL}} \&matrix, int col\+\_\+index)
+\item 
+void \mbox{\hyperlink{classPersistentLaplacians_1_1Filtered__Boundary__Matrix_ab949e66fd0eacc7ce14d86a742100939}{submatrix\+\_\+at\+\_\+filtration}} (\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} a, Eigen\+::\+Sparse\+Matrix$<$ FBMcoeff, Eigen\+::\+Col\+Major $>$ \&M)
+\item 
+std\+::tuple$<$ \mbox{\hyperlink{typedefs_8hpp_aa0b819682f9cdac0ae1234aed46106e6}{Sparse\+Matrix\+\_\+\+PL}}, \mbox{\hyperlink{typedefs_8hpp_aa0b819682f9cdac0ae1234aed46106e6}{Sparse\+Matrix\+\_\+\+PL}}, std\+::vector$<$ int $>$, int $>$ \mbox{\hyperlink{classPersistentLaplacians_1_1Filtered__Boundary__Matrix_acd7cb7acd87a22bdb24090e78ef9881d}{reduce}} (int a\+\_\+row\+\_\+index, int b\+\_\+row\+\_\+index, int b\+\_\+col\+\_\+index)
+\item 
+void \mbox{\hyperlink{classPersistentLaplacians_1_1Filtered__Boundary__Matrix_a8fa774dbf17efd6c9296a370bafd093a}{print\+\_\+range\+\_\+filtration}} ()
+\item 
+void \mbox{\hyperlink{classPersistentLaplacians_1_1Filtered__Boundary__Matrix_a526d596210ffa70c5a77527c56f01d42}{print\+\_\+domain\+\_\+filtration}} ()
+\item 
+void \mbox{\hyperlink{classPersistentLaplacians_1_1Filtered__Boundary__Matrix_a7a48a3deadd975cfc422a895c3995682}{print}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename FBMcoeff = int$>$\newline
+class Persistent\+Laplacians\+::\+Filtered\+\_\+\+Boundary\+\_\+\+Matrix$<$ FBMcoeff $>$}
+
+Class for storing, manipulating, and retrieving the boundary matrix at different filtration levels 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPersistentLaplacians_1_1Filtered__Boundary__Matrix_a3af3bd80e65070ffbdb4f6dd0492a6bf}\label{classPersistentLaplacians_1_1Filtered__Boundary__Matrix_a3af3bd80e65070ffbdb4f6dd0492a6bf}} 
+\index{PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$@{PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$}!Filtered\_Boundary\_Matrix@{Filtered\_Boundary\_Matrix}}
+\index{Filtered\_Boundary\_Matrix@{Filtered\_Boundary\_Matrix}!PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$@{PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$}}
+\doxysubsubsection{\texorpdfstring{Filtered\_Boundary\_Matrix()}{Filtered\_Boundary\_Matrix()}}
+{\footnotesize\ttfamily template$<$typename FBMcoeff  = int$>$ \\
+\mbox{\hyperlink{classPersistentLaplacians_1_1Filtered__Boundary__Matrix}{Persistent\+Laplacians\+::\+Filtered\+\_\+\+Boundary\+\_\+\+Matrix}}$<$ FBMcoeff $>$\+::\mbox{\hyperlink{classPersistentLaplacians_1_1Filtered__Boundary__Matrix}{Filtered\+\_\+\+Boundary\+\_\+\+Matrix}} (\begin{DoxyParamCaption}\item[{Eigen\+::\+Sparse\+Matrix$<$ FBMcoeff, Eigen\+::\+Col\+Major $>$}]{\+\_\+matrix,  }\item[{std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$}]{\+\_\+domain\+\_\+filtrations,  }\item[{std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$}]{\+\_\+range\+\_\+filtrations }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor. Note\+: dimensions of filtrations and matrix must match. 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+matrix} & boundary matrix d\+\_\+n \\
+\hline
+{\em \+\_\+domain\+\_\+filtrations} & filtrations of n-\/simplices \\
+\hline
+{\em \+\_\+range\+\_\+filtrations} & filtrations of (n-\/1)-\/simplices \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPersistentLaplacians_1_1Filtered__Boundary__Matrix_ae6eabc0d3c585e00c146cd16c5c2d329}\label{classPersistentLaplacians_1_1Filtered__Boundary__Matrix_ae6eabc0d3c585e00c146cd16c5c2d329}} 
+\index{PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$@{PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$}!get\_domain\_filtrations@{get\_domain\_filtrations}}
+\index{get\_domain\_filtrations@{get\_domain\_filtrations}!PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$@{PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$}}
+\doxysubsubsection{\texorpdfstring{get\_domain\_filtrations()}{get\_domain\_filtrations()}}
+{\footnotesize\ttfamily template$<$typename FBMcoeff  = int$>$ \\
+std\+::vector$<$\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}$>$ \mbox{\hyperlink{classPersistentLaplacians_1_1Filtered__Boundary__Matrix}{Persistent\+Laplacians\+::\+Filtered\+\_\+\+Boundary\+\_\+\+Matrix}}$<$ FBMcoeff $>$\+::get\+\_\+domain\+\_\+filtrations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the filtration values of n-\/simplices \mbox{\Hypertarget{classPersistentLaplacians_1_1Filtered__Boundary__Matrix_afd9ce3c544e436c00f3a36525169f930}\label{classPersistentLaplacians_1_1Filtered__Boundary__Matrix_afd9ce3c544e436c00f3a36525169f930}} 
+\index{PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$@{PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$}!get\_low@{get\_low}}
+\index{get\_low@{get\_low}!PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$@{PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$}}
+\doxysubsubsection{\texorpdfstring{get\_low()}{get\_low()}}
+{\footnotesize\ttfamily template$<$typename FBMcoeff  = int$>$ \\
+int \mbox{\hyperlink{classPersistentLaplacians_1_1Filtered__Boundary__Matrix}{Persistent\+Laplacians\+::\+Filtered\+\_\+\+Boundary\+\_\+\+Matrix}}$<$ FBMcoeff $>$\+::get\+\_\+low (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8hpp_aa0b819682f9cdac0ae1234aed46106e6}{Sparse\+Matrix\+\_\+\+PL}} \&}]{matrix,  }\item[{int}]{col\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPersistentLaplacians_1_1Filtered__Boundary__Matrix_af94694009a63d5cd8854f13a13460425}\label{classPersistentLaplacians_1_1Filtered__Boundary__Matrix_af94694009a63d5cd8854f13a13460425}} 
+\index{PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$@{PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$}!get\_range\_filtrations@{get\_range\_filtrations}}
+\index{get\_range\_filtrations@{get\_range\_filtrations}!PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$@{PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$}}
+\doxysubsubsection{\texorpdfstring{get\_range\_filtrations()}{get\_range\_filtrations()}}
+{\footnotesize\ttfamily template$<$typename FBMcoeff  = int$>$ \\
+std\+::vector$<$\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}$>$ \mbox{\hyperlink{classPersistentLaplacians_1_1Filtered__Boundary__Matrix}{Persistent\+Laplacians\+::\+Filtered\+\_\+\+Boundary\+\_\+\+Matrix}}$<$ FBMcoeff $>$\+::get\+\_\+range\+\_\+filtrations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the filtration values of (n-\/1)-\/simplices \mbox{\Hypertarget{classPersistentLaplacians_1_1Filtered__Boundary__Matrix_a7a51d6737bd92e62532d1de92cd836b6}\label{classPersistentLaplacians_1_1Filtered__Boundary__Matrix_a7a51d6737bd92e62532d1de92cd836b6}} 
+\index{PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$@{PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$}!index\_of\_filtration@{index\_of\_filtration}}
+\index{index\_of\_filtration@{index\_of\_filtration}!PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$@{PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$}}
+\doxysubsubsection{\texorpdfstring{index\_of\_filtration()}{index\_of\_filtration()}}
+{\footnotesize\ttfamily template$<$typename FBMcoeff  = int$>$ \\
+int \mbox{\hyperlink{classPersistentLaplacians_1_1Filtered__Boundary__Matrix}{Persistent\+Laplacians\+::\+Filtered\+\_\+\+Boundary\+\_\+\+Matrix}}$<$ FBMcoeff $>$\+::index\+\_\+of\+\_\+filtration (\begin{DoxyParamCaption}\item[{bool}]{use\+\_\+domain\+\_\+filtrations,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the largest index where the corresponding filtration value is not more than a. If there are multiple simplices with the same filtration highest value, it will return the largest index. 
+\begin{DoxyParams}{Parameters}
+{\em use\+\_\+domain\+\_\+filtrations} & if true, iterate over the domain filtrations (n-\/simplices), if false over the range filtrations (n-\/1)-\/simplices \\
+\hline
+{\em a} & filtration value ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The largest index where the corresponding filtration value is not more than a. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPersistentLaplacians_1_1Filtered__Boundary__Matrix_a7a48a3deadd975cfc422a895c3995682}\label{classPersistentLaplacians_1_1Filtered__Boundary__Matrix_a7a48a3deadd975cfc422a895c3995682}} 
+\index{PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$@{PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$}!print@{print}}
+\index{print@{print}!PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$@{PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily template$<$typename FBMcoeff  = int$>$ \\
+void \mbox{\hyperlink{classPersistentLaplacians_1_1Filtered__Boundary__Matrix}{Persistent\+Laplacians\+::\+Filtered\+\_\+\+Boundary\+\_\+\+Matrix}}$<$ FBMcoeff $>$\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Print the underlying matrix for d\+\_\+n. \mbox{\Hypertarget{classPersistentLaplacians_1_1Filtered__Boundary__Matrix_a526d596210ffa70c5a77527c56f01d42}\label{classPersistentLaplacians_1_1Filtered__Boundary__Matrix_a526d596210ffa70c5a77527c56f01d42}} 
+\index{PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$@{PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$}!print\_domain\_filtration@{print\_domain\_filtration}}
+\index{print\_domain\_filtration@{print\_domain\_filtration}!PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$@{PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$}}
+\doxysubsubsection{\texorpdfstring{print\_domain\_filtration()}{print\_domain\_filtration()}}
+{\footnotesize\ttfamily template$<$typename FBMcoeff  = int$>$ \\
+void \mbox{\hyperlink{classPersistentLaplacians_1_1Filtered__Boundary__Matrix}{Persistent\+Laplacians\+::\+Filtered\+\_\+\+Boundary\+\_\+\+Matrix}}$<$ FBMcoeff $>$\+::print\+\_\+domain\+\_\+filtration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Print the filtration values of (n-\/1)-\/simplices. \mbox{\Hypertarget{classPersistentLaplacians_1_1Filtered__Boundary__Matrix_a8fa774dbf17efd6c9296a370bafd093a}\label{classPersistentLaplacians_1_1Filtered__Boundary__Matrix_a8fa774dbf17efd6c9296a370bafd093a}} 
+\index{PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$@{PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$}!print\_range\_filtration@{print\_range\_filtration}}
+\index{print\_range\_filtration@{print\_range\_filtration}!PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$@{PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$}}
+\doxysubsubsection{\texorpdfstring{print\_range\_filtration()}{print\_range\_filtration()}}
+{\footnotesize\ttfamily template$<$typename FBMcoeff  = int$>$ \\
+void \mbox{\hyperlink{classPersistentLaplacians_1_1Filtered__Boundary__Matrix}{Persistent\+Laplacians\+::\+Filtered\+\_\+\+Boundary\+\_\+\+Matrix}}$<$ FBMcoeff $>$\+::print\+\_\+range\+\_\+filtration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Print the filtration values of (n-\/1)-\/simplices. \mbox{\Hypertarget{classPersistentLaplacians_1_1Filtered__Boundary__Matrix_acd7cb7acd87a22bdb24090e78ef9881d}\label{classPersistentLaplacians_1_1Filtered__Boundary__Matrix_acd7cb7acd87a22bdb24090e78ef9881d}} 
+\index{PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$@{PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$}!reduce@{reduce}}
+\index{reduce@{reduce}!PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$@{PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$}}
+\doxysubsubsection{\texorpdfstring{reduce()}{reduce()}}
+{\footnotesize\ttfamily template$<$typename FBMcoeff  = int$>$ \\
+std\+::tuple$<$\mbox{\hyperlink{typedefs_8hpp_aa0b819682f9cdac0ae1234aed46106e6}{Sparse\+Matrix\+\_\+\+PL}},\mbox{\hyperlink{typedefs_8hpp_aa0b819682f9cdac0ae1234aed46106e6}{Sparse\+Matrix\+\_\+\+PL}},std\+::vector$<$int$>$, int$>$ \mbox{\hyperlink{classPersistentLaplacians_1_1Filtered__Boundary__Matrix}{Persistent\+Laplacians\+::\+Filtered\+\_\+\+Boundary\+\_\+\+Matrix}}$<$ FBMcoeff $>$\+::reduce (\begin{DoxyParamCaption}\item[{int}]{a\+\_\+row\+\_\+index,  }\item[{int}]{b\+\_\+row\+\_\+index,  }\item[{int}]{b\+\_\+col\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPersistentLaplacians_1_1Filtered__Boundary__Matrix_ab949e66fd0eacc7ce14d86a742100939}\label{classPersistentLaplacians_1_1Filtered__Boundary__Matrix_ab949e66fd0eacc7ce14d86a742100939}} 
+\index{PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$@{PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$}!submatrix\_at\_filtration@{submatrix\_at\_filtration}}
+\index{submatrix\_at\_filtration@{submatrix\_at\_filtration}!PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$@{PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$}}
+\doxysubsubsection{\texorpdfstring{submatrix\_at\_filtration()}{submatrix\_at\_filtration()}}
+{\footnotesize\ttfamily template$<$typename FBMcoeff  = int$>$ \\
+void \mbox{\hyperlink{classPersistentLaplacians_1_1Filtered__Boundary__Matrix}{Persistent\+Laplacians\+::\+Filtered\+\_\+\+Boundary\+\_\+\+Matrix}}$<$ FBMcoeff $>$\+::submatrix\+\_\+at\+\_\+filtration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{a,  }\item[{Eigen\+::\+Sparse\+Matrix$<$ FBMcoeff, Eigen\+::\+Col\+Major $>$ \&}]{M }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the largest submatrix (by reference) that does not have corresponding filtration values greater than a. 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em a} & filtration value \\
+\hline
+\mbox{\texttt{ out}}  & {\em M} & the submatrix. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPersistentLaplacians_1_1Filtered__Boundary__Matrix_a2da3d56bc02514ede2c0bc86fee105ba}\label{classPersistentLaplacians_1_1Filtered__Boundary__Matrix_a2da3d56bc02514ede2c0bc86fee105ba}} 
+\index{PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$@{PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$}!transpose@{transpose}}
+\index{transpose@{transpose}!PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$@{PersistentLaplacians::Filtered\_Boundary\_Matrix$<$ FBMcoeff $>$}}
+\doxysubsubsection{\texorpdfstring{transpose()}{transpose()}}
+{\footnotesize\ttfamily template$<$typename FBMcoeff  = int$>$ \\
+\mbox{\hyperlink{classPersistentLaplacians_1_1Filtered__Boundary__Matrix}{Filtered\+\_\+\+Boundary\+\_\+\+Matrix}} \mbox{\hyperlink{classPersistentLaplacians_1_1Filtered__Boundary__Matrix}{Persistent\+Laplacians\+::\+Filtered\+\_\+\+Boundary\+\_\+\+Matrix}}$<$ FBMcoeff $>$\+::transpose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the transpose of the boundary matrix, which swaps the domain and range filtrations 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jones657/\+Persistent\+Laplacians/cpp/include/\+Persistent\+Laplacians\+\_\+headers/core/\mbox{\hyperlink{Filtered__Boundary__Matrix_8hpp}{Filtered\+\_\+\+Boundary\+\_\+\+Matrix.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,74 @@
+\hypertarget{classPersistentLaplacians_1_1sheaf__simplex__tree}{}\doxysection{Persistent\+Laplacians\+::sheaf\+\_\+simplex\+\_\+tree Class Reference}
+\label{classPersistentLaplacians_1_1sheaf__simplex__tree}\index{PersistentLaplacians::sheaf\_simplex\_tree@{PersistentLaplacians::sheaf\_simplex\_tree}}
+
+
+{\ttfamily \#include $<$sheaf\+\_\+simplex\+\_\+tree.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPersistentLaplacians_1_1sheaf__simplex__tree_aea312dada2187d15d71f790248377124}{sheaf\+\_\+simplex\+\_\+tree}} (\mbox{\hyperlink{namespacePersistentLaplacians_af5a05e44b87981109cce88070677b6f1}{Simplex\+\_\+tree}} \+\_\+st, std\+::unordered\+\_\+map$<$ Simplex\+\_\+tree\+::\+Simplex\+\_\+key, std\+::vector$<$ float $>$$>$ \+\_\+extra\+\_\+data, std\+::function$<$ float(Simplex\+\_\+tree\+::\+Simplex\+\_\+handle, Simplex\+\_\+tree\+::\+Simplex\+\_\+handle, \mbox{\hyperlink{classPersistentLaplacians_1_1sheaf__simplex__tree}{sheaf\+\_\+simplex\+\_\+tree}} \&)$>$ \+\_\+restriction)
+\item 
+int \mbox{\hyperlink{classPersistentLaplacians_1_1sheaf__simplex__tree_ab96d531bd1a66382b08c7ecb49acd7fc}{coface\+\_\+index}} (Simplex\+\_\+tree\+::\+Simplex\+\_\+handle simplex, Simplex\+\_\+tree\+::\+Simplex\+\_\+handle coface)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classPersistentLaplacians_1_1FilteredBoundaryMatrix}{Filtered\+Boundary\+Matrix}}$<$ float $>$ $>$ \mbox{\hyperlink{classPersistentLaplacians_1_1sheaf__simplex__tree_ab950d0672d2d3f747e60df61b15c8ea4}{apply\+\_\+restriction\+\_\+function}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacePersistentLaplacians_af5a05e44b87981109cce88070677b6f1}{Simplex\+\_\+tree}} \mbox{\hyperlink{classPersistentLaplacians_1_1sheaf__simplex__tree_a0dc5341545d584cdae8322877229994c}{st}}
+\item 
+std\+::unordered\+\_\+map$<$ Simplex\+\_\+tree\+::\+Simplex\+\_\+key, std\+::vector$<$ float $>$ $>$ \mbox{\hyperlink{classPersistentLaplacians_1_1sheaf__simplex__tree_adc412faedc0144197325f165c01d88d4}{extra\+\_\+data}}
+\item 
+std\+::function$<$ float(Simplex\+\_\+tree\+::\+Simplex\+\_\+handle, Simplex\+\_\+tree\+::\+Simplex\+\_\+handle, \mbox{\hyperlink{classPersistentLaplacians_1_1sheaf__simplex__tree}{sheaf\+\_\+simplex\+\_\+tree}} \&)$>$ \mbox{\hyperlink{classPersistentLaplacians_1_1sheaf__simplex__tree_a204374a03b3336ee01b709329f04c0fc}{restriction}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPersistentLaplacians_1_1sheaf__simplex__tree_aea312dada2187d15d71f790248377124}\label{classPersistentLaplacians_1_1sheaf__simplex__tree_aea312dada2187d15d71f790248377124}} 
+\index{PersistentLaplacians::sheaf\_simplex\_tree@{PersistentLaplacians::sheaf\_simplex\_tree}!sheaf\_simplex\_tree@{sheaf\_simplex\_tree}}
+\index{sheaf\_simplex\_tree@{sheaf\_simplex\_tree}!PersistentLaplacians::sheaf\_simplex\_tree@{PersistentLaplacians::sheaf\_simplex\_tree}}
+\doxysubsubsection{\texorpdfstring{sheaf\_simplex\_tree()}{sheaf\_simplex\_tree()}}
+{\footnotesize\ttfamily Persistent\+Laplacians\+::sheaf\+\_\+simplex\+\_\+tree\+::sheaf\+\_\+simplex\+\_\+tree (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacePersistentLaplacians_af5a05e44b87981109cce88070677b6f1}{Simplex\+\_\+tree}}}]{\+\_\+st,  }\item[{std\+::unordered\+\_\+map$<$ Simplex\+\_\+tree\+::\+Simplex\+\_\+key, std\+::vector$<$ float $>$$>$}]{\+\_\+extra\+\_\+data,  }\item[{std\+::function$<$ float(Simplex\+\_\+tree\+::\+Simplex\+\_\+handle, Simplex\+\_\+tree\+::\+Simplex\+\_\+handle, \mbox{\hyperlink{classPersistentLaplacians_1_1sheaf__simplex__tree}{sheaf\+\_\+simplex\+\_\+tree}} \&)$>$}]{\+\_\+restriction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPersistentLaplacians_1_1sheaf__simplex__tree_ab950d0672d2d3f747e60df61b15c8ea4}\label{classPersistentLaplacians_1_1sheaf__simplex__tree_ab950d0672d2d3f747e60df61b15c8ea4}} 
+\index{PersistentLaplacians::sheaf\_simplex\_tree@{PersistentLaplacians::sheaf\_simplex\_tree}!apply\_restriction\_function@{apply\_restriction\_function}}
+\index{apply\_restriction\_function@{apply\_restriction\_function}!PersistentLaplacians::sheaf\_simplex\_tree@{PersistentLaplacians::sheaf\_simplex\_tree}}
+\doxysubsubsection{\texorpdfstring{apply\_restriction\_function()}{apply\_restriction\_function()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classPersistentLaplacians_1_1FilteredBoundaryMatrix}{Filtered\+Boundary\+Matrix}}$<$float$>$ $>$ Persistent\+Laplacians\+::sheaf\+\_\+simplex\+\_\+tree\+::apply\+\_\+restriction\+\_\+function (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPersistentLaplacians_1_1sheaf__simplex__tree_ab96d531bd1a66382b08c7ecb49acd7fc}\label{classPersistentLaplacians_1_1sheaf__simplex__tree_ab96d531bd1a66382b08c7ecb49acd7fc}} 
+\index{PersistentLaplacians::sheaf\_simplex\_tree@{PersistentLaplacians::sheaf\_simplex\_tree}!coface\_index@{coface\_index}}
+\index{coface\_index@{coface\_index}!PersistentLaplacians::sheaf\_simplex\_tree@{PersistentLaplacians::sheaf\_simplex\_tree}}
+\doxysubsubsection{\texorpdfstring{coface\_index()}{coface\_index()}}
+{\footnotesize\ttfamily int Persistent\+Laplacians\+::sheaf\+\_\+simplex\+\_\+tree\+::coface\+\_\+index (\begin{DoxyParamCaption}\item[{Simplex\+\_\+tree\+::\+Simplex\+\_\+handle}]{simplex,  }\item[{Simplex\+\_\+tree\+::\+Simplex\+\_\+handle}]{coface }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classPersistentLaplacians_1_1sheaf__simplex__tree_adc412faedc0144197325f165c01d88d4}\label{classPersistentLaplacians_1_1sheaf__simplex__tree_adc412faedc0144197325f165c01d88d4}} 
+\index{PersistentLaplacians::sheaf\_simplex\_tree@{PersistentLaplacians::sheaf\_simplex\_tree}!extra\_data@{extra\_data}}
+\index{extra\_data@{extra\_data}!PersistentLaplacians::sheaf\_simplex\_tree@{PersistentLaplacians::sheaf\_simplex\_tree}}
+\doxysubsubsection{\texorpdfstring{extra\_data}{extra\_data}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$Simplex\+\_\+tree\+::\+Simplex\+\_\+key, std\+::vector$<$float$>$ $>$ Persistent\+Laplacians\+::sheaf\+\_\+simplex\+\_\+tree\+::extra\+\_\+data}
+
+\mbox{\Hypertarget{classPersistentLaplacians_1_1sheaf__simplex__tree_a204374a03b3336ee01b709329f04c0fc}\label{classPersistentLaplacians_1_1sheaf__simplex__tree_a204374a03b3336ee01b709329f04c0fc}} 
+\index{PersistentLaplacians::sheaf\_simplex\_tree@{PersistentLaplacians::sheaf\_simplex\_tree}!restriction@{restriction}}
+\index{restriction@{restriction}!PersistentLaplacians::sheaf\_simplex\_tree@{PersistentLaplacians::sheaf\_simplex\_tree}}
+\doxysubsubsection{\texorpdfstring{restriction}{restriction}}
+{\footnotesize\ttfamily std\+::function$<$float(Simplex\+\_\+tree\+::\+Simplex\+\_\+handle, Simplex\+\_\+tree\+::\+Simplex\+\_\+handle, \mbox{\hyperlink{classPersistentLaplacians_1_1sheaf__simplex__tree}{sheaf\+\_\+simplex\+\_\+tree}}\&)$>$ Persistent\+Laplacians\+::sheaf\+\_\+simplex\+\_\+tree\+::restriction}
+
+\mbox{\Hypertarget{classPersistentLaplacians_1_1sheaf__simplex__tree_a0dc5341545d584cdae8322877229994c}\label{classPersistentLaplacians_1_1sheaf__simplex__tree_a0dc5341545d584cdae8322877229994c}} 
+\index{PersistentLaplacians::sheaf\_simplex\_tree@{PersistentLaplacians::sheaf\_simplex\_tree}!st@{st}}
+\index{st@{st}!PersistentLaplacians::sheaf\_simplex\_tree@{PersistentLaplacians::sheaf\_simplex\_tree}}
+\doxysubsubsection{\texorpdfstring{st}{st}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacePersistentLaplacians_af5a05e44b87981109cce88070677b6f1}{Simplex\+\_\+tree}} Persistent\+Laplacians\+::sheaf\+\_\+simplex\+\_\+tree\+::st}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jones657/\+Persistent\+Laplacians/cpp/include/\+Persistent\+Laplacians\+\_\+headers/variants/\mbox{\hyperlink{sheaf__simplex__tree_8hpp}{sheaf\+\_\+simplex\+\_\+tree.\+hpp}}\end{DoxyCompactItemize}

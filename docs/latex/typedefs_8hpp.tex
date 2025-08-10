@@ -1,0 +1,135 @@
+\hypertarget{typedefs_8hpp}{}\doxysection{/home/jones657/\+Persistent\+Laplacians/cpp/include/\+Persistent\+Laplacians\+\_\+headers/typedefs.hpp File Reference}
+\label{typedefs_8hpp}\index{/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians\_headers/typedefs.hpp@{/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians\_headers/typedefs.hpp}}
+{\ttfamily \#include \char`\"{}Eigen/\+Sparse\+Core\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{typedefs_8hpp_a479ee4600a6441dbaef402db186dd0ae}{PRUNE\+\_\+\+CONSTANT}}~0.\+0000001
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef float \mbox{\hyperlink{typedefs_8hpp_a09e36216a82b7355c90a8d6bdde28b10}{coefficient\+\_\+type}}
+\item 
+typedef float \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}}
+\item 
+typedef float \mbox{\hyperlink{typedefs_8hpp_af7d5e90927b3e42d710237198c3582d5}{storage}}
+\item 
+typedef Eigen\+::\+Sparse\+Matrix$<$ \mbox{\hyperlink{typedefs_8hpp_af7d5e90927b3e42d710237198c3582d5}{storage}}, Eigen\+::\+Col\+Major $>$ \mbox{\hyperlink{typedefs_8hpp_a696f33453207d73162f781efad58d040}{Sparse\+Matrix\+\_\+storage}}
+\item 
+typedef Eigen\+::\+Sparse\+Matrix$<$ \mbox{\hyperlink{typedefs_8hpp_a09e36216a82b7355c90a8d6bdde28b10}{coefficient\+\_\+type}}, Eigen\+::\+Col\+Major $>$ \mbox{\hyperlink{typedefs_8hpp_aa0b819682f9cdac0ae1234aed46106e6}{Sparse\+Matrix\+\_\+\+PL}}
+\item 
+typedef Eigen\+::\+Matrix$<$ \mbox{\hyperlink{typedefs_8hpp_a09e36216a82b7355c90a8d6bdde28b10}{coefficient\+\_\+type}}, Eigen\+::\+Dynamic, Eigen\+::\+Dynamic $>$ \mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}}
+\item 
+typedef Eigen\+::\+Matrix$<$ \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}}, Eigen\+::\+Dynamic, Eigen\+::\+Dynamic $>$ \mbox{\hyperlink{typedefs_8hpp_a030e5ac5de56ef32415d87cfb7e1cc8f}{Sparse\+Matrix\+\_\+spectra\+\_\+\+PL}}
+\item 
+typedef Eigen\+::\+Matrix$<$ \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}}, Eigen\+::\+Dynamic, Eigen\+::\+Dynamic $>$ \mbox{\hyperlink{typedefs_8hpp_ab1b02c8ebcde7779bc2d81fedc0a2d35}{Dense\+Matrix\+\_\+spectra\+\_\+\+PL}}
+\item 
+typedef Eigen\+::\+Matrix$<$ \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}}, Eigen\+::\+Dynamic, 1 $>$ \mbox{\hyperlink{typedefs_8hpp_a27a64e317582fd2a2dbdc95fa84b7ebd}{spectra\+\_\+vec}}
+\item 
+typedef Eigen\+::\+Sparse\+Matrix$<$ int, Eigen\+::\+Col\+Major $>$ \mbox{\hyperlink{typedefs_8hpp_af75f469c1ca3f8752d6f67a115e57af4}{Sparse\+Matrix\+Int}}
+\item 
+typedef Eigen\+::\+Sparse\+Matrix$<$ double, Eigen\+::\+Col\+Major $>$ \mbox{\hyperlink{typedefs_8hpp_aa38aa00f5d649a8f0714186a48035c80}{Sparse\+Matrix\+Double}}
+\item 
+typedef Eigen\+::\+Sparse\+Matrix$<$ float, Eigen\+::\+Col\+Major $>$ \mbox{\hyperlink{typedefs_8hpp_a36861f68d1eb98f57ea27b47bd45fc37}{Sparse\+Matrix\+Float}}
+\item 
+typedef double \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}
+\item 
+typedef int \mbox{\hyperlink{typedefs_8hpp_aa511d4e3e646072967e8a42dc6c54194}{index\+\_\+type}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{typedefs_8hpp_a479ee4600a6441dbaef402db186dd0ae}\label{typedefs_8hpp_a479ee4600a6441dbaef402db186dd0ae}} 
+\index{typedefs.hpp@{typedefs.hpp}!PRUNE\_CONSTANT@{PRUNE\_CONSTANT}}
+\index{PRUNE\_CONSTANT@{PRUNE\_CONSTANT}!typedefs.hpp@{typedefs.hpp}}
+\doxysubsubsection{\texorpdfstring{PRUNE\_CONSTANT}{PRUNE\_CONSTANT}}
+{\footnotesize\ttfamily \#define PRUNE\+\_\+\+CONSTANT~0.\+0000001}
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{typedefs_8hpp_a09e36216a82b7355c90a8d6bdde28b10}\label{typedefs_8hpp_a09e36216a82b7355c90a8d6bdde28b10}} 
+\index{typedefs.hpp@{typedefs.hpp}!coefficient\_type@{coefficient\_type}}
+\index{coefficient\_type@{coefficient\_type}!typedefs.hpp@{typedefs.hpp}}
+\doxysubsubsection{\texorpdfstring{coefficient\_type}{coefficient\_type}}
+{\footnotesize\ttfamily typedef float \mbox{\hyperlink{typedefs_8hpp_a09e36216a82b7355c90a8d6bdde28b10}{coefficient\+\_\+type}}}
+
+\mbox{\Hypertarget{typedefs_8hpp_a260197b742c38462952d018c69ff535a}\label{typedefs_8hpp_a260197b742c38462952d018c69ff535a}} 
+\index{typedefs.hpp@{typedefs.hpp}!DenseMatrix\_PL@{DenseMatrix\_PL}}
+\index{DenseMatrix\_PL@{DenseMatrix\_PL}!typedefs.hpp@{typedefs.hpp}}
+\doxysubsubsection{\texorpdfstring{DenseMatrix\_PL}{DenseMatrix\_PL}}
+{\footnotesize\ttfamily typedef Eigen\+::\+Matrix$<$\mbox{\hyperlink{typedefs_8hpp_a09e36216a82b7355c90a8d6bdde28b10}{coefficient\+\_\+type}}, Eigen\+::\+Dynamic, Eigen\+::\+Dynamic$>$ \mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}}}
+
+\mbox{\Hypertarget{typedefs_8hpp_ab1b02c8ebcde7779bc2d81fedc0a2d35}\label{typedefs_8hpp_ab1b02c8ebcde7779bc2d81fedc0a2d35}} 
+\index{typedefs.hpp@{typedefs.hpp}!DenseMatrix\_spectra\_PL@{DenseMatrix\_spectra\_PL}}
+\index{DenseMatrix\_spectra\_PL@{DenseMatrix\_spectra\_PL}!typedefs.hpp@{typedefs.hpp}}
+\doxysubsubsection{\texorpdfstring{DenseMatrix\_spectra\_PL}{DenseMatrix\_spectra\_PL}}
+{\footnotesize\ttfamily typedef Eigen\+::\+Matrix$<$\mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}}, Eigen\+::\+Dynamic, Eigen\+::\+Dynamic$>$ \mbox{\hyperlink{typedefs_8hpp_ab1b02c8ebcde7779bc2d81fedc0a2d35}{Dense\+Matrix\+\_\+spectra\+\_\+\+PL}}}
+
+\mbox{\Hypertarget{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}\label{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}} 
+\index{typedefs.hpp@{typedefs.hpp}!filtration\_type@{filtration\_type}}
+\index{filtration\_type@{filtration\_type}!typedefs.hpp@{typedefs.hpp}}
+\doxysubsubsection{\texorpdfstring{filtration\_type}{filtration\_type}}
+{\footnotesize\ttfamily typedef double \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}
+
+\mbox{\Hypertarget{typedefs_8hpp_aa511d4e3e646072967e8a42dc6c54194}\label{typedefs_8hpp_aa511d4e3e646072967e8a42dc6c54194}} 
+\index{typedefs.hpp@{typedefs.hpp}!index\_type@{index\_type}}
+\index{index\_type@{index\_type}!typedefs.hpp@{typedefs.hpp}}
+\doxysubsubsection{\texorpdfstring{index\_type}{index\_type}}
+{\footnotesize\ttfamily typedef int \mbox{\hyperlink{typedefs_8hpp_aa511d4e3e646072967e8a42dc6c54194}{index\+\_\+type}}}
+
+\mbox{\Hypertarget{typedefs_8hpp_aa0b819682f9cdac0ae1234aed46106e6}\label{typedefs_8hpp_aa0b819682f9cdac0ae1234aed46106e6}} 
+\index{typedefs.hpp@{typedefs.hpp}!SparseMatrix\_PL@{SparseMatrix\_PL}}
+\index{SparseMatrix\_PL@{SparseMatrix\_PL}!typedefs.hpp@{typedefs.hpp}}
+\doxysubsubsection{\texorpdfstring{SparseMatrix\_PL}{SparseMatrix\_PL}}
+{\footnotesize\ttfamily typedef Eigen\+::\+Sparse\+Matrix$<$\mbox{\hyperlink{typedefs_8hpp_a09e36216a82b7355c90a8d6bdde28b10}{coefficient\+\_\+type}}, Eigen\+::\+Col\+Major$>$ \mbox{\hyperlink{typedefs_8hpp_aa0b819682f9cdac0ae1234aed46106e6}{Sparse\+Matrix\+\_\+\+PL}}}
+
+\mbox{\Hypertarget{typedefs_8hpp_a030e5ac5de56ef32415d87cfb7e1cc8f}\label{typedefs_8hpp_a030e5ac5de56ef32415d87cfb7e1cc8f}} 
+\index{typedefs.hpp@{typedefs.hpp}!SparseMatrix\_spectra\_PL@{SparseMatrix\_spectra\_PL}}
+\index{SparseMatrix\_spectra\_PL@{SparseMatrix\_spectra\_PL}!typedefs.hpp@{typedefs.hpp}}
+\doxysubsubsection{\texorpdfstring{SparseMatrix\_spectra\_PL}{SparseMatrix\_spectra\_PL}}
+{\footnotesize\ttfamily typedef Eigen\+::\+Matrix$<$\mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}}, Eigen\+::\+Dynamic, Eigen\+::\+Dynamic$>$ \mbox{\hyperlink{typedefs_8hpp_a030e5ac5de56ef32415d87cfb7e1cc8f}{Sparse\+Matrix\+\_\+spectra\+\_\+\+PL}}}
+
+\mbox{\Hypertarget{typedefs_8hpp_a696f33453207d73162f781efad58d040}\label{typedefs_8hpp_a696f33453207d73162f781efad58d040}} 
+\index{typedefs.hpp@{typedefs.hpp}!SparseMatrix\_storage@{SparseMatrix\_storage}}
+\index{SparseMatrix\_storage@{SparseMatrix\_storage}!typedefs.hpp@{typedefs.hpp}}
+\doxysubsubsection{\texorpdfstring{SparseMatrix\_storage}{SparseMatrix\_storage}}
+{\footnotesize\ttfamily typedef Eigen\+::\+Sparse\+Matrix$<$\mbox{\hyperlink{typedefs_8hpp_af7d5e90927b3e42d710237198c3582d5}{storage}}, Eigen\+::\+Col\+Major$>$ \mbox{\hyperlink{typedefs_8hpp_a696f33453207d73162f781efad58d040}{Sparse\+Matrix\+\_\+storage}}}
+
+\mbox{\Hypertarget{typedefs_8hpp_aa38aa00f5d649a8f0714186a48035c80}\label{typedefs_8hpp_aa38aa00f5d649a8f0714186a48035c80}} 
+\index{typedefs.hpp@{typedefs.hpp}!SparseMatrixDouble@{SparseMatrixDouble}}
+\index{SparseMatrixDouble@{SparseMatrixDouble}!typedefs.hpp@{typedefs.hpp}}
+\doxysubsubsection{\texorpdfstring{SparseMatrixDouble}{SparseMatrixDouble}}
+{\footnotesize\ttfamily typedef Eigen\+::\+Sparse\+Matrix$<$double, Eigen\+::\+Col\+Major$>$ \mbox{\hyperlink{typedefs_8hpp_aa38aa00f5d649a8f0714186a48035c80}{Sparse\+Matrix\+Double}}}
+
+\mbox{\Hypertarget{typedefs_8hpp_a36861f68d1eb98f57ea27b47bd45fc37}\label{typedefs_8hpp_a36861f68d1eb98f57ea27b47bd45fc37}} 
+\index{typedefs.hpp@{typedefs.hpp}!SparseMatrixFloat@{SparseMatrixFloat}}
+\index{SparseMatrixFloat@{SparseMatrixFloat}!typedefs.hpp@{typedefs.hpp}}
+\doxysubsubsection{\texorpdfstring{SparseMatrixFloat}{SparseMatrixFloat}}
+{\footnotesize\ttfamily typedef Eigen\+::\+Sparse\+Matrix$<$float, Eigen\+::\+Col\+Major$>$ \mbox{\hyperlink{typedefs_8hpp_a36861f68d1eb98f57ea27b47bd45fc37}{Sparse\+Matrix\+Float}}}
+
+\mbox{\Hypertarget{typedefs_8hpp_af75f469c1ca3f8752d6f67a115e57af4}\label{typedefs_8hpp_af75f469c1ca3f8752d6f67a115e57af4}} 
+\index{typedefs.hpp@{typedefs.hpp}!SparseMatrixInt@{SparseMatrixInt}}
+\index{SparseMatrixInt@{SparseMatrixInt}!typedefs.hpp@{typedefs.hpp}}
+\doxysubsubsection{\texorpdfstring{SparseMatrixInt}{SparseMatrixInt}}
+{\footnotesize\ttfamily typedef Eigen\+::\+Sparse\+Matrix$<$int, Eigen\+::\+Col\+Major$>$ \mbox{\hyperlink{typedefs_8hpp_af75f469c1ca3f8752d6f67a115e57af4}{Sparse\+Matrix\+Int}}}
+
+\mbox{\Hypertarget{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}\label{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}} 
+\index{typedefs.hpp@{typedefs.hpp}!spectra\_type@{spectra\_type}}
+\index{spectra\_type@{spectra\_type}!typedefs.hpp@{typedefs.hpp}}
+\doxysubsubsection{\texorpdfstring{spectra\_type}{spectra\_type}}
+{\footnotesize\ttfamily typedef float \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}}}
+
+\mbox{\Hypertarget{typedefs_8hpp_a27a64e317582fd2a2dbdc95fa84b7ebd}\label{typedefs_8hpp_a27a64e317582fd2a2dbdc95fa84b7ebd}} 
+\index{typedefs.hpp@{typedefs.hpp}!spectra\_vec@{spectra\_vec}}
+\index{spectra\_vec@{spectra\_vec}!typedefs.hpp@{typedefs.hpp}}
+\doxysubsubsection{\texorpdfstring{spectra\_vec}{spectra\_vec}}
+{\footnotesize\ttfamily typedef Eigen\+::\+Matrix$<$\mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}}, Eigen\+::\+Dynamic, 1$>$ \mbox{\hyperlink{typedefs_8hpp_a27a64e317582fd2a2dbdc95fa84b7ebd}{spectra\+\_\+vec}}}
+
+\mbox{\Hypertarget{typedefs_8hpp_af7d5e90927b3e42d710237198c3582d5}\label{typedefs_8hpp_af7d5e90927b3e42d710237198c3582d5}} 
+\index{typedefs.hpp@{typedefs.hpp}!storage@{storage}}
+\index{storage@{storage}!typedefs.hpp@{typedefs.hpp}}
+\doxysubsubsection{\texorpdfstring{storage}{storage}}
+{\footnotesize\ttfamily typedef float \mbox{\hyperlink{typedefs_8hpp_af7d5e90927b3e42d710237198c3582d5}{storage}}}
+

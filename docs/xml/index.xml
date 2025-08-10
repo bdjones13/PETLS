@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
+  <compound refid="classPersistentLaplacians_1_1bdcsvd" kind="class"><name>PersistentLaplacians::bdcsvd</name>
+    <member refid="classPersistentLaplacians_1_1bdcsvd_1ae1df6b21a63374278a6a84f5503444ae" kind="function"><name>eigenvalues</name></member>
+    <member refid="classPersistentLaplacians_1_1bdcsvd_1a3a0a4926249ecd0b85668e898f7362f7" kind="function"><name>eigenpairs</name></member>
+  </compound>
+  <compound refid="classPersistentLaplacians_1_1eigensolver" kind="class"><name>PersistentLaplacians::eigensolver</name>
+    <member refid="classPersistentLaplacians_1_1eigensolver_1a3c434d8ed423aa2312253c0008de8564" kind="function"><name>eigenvalues</name></member>
+    <member refid="classPersistentLaplacians_1_1eigensolver_1a7b1384f543e3145e796a4aec91f8890c" kind="function"><name>eigenpairs</name></member>
+  </compound>
+  <compound refid="classPersistentLaplacians_1_1FilteredBoundaryMatrix" kind="class"><name>PersistentLaplacians::FilteredBoundaryMatrix</name>
+    <member refid="classPersistentLaplacians_1_1FilteredBoundaryMatrix_1a80581ed92511216db87bb387b3f2579c" kind="variable"><name>domain_filtrations</name></member>
+    <member refid="classPersistentLaplacians_1_1FilteredBoundaryMatrix_1aa02f4459cb25eeb9933948ea1e79d46c" kind="variable"><name>range_filtrations</name></member>
+    <member refid="classPersistentLaplacians_1_1FilteredBoundaryMatrix_1aaa45cf4724fa6c58139c13a98c955ace" kind="variable"><name>matrix</name></member>
+    <member refid="classPersistentLaplacians_1_1FilteredBoundaryMatrix_1a82719f74bda090fe0f94e667c1299abe" kind="variable"><name>num_rows</name></member>
+    <member refid="classPersistentLaplacians_1_1FilteredBoundaryMatrix_1ae9514a68a544f5540c72029ca95460e3" kind="variable"><name>num_cols</name></member>
+    <member refid="classPersistentLaplacians_1_1FilteredBoundaryMatrix_1a1a5a7334e3704767c0a7d1ddf0f4f4a8" kind="function"><name>FilteredBoundaryMatrix</name></member>
+    <member refid="classPersistentLaplacians_1_1FilteredBoundaryMatrix_1a6dbe226f7a4a6091ec68a6b03f54d02f" kind="function"><name>get_domain_filtrations</name></member>
+    <member refid="classPersistentLaplacians_1_1FilteredBoundaryMatrix_1acaa5b423827c6ec50690f5a4a84398e1" kind="function"><name>get_range_filtrations</name></member>
+    <member refid="classPersistentLaplacians_1_1FilteredBoundaryMatrix_1a2e42e0591a824d23826562c7e3a98a79" kind="function"><name>transpose</name></member>
+    <member refid="classPersistentLaplacians_1_1FilteredBoundaryMatrix_1ad2ac8f6546005231711bffd131dc64d9" kind="function"><name>index_of_filtration</name></member>
+    <member refid="classPersistentLaplacians_1_1FilteredBoundaryMatrix_1a672ee5b3d1d87b09c1d11c227d780c17" kind="function"><name>get_low</name></member>
+    <member refid="classPersistentLaplacians_1_1FilteredBoundaryMatrix_1a5df12d25ca80eb5d1c0d9dcb58e0e67c" kind="function"><name>submatrix_at_filtration</name></member>
+    <member refid="classPersistentLaplacians_1_1FilteredBoundaryMatrix_1aea5c25d4fe9dd8c031700327724fb436" kind="function"><name>reduce</name></member>
+    <member refid="classPersistentLaplacians_1_1FilteredBoundaryMatrix_1a36fecc7ad4f924b9079772a6b7a0ea37" kind="function"><name>print_range_filtration</name></member>
+    <member refid="classPersistentLaplacians_1_1FilteredBoundaryMatrix_1a5e023b9da0c3426c6249dce1c80c229d" kind="function"><name>print_domain_filtration</name></member>
+    <member refid="classPersistentLaplacians_1_1FilteredBoundaryMatrix_1a1d76cae27bc63abb70e682c5539f9d4a" kind="function"><name>print</name></member>
+  </compound>
+  <compound refid="classPersistentLaplacians_1_1ortho" kind="class"><name>PersistentLaplacians::ortho</name>
+    <member refid="classPersistentLaplacians_1_1ortho_1a7a675131615c18037e056c7f7c142815" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classPersistentLaplacians_1_1PersistentAlphaLaplacian" kind="class"><name>PersistentLaplacians::PersistentAlphaLaplacian</name>
+    <member refid="classPersistentLaplacians_1_1PersistentAlphaLaplacian_1afa46d702fa82c0127138ec3425bd864a" kind="function"><name>PersistentAlphaLaplacian</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentAlphaLaplacian_1abfeb95860fa65b242fb470bbe957ee74" kind="function"><name>PersistentAlphaLaplacian</name></member>
+  </compound>
+  <compound refid="classPersistentLaplacians_1_1PersistentDirectedFlagLaplacian" kind="class"><name>PersistentLaplacians::PersistentDirectedFlagLaplacian</name>
+    <member refid="classPersistentLaplacians_1_1PersistentDirectedFlagLaplacian_1ae68655dc680e969e2f21ec44fbc53921" kind="function"><name>PersistentDirectedFlagLaplacian</name></member>
+  </compound>
+  <compound refid="classPersistentLaplacians_1_1PersistentLaplacian" kind="class"><name>PersistentLaplacians::PersistentLaplacian</name>
+    <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a8f319d5a99becc40eccf3c349ba9f6d0" kind="variable"><name>top_dim</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a79e6ff1bde28006145eceaa5674d9020" kind="variable"><name>filtered_boundaries</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a8da20628a8cd90cf31f86020a6c6fc15" kind="variable"><name>verbose</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1af9fb8be1b79c7e75293720cafa6c9a26" kind="variable"><name>use_flipped</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a973c01d03d177e2116f0a1ec173a93be" kind="variable"><name>profile</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a55e983673494944131ff4ea0eb300ab2" kind="function"><name>PersistentLaplacian</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a6edcfb7daaa0df8c9b69d01b28932dbc" kind="function"><name>PersistentLaplacian</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1ab2f8ae87e04008134820ba126ac25937" kind="function"><name>~PersistentLaplacian</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1ae1d2e11b09e891608b6332f88cfb431d" kind="function"><name>set_boundaries_filtrations</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a9fbc57f868cb9d1c6ec951692f1b71ae" kind="function"><name>set_verbose</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1acf0f8a6cf4b4b49447871a9b5f04d856" kind="function"><name>set_flipped</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a1e23706e72d592f27a108cc7d075d48a" kind="function"><name>get_L</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a2e8b3d1b21217f6bf2970da9bf30c816" kind="function"><name>get_L</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a27163d1d4c3ca3016927695064c1f8d6" kind="function"><name>get_L_top_dim_flipped</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1ad46319b5bde9cdd9eccb99969a3b465e" kind="function"><name>get_L_top_dim_flipped</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1ac660b1a316536cd404fc03e2d6ebc91b" kind="function"><name>get_up</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a453c5a826140c67cae47df6e14ce1b58" kind="function"><name>get_up</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1aa891f790594c6da1ae402540ebd185d2" kind="function"><name>get_down</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1ae0f660133fa717d1822f7628bb03fc96" kind="function"><name>get_down</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a240e9d30eb215e1a9cca99381327d28e" kind="function"><name>nonzero_spectra</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a9999ae6549e0e813b87e2f5a6784c803" kind="function"><name>spectra</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a75744761caf09e38b6b592e75d95d5d0" kind="function"><name>spectra</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a6d1df94a4250f2508812de09babaac9a" kind="function"><name>spectra</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a28609766ed890efa3a7b83244d9ec262" kind="function"><name>eigenpairs</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1ade633c893ce727d35cb7539ec205f5cd" kind="function"><name>eigenpairs</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a2afd5704a3e0bd94d898008b5de61f1b" kind="function"><name>eigenpairs</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1ac25930bc9649cce4e2cca1fb99f13ad7" kind="function"><name>eigenvalues_summarize</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a2279f3ac44df29f3c6296a679c06399b" kind="function"><name>store_L</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1af4c865863604dfede94edecd1b9ccf27" kind="function"><name>print_boundaries</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a13cba8d7973e9512cf12976b57938576" kind="function"><name>store_spectra</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a055a3a3e17b0a6090427ea178140e5d3" kind="function"><name>store_spectra_summary</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1ad76f65268220edd384945c5f40835615" kind="function"><name>filtration_list_to_spectra_request</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1a454440d87e8ae8ebddfb7229733a4675" kind="function"><name>get_all_filtrations</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentLaplacian_1ad01968f2ccb10c8a0346a378038ad82f" kind="function"><name>dummy_d0</name></member>
+  </compound>
+  <compound refid="classPersistentLaplacians_1_1PersistentRipsLaplacian" kind="class"><name>PersistentLaplacians::PersistentRipsLaplacian</name>
+    <member refid="classPersistentLaplacians_1_1PersistentRipsLaplacian_1a765a6ce41f0f51f2b1ebe66aa687ac92" kind="function"><name>PersistentRipsLaplacian</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentRipsLaplacian_1aae8a8e6e17a94e1fd27950145a690024" kind="function"><name>PersistentRipsLaplacian</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentRipsLaplacian_1accf3550da4b6f14a026215ffda71ec48" kind="function"><name>PersistentRipsLaplacian</name></member>
+    <member refid="classPersistentLaplacians_1_1PersistentRipsLaplacian_1abec85d9590f3caf7f509ec904f1dd2c7" kind="function"><name>PersistentRipsLaplacian</name></member>
+  </compound>
+  <compound refid="classPersistentLaplacians_1_1PersistentSheafLaplacian" kind="class"><name>PersistentLaplacians::PersistentSheafLaplacian</name>
+    <member refid="classPersistentLaplacians_1_1PersistentSheafLaplacian_1a781723065f219df2c7e55813b44b0233" kind="function"><name>PersistentSheafLaplacian</name></member>
+  </compound>
+  <compound refid="structPersistentLaplacians_1_1Profile" kind="struct"><name>PersistentLaplacians::Profile</name>
+    <member refid="structPersistentLaplacians_1_1Profile_1adb71605b3344fd4d71b6ce24bbe82485" kind="variable"><name>dims</name></member>
+    <member refid="structPersistentLaplacians_1_1Profile_1a89701f8f5a3d05b91598b3a2f8d699ec" kind="variable"><name>filtration_a</name></member>
+    <member refid="structPersistentLaplacians_1_1Profile_1a175ae62343ee0e593757f0289f1ad3ba" kind="variable"><name>filtration_b</name></member>
+    <member refid="structPersistentLaplacians_1_1Profile_1a93fdfa3ebf795554d497250f95570e6c" kind="variable"><name>all</name></member>
+    <member refid="structPersistentLaplacians_1_1Profile_1a6b292ba7886ad13588c3eedb5305a60a" kind="variable"><name>eigs</name></member>
+    <member refid="structPersistentLaplacians_1_1Profile_1a94fd89e72aeb3165ea510b05f90032eb" kind="variable"><name>L</name></member>
+    <member refid="structPersistentLaplacians_1_1Profile_1a231007bb7d0349bce00f0bd05f2f8736" kind="variable"><name>L_up</name></member>
+    <member refid="structPersistentLaplacians_1_1Profile_1a6378e79ea2d549a41faf98646f03cf9c" kind="variable"><name>L_down</name></member>
+    <member refid="structPersistentLaplacians_1_1Profile_1acda96b63f99c8fdfcf8123f03a072a5d" kind="variable"><name>sum_up_down</name></member>
+    <member refid="structPersistentLaplacians_1_1Profile_1a6b8e3b8c92b8cb33c2da32f20b019545" kind="variable"><name>durations_all</name></member>
+    <member refid="structPersistentLaplacians_1_1Profile_1a30f7a63a1d89020a3cf7215c0ec272e5" kind="variable"><name>durations_eigs</name></member>
+    <member refid="structPersistentLaplacians_1_1Profile_1ad927e0f3af19a21fb915f2e12785fc2e" kind="variable"><name>durations_L</name></member>
+    <member refid="structPersistentLaplacians_1_1Profile_1a304826cf0c22453e164d9213d45744db" kind="variable"><name>durations_L_up</name></member>
+    <member refid="structPersistentLaplacians_1_1Profile_1a403c1b5f2a4257c16c52cc23b9b848b5" kind="variable"><name>durations_L_down</name></member>
+    <member refid="structPersistentLaplacians_1_1Profile_1aef222c7fa8771ad5c1f21c426c52c4dc" kind="variable"><name>durations_sum_up_down</name></member>
+    <member refid="structPersistentLaplacians_1_1Profile_1ad2a58fa6977029fbb2f5dd038899a3af" kind="variable"><name>L_rows</name></member>
+    <member refid="structPersistentLaplacians_1_1Profile_1a8e7b5298493204f2ad0f92d85e16f561" kind="variable"><name>bettis</name></member>
+    <member refid="structPersistentLaplacians_1_1Profile_1a4dc87e427d1612c31f9495d8296ce05a" kind="variable"><name>lambdas</name></member>
+    <member refid="structPersistentLaplacians_1_1Profile_1a7e04f47c782cac174fd6d5b265482559" kind="function"><name>to_csv</name></member>
+    <member refid="structPersistentLaplacians_1_1Profile_1a8f2c2810743e4ce3a765bb6551252108" kind="function"><name>start_all</name></member>
+    <member refid="structPersistentLaplacians_1_1Profile_1ab233b235f48d25c9d8f5e6c010a5ffe5" kind="function"><name>start_eigs</name></member>
+    <member refid="structPersistentLaplacians_1_1Profile_1a33070f90a3270bb4c91534ca7f42628a" kind="function"><name>start_L</name></member>
+    <member refid="structPersistentLaplacians_1_1Profile_1a47dff11c3099c75bde4f047564af3bdf" kind="function"><name>start_L_up</name></member>
+    <member refid="structPersistentLaplacians_1_1Profile_1a3008950ecb438faf065963302a3a947d" kind="function"><name>start_L_down</name></member>
+    <member refid="structPersistentLaplacians_1_1Profile_1acb6f84452faf504b9ab3b096a745af72" kind="function"><name>start_sum_up_down</name></member>
+    <member refid="structPersistentLaplacians_1_1Profile_1ad7cbaf77704acf5830d7e4790b2fb00f" kind="function"><name>stop_all</name></member>
+    <member refid="structPersistentLaplacians_1_1Profile_1afc41817d218b5b818080ce76709f814c" kind="function"><name>stop_eigs</name></member>
+    <member refid="structPersistentLaplacians_1_1Profile_1a5af1c264ba40ffddb4ae382c9fa4e85f" kind="function"><name>stop_L</name></member>
+    <member refid="structPersistentLaplacians_1_1Profile_1afa4171ec301ef5e0c0bdd058d6e92a68" kind="function"><name>stop_L_up</name></member>
+    <member refid="structPersistentLaplacians_1_1Profile_1aca2648e63d0c747eebe1639bb794e0c7" kind="function"><name>stop_L_down</name></member>
+    <member refid="structPersistentLaplacians_1_1Profile_1a03e0a99902d31b730d295d5d48f5a813" kind="function"><name>stop_sum_up_down</name></member>
+  </compound>
+  <compound refid="classPersistentLaplacians_1_1schur" kind="class"><name>PersistentLaplacians::schur</name>
+    <member refid="classPersistentLaplacians_1_1schur_1ad21460c921bd6e8c646578a0c6df6ca6" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classPersistentLaplacians_1_1selfadjoint" kind="class"><name>PersistentLaplacians::selfadjoint</name>
+    <member refid="classPersistentLaplacians_1_1selfadjoint_1a442267ea1ddc08752c1efdff480590d8" kind="function"><name>eigenvalues</name></member>
+    <member refid="classPersistentLaplacians_1_1selfadjoint_1ac686b1467618bf76394cde66d3b9a35d" kind="function"><name>eigenpairs</name></member>
+  </compound>
+  <compound refid="classPersistentLaplacians_1_1sheaf__simplex__tree" kind="class"><name>PersistentLaplacians::sheaf_simplex_tree</name>
+    <member refid="classPersistentLaplacians_1_1sheaf__simplex__tree_1a0dc5341545d584cdae8322877229994c" kind="variable"><name>st</name></member>
+    <member refid="classPersistentLaplacians_1_1sheaf__simplex__tree_1adc412faedc0144197325f165c01d88d4" kind="variable"><name>extra_data</name></member>
+    <member refid="classPersistentLaplacians_1_1sheaf__simplex__tree_1a204374a03b3336ee01b709329f04c0fc" kind="variable"><name>restriction</name></member>
+    <member refid="classPersistentLaplacians_1_1sheaf__simplex__tree_1aea312dada2187d15d71f790248377124" kind="function"><name>sheaf_simplex_tree</name></member>
+    <member refid="classPersistentLaplacians_1_1sheaf__simplex__tree_1ab96d531bd1a66382b08c7ecb49acd7fc" kind="function"><name>coface_index</name></member>
+    <member refid="classPersistentLaplacians_1_1sheaf__simplex__tree_1ab950d0672d2d3f747e60df61b15c8ea4" kind="function"><name>apply_restriction_function</name></member>
+    <member refid="classPersistentLaplacians_1_1sheaf__simplex__tree_1aefe17736b40850d852d581b023b064fb" kind="function"><name>reindex_boundaries_map</name></member>
+  </compound>
+  <compound refid="structPersistentLaplacians_1_1timer" kind="struct"><name>PersistentLaplacians::timer</name>
+    <member refid="structPersistentLaplacians_1_1timer_1acff399cee3e0c168bbf4a6cab9348158" kind="variable"><name>duration</name></member>
+    <member refid="structPersistentLaplacians_1_1timer_1a9fbe8840ab78aa95649fe072880ed31c" kind="variable"><name>start_t</name></member>
+    <member refid="structPersistentLaplacians_1_1timer_1a555a1420f81dddf5cb3874e2c04e7ed2" kind="function"><name>start</name></member>
+    <member refid="structPersistentLaplacians_1_1timer_1afbee23e392e7a08575bb1c3010015b08" kind="function"><name>stop</name></member>
+  </compound>
+  <compound refid="namespacePersistentLaplacians" kind="namespace"><name>PersistentLaplacians</name>
+    <member refid="namespacePersistentLaplacians_1af5a05e44b87981109cce88070677b6f1" kind="typedef"><name>Simplex_tree</name></member>
+    <member refid="namespacePersistentLaplacians_1a58c490a6ba7bc8547c4d686ce660e806" kind="typedef"><name>Filtration_value</name></member>
+    <member refid="namespacePersistentLaplacians_1a751679cfa9745a7e47c310947521b59e" kind="typedef"><name>Distance_matrix</name></member>
+    <member refid="namespacePersistentLaplacians_1a5e90134767fdfde516979022489d8202" kind="function"><name>round_zeros</name></member>
+    <member refid="namespacePersistentLaplacians_1a112d702a171a0032f30409e7de3532ea" kind="function"><name>print_full_matrix_precise</name></member>
+    <member refid="namespacePersistentLaplacians_1aa2ceec6e0a53a2780e0b5655d79dbca4" kind="function"><name>print_full_matrix_precise</name></member>
+    <member refid="namespacePersistentLaplacians_1a05153ba21964d638315e6dcbadfd4ebd" kind="function"><name>print_full_matrix_precise</name></member>
+    <member refid="namespacePersistentLaplacians_1a94948fb7f8d8894648fbdf7ac11870e6" kind="function"><name>print_full_matrix_precise</name></member>
+    <member refid="namespacePersistentLaplacians_1a6a6d1cace8ac4c62b88ce5140f3b98da" kind="function"><name>print_vector_precise</name></member>
+    <member refid="namespacePersistentLaplacians_1a9384228573917582462e538376d385b5" kind="function"><name>print_vector_precise</name></member>
+    <member refid="namespacePersistentLaplacians_1aa8ee555e30135133715db05dd7b35ed3" kind="function"><name>print_spectra</name></member>
+    <member refid="namespacePersistentLaplacians_1ac97e07389e2c5d1f9dec664e271cd59b" kind="function"><name>reindex_boundaries_map</name></member>
+    <member refid="namespacePersistentLaplacians_1a2c6b429935449ff2010770034b5e9ff2" kind="function"><name>reindex_boundaries</name></member>
+    <member refid="namespacePersistentLaplacians_1ae854648cbdf91ceb16c6fe07a6801989" kind="function"><name>alpha_points</name></member>
+    <member refid="namespacePersistentLaplacians_1aa8578e00f53b31867376ac329cd8b9eb" kind="function"><name>alpha_OFF</name></member>
+    <member refid="namespacePersistentLaplacians_1a06d02bd9fe76eee39b28d8b672df0ca3" kind="function"><name>from</name></member>
+    <member refid="namespacePersistentLaplacians_1a1a687cbb13d72b6c94ff1e6a7414648a" kind="function"><name>from</name></member>
+    <member refid="namespacePersistentLaplacians_1a1ccbae2ac3385b0b00fbcf791101763c" kind="function"><name>from</name></member>
+    <member refid="namespacePersistentLaplacians_1a8b6dc89cc0afd68c219f8ebdaaa490f2" kind="function"><name>from</name></member>
+    <member refid="namespacePersistentLaplacians_1aaea7b6de09ffe44b94fcaa130f68b378" kind="function"><name>get_boundaries_and_filtrations</name></member>
+    <member refid="namespacePersistentLaplacians_1ac9b7a3c77f8eb773c3bded878909fe1e" kind="function"><name>print_full_matrix_precise</name></member>
+    <member refid="namespacePersistentLaplacians_1a690d31305b1585081c4f16bb703f5bd4" kind="function"><name>print_vector_precise</name></member>
+    <member refid="namespacePersistentLaplacians_1a723613a2af1a0651a29f8f34a44b3f1f" kind="function"><name>rips_sheaf_simplex_tree</name></member>
+  </compound>
+  <compound refid="PersistentLaplacians" kind="file"><name>PersistentLaplacians</name>
+  </compound>
+  <compound refid="FilteredBoundaryMatrix_8hpp" kind="file"><name>FilteredBoundaryMatrix.hpp</name>
+  </compound>
+  <compound refid="PersistentLaplacian_8hpp" kind="file"><name>PersistentLaplacian.hpp</name>
+  </compound>
+  <compound refid="up__algorithms_8hpp" kind="file"><name>up_algorithms.hpp</name>
+  </compound>
+  <compound refid="eigs__algorithms_8hpp" kind="file"><name>eigs_algorithms.hpp</name>
+  </compound>
+  <compound refid="PersistentLaplacians_8hpp" kind="file"><name>PersistentLaplacians.hpp</name>
+  </compound>
+  <compound refid="typedefs_8hpp" kind="file"><name>typedefs.hpp</name>
+    <member refid="typedefs_8hpp_1a479ee4600a6441dbaef402db186dd0ae" kind="define"><name>PRUNE_CONSTANT</name></member>
+    <member refid="typedefs_8hpp_1a09e36216a82b7355c90a8d6bdde28b10" kind="typedef"><name>coefficient_type</name></member>
+    <member refid="typedefs_8hpp_1ac240cc0d46f103fa1a410237a0b8853f" kind="typedef"><name>spectra_type</name></member>
+    <member refid="typedefs_8hpp_1af7d5e90927b3e42d710237198c3582d5" kind="typedef"><name>storage</name></member>
+    <member refid="typedefs_8hpp_1a696f33453207d73162f781efad58d040" kind="typedef"><name>SparseMatrix_storage</name></member>
+    <member refid="typedefs_8hpp_1aa0b819682f9cdac0ae1234aed46106e6" kind="typedef"><name>SparseMatrix_PL</name></member>
+    <member refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kind="typedef"><name>DenseMatrix_PL</name></member>
+    <member refid="typedefs_8hpp_1a030e5ac5de56ef32415d87cfb7e1cc8f" kind="typedef"><name>SparseMatrix_spectra_PL</name></member>
+    <member refid="typedefs_8hpp_1ab1b02c8ebcde7779bc2d81fedc0a2d35" kind="typedef"><name>DenseMatrix_spectra_PL</name></member>
+    <member refid="typedefs_8hpp_1a27a64e317582fd2a2dbdc95fa84b7ebd" kind="typedef"><name>spectra_vec</name></member>
+    <member refid="typedefs_8hpp_1af75f469c1ca3f8752d6f67a115e57af4" kind="typedef"><name>SparseMatrixInt</name></member>
+    <member refid="typedefs_8hpp_1aa38aa00f5d649a8f0714186a48035c80" kind="typedef"><name>SparseMatrixDouble</name></member>
+    <member refid="typedefs_8hpp_1a36861f68d1eb98f57ea27b47bd45fc37" kind="typedef"><name>SparseMatrixFloat</name></member>
+    <member refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kind="typedef"><name>filtration_type</name></member>
+    <member refid="typedefs_8hpp_1aa511d4e3e646072967e8a42dc6c54194" kind="typedef"><name>index_type</name></member>
+  </compound>
+  <compound refid="PersistentAlphaLaplacian_8hpp" kind="file"><name>PersistentAlphaLaplacian.hpp</name>
+  </compound>
+  <compound refid="PersistentDirectedFlagLaplacian_8hpp" kind="file"><name>PersistentDirectedFlagLaplacian.hpp</name>
+  </compound>
+  <compound refid="PersistentRipsLaplacian_8hpp" kind="file"><name>PersistentRipsLaplacian.hpp</name>
+  </compound>
+  <compound refid="PersistentSheafLaplacian_8hpp" kind="file"><name>PersistentSheafLaplacian.hpp</name>
+  </compound>
+  <compound refid="sheaf__simplex__tree_8hpp" kind="file"><name>sheaf_simplex_tree.hpp</name>
+  </compound>
+  <compound refid="PersistentLaplacians_8cpp" kind="file"><name>PersistentLaplacians.cpp</name>
+  </compound>
+  <compound refid="PersistentAlphaLaplacian_8cpp" kind="file"><name>PersistentAlphaLaplacian.cpp</name>
+    <member refid="PersistentAlphaLaplacian_8cpp_1a69d52492717758b0992a45a39f7823c0" kind="typedef"><name>Kernel</name></member>
+    <member refid="PersistentAlphaLaplacian_8cpp_1abf1f39bf535adfc15531969495d26ab7" kind="typedef"><name>Vb</name></member>
+    <member refid="PersistentAlphaLaplacian_8cpp_1afdf57fbb60e4a96e14e05b5be7e08d45" kind="typedef"><name>Fb</name></member>
+    <member refid="PersistentAlphaLaplacian_8cpp_1a6cae290580c18ff11d3bbe631bd0e57c" kind="typedef"><name>Tds</name></member>
+    <member refid="PersistentAlphaLaplacian_8cpp_1a6889e236656c68572abd912cd2391b5e" kind="typedef"><name>Triangulation_3</name></member>
+    <member refid="PersistentAlphaLaplacian_8cpp_1ac15590d23eadee07a338251318bb07c5" kind="typedef"><name>Alpha_shape_3</name></member>
+    <member refid="PersistentAlphaLaplacian_8cpp_1a34f5250ef707a575baad36c8a213ba4a" kind="typedef"><name>Point</name></member>
+    <member refid="PersistentAlphaLaplacian_8cpp_1a9985cbec50dee4788ae578cd5680058f" kind="typedef"><name>Alpha_value_type</name></member>
+    <member refid="PersistentAlphaLaplacian_8cpp_1a33528ae3e224f3cae20ea9c1a4604b08" kind="typedef"><name>Object</name></member>
+    <member refid="PersistentAlphaLaplacian_8cpp_1a4d765140fe1e9a524aec03f60a769c1f" kind="typedef"><name>Dispatch</name></member>
+    <member refid="PersistentAlphaLaplacian_8cpp_1a29ee975320b9ec3b14074ce336d7b88c" kind="typedef"><name>Cell_handle</name></member>
+    <member refid="PersistentAlphaLaplacian_8cpp_1ab757b57094db65647a1f51c793464240" kind="typedef"><name>Facet</name></member>
+    <member refid="PersistentAlphaLaplacian_8cpp_1a059d548004c91470f1bf1df952e0b531" kind="typedef"><name>Edge</name></member>
+    <member refid="PersistentAlphaLaplacian_8cpp_1a35b212c9d8294610f52745b5a555c5ed" kind="typedef"><name>Vertex_list</name></member>
+    <member refid="PersistentAlphaLaplacian_8cpp_1a82bec8c8364e784a54e7933a18a2ac3c" kind="typedef"><name>Simplex_tree</name></member>
+    <member refid="PersistentAlphaLaplacian_8cpp_1ad71c42cead428458ea36886ad73458f3" kind="typedef"><name>Simplex_tree_vertex</name></member>
+    <member refid="PersistentAlphaLaplacian_8cpp_1a0f64464490a47368d40dacca1058c6fd" kind="typedef"><name>Alpha_shape_simplex_tree_map</name></member>
+    <member refid="PersistentAlphaLaplacian_8cpp_1ae0d79f0749827b256acd7ef64da29e4d" kind="typedef"><name>Alpha_shape_simplex_tree_pair</name></member>
+    <member refid="PersistentAlphaLaplacian_8cpp_1a879061de84a399d9088146efb84f6f2a" kind="typedef"><name>Simplex_tree_vector_vertex</name></member>
+  </compound>
+  <compound refid="dir_7b1a513f5eeaa2bd7268407b9ac08cfd" kind="dir"><name>/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/core</name>
+  </compound>
+  <compound refid="dir_df511e5bd85cec96854b39d5e1c27aa8" kind="dir"><name>/home/jones657/PersistentLaplacians/cpp</name>
+  </compound>
+  <compound refid="dir_ae2679e78afb57fe96bbad4801ca3a34" kind="dir"><name>/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/eigenvalues</name>
+  </compound>
+  <compound refid="dir_07f37e320deb3031a60f4b23b9c60eb5" kind="dir"><name>/home/jones657/PersistentLaplacians/cpp/include</name>
+  </compound>
+  <compound refid="dir_f4dafedda50505565fc59033b655396b" kind="dir"><name>/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers</name>
+  </compound>
+  <compound refid="dir_7e72c7cf48e3493f8206cd364e6bc9f6" kind="dir"><name>/home/jones657/PersistentLaplacians/cpp/src</name>
+  </compound>
+  <compound refid="dir_0ad7e41f04d98acb148714f84d2f044e" kind="dir"><name>/home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants</name>
+  </compound>
+  <compound refid="dir_aa999d0ce8e965b4353e6170079285a5" kind="dir"><name>/home/jones657/PersistentLaplacians/cpp/src/variants</name>
+  </compound>
+</doxygenindex>

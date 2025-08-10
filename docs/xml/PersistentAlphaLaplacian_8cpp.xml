@@ -1,0 +1,725 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="PersistentAlphaLaplacian_8cpp" kind="file" language="C++">
+    <compoundname>PersistentAlphaLaplacian.cpp</compoundname>
+    <includes local="no">vector</includes>
+    <includes local="no">set</includes>
+    <includes refid="PersistentAlphaLaplacian_8hpp" local="yes">../../include/PersistentLaplacians_headers/variants/PersistentAlphaLaplacian.hpp</includes>
+    <includes local="no">gudhi/Simplex_tree.h</includes>
+    <includes local="no">gudhi/Points_3D_off_io.h</includes>
+    <includes local="no">boost/variant.hpp</includes>
+    <includes local="no">CGAL/Exact_predicates_inexact_constructions_kernel.h</includes>
+    <includes local="no">CGAL/Delaunay_triangulation_3.h</includes>
+    <includes local="no">CGAL/Alpha_shape_3.h</includes>
+    <includes local="no">CGAL/Alpha_shape_vertex_base_3.h</includes>
+    <includes local="no">CGAL/Alpha_shape_cell_base_3.h</includes>
+    <includes local="no">CGAL/iterator.h</includes>
+    <incdepgraph>
+      <node id="31">
+        <label>CGAL/iterator.h</label>
+      </node>
+      <node id="12">
+        <label>FilteredBoundaryMatrix.hpp</label>
+        <link refid="FilteredBoundaryMatrix_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Eigen/Cholesky</label>
+      </node>
+      <node id="16">
+        <label>Eigen/QR</label>
+      </node>
+      <node id="17">
+        <label>../eigenvalues/eigs_algorithms.hpp</label>
+        <link refid="eigs__algorithms_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>cassert</label>
+      </node>
+      <node id="21">
+        <label>numeric</label>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="22">
+        <label>map</label>
+      </node>
+      <node id="24">
+        <label>gudhi/Points_3D_off_io.h</label>
+      </node>
+      <node id="11">
+        <label>../core/up_algorithms.hpp</label>
+        <link refid="up__algorithms_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>unsupported/Eigen/SparseExtra</label>
+      </node>
+      <node id="25">
+        <label>boost/variant.hpp</label>
+      </node>
+      <node id="18">
+        <label>Eigen/Eigenvalues</label>
+      </node>
+      <node id="8">
+        <label>../PersistentLaplacians.hpp</label>
+        <link refid="PersistentLaplacians_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>CGAL/Alpha_shape_vertex_base_3.h</label>
+      </node>
+      <node id="1">
+        <label>/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp</label>
+        <link refid="PersistentAlphaLaplacian_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>../typedefs.hpp</label>
+        <link refid="typedefs_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>../core/PersistentLaplacian.hpp</label>
+        <link refid="PersistentLaplacian_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vector</label>
+      </node>
+      <node id="28">
+        <label>CGAL/Alpha_shape_3.h</label>
+      </node>
+      <node id="30">
+        <label>CGAL/Alpha_shape_cell_base_3.h</label>
+      </node>
+      <node id="7">
+        <label>Eigen/SparseCore</label>
+      </node>
+      <node id="14">
+        <label>iostream</label>
+      </node>
+      <node id="10">
+        <label>chrono</label>
+      </node>
+      <node id="23">
+        <label>gudhi/Simplex_tree.h</label>
+      </node>
+      <node id="19">
+        <label>Eigen/SVD</label>
+      </node>
+      <node id="3">
+        <label>set</label>
+      </node>
+      <node id="4">
+        <label>../../include/PersistentLaplacians_headers/variants/PersistentAlphaLaplacian.hpp</label>
+        <link refid="PersistentAlphaLaplacian_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>CGAL/Delaunay_triangulation_3.h</label>
+      </node>
+      <node id="26">
+        <label>CGAL/Exact_predicates_inexact_constructions_kernel.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacePersistentLaplacians">PersistentLaplacians</innernamespace>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="PersistentAlphaLaplacian_8cpp_1a69d52492717758b0992a45a39f7823c0" prot="public" static="no">
+        <type>CGAL::Exact_predicates_inexact_constructions_kernel</type>
+        <definition>typedef CGAL::Exact_predicates_inexact_constructions_kernel Kernel</definition>
+        <argsstring></argsstring>
+        <name>Kernel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" line="19" column="61" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="PersistentAlphaLaplacian_8cpp_1abf1f39bf535adfc15531969495d26ab7" prot="public" static="no">
+        <type>CGAL::Alpha_shape_vertex_base_3&lt; <ref refid="PersistentAlphaLaplacian_8cpp_1a69d52492717758b0992a45a39f7823c0" kindref="member">Kernel</ref> &gt;</type>
+        <definition>typedef CGAL::Alpha_shape_vertex_base_3&lt;Kernel&gt; Vb</definition>
+        <argsstring></argsstring>
+        <name>Vb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" line="20" column="41" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="PersistentAlphaLaplacian_8cpp_1afdf57fbb60e4a96e14e05b5be7e08d45" prot="public" static="no">
+        <type>CGAL::Alpha_shape_cell_base_3&lt; <ref refid="PersistentAlphaLaplacian_8cpp_1a69d52492717758b0992a45a39f7823c0" kindref="member">Kernel</ref> &gt;</type>
+        <definition>typedef CGAL::Alpha_shape_cell_base_3&lt;Kernel&gt; Fb</definition>
+        <argsstring></argsstring>
+        <name>Fb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" line="21" column="39" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="PersistentAlphaLaplacian_8cpp_1a6cae290580c18ff11d3bbe631bd0e57c" prot="public" static="no">
+        <type>CGAL::Triangulation_data_structure_3&lt; <ref refid="PersistentAlphaLaplacian_8cpp_1abf1f39bf535adfc15531969495d26ab7" kindref="member">Vb</ref>, <ref refid="PersistentAlphaLaplacian_8cpp_1afdf57fbb60e4a96e14e05b5be7e08d45" kindref="member">Fb</ref> &gt;</type>
+        <definition>typedef CGAL::Triangulation_data_structure_3&lt;Vb, Fb&gt; Tds</definition>
+        <argsstring></argsstring>
+        <name>Tds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" line="22" column="46" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="PersistentAlphaLaplacian_8cpp_1a6889e236656c68572abd912cd2391b5e" prot="public" static="no">
+        <type>CGAL::Delaunay_triangulation_3&lt; <ref refid="PersistentAlphaLaplacian_8cpp_1a69d52492717758b0992a45a39f7823c0" kindref="member">Kernel</ref>, <ref refid="PersistentAlphaLaplacian_8cpp_1a6cae290580c18ff11d3bbe631bd0e57c" kindref="member">Tds</ref> &gt;</type>
+        <definition>typedef CGAL::Delaunay_triangulation_3&lt;Kernel, Tds&gt; Triangulation_3</definition>
+        <argsstring></argsstring>
+        <name>Triangulation_3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" line="23" column="40" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="PersistentAlphaLaplacian_8cpp_1ac15590d23eadee07a338251318bb07c5" prot="public" static="no">
+        <type>CGAL::Alpha_shape_3&lt; <ref refid="PersistentAlphaLaplacian_8cpp_1a6889e236656c68572abd912cd2391b5e" kindref="member">Triangulation_3</ref> &gt;</type>
+        <definition>typedef CGAL::Alpha_shape_3&lt;Triangulation_3&gt; Alpha_shape_3</definition>
+        <argsstring></argsstring>
+        <name>Alpha_shape_3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" line="24" column="29" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="PersistentAlphaLaplacian_8cpp_1a34f5250ef707a575baad36c8a213ba4a" prot="public" static="no">
+        <type>Kernel::Point_3</type>
+        <definition>typedef Kernel::Point_3 Point</definition>
+        <argsstring></argsstring>
+        <name>Point</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" line="26" column="25" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="PersistentAlphaLaplacian_8cpp_1a9985cbec50dee4788ae578cd5680058f" prot="public" static="no">
+        <type>Alpha_shape_3::FT</type>
+        <definition>typedef Alpha_shape_3::FT Alpha_value_type</definition>
+        <argsstring></argsstring>
+        <name>Alpha_value_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" line="28" column="27" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="PersistentAlphaLaplacian_8cpp_1a33528ae3e224f3cae20ea9c1a4604b08" prot="public" static="no">
+        <type>CGAL::Object</type>
+        <definition>typedef CGAL::Object Object</definition>
+        <argsstring></argsstring>
+        <name>Object</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" line="29" column="22" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="PersistentAlphaLaplacian_8cpp_1a4d765140fe1e9a524aec03f60a769c1f" prot="public" static="no">
+        <type>CGAL::Dispatch_output_iterator&lt; CGAL::cpp11::tuple&lt; <ref refid="PersistentAlphaLaplacian_8cpp_1a33528ae3e224f3cae20ea9c1a4604b08" kindref="member">Object</ref>, <ref refid="PersistentAlphaLaplacian_8cpp_1a9985cbec50dee4788ae578cd5680058f" kindref="member">Alpha_value_type</ref> &gt;, CGAL::cpp11::tuple&lt; std::back_insert_iterator&lt; std::vector&lt; <ref refid="PersistentAlphaLaplacian_8cpp_1a33528ae3e224f3cae20ea9c1a4604b08" kindref="member">Object</ref> &gt; &gt;, std::back_insert_iterator&lt; std::vector&lt; <ref refid="PersistentAlphaLaplacian_8cpp_1a9985cbec50dee4788ae578cd5680058f" kindref="member">Alpha_value_type</ref> &gt; &gt; &gt; &gt;</type>
+        <definition>typedef CGAL::Dispatch_output_iterator&lt; CGAL::cpp11::tuple&lt;Object, Alpha_value_type&gt;, CGAL::cpp11::tuple&lt;std::back_insert_iterator&lt;std::vector&lt;Object&gt; &gt;, std::back_insert_iterator&lt;std::vector&lt;Alpha_value_type&gt; &gt; &gt; &gt; Dispatch</definition>
+        <argsstring></argsstring>
+        <name>Dispatch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" line="34" column="5" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="PersistentAlphaLaplacian_8cpp_1a29ee975320b9ec3b14074ce336d7b88c" prot="public" static="no">
+        <type>Alpha_shape_3::Cell_handle</type>
+        <definition>typedef Alpha_shape_3::Cell_handle Cell_handle</definition>
+        <argsstring></argsstring>
+        <name>Cell_handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" line="35" column="36" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="PersistentAlphaLaplacian_8cpp_1ab757b57094db65647a1f51c793464240" prot="public" static="no">
+        <type>Alpha_shape_3::Facet</type>
+        <definition>typedef Alpha_shape_3::Facet Facet</definition>
+        <argsstring></argsstring>
+        <name>Facet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" line="36" column="30" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="PersistentAlphaLaplacian_8cpp_1a059d548004c91470f1bf1df952e0b531" prot="public" static="no">
+        <type>Alpha_shape_3::Edge</type>
+        <definition>typedef Alpha_shape_3::Edge Edge</definition>
+        <argsstring></argsstring>
+        <name>Edge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" line="37" column="29" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="PersistentAlphaLaplacian_8cpp_1a35b212c9d8294610f52745b5a555c5ed" prot="public" static="no">
+        <type>std::list&lt; Alpha_shape_3::Vertex_handle &gt;</type>
+        <definition>typedef std::list&lt;Alpha_shape_3::Vertex_handle&gt; Vertex_list</definition>
+        <argsstring></argsstring>
+        <name>Vertex_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" line="38" column="19" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="PersistentAlphaLaplacian_8cpp_1a82bec8c8364e784a54e7933a18a2ac3c" prot="public" static="no">
+        <type>Gudhi::Simplex_tree</type>
+        <definition>typedef Gudhi::Simplex_tree Simplex_tree</definition>
+        <argsstring></argsstring>
+        <name>Simplex_tree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" line="40" column="10" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="PersistentAlphaLaplacian_8cpp_1ad71c42cead428458ea36886ad73458f3" prot="public" static="no">
+        <type>Simplex_tree::Vertex_handle</type>
+        <definition>typedef Simplex_tree::Vertex_handle Simplex_tree_vertex</definition>
+        <argsstring></argsstring>
+        <name>Simplex_tree_vertex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" line="41" column="37" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="PersistentAlphaLaplacian_8cpp_1a0f64464490a47368d40dacca1058c6fd" prot="public" static="no">
+        <type>std::map&lt; Alpha_shape_3::Vertex_handle, <ref refid="PersistentAlphaLaplacian_8cpp_1ad71c42cead428458ea36886ad73458f3" kindref="member">Simplex_tree_vertex</ref> &gt;</type>
+        <definition>typedef std::map&lt;Alpha_shape_3::Vertex_handle, Simplex_tree_vertex&gt; Alpha_shape_simplex_tree_map</definition>
+        <argsstring></argsstring>
+        <name>Alpha_shape_simplex_tree_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" line="42" column="18" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="PersistentAlphaLaplacian_8cpp_1ae0d79f0749827b256acd7ef64da29e4d" prot="public" static="no">
+        <type>std::pair&lt; Alpha_shape_3::Vertex_handle, <ref refid="PersistentAlphaLaplacian_8cpp_1ad71c42cead428458ea36886ad73458f3" kindref="member">Simplex_tree_vertex</ref> &gt;</type>
+        <definition>typedef std::pair&lt;Alpha_shape_3::Vertex_handle, Simplex_tree_vertex&gt; Alpha_shape_simplex_tree_pair</definition>
+        <argsstring></argsstring>
+        <name>Alpha_shape_simplex_tree_pair</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" line="43" column="19" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="PersistentAlphaLaplacian_8cpp_1a879061de84a399d9088146efb84f6f2a" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="PersistentAlphaLaplacian_8cpp_1ad71c42cead428458ea36886ad73458f3" kindref="member">Simplex_tree_vertex</ref> &gt;</type>
+        <definition>typedef std::vector&lt;Simplex_tree_vertex&gt; Simplex_tree_vector_vertex</definition>
+        <argsstring></argsstring>
+        <name>Simplex_tree_vector_vertex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" line="44" column="21" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;set&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../include/PersistentLaplacians_headers/variants/PersistentAlphaLaplacian.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Imports<sp/>and<sp/>typedefs<sp/>for<sp/>Gudhi</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gudhi/Simplex_tree.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gudhi/Points_3D_off_io.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/variant.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;CGAL/Exact_predicates_inexact_constructions_kernel.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;CGAL/Delaunay_triangulation_3.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;CGAL/Alpha_shape_3.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;CGAL/Alpha_shape_vertex_base_3.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;CGAL/Alpha_shape_cell_base_3.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;CGAL/iterator.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Alpha_shape_3<sp/>templates<sp/>type<sp/>definitions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>CGAL::Exact_predicates_inexact_constructions_kernel<sp/><ref refid="PersistentAlphaLaplacian_8cpp_1a69d52492717758b0992a45a39f7823c0" kindref="member">Kernel</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>CGAL::Alpha_shape_vertex_base_3&lt;Kernel&gt;<sp/><ref refid="PersistentAlphaLaplacian_8cpp_1abf1f39bf535adfc15531969495d26ab7" kindref="member">Vb</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>CGAL::Alpha_shape_cell_base_3&lt;Kernel&gt;<sp/><ref refid="PersistentAlphaLaplacian_8cpp_1afdf57fbb60e4a96e14e05b5be7e08d45" kindref="member">Fb</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>CGAL::Triangulation_data_structure_3&lt;Vb,<sp/>Fb&gt;<sp/><ref refid="PersistentAlphaLaplacian_8cpp_1a6cae290580c18ff11d3bbe631bd0e57c" kindref="member">Tds</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>CGAL::Delaunay_triangulation_3&lt;Kernel,<sp/>Tds&gt;<sp/><ref refid="PersistentAlphaLaplacian_8cpp_1a6889e236656c68572abd912cd2391b5e" kindref="member">Triangulation_3</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>CGAL::Alpha_shape_3&lt;Triangulation_3&gt;<sp/><ref refid="PersistentAlphaLaplacian_8cpp_1ac15590d23eadee07a338251318bb07c5" kindref="member">Alpha_shape_3</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>From<sp/>file<sp/>type<sp/>definition</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Kernel::Point_3<sp/><ref refid="PersistentAlphaLaplacian_8cpp_1a34f5250ef707a575baad36c8a213ba4a" kindref="member">Point</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>filtration<sp/>with<sp/>alpha<sp/>values<sp/>needed<sp/>type<sp/>definition</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Alpha_shape_3::FT<sp/><ref refid="PersistentAlphaLaplacian_8cpp_1a9985cbec50dee4788ae578cd5680058f" kindref="member">Alpha_value_type</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="PersistentAlphaLaplacian_8cpp_1a33528ae3e224f3cae20ea9c1a4604b08" kindref="member">CGAL::Object</ref><sp/><ref refid="PersistentAlphaLaplacian_8cpp_1a33528ae3e224f3cae20ea9c1a4604b08" kindref="member">Object</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>CGAL::Dispatch_output_iterator&lt;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>CGAL::cpp11::tuple&lt;Object,<sp/>Alpha_value_type&gt;,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>CGAL::cpp11::tuple&lt;std::back_insert_iterator&lt;std::vector&lt;Object&gt;&gt;,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::back_insert_iterator&lt;std::vector&lt;Alpha_value_type&gt;&gt;&gt;&gt;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="PersistentAlphaLaplacian_8cpp_1a4d765140fe1e9a524aec03f60a769c1f" kindref="member">Dispatch</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="PersistentAlphaLaplacian_8cpp_1a29ee975320b9ec3b14074ce336d7b88c" kindref="member">Alpha_shape_3::Cell_handle</ref><sp/><ref refid="PersistentAlphaLaplacian_8cpp_1a29ee975320b9ec3b14074ce336d7b88c" kindref="member">Cell_handle</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="PersistentAlphaLaplacian_8cpp_1ab757b57094db65647a1f51c793464240" kindref="member">Alpha_shape_3::Facet</ref><sp/><ref refid="PersistentAlphaLaplacian_8cpp_1ab757b57094db65647a1f51c793464240" kindref="member">Facet</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="PersistentAlphaLaplacian_8cpp_1a059d548004c91470f1bf1df952e0b531" kindref="member">Alpha_shape_3::Edge</ref><sp/><ref refid="PersistentAlphaLaplacian_8cpp_1a059d548004c91470f1bf1df952e0b531" kindref="member">Edge</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::list&lt;Alpha_shape_3::Vertex_handle&gt;<sp/><ref refid="PersistentAlphaLaplacian_8cpp_1a35b212c9d8294610f52745b5a555c5ed" kindref="member">Vertex_list</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/>gudhi<sp/>type<sp/>definition</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Gudhi::Simplex_tree&lt;&gt;<sp/><ref refid="PersistentAlphaLaplacian_8cpp_1a82bec8c8364e784a54e7933a18a2ac3c" kindref="member">Simplex_tree</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Simplex_tree::Vertex_handle<sp/><ref refid="PersistentAlphaLaplacian_8cpp_1ad71c42cead428458ea36886ad73458f3" kindref="member">Simplex_tree_vertex</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;Alpha_shape_3::Vertex_handle,<sp/>Simplex_tree_vertex&gt;<sp/><ref refid="PersistentAlphaLaplacian_8cpp_1a0f64464490a47368d40dacca1058c6fd" kindref="member">Alpha_shape_simplex_tree_map</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::pair&lt;Alpha_shape_3::Vertex_handle,<sp/>Simplex_tree_vertex&gt;<sp/><ref refid="PersistentAlphaLaplacian_8cpp_1ae0d79f0749827b256acd7ef64da29e4d" kindref="member">Alpha_shape_simplex_tree_pair</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::vector&lt;Simplex_tree_vertex&gt;<sp/><ref refid="PersistentAlphaLaplacian_8cpp_1a879061de84a399d9088146efb84f6f2a" kindref="member">Simplex_tree_vector_vertex</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacePersistentLaplacians" kindref="compound">PersistentLaplacians</ref>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacePersistentLaplacians_1ae854648cbdf91ceb16c6fe07a6801989" kindref="member">alpha_points</ref>(std::vector&lt;Point&gt;<sp/>&amp;points,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim_max,<sp/>std::vector&lt;std::vector&lt;std::tuple&lt;int,int,int&gt;&gt;&gt;&amp;<sp/>boundaries_triples,std::vector&lt;std::vector&lt;filtration_type&gt;&gt;&amp;<sp/>filtrations);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacePersistentLaplacians_1aa8578e00f53b31867376ac329cd8b9eb" kindref="member">alpha_OFF</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>filename,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim_max,<sp/>std::vector&lt;std::vector&lt;std::tuple&lt;int,int,int&gt;&gt;&gt;&amp;<sp/>boundaries_triples,std::vector&lt;std::vector&lt;filtration_type&gt;&gt;&amp;<sp/>filtrations);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classPersistentLaplacians_1_1PersistentAlphaLaplacian_1afa46d702fa82c0127138ec3425bd864a" kindref="member">PersistentAlphaLaplacian::PersistentAlphaLaplacian</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>filename,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_dim)<sp/>:<sp/><ref refid="namespacePersistentLaplacians" kindref="compound">PersistentLaplacians</ref>::PersistentLaplacian()<sp/>{<sp/></highlight><highlight class="comment">//<sp/>call<sp/>default<sp/>constructor<sp/>of<sp/>parent<sp/>class</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::vector&lt;std::tuple&lt;int,int,int&gt;&gt;&gt;<sp/>boundaries_triples(max_dim);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::vector&lt;filtration_type&gt;&gt;<sp/>filtrations(max_dim+1);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>verbose<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePersistentLaplacians_1aa8578e00f53b31867376ac329cd8b9eb" kindref="member">alpha_OFF</ref>(filename,<sp/>max_dim,<sp/>boundaries_triples,<sp/>filtrations);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;SparseMatrixInt&gt;<sp/>reindexed_boundaries(boundaries_triples.size());</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePersistentLaplacians_1a2c6b429935449ff2010770034b5e9ff2" kindref="member">reindex_boundaries</ref>(boundaries_triples,<sp/>reindexed_boundaries,<sp/>filtrations[0].size());</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>set_boundaries_filtrations(reindexed_boundaries,<sp/>filtrations);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>PersistentAlphaLaplacian::PersistentAlphaLaplacian(std::vector&lt;std::tuple&lt;double,double,double&gt;&gt;<sp/>points,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_dim)<sp/>:<sp/><ref refid="namespacePersistentLaplacians" kindref="compound">PersistentLaplacians</ref>::PersistentLaplacian()<sp/>{<sp/></highlight><highlight class="comment">//<sp/>call<sp/>default<sp/>constructor<sp/>of<sp/>parent<sp/>class</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::vector&lt;std::tuple&lt;int,int,int&gt;&gt;&gt;<sp/>boundaries_triples(max_dim);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::vector&lt;filtration_type&gt;&gt;<sp/>filtrations(max_dim+1);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>verbose<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;Point&gt;<sp/>points_gudhi(points.size());</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;number<sp/>of<sp/>points:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>points.size()<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>points.size();<sp/>i++){</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>points_gudhi[i]<sp/>=<sp/><ref refid="PersistentAlphaLaplacian_8cpp_1a34f5250ef707a575baad36c8a213ba4a" kindref="member">Point</ref>(std::get&lt;0&gt;(points[i]),</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::get&lt;1&gt;(points[i]),</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::get&lt;2&gt;(points[i])</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePersistentLaplacians_1ae854648cbdf91ceb16c6fe07a6801989" kindref="member">alpha_points</ref>(points_gudhi,<sp/>max_dim,<sp/>boundaries_triples,<sp/>filtrations);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>alpha_OFF(filename,<sp/>max_dim,<sp/>boundaries_triples,<sp/>filtrations);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;SparseMatrixInt&gt;<sp/>reindexed_boundaries(boundaries_triples.size());</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePersistentLaplacians_1a2c6b429935449ff2010770034b5e9ff2" kindref="member">reindex_boundaries</ref>(boundaries_triples,<sp/>reindexed_boundaries,<sp/>filtrations[0].size());</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>set_boundaries_filtrations(reindexed_boundaries,<sp/>filtrations);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>functions<sp/>for<sp/>alpha<sp/>complex</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="PersistentAlphaLaplacian_8cpp_1a35b212c9d8294610f52745b5a555c5ed" kindref="member">Vertex_list</ref><sp/><ref refid="namespacePersistentLaplacians_1a8b6dc89cc0afd68c219f8ebdaaa490f2" kindref="member">from</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="PersistentAlphaLaplacian_8cpp_1a29ee975320b9ec3b14074ce336d7b88c" kindref="member">Cell_handle</ref><sp/>&amp;ch)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="PersistentAlphaLaplacian_8cpp_1a35b212c9d8294610f52745b5a555c5ed" kindref="member">Vertex_list</ref><sp/>the_list;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>4;<sp/>i++)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>the_list.push_back(ch-&gt;vertex(i));</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>the_list;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="PersistentAlphaLaplacian_8cpp_1a35b212c9d8294610f52745b5a555c5ed" kindref="member">Vertex_list</ref><sp/><ref refid="namespacePersistentLaplacians_1a8b6dc89cc0afd68c219f8ebdaaa490f2" kindref="member">from</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="PersistentAlphaLaplacian_8cpp_1ab757b57094db65647a1f51c793464240" kindref="member">Facet</ref><sp/>&amp;fct)</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="PersistentAlphaLaplacian_8cpp_1a35b212c9d8294610f52745b5a555c5ed" kindref="member">Vertex_list</ref><sp/>the_list;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>4;<sp/>i++)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fct.second<sp/>!=<sp/>i)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>the_list.push_back(fct.first-&gt;vertex(i));</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>the_list;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="PersistentAlphaLaplacian_8cpp_1a35b212c9d8294610f52745b5a555c5ed" kindref="member">Vertex_list</ref><sp/><ref refid="namespacePersistentLaplacians_1a8b6dc89cc0afd68c219f8ebdaaa490f2" kindref="member">from</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="PersistentAlphaLaplacian_8cpp_1a059d548004c91470f1bf1df952e0b531" kindref="member">Edge</ref><sp/>&amp;edg)</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="PersistentAlphaLaplacian_8cpp_1a35b212c9d8294610f52745b5a555c5ed" kindref="member">Vertex_list</ref><sp/>the_list;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>4;<sp/>i++)</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((edg.second<sp/>==<sp/>i)<sp/>||<sp/>(edg.third<sp/>==<sp/>i))</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>the_list.push_back(edg.first-&gt;vertex(i));</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>the_list;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="PersistentAlphaLaplacian_8cpp_1a35b212c9d8294610f52745b5a555c5ed" kindref="member">Vertex_list</ref><sp/><ref refid="namespacePersistentLaplacians_1a8b6dc89cc0afd68c219f8ebdaaa490f2" kindref="member">from</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Alpha_shape_3::Vertex_handle<sp/>&amp;vh)</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="PersistentAlphaLaplacian_8cpp_1a35b212c9d8294610f52745b5a555c5ed" kindref="member">Vertex_list</ref><sp/>the_list;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>the_list.push_back(vh);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>the_list;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacePersistentLaplacians_1aaea7b6de09ffe44b94fcaa130f68b378" kindref="member">get_boundaries_and_filtrations</ref>(<ref refid="PersistentAlphaLaplacian_8cpp_1a82bec8c8364e784a54e7933a18a2ac3c" kindref="member">Simplex_tree</ref><sp/>simplex_tree,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim_max,<sp/><sp/>std::vector&lt;std::vector&lt;std::tuple&lt;int,int,int&gt;&gt;&gt;&amp;<sp/>boundaries_triples,std::vector&lt;std::vector&lt;filtration_type&gt;&gt;&amp;<sp/>filtrations){</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>give<sp/>each<sp/>simplex<sp/>a<sp/>unique<sp/>index<sp/>(assign_key)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>method<sp/>from<sp/>Gudhi<sp/>rips_persistence_via_boundary_matrix.cpp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>simplex_handle<sp/>:<sp/>simplex_tree.filtration_simplex_range()){</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>simplex_tree.assign_key(simplex_handle,<sp/>count++);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>int<sp/>max_dim<sp/>=<sp/>3;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//initialize<sp/>list<sp/>of<sp/>boundaries</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim<sp/>=<sp/>0;<sp/>dim<sp/>&lt;<sp/>dim_max;<sp/>dim++){</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boundaries_triples[dim]<sp/>=<sp/>std::vector&lt;std::tuple&lt;int,int,int&gt;&gt;();</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>initialize<sp/>list<sp/>of<sp/>filtrations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim<sp/>=<sp/>0;<sp/>dim<sp/>&lt;=<sp/>dim_max;<sp/>dim++){</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>filtrations[dim]<sp/>=<sp/>std::vector&lt;filtration_type&gt;();</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>iterate<sp/>over<sp/>all<sp/>simplices<sp/>to<sp/>store<sp/>their<sp/>boundary<sp/>information</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>f_simplex<sp/>:<sp/>simplex_tree.filtration_simplex_range())</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim_f<sp/>=<sp/>simplex_tree.dimension(f_simplex);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>store<sp/>filtration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>f_key<sp/>=<sp/>simplex_tree.key(f_simplex);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>filtrations[dim_f].push_back(simplex_tree.filtration(f_simplex));</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>loop<sp/>over<sp/>the<sp/>boundaries</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sign<sp/>=<sp/>1<sp/>-<sp/>2<sp/>*<sp/>(dim_f<sp/>%<sp/>2);<sp/></highlight><highlight class="comment">//<sp/>from<sp/>Gudhi<sp/>Persistent_cohomology.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>b_simplex<sp/>:<sp/>simplex_tree.boundary_simplex_range(f_simplex))</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boundaries_triples[dim_f-1].push_back(std::make_tuple(simplex_tree.key(b_simplex),</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f_key,</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sign));</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sign<sp/>=<sp/>-sign;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacePersistentLaplacians_1ae854648cbdf91ceb16c6fe07a6801989" kindref="member">alpha_points</ref>(std::vector&lt;Point&gt;&amp;<sp/>points,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim_max,<sp/>std::vector&lt;std::vector&lt;std::tuple&lt;int,int,int&gt;&gt;&gt;&amp;<sp/>boundaries_triples,std::vector&lt;std::vector&lt;filtration_type&gt;&gt;&amp;<sp/>filtrations){</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>alpha<sp/>shape<sp/>construction<sp/>from<sp/>points.<sp/>CGAL<sp/>has<sp/>a<sp/>strange<sp/>behavior<sp/>in<sp/>REGULARIZED<sp/>mode.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="PersistentAlphaLaplacian_8cpp_1ac15590d23eadee07a338251318bb07c5" kindref="member">Alpha_shape_3</ref><sp/>as(points.begin(),<sp/>points.end(),<sp/>0,<sp/>Alpha_shape_3::GENERAL);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>filtration<sp/>with<sp/>alpha<sp/>values<sp/>from<sp/>alpha<sp/>shape</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;Object&gt;<sp/>the_objects;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;Alpha_value_type&gt;<sp/>the_alpha_values;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="PersistentAlphaLaplacian_8cpp_1a4d765140fe1e9a524aec03f60a769c1f" kindref="member">Dispatch</ref><sp/>disp<sp/>=<sp/>CGAL::dispatch_output&lt;Object,<sp/>Alpha_value_type&gt;(std::back_inserter(the_objects),</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::back_inserter(the_alpha_values));</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>as.filtration_with_alpha_values(disp);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Alpha_shape_3::size_type<sp/>count_vertices<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Alpha_shape_3::size_type<sp/>count_edges<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Alpha_shape_3::size_type<sp/>count_facets<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Alpha_shape_3::size_type<sp/>count_cells<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Loop<sp/>on<sp/>objects<sp/>vector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="PersistentAlphaLaplacian_8cpp_1a35b212c9d8294610f52745b5a555c5ed" kindref="member">Vertex_list</ref><sp/>vertex_list;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="PersistentAlphaLaplacian_8cpp_1a82bec8c8364e784a54e7933a18a2ac3c" kindref="member">Simplex_tree</ref><sp/>simplex_tree;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="PersistentAlphaLaplacian_8cpp_1a0f64464490a47368d40dacca1058c6fd" kindref="member">Alpha_shape_simplex_tree_map</ref><sp/>map_cgal_simplex_tree;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;Alpha_value_type&gt;::iterator<sp/>the_alpha_value_iterator<sp/>=<sp/>the_alpha_values.begin();</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>object_iterator<sp/>:<sp/>the_objects)</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Retrieve<sp/>Alpha<sp/>shape<sp/>vertex<sp/>list<sp/>from<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="PersistentAlphaLaplacian_8cpp_1a29ee975320b9ec3b14074ce336d7b88c" kindref="member">Cell_handle</ref><sp/>*cell<sp/>=<sp/>CGAL::object_cast&lt;Cell_handle&gt;(&amp;object_iterator))</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vertex_list<sp/>=<sp/><ref refid="namespacePersistentLaplacians_1a8b6dc89cc0afd68c219f8ebdaaa490f2" kindref="member">from</ref>(*cell);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>count_cells++;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="PersistentAlphaLaplacian_8cpp_1ab757b57094db65647a1f51c793464240" kindref="member">Facet</ref><sp/>*facet<sp/>=<sp/>CGAL::object_cast&lt;Facet&gt;(&amp;object_iterator))</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vertex_list<sp/>=<sp/><ref refid="namespacePersistentLaplacians_1a8b6dc89cc0afd68c219f8ebdaaa490f2" kindref="member">from</ref>(*facet);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>count_facets++;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="PersistentAlphaLaplacian_8cpp_1a059d548004c91470f1bf1df952e0b531" kindref="member">Edge</ref><sp/>*edge<sp/>=<sp/>CGAL::object_cast&lt;Edge&gt;(&amp;object_iterator))</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vertex_list<sp/>=<sp/><ref refid="namespacePersistentLaplacians_1a8b6dc89cc0afd68c219f8ebdaaa490f2" kindref="member">from</ref>(*edge);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>count_edges++;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Alpha_shape_3::Vertex_handle<sp/>*vertex<sp/>=</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CGAL::object_cast&lt;Alpha_shape_3::Vertex_handle&gt;(&amp;object_iterator))</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>count_vertices++;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vertex_list<sp/>=<sp/><ref refid="namespacePersistentLaplacians_1a8b6dc89cc0afd68c219f8ebdaaa490f2" kindref="member">from</ref>(*vertex);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Construction<sp/>of<sp/>the<sp/>vector<sp/>of<sp/>simplex_tree<sp/>vertex<sp/>from<sp/>list<sp/>of<sp/>alpha_shapes<sp/>vertex</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="PersistentAlphaLaplacian_8cpp_1a879061de84a399d9088146efb84f6f2a" kindref="member">Simplex_tree_vector_vertex</ref><sp/>the_simplex_tree;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>the_alpha_shape_vertex<sp/>:<sp/>vertex_list)</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Alpha_shape_simplex_tree_map::iterator<sp/>the_map_iterator<sp/>=<sp/>map_cgal_simplex_tree.find(the_alpha_shape_vertex);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(the_map_iterator<sp/>==<sp/>map_cgal_simplex_tree.end())</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>alpha<sp/>shape<sp/>not<sp/>found</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="PersistentAlphaLaplacian_8cpp_1ad71c42cead428458ea36886ad73458f3" kindref="member">Simplex_tree_vertex</ref><sp/>vertex<sp/>=<sp/>map_cgal_simplex_tree.size();</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>the_simplex_tree.push_back(vertex);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map_cgal_simplex_tree.insert(<ref refid="PersistentAlphaLaplacian_8cpp_1ae0d79f0749827b256acd7ef64da29e4d" kindref="member">Alpha_shape_simplex_tree_pair</ref>(the_alpha_shape_vertex,<sp/>vertex));</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>alpha<sp/>shape<sp/>found</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="PersistentAlphaLaplacian_8cpp_1ad71c42cead428458ea36886ad73458f3" kindref="member">Simplex_tree_vertex</ref><sp/>vertex<sp/>=<sp/>the_map_iterator-&gt;second;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>the_simplex_tree.push_back(vertex);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Construction<sp/>of<sp/>the<sp/>simplex_tree</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>simplex_tree.insert_simplex(the_simplex_tree,<sp/>std::sqrt(*the_alpha_value_iterator));</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(the_alpha_value_iterator<sp/>!=<sp/>the_alpha_values.end())</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++the_alpha_value_iterator;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;This<sp/>shall<sp/>not<sp/>happen&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePersistentLaplacians_1aaea7b6de09ffe44b94fcaa130f68b378" kindref="member">get_boundaries_and_filtrations</ref>(simplex_tree,<sp/>dim_max,<sp/>boundaries_triples,<sp/>filtrations);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacePersistentLaplacians_1aa8578e00f53b31867376ac329cd8b9eb" kindref="member">alpha_OFF</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>filename,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim_max,<sp/>std::vector&lt;std::vector&lt;std::tuple&lt;int,int,int&gt;&gt;&gt;&amp;<sp/>boundaries_triples,std::vector&lt;std::vector&lt;filtration_type&gt;&gt;&amp;<sp/>filtrations){</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Read<sp/>points<sp/>from<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>offInputFile(filename);</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Read<sp/>the<sp/>OFF<sp/>file<sp/>(input<sp/>file<sp/>name<sp/>given<sp/>as<sp/>parameter)<sp/>and<sp/>triangulate<sp/>points</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Gudhi::Points_3D_off_reader&lt;Point&gt;<sp/>off_reader(offInputFile);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>the<sp/>read<sp/>operation<sp/>was<sp/>correct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!off_reader.is_valid())</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Unable<sp/>to<sp/>read<sp/>file<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>filename<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Retrieve<sp/>the<sp/>triangulation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;Point&gt;<sp/>points<sp/>=<sp/>off_reader.get_point_cloud();</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePersistentLaplacians_1ae854648cbdf91ceb16c6fe07a6801989" kindref="member">alpha_points</ref>(points,<sp/>dim_max,<sp/>boundaries_triples,<sp/>filtrations);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="261"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp"/>
+  </compounddef>
+</doxygen>

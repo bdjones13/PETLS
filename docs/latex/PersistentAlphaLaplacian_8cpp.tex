@@ -1,0 +1,194 @@
+\hypertarget{PersistentAlphaLaplacian_8cpp}{}\doxysection{/home/jones657/\+Persistent\+Laplacians/cpp/src/variants/\+Persistent\+Alpha\+Laplacian.cpp File Reference}
+\label{PersistentAlphaLaplacian_8cpp}\index{/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp@{/home/jones657/PersistentLaplacians/cpp/src/variants/PersistentAlphaLaplacian.cpp}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+{\ttfamily \#include \char`\"{}../../include/\+Persistent\+Laplacians\+\_\+headers/variants/\+Persistent\+Alpha\+Laplacian.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$gudhi/\+Simplex\+\_\+tree.\+h$>$}\newline
+{\ttfamily \#include $<$gudhi/\+Points\+\_\+3\+D\+\_\+off\+\_\+io.\+h$>$}\newline
+{\ttfamily \#include $<$boost/variant.\+hpp$>$}\newline
+{\ttfamily \#include $<$CGAL/\+Exact\+\_\+predicates\+\_\+inexact\+\_\+constructions\+\_\+kernel.\+h$>$}\newline
+{\ttfamily \#include $<$CGAL/\+Delaunay\+\_\+triangulation\+\_\+3.\+h$>$}\newline
+{\ttfamily \#include $<$CGAL/\+Alpha\+\_\+shape\+\_\+3.\+h$>$}\newline
+{\ttfamily \#include $<$CGAL/\+Alpha\+\_\+shape\+\_\+vertex\+\_\+base\+\_\+3.\+h$>$}\newline
+{\ttfamily \#include $<$CGAL/\+Alpha\+\_\+shape\+\_\+cell\+\_\+base\+\_\+3.\+h$>$}\newline
+{\ttfamily \#include $<$CGAL/iterator.\+h$>$}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacePersistentLaplacians}{Persistent\+Laplacians}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef CGAL\+::\+Exact\+\_\+predicates\+\_\+inexact\+\_\+constructions\+\_\+kernel \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a69d52492717758b0992a45a39f7823c0}{Kernel}}
+\item 
+typedef CGAL\+::\+Alpha\+\_\+shape\+\_\+vertex\+\_\+base\+\_\+3$<$ \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a69d52492717758b0992a45a39f7823c0}{Kernel}} $>$ \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_abf1f39bf535adfc15531969495d26ab7}{Vb}}
+\item 
+typedef CGAL\+::\+Alpha\+\_\+shape\+\_\+cell\+\_\+base\+\_\+3$<$ \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a69d52492717758b0992a45a39f7823c0}{Kernel}} $>$ \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_afdf57fbb60e4a96e14e05b5be7e08d45}{Fb}}
+\item 
+typedef CGAL\+::\+Triangulation\+\_\+data\+\_\+structure\+\_\+3$<$ \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_abf1f39bf535adfc15531969495d26ab7}{Vb}}, \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_afdf57fbb60e4a96e14e05b5be7e08d45}{Fb}} $>$ \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a6cae290580c18ff11d3bbe631bd0e57c}{Tds}}
+\item 
+typedef CGAL\+::\+Delaunay\+\_\+triangulation\+\_\+3$<$ \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a69d52492717758b0992a45a39f7823c0}{Kernel}}, \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a6cae290580c18ff11d3bbe631bd0e57c}{Tds}} $>$ \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a6889e236656c68572abd912cd2391b5e}{Triangulation\+\_\+3}}
+\item 
+typedef CGAL\+::\+Alpha\+\_\+shape\+\_\+3$<$ \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a6889e236656c68572abd912cd2391b5e}{Triangulation\+\_\+3}} $>$ \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_ac15590d23eadee07a338251318bb07c5}{Alpha\+\_\+shape\+\_\+3}}
+\item 
+typedef Kernel\+::\+Point\+\_\+3 \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a34f5250ef707a575baad36c8a213ba4a}{Point}}
+\item 
+typedef Alpha\+\_\+shape\+\_\+3\+::\+FT \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a9985cbec50dee4788ae578cd5680058f}{Alpha\+\_\+value\+\_\+type}}
+\item 
+typedef CGAL\+::\+Object \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a33528ae3e224f3cae20ea9c1a4604b08}{Object}}
+\item 
+typedef CGAL\+::\+Dispatch\+\_\+output\+\_\+iterator$<$ CGAL\+::cpp11\+::tuple$<$ \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a33528ae3e224f3cae20ea9c1a4604b08}{Object}}, \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a9985cbec50dee4788ae578cd5680058f}{Alpha\+\_\+value\+\_\+type}} $>$, CGAL\+::cpp11\+::tuple$<$ std\+::back\+\_\+insert\+\_\+iterator$<$ std\+::vector$<$ \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a33528ae3e224f3cae20ea9c1a4604b08}{Object}} $>$ $>$, std\+::back\+\_\+insert\+\_\+iterator$<$ std\+::vector$<$ \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a9985cbec50dee4788ae578cd5680058f}{Alpha\+\_\+value\+\_\+type}} $>$ $>$ $>$ $>$ \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a4d765140fe1e9a524aec03f60a769c1f}{Dispatch}}
+\item 
+typedef Alpha\+\_\+shape\+\_\+3\+::\+Cell\+\_\+handle \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a29ee975320b9ec3b14074ce336d7b88c}{Cell\+\_\+handle}}
+\item 
+typedef Alpha\+\_\+shape\+\_\+3\+::\+Facet \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_ab757b57094db65647a1f51c793464240}{Facet}}
+\item 
+typedef Alpha\+\_\+shape\+\_\+3\+::\+Edge \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a059d548004c91470f1bf1df952e0b531}{Edge}}
+\item 
+typedef std\+::list$<$ Alpha\+\_\+shape\+\_\+3\+::\+Vertex\+\_\+handle $>$ \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a35b212c9d8294610f52745b5a555c5ed}{Vertex\+\_\+list}}
+\item 
+typedef Gudhi\+::\+Simplex\+\_\+tree \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a82bec8c8364e784a54e7933a18a2ac3c}{Simplex\+\_\+tree}}
+\item 
+typedef Simplex\+\_\+tree\+::\+Vertex\+\_\+handle \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_ad71c42cead428458ea36886ad73458f3}{Simplex\+\_\+tree\+\_\+vertex}}
+\item 
+typedef std\+::map$<$ Alpha\+\_\+shape\+\_\+3\+::\+Vertex\+\_\+handle, \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_ad71c42cead428458ea36886ad73458f3}{Simplex\+\_\+tree\+\_\+vertex}} $>$ \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a0f64464490a47368d40dacca1058c6fd}{Alpha\+\_\+shape\+\_\+simplex\+\_\+tree\+\_\+map}}
+\item 
+typedef std\+::pair$<$ Alpha\+\_\+shape\+\_\+3\+::\+Vertex\+\_\+handle, \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_ad71c42cead428458ea36886ad73458f3}{Simplex\+\_\+tree\+\_\+vertex}} $>$ \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_ae0d79f0749827b256acd7ef64da29e4d}{Alpha\+\_\+shape\+\_\+simplex\+\_\+tree\+\_\+pair}}
+\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_ad71c42cead428458ea36886ad73458f3}{Simplex\+\_\+tree\+\_\+vertex}} $>$ \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a879061de84a399d9088146efb84f6f2a}{Simplex\+\_\+tree\+\_\+vector\+\_\+vertex}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespacePersistentLaplacians_ae854648cbdf91ceb16c6fe07a6801989}{Persistent\+Laplacians\+::alpha\+\_\+points}} (std\+::vector$<$ \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a34f5250ef707a575baad36c8a213ba4a}{Point}} $>$ \&points, int dim\+\_\+max, std\+::vector$<$ std\+::vector$<$ std\+::tuple$<$ int, int, int $>$$>$$>$ \&boundaries\+\_\+triples, std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$$>$ \&filtrations)
+\item 
+void \mbox{\hyperlink{namespacePersistentLaplacians_aa8578e00f53b31867376ac329cd8b9eb}{Persistent\+Laplacians\+::alpha\+\_\+\+OFF}} (const char $\ast$filename, int dim\+\_\+max, std\+::vector$<$ std\+::vector$<$ std\+::tuple$<$ int, int, int $>$$>$$>$ \&boundaries\+\_\+triples, std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$$>$ \&filtrations)
+\item 
+\mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a35b212c9d8294610f52745b5a555c5ed}{Vertex\+\_\+list}} \mbox{\hyperlink{namespacePersistentLaplacians_a06d02bd9fe76eee39b28d8b672df0ca3}{Persistent\+Laplacians\+::from}} (const \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a29ee975320b9ec3b14074ce336d7b88c}{Cell\+\_\+handle}} \&ch)
+\item 
+\mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a35b212c9d8294610f52745b5a555c5ed}{Vertex\+\_\+list}} \mbox{\hyperlink{namespacePersistentLaplacians_a1a687cbb13d72b6c94ff1e6a7414648a}{Persistent\+Laplacians\+::from}} (const \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_ab757b57094db65647a1f51c793464240}{Facet}} \&fct)
+\item 
+\mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a35b212c9d8294610f52745b5a555c5ed}{Vertex\+\_\+list}} \mbox{\hyperlink{namespacePersistentLaplacians_a1ccbae2ac3385b0b00fbcf791101763c}{Persistent\+Laplacians\+::from}} (const \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a059d548004c91470f1bf1df952e0b531}{Edge}} \&edg)
+\item 
+\mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a35b212c9d8294610f52745b5a555c5ed}{Vertex\+\_\+list}} \mbox{\hyperlink{namespacePersistentLaplacians_a8b6dc89cc0afd68c219f8ebdaaa490f2}{Persistent\+Laplacians\+::from}} (const Alpha\+\_\+shape\+\_\+3\+::\+Vertex\+\_\+handle \&vh)
+\item 
+void \mbox{\hyperlink{namespacePersistentLaplacians_aaea7b6de09ffe44b94fcaa130f68b378}{Persistent\+Laplacians\+::get\+\_\+boundaries\+\_\+and\+\_\+filtrations}} (\mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a82bec8c8364e784a54e7933a18a2ac3c}{Simplex\+\_\+tree}} simplex\+\_\+tree, int dim\+\_\+max, std\+::vector$<$ std\+::vector$<$ std\+::tuple$<$ int, int, int $>$$>$$>$ \&boundaries\+\_\+triples, std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$$>$ \&filtrations)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{PersistentAlphaLaplacian_8cpp_ac15590d23eadee07a338251318bb07c5}\label{PersistentAlphaLaplacian_8cpp_ac15590d23eadee07a338251318bb07c5}} 
+\index{PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}!Alpha\_shape\_3@{Alpha\_shape\_3}}
+\index{Alpha\_shape\_3@{Alpha\_shape\_3}!PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}}
+\doxysubsubsection{\texorpdfstring{Alpha\_shape\_3}{Alpha\_shape\_3}}
+{\footnotesize\ttfamily typedef CGAL\+::\+Alpha\+\_\+shape\+\_\+3$<$\mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a6889e236656c68572abd912cd2391b5e}{Triangulation\+\_\+3}}$>$ \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_ac15590d23eadee07a338251318bb07c5}{Alpha\+\_\+shape\+\_\+3}}}
+
+\mbox{\Hypertarget{PersistentAlphaLaplacian_8cpp_a0f64464490a47368d40dacca1058c6fd}\label{PersistentAlphaLaplacian_8cpp_a0f64464490a47368d40dacca1058c6fd}} 
+\index{PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}!Alpha\_shape\_simplex\_tree\_map@{Alpha\_shape\_simplex\_tree\_map}}
+\index{Alpha\_shape\_simplex\_tree\_map@{Alpha\_shape\_simplex\_tree\_map}!PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}}
+\doxysubsubsection{\texorpdfstring{Alpha\_shape\_simplex\_tree\_map}{Alpha\_shape\_simplex\_tree\_map}}
+{\footnotesize\ttfamily typedef std\+::map$<$Alpha\+\_\+shape\+\_\+3\+::\+Vertex\+\_\+handle, \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_ad71c42cead428458ea36886ad73458f3}{Simplex\+\_\+tree\+\_\+vertex}}$>$ \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a0f64464490a47368d40dacca1058c6fd}{Alpha\+\_\+shape\+\_\+simplex\+\_\+tree\+\_\+map}}}
+
+\mbox{\Hypertarget{PersistentAlphaLaplacian_8cpp_ae0d79f0749827b256acd7ef64da29e4d}\label{PersistentAlphaLaplacian_8cpp_ae0d79f0749827b256acd7ef64da29e4d}} 
+\index{PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}!Alpha\_shape\_simplex\_tree\_pair@{Alpha\_shape\_simplex\_tree\_pair}}
+\index{Alpha\_shape\_simplex\_tree\_pair@{Alpha\_shape\_simplex\_tree\_pair}!PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}}
+\doxysubsubsection{\texorpdfstring{Alpha\_shape\_simplex\_tree\_pair}{Alpha\_shape\_simplex\_tree\_pair}}
+{\footnotesize\ttfamily typedef std\+::pair$<$Alpha\+\_\+shape\+\_\+3\+::\+Vertex\+\_\+handle, \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_ad71c42cead428458ea36886ad73458f3}{Simplex\+\_\+tree\+\_\+vertex}}$>$ \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_ae0d79f0749827b256acd7ef64da29e4d}{Alpha\+\_\+shape\+\_\+simplex\+\_\+tree\+\_\+pair}}}
+
+\mbox{\Hypertarget{PersistentAlphaLaplacian_8cpp_a9985cbec50dee4788ae578cd5680058f}\label{PersistentAlphaLaplacian_8cpp_a9985cbec50dee4788ae578cd5680058f}} 
+\index{PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}!Alpha\_value\_type@{Alpha\_value\_type}}
+\index{Alpha\_value\_type@{Alpha\_value\_type}!PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}}
+\doxysubsubsection{\texorpdfstring{Alpha\_value\_type}{Alpha\_value\_type}}
+{\footnotesize\ttfamily typedef Alpha\+\_\+shape\+\_\+3\+::\+FT \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a9985cbec50dee4788ae578cd5680058f}{Alpha\+\_\+value\+\_\+type}}}
+
+\mbox{\Hypertarget{PersistentAlphaLaplacian_8cpp_a29ee975320b9ec3b14074ce336d7b88c}\label{PersistentAlphaLaplacian_8cpp_a29ee975320b9ec3b14074ce336d7b88c}} 
+\index{PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}!Cell\_handle@{Cell\_handle}}
+\index{Cell\_handle@{Cell\_handle}!PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}}
+\doxysubsubsection{\texorpdfstring{Cell\_handle}{Cell\_handle}}
+{\footnotesize\ttfamily typedef Alpha\+\_\+shape\+\_\+3\+::\+Cell\+\_\+handle \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a29ee975320b9ec3b14074ce336d7b88c}{Cell\+\_\+handle}}}
+
+\mbox{\Hypertarget{PersistentAlphaLaplacian_8cpp_a4d765140fe1e9a524aec03f60a769c1f}\label{PersistentAlphaLaplacian_8cpp_a4d765140fe1e9a524aec03f60a769c1f}} 
+\index{PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}!Dispatch@{Dispatch}}
+\index{Dispatch@{Dispatch}!PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}}
+\doxysubsubsection{\texorpdfstring{Dispatch}{Dispatch}}
+{\footnotesize\ttfamily typedef CGAL\+::\+Dispatch\+\_\+output\+\_\+iterator$<$ CGAL\+::cpp11\+::tuple$<$\mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a33528ae3e224f3cae20ea9c1a4604b08}{Object}}, \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a9985cbec50dee4788ae578cd5680058f}{Alpha\+\_\+value\+\_\+type}}$>$, CGAL\+::cpp11\+::tuple$<$std\+::back\+\_\+insert\+\_\+iterator$<$std\+::vector$<$\mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a33528ae3e224f3cae20ea9c1a4604b08}{Object}}$>$ $>$, std\+::back\+\_\+insert\+\_\+iterator$<$std\+::vector$<$\mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a9985cbec50dee4788ae578cd5680058f}{Alpha\+\_\+value\+\_\+type}}$>$ $>$ $>$ $>$ \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a4d765140fe1e9a524aec03f60a769c1f}{Dispatch}}}
+
+\mbox{\Hypertarget{PersistentAlphaLaplacian_8cpp_a059d548004c91470f1bf1df952e0b531}\label{PersistentAlphaLaplacian_8cpp_a059d548004c91470f1bf1df952e0b531}} 
+\index{PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}!Edge@{Edge}}
+\index{Edge@{Edge}!PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}}
+\doxysubsubsection{\texorpdfstring{Edge}{Edge}}
+{\footnotesize\ttfamily typedef Alpha\+\_\+shape\+\_\+3\+::\+Edge \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a059d548004c91470f1bf1df952e0b531}{Edge}}}
+
+\mbox{\Hypertarget{PersistentAlphaLaplacian_8cpp_ab757b57094db65647a1f51c793464240}\label{PersistentAlphaLaplacian_8cpp_ab757b57094db65647a1f51c793464240}} 
+\index{PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}!Facet@{Facet}}
+\index{Facet@{Facet}!PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}}
+\doxysubsubsection{\texorpdfstring{Facet}{Facet}}
+{\footnotesize\ttfamily typedef Alpha\+\_\+shape\+\_\+3\+::\+Facet \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_ab757b57094db65647a1f51c793464240}{Facet}}}
+
+\mbox{\Hypertarget{PersistentAlphaLaplacian_8cpp_afdf57fbb60e4a96e14e05b5be7e08d45}\label{PersistentAlphaLaplacian_8cpp_afdf57fbb60e4a96e14e05b5be7e08d45}} 
+\index{PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}!Fb@{Fb}}
+\index{Fb@{Fb}!PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}}
+\doxysubsubsection{\texorpdfstring{Fb}{Fb}}
+{\footnotesize\ttfamily typedef CGAL\+::\+Alpha\+\_\+shape\+\_\+cell\+\_\+base\+\_\+3$<$\mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a69d52492717758b0992a45a39f7823c0}{Kernel}}$>$ \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_afdf57fbb60e4a96e14e05b5be7e08d45}{Fb}}}
+
+\mbox{\Hypertarget{PersistentAlphaLaplacian_8cpp_a69d52492717758b0992a45a39f7823c0}\label{PersistentAlphaLaplacian_8cpp_a69d52492717758b0992a45a39f7823c0}} 
+\index{PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}!Kernel@{Kernel}}
+\index{Kernel@{Kernel}!PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}}
+\doxysubsubsection{\texorpdfstring{Kernel}{Kernel}}
+{\footnotesize\ttfamily typedef CGAL\+::\+Exact\+\_\+predicates\+\_\+inexact\+\_\+constructions\+\_\+kernel \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a69d52492717758b0992a45a39f7823c0}{Kernel}}}
+
+\mbox{\Hypertarget{PersistentAlphaLaplacian_8cpp_a33528ae3e224f3cae20ea9c1a4604b08}\label{PersistentAlphaLaplacian_8cpp_a33528ae3e224f3cae20ea9c1a4604b08}} 
+\index{PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}!Object@{Object}}
+\index{Object@{Object}!PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}}
+\doxysubsubsection{\texorpdfstring{Object}{Object}}
+{\footnotesize\ttfamily typedef CGAL\+::\+Object \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a33528ae3e224f3cae20ea9c1a4604b08}{Object}}}
+
+\mbox{\Hypertarget{PersistentAlphaLaplacian_8cpp_a34f5250ef707a575baad36c8a213ba4a}\label{PersistentAlphaLaplacian_8cpp_a34f5250ef707a575baad36c8a213ba4a}} 
+\index{PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}!Point@{Point}}
+\index{Point@{Point}!PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}}
+\doxysubsubsection{\texorpdfstring{Point}{Point}}
+{\footnotesize\ttfamily typedef Kernel\+::\+Point\+\_\+3 \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a34f5250ef707a575baad36c8a213ba4a}{Point}}}
+
+\mbox{\Hypertarget{PersistentAlphaLaplacian_8cpp_a82bec8c8364e784a54e7933a18a2ac3c}\label{PersistentAlphaLaplacian_8cpp_a82bec8c8364e784a54e7933a18a2ac3c}} 
+\index{PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}!Simplex\_tree@{Simplex\_tree}}
+\index{Simplex\_tree@{Simplex\_tree}!PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}}
+\doxysubsubsection{\texorpdfstring{Simplex\_tree}{Simplex\_tree}}
+{\footnotesize\ttfamily typedef Gudhi\+::\+Simplex\+\_\+tree \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a82bec8c8364e784a54e7933a18a2ac3c}{Simplex\+\_\+tree}}}
+
+\mbox{\Hypertarget{PersistentAlphaLaplacian_8cpp_a879061de84a399d9088146efb84f6f2a}\label{PersistentAlphaLaplacian_8cpp_a879061de84a399d9088146efb84f6f2a}} 
+\index{PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}!Simplex\_tree\_vector\_vertex@{Simplex\_tree\_vector\_vertex}}
+\index{Simplex\_tree\_vector\_vertex@{Simplex\_tree\_vector\_vertex}!PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}}
+\doxysubsubsection{\texorpdfstring{Simplex\_tree\_vector\_vertex}{Simplex\_tree\_vector\_vertex}}
+{\footnotesize\ttfamily typedef std\+::vector$<$\mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_ad71c42cead428458ea36886ad73458f3}{Simplex\+\_\+tree\+\_\+vertex}}$>$ \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a879061de84a399d9088146efb84f6f2a}{Simplex\+\_\+tree\+\_\+vector\+\_\+vertex}}}
+
+\mbox{\Hypertarget{PersistentAlphaLaplacian_8cpp_ad71c42cead428458ea36886ad73458f3}\label{PersistentAlphaLaplacian_8cpp_ad71c42cead428458ea36886ad73458f3}} 
+\index{PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}!Simplex\_tree\_vertex@{Simplex\_tree\_vertex}}
+\index{Simplex\_tree\_vertex@{Simplex\_tree\_vertex}!PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}}
+\doxysubsubsection{\texorpdfstring{Simplex\_tree\_vertex}{Simplex\_tree\_vertex}}
+{\footnotesize\ttfamily typedef Simplex\+\_\+tree\+::\+Vertex\+\_\+handle \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_ad71c42cead428458ea36886ad73458f3}{Simplex\+\_\+tree\+\_\+vertex}}}
+
+\mbox{\Hypertarget{PersistentAlphaLaplacian_8cpp_a6cae290580c18ff11d3bbe631bd0e57c}\label{PersistentAlphaLaplacian_8cpp_a6cae290580c18ff11d3bbe631bd0e57c}} 
+\index{PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}!Tds@{Tds}}
+\index{Tds@{Tds}!PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}}
+\doxysubsubsection{\texorpdfstring{Tds}{Tds}}
+{\footnotesize\ttfamily typedef CGAL\+::\+Triangulation\+\_\+data\+\_\+structure\+\_\+3$<$\mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_abf1f39bf535adfc15531969495d26ab7}{Vb}}, \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_afdf57fbb60e4a96e14e05b5be7e08d45}{Fb}}$>$ \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a6cae290580c18ff11d3bbe631bd0e57c}{Tds}}}
+
+\mbox{\Hypertarget{PersistentAlphaLaplacian_8cpp_a6889e236656c68572abd912cd2391b5e}\label{PersistentAlphaLaplacian_8cpp_a6889e236656c68572abd912cd2391b5e}} 
+\index{PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}!Triangulation\_3@{Triangulation\_3}}
+\index{Triangulation\_3@{Triangulation\_3}!PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}}
+\doxysubsubsection{\texorpdfstring{Triangulation\_3}{Triangulation\_3}}
+{\footnotesize\ttfamily typedef CGAL\+::\+Delaunay\+\_\+triangulation\+\_\+3$<$\mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a69d52492717758b0992a45a39f7823c0}{Kernel}}, \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a6cae290580c18ff11d3bbe631bd0e57c}{Tds}}$>$ \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a6889e236656c68572abd912cd2391b5e}{Triangulation\+\_\+3}}}
+
+\mbox{\Hypertarget{PersistentAlphaLaplacian_8cpp_abf1f39bf535adfc15531969495d26ab7}\label{PersistentAlphaLaplacian_8cpp_abf1f39bf535adfc15531969495d26ab7}} 
+\index{PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}!Vb@{Vb}}
+\index{Vb@{Vb}!PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}}
+\doxysubsubsection{\texorpdfstring{Vb}{Vb}}
+{\footnotesize\ttfamily typedef CGAL\+::\+Alpha\+\_\+shape\+\_\+vertex\+\_\+base\+\_\+3$<$\mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a69d52492717758b0992a45a39f7823c0}{Kernel}}$>$ \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_abf1f39bf535adfc15531969495d26ab7}{Vb}}}
+
+\mbox{\Hypertarget{PersistentAlphaLaplacian_8cpp_a35b212c9d8294610f52745b5a555c5ed}\label{PersistentAlphaLaplacian_8cpp_a35b212c9d8294610f52745b5a555c5ed}} 
+\index{PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}!Vertex\_list@{Vertex\_list}}
+\index{Vertex\_list@{Vertex\_list}!PersistentAlphaLaplacian.cpp@{PersistentAlphaLaplacian.cpp}}
+\doxysubsubsection{\texorpdfstring{Vertex\_list}{Vertex\_list}}
+{\footnotesize\ttfamily typedef std\+::list$<$Alpha\+\_\+shape\+\_\+3\+::\+Vertex\+\_\+handle$>$ \mbox{\hyperlink{PersistentAlphaLaplacian_8cpp_a35b212c9d8294610f52745b5a555c5ed}{Vertex\+\_\+list}}}
+

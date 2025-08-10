@@ -1,0 +1,30 @@
+#ifndef PERSISTENTLAPLACIANS_LIBRARY_H
+#define PERSISTENTLAPLACIANS_LIBRARY_H
+
+#include "petls_headers/typedefs.hpp"
+
+#include "petls_headers/petls.hpp"
+
+#include "petls_headers/core/Complex.hpp"
+#include "petls_headers/core/FilteredBoundaryMatrix.hpp"
+// #include "petls_headers/core/Filtration_Index_Pair.hpp"
+// #include "petls_headers/core/Simplex.hpp"
+
+
+#include "petls_headers/eigenvalues/eigs_algorithms.hpp"
+#include "petls_headers/core/up_algorithms.hpp"
+
+
+#include "petls_headers/variants/dFlag.hpp"
+// #include "petls_headers/variants/PersistentHyperdigraphLaplacian.hpp"
+// #include "petls_headers/variants/PersistentHypergraphLaplacian.hpp"
+// #include "petls_headers/variants/PersistentPathLaplacian.hpp"
+#include "petls_headers/variants/Rips.hpp"
+#include "petls_headers/variants/PersistentSheafLaplacian.hpp"
+#include "petls_headers/variants/sheaf_simplex_tree.hpp"
+
+#ifdef PETLS_USE_ALPHA_COMPLEX
+#include "petls_headers/variants/Alpha.hpp"
+#endif
+
+#endif

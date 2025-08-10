@@ -1,0 +1,74 @@
+name: Build
+
+on: 
+  # push:
+  workflow_dispatch:
+  release:
+    types:
+      - published
+
+jobs:
+  build_wheels:
+    name: Build wheels on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        # macos-13 is an intel runner, macos-14 is apple silicon
+        os: [ubuntu-22.04]
+        # , windows-latest, macos-13, macos-14]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build wheels
+        uses: pypa/cibuildwheel@v2.23.3
+        env:
+          CIBW_MANYLINUX_X86_64_IMAGE: manylinux_2_28 # https://github.com/pypa/manylinux, https://cibuildwheel.pypa.io/en/1.x/options/#manylinux-image
+           # dnf is equivalent to apt-get or yum but for AlmaLinux, which is what manylinux_2_28 is based on
+          CIBW_BEFORE_ALL: >
+            dnf install -y boost-devel &&
+            dnf install -y CGAL-devel
+          CIBW_BUILD: cp310-manylinux_x86_64 cp312-manylinux_x86_64
+          CIBW_TEST_REQUIRES: pytest numpy scipy matplotlib
+          CIBW_TEST_COMMAND: python -m pytest {project}/tests/core
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cibw-wheels-${{ matrix.os }}-${{ strategy.job-index }}
+          path: ./wheelhouse/*.whl
+
+
+  build_sdist:
+    name: Source distribution
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - run: pipx run build --sdist
+      - uses: actions/upload-artifact@v4
+        with:
+         name: cibw-sdist
+         path: dist/*.tar.gz
+  
+
+  publish_pypi:
+    name: Publish PyPI
+    needs:
+      - build_wheels
+      - build_sdist
+    runs-on: ubuntu-latest
+    if: github.event_name == 'release' && github.event.action == 'published'
+    steps:
+      - name: download all the dists
+        uses: actions/download-artifact@v4
+        with:
+          pattern: cibw-*
+          path: dist
+          merge-multiple: true
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          repository-url: https://test.pypi.org/legacy/
+          password: ${{ secrets.testpypi_token }}

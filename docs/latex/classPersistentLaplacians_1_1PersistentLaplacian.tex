@@ -1,0 +1,601 @@
+\hypertarget{classPersistentLaplacians_1_1PersistentLaplacian}{}\doxysection{Persistent\+Laplacians\+::Persistent\+Laplacian$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$ Class Template Reference}
+\label{classPersistentLaplacians_1_1PersistentLaplacian}\index{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}}
+
+
+{\ttfamily \#include $<$Persistent\+Laplacian.\+hpp$>$}
+
+Inheritance diagram for Persistent\+Laplacians\+::Persistent\+Laplacian$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classPersistentLaplacians_1_1PersistentLaplacian}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_a55e983673494944131ff4ea0eb300ab2}{Persistent\+Laplacian}} ()
+\item 
+\mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_a6edcfb7daaa0df8c9b69d01b28932dbc}{Persistent\+Laplacian}} (std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_af75f469c1ca3f8752d6f67a115e57af4}{Sparse\+Matrix\+Int}} $>$ boundaries, std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$$>$ filtrations)
+\item 
+\mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_ab2f8ae87e04008134820ba126ac25937}{$\sim$\+Persistent\+Laplacian}} ()
+\item 
+void \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_ae1d2e11b09e891608b6332f88cfb431d}{set\+\_\+boundaries\+\_\+filtrations}} (std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_af75f469c1ca3f8752d6f67a115e57af4}{Sparse\+Matrix\+Int}} $>$ boundaries, std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$$>$ filtrations)
+\item 
+void \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_a9fbc57f868cb9d1c6ec951692f1b71ae}{set\+\_\+verbose}} (bool \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_a8da20628a8cd90cf31f86020a6c6fc15}{verbose}})
+\item 
+void \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_acf0f8a6cf4b4b49447871a9b5f04d856}{set\+\_\+flipped}} (bool \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_af9fb8be1b79c7e75293720cafa6c9a26}{use\+\_\+flipped}})
+\item 
+void \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_a1e23706e72d592f27a108cc7d075d48a}{get\+\_\+L}} (int dim, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} a, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} b, \mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}} \&L)
+\item 
+\mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}} \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_a2e8b3d1b21217f6bf2970da9bf30c816}{get\+\_\+L}} (int dim, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} a, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} b)
+\item 
+void \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_a27163d1d4c3ca3016927695064c1f8d6}{get\+\_\+\+L\+\_\+top\+\_\+dim\+\_\+flipped}} (\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} a, \mbox{\hyperlink{typedefs_8hpp_aa0b819682f9cdac0ae1234aed46106e6}{Sparse\+Matrix\+\_\+\+PL}} \&L)
+\item 
+\mbox{\hyperlink{typedefs_8hpp_aa0b819682f9cdac0ae1234aed46106e6}{Sparse\+Matrix\+\_\+\+PL}} \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_ad46319b5bde9cdd9eccb99969a3b465e}{get\+\_\+\+L\+\_\+top\+\_\+dim\+\_\+flipped}} (\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} a)
+\item 
+void \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_ac660b1a316536cd404fc03e2d6ebc91b}{get\+\_\+up}} (int dim, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} a, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} b, \mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}} \&L\+\_\+up)
+\item 
+\mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}} \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_a453c5a826140c67cae47df6e14ce1b58}{get\+\_\+up}} (int dim, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} a, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} b)
+\item 
+void \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_aa891f790594c6da1ae402540ebd185d2}{get\+\_\+down}} (int dim, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} a, \mbox{\hyperlink{typedefs_8hpp_a696f33453207d73162f781efad58d040}{Sparse\+Matrix\+\_\+storage}} \&L\+\_\+down)
+\item 
+\mbox{\hyperlink{typedefs_8hpp_a696f33453207d73162f781efad58d040}{Sparse\+Matrix\+\_\+storage}} \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_ae0f660133fa717d1822f7628bb03fc96}{get\+\_\+down}} (int dim, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} a)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}} $>$ \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_a240e9d30eb215e1a9cca99381327d28e}{nonzero\+\_\+spectra}} (int dim, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} a, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} b, \mbox{\hyperlink{typedefs_8hpp_a36861f68d1eb98f57ea27b47bd45fc37}{Sparse\+Matrix\+Float}} PH\+\_\+basis, bool use\+\_\+dummy\+\_\+harmonic\+\_\+basis)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}} $>$ \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_a9999ae6549e0e813b87e2f5a6784c803}{spectra}} (int dim, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} a, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} b)
+\item 
+std\+::vector$<$ std\+::tuple$<$ int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}} $>$ $>$ $>$ \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_a75744761caf09e38b6b592e75d95d5d0}{spectra}} ()
+\item 
+std\+::vector$<$ std\+::tuple$<$ int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}} $>$ $>$ $>$ \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_a6d1df94a4250f2508812de09babaac9a}{spectra}} (std\+::vector$<$ std\+::tuple$<$ int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$$>$ spectra\+\_\+request\+\_\+list)
+\item 
+std\+::pair$<$ std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}} $>$, \mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}} $>$ \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_a28609766ed890efa3a7b83244d9ec262}{eigenpairs}} (int dim, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} a, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} b)
+\item 
+std\+::vector$<$ std\+::tuple$<$ int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}} $>$, \mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}} $>$ $>$ \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_ade633c893ce727d35cb7539ec205f5cd}{eigenpairs}} ()
+\item 
+std\+::vector$<$ std\+::tuple$<$ int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}} $>$, \mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}} $>$ $>$ \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_a2afd5704a3e0bd94d898008b5de61f1b}{eigenpairs}} (std\+::vector$<$ std\+::tuple$<$ int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$$>$ spectra\+\_\+request\+\_\+list)
+\item 
+std\+::pair$<$ int, \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}} $>$ \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_ac25930bc9649cce4e2cca1fb99f13ad7}{eigenvalues\+\_\+summarize}} (std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}} $>$ eigenvalues)
+\item 
+void \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_a2279f3ac44df29f3c6296a679c06399b}{store\+\_\+L}} (int dim, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} a, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} b, std\+::string filename)
+\item 
+void \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_af4c865863604dfede94edecd1b9ccf27}{print\+\_\+boundaries}} ()
+\item 
+void \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_a13cba8d7973e9512cf12976b57938576}{store\+\_\+spectra}} (std\+::vector$<$ std\+::tuple$<$ int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}} $>$$>$$>$ \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_a9999ae6549e0e813b87e2f5a6784c803}{spectra}}, std\+::string out\+\_\+prefix)
+\item 
+void \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_a055a3a3e17b0a6090427ea178140e5d3}{store\+\_\+spectra\+\_\+summary}} (std\+::vector$<$ std\+::tuple$<$ int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}} $>$$>$$>$ \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_a9999ae6549e0e813b87e2f5a6784c803}{spectra}}, std\+::string out\+\_\+prefix)
+\item 
+std\+::vector$<$ std\+::tuple$<$ int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$ $>$ \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_ad76f65268220edd384945c5f40835615}{filtration\+\_\+list\+\_\+to\+\_\+spectra\+\_\+request}} (std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$ filtrations, std\+::vector$<$ int $>$ dims)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$ \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_a454440d87e8ae8ebddfb7229733a4675}{get\+\_\+all\+\_\+filtrations}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_a8f319d5a99becc40eccf3c349ba9f6d0}{top\+\_\+dim}}
+\begin{DoxyCompactList}\small\item\em Top dimension of the complex. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classPersistentLaplacians_1_1FilteredBoundaryMatrix}{Filtered\+Boundary\+Matrix}}$<$ \mbox{\hyperlink{typedefs_8hpp_af7d5e90927b3e42d710237198c3582d5}{storage}} $>$ $>$ \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_a79e6ff1bde28006145eceaa5674d9020}{filtered\+\_\+boundaries}}
+\begin{DoxyCompactList}\small\item\em Boundary matrix assuming real (or integer) coefficients. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_a8da20628a8cd90cf31f86020a6c6fc15}{verbose}}
+\begin{DoxyCompactList}\small\item\em Print progress if \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_a75744761caf09e38b6b592e75d95d5d0}{spectra()}} is called. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_af9fb8be1b79c7e75293720cafa6c9a26}{use\+\_\+flipped}}
+\begin{DoxyCompactList}\small\item\em Compute the top-\/dimensional Laplacian\textquotesingle{}s eigenvalues in spectra function via the eigenvalues of the smaller of B\+\_\+N B\+\_\+\+N$^\wedge$T or B\+\_\+\+N$^\wedge$T B\+\_\+N and possible zero-\/padding. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPersistentLaplacians_1_1Profile}{Profile}} \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_a973c01d03d177e2116f0a1ec173a93be}{profile}}
+\begin{DoxyCompactList}\small\item\em Profiler to track time usage of various steps. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPersistentLaplacians_1_1FilteredBoundaryMatrix}{Persistent\+Laplacians\+::\+Filtered\+Boundary\+Matrix}}$<$ \mbox{\hyperlink{typedefs_8hpp_af7d5e90927b3e42d710237198c3582d5}{storage}} $>$ \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_ad01968f2ccb10c8a0346a378038ad82f}{dummy\+\_\+d0}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename eigs\+\_\+\+Algorithm = Persistent\+Laplacians\+::selfadjoint, typename up\+\_\+\+Algorithm = Persistent\+Laplacians\+::schur$>$\newline
+class Persistent\+Laplacians\+::\+Persistent\+Laplacian$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$}
+
+Primary class for computing persistent Laplacians 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em eigs\+\_\+\+Algorithm} & Algorithm wrapper class to use for computing eigenvalues of the Laplacian in the spectra family of functions. Default is a wrapper for Eigen\+::\+Self\+Adjoint\+Eigen\+Solver. \\
+\hline
+{\em up\+\_\+\+Algorithm} & Algorithm wrapper class to use for computing the up-\/\+Laplacian. Default is the Schur complement algorithm presented in Memoli, Wan, and Wang 2020. //\+TODO\+: \textbackslash{}see up\+\_\+algorithms and eigs\+\_\+algorithms \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPersistentLaplacians_1_1PersistentLaplacian_a55e983673494944131ff4ea0eb300ab2}\label{classPersistentLaplacians_1_1PersistentLaplacian_a55e983673494944131ff4ea0eb300ab2}} 
+\index{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}!PersistentLaplacian@{PersistentLaplacian}}
+\index{PersistentLaplacian@{PersistentLaplacian}!PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}}
+\doxysubsubsection{\texorpdfstring{PersistentLaplacian()}{PersistentLaplacian()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename eigs\+\_\+\+Algorithm  = Persistent\+Laplacians\+::selfadjoint, typename up\+\_\+\+Algorithm  = Persistent\+Laplacians\+::schur$>$ \\
+\mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacians\+::\+Persistent\+Laplacian}}$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$\+::\mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacian}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Default constructor with no boundary maps or simplices. \mbox{\Hypertarget{classPersistentLaplacians_1_1PersistentLaplacian_a6edcfb7daaa0df8c9b69d01b28932dbc}\label{classPersistentLaplacians_1_1PersistentLaplacian_a6edcfb7daaa0df8c9b69d01b28932dbc}} 
+\index{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}!PersistentLaplacian@{PersistentLaplacian}}
+\index{PersistentLaplacian@{PersistentLaplacian}!PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}}
+\doxysubsubsection{\texorpdfstring{PersistentLaplacian()}{PersistentLaplacian()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename eigs\+\_\+\+Algorithm  = Persistent\+Laplacians\+::selfadjoint, typename up\+\_\+\+Algorithm  = Persistent\+Laplacians\+::schur$>$ \\
+\mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacians\+::\+Persistent\+Laplacian}}$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$\+::\mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacian}} (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_af75f469c1ca3f8752d6f67a115e57af4}{Sparse\+Matrix\+Int}} $>$}]{boundaries,  }\item[{std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$$>$}]{filtrations }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em boundaries} & a vector of Eigen\+::\+Sparse\+Matrix of type int. Boundaries must be sorted in order of dimension. \\
+\hline
+{\em filtrations} & a vector of vector of filtrations. filtrations\mbox{[}dim\mbox{]} is a list of all filtrations of simplices in dimension dim. filtrations must be sorted in order of dimension, each filtrations\mbox{[}i\mbox{]} must be sorted in order of filtration\\
+\hline
+\end{DoxyParams}
+Primary constructor. Important Assumptions\+: 1) Boundary matrix has real coefficients stored as integers (but not mod 2!) 2) Boundary matrix dimensions agree with filtrations sizes 3) Length(filtrations) = Length(boundaries) + 1 \mbox{\Hypertarget{classPersistentLaplacians_1_1PersistentLaplacian_ab2f8ae87e04008134820ba126ac25937}\label{classPersistentLaplacians_1_1PersistentLaplacian_ab2f8ae87e04008134820ba126ac25937}} 
+\index{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}!````~PersistentLaplacian@{$\sim$PersistentLaplacian}}
+\index{````~PersistentLaplacian@{$\sim$PersistentLaplacian}!PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$PersistentLaplacian()}{~PersistentLaplacian()}}
+{\footnotesize\ttfamily template$<$typename eigs\+\_\+\+Algorithm  = Persistent\+Laplacians\+::selfadjoint, typename up\+\_\+\+Algorithm  = Persistent\+Laplacians\+::schur$>$ \\
+\mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacians\+::\+Persistent\+Laplacian}}$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$\+::$\sim$\mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacian}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPersistentLaplacians_1_1PersistentLaplacian_ad01968f2ccb10c8a0346a378038ad82f}\label{classPersistentLaplacians_1_1PersistentLaplacian_ad01968f2ccb10c8a0346a378038ad82f}} 
+\index{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}!dummy\_d0@{dummy\_d0}}
+\index{dummy\_d0@{dummy\_d0}!PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}}
+\doxysubsubsection{\texorpdfstring{dummy\_d0()}{dummy\_d0()}}
+{\footnotesize\ttfamily template$<$typename eigs\+\_\+\+Algorithm  = Persistent\+Laplacians\+::selfadjoint, typename up\+\_\+\+Algorithm  = Persistent\+Laplacians\+::schur$>$ \\
+\mbox{\hyperlink{classPersistentLaplacians_1_1FilteredBoundaryMatrix}{Persistent\+Laplacians\+::\+Filtered\+Boundary\+Matrix}}$<$\mbox{\hyperlink{typedefs_8hpp_af7d5e90927b3e42d710237198c3582d5}{storage}}$>$ \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacians\+::\+Persistent\+Laplacian}}$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$\+::dummy\+\_\+d0 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPersistentLaplacians_1_1PersistentLaplacian_ade633c893ce727d35cb7539ec205f5cd}\label{classPersistentLaplacians_1_1PersistentLaplacian_ade633c893ce727d35cb7539ec205f5cd}} 
+\index{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}!eigenpairs@{eigenpairs}}
+\index{eigenpairs@{eigenpairs}!PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}}
+\doxysubsubsection{\texorpdfstring{eigenpairs()}{eigenpairs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename eigs\+\_\+\+Algorithm  = Persistent\+Laplacians\+::selfadjoint, typename up\+\_\+\+Algorithm  = Persistent\+Laplacians\+::schur$>$ \\
+std\+::vector$<$std\+::tuple$<$int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, std\+::vector$<$\mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}}$>$,\mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}}$>$ $>$ \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacians\+::\+Persistent\+Laplacian}}$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$\+::eigenpairs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get all eigenvalues for all combinations of dimension and successive filtration values\+: a=filtrations\mbox{[}i\mbox{]} and b=filtrations\mbox{[}i+1\mbox{]}. Note\+: the caller does not know what spectra to expect from this. ~\newline
+ \begin{DoxyReturn}{Returns}
+vector of tuples (dim, a, b, eigenvalues, eigenvectors) where \char`\"{}eigenvalues\char`\"{} is a sorted vector of real, nonnegative eigenvalues and \char`\"{}eigenvectors\char`\"{} is an Eigen\+::\+Matrix\+Xf where column i is the eigenvector for eigenvalue i 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPersistentLaplacians_1_1PersistentLaplacian_a28609766ed890efa3a7b83244d9ec262}\label{classPersistentLaplacians_1_1PersistentLaplacian_a28609766ed890efa3a7b83244d9ec262}} 
+\index{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}!eigenpairs@{eigenpairs}}
+\index{eigenpairs@{eigenpairs}!PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}}
+\doxysubsubsection{\texorpdfstring{eigenpairs()}{eigenpairs()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename eigs\+\_\+\+Algorithm  = Persistent\+Laplacians\+::selfadjoint, typename up\+\_\+\+Algorithm  = Persistent\+Laplacians\+::schur$>$ \\
+std\+::pair$<$std\+::vector$<$\mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}}$>$,\mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}}$>$ \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacians\+::\+Persistent\+Laplacian}}$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$\+::eigenpairs (\begin{DoxyParamCaption}\item[{int}]{dim,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{a,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the Persistent Laplacian\textquotesingle{}s eigenvalues and eigenvectors at a given dimension and filtration. 
+\begin{DoxyParams}{Parameters}
+{\em dim} & dimension \\
+\hline
+{\em a} & start filtration level \\
+\hline
+{\em b} & end filtration level \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sorted pair of\+: vector of real, nonnegative eigenvalues and Eigen matrix where column i is the eigenvector for eigenvalue i 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPersistentLaplacians_1_1PersistentLaplacian_a2afd5704a3e0bd94d898008b5de61f1b}\label{classPersistentLaplacians_1_1PersistentLaplacian_a2afd5704a3e0bd94d898008b5de61f1b}} 
+\index{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}!eigenpairs@{eigenpairs}}
+\index{eigenpairs@{eigenpairs}!PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}}
+\doxysubsubsection{\texorpdfstring{eigenpairs()}{eigenpairs()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename eigs\+\_\+\+Algorithm  = Persistent\+Laplacians\+::selfadjoint, typename up\+\_\+\+Algorithm  = Persistent\+Laplacians\+::schur$>$ \\
+std\+::vector$<$std\+::tuple$<$int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, std\+::vector$<$\mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}}$>$, \mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}}$>$ $>$ \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacians\+::\+Persistent\+Laplacian}}$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$\+::eigenpairs (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::tuple$<$ int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$$>$}]{spectra\+\_\+request\+\_\+list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This function essentially just calls eigenpairs(dim, a, b) in a loop. 
+\begin{DoxyParams}{Parameters}
+{\em spectra\+\_\+quest\+\_\+list} & vector of tuples (dim, a, b) to compute the eigenvalues of L\+\_\+\{dim\}$^\wedge$\{a,b\}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector of tuples (dim, a, b, eigenvalues, eigenvalues), where eigenvalues it istelf a vector of real, nonnegative eigenvalues and \char`\"{}eigenvectors\char`\"{} is an Eigen\+::\+Matrix\+Xf where column i is the eigenvector for eigenvalue i. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPersistentLaplacians_1_1PersistentLaplacian_ac25930bc9649cce4e2cca1fb99f13ad7}\label{classPersistentLaplacians_1_1PersistentLaplacian_ac25930bc9649cce4e2cca1fb99f13ad7}} 
+\index{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}!eigenvalues\_summarize@{eigenvalues\_summarize}}
+\index{eigenvalues\_summarize@{eigenvalues\_summarize}!PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}}
+\doxysubsubsection{\texorpdfstring{eigenvalues\_summarize()}{eigenvalues\_summarize()}}
+{\footnotesize\ttfamily template$<$typename eigs\+\_\+\+Algorithm  = Persistent\+Laplacians\+::selfadjoint, typename up\+\_\+\+Algorithm  = Persistent\+Laplacians\+::schur$>$ \\
+std\+::pair$<$int, \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}}$>$ \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacians\+::\+Persistent\+Laplacian}}$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$\+::eigenvalues\+\_\+summarize (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}} $>$}]{eigenvalues }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Utility function to get the Betti number and least nonzero eigenvalue form a vector of eigenvalues. 
+\begin{DoxyParams}{Parameters}
+{\em eigenvalues} & eigenvalues \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pair of (Betti number, least nonzero eigenvalue) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPersistentLaplacians_1_1PersistentLaplacian_ad76f65268220edd384945c5f40835615}\label{classPersistentLaplacians_1_1PersistentLaplacian_ad76f65268220edd384945c5f40835615}} 
+\index{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}!filtration\_list\_to\_spectra\_request@{filtration\_list\_to\_spectra\_request}}
+\index{filtration\_list\_to\_spectra\_request@{filtration\_list\_to\_spectra\_request}!PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}}
+\doxysubsubsection{\texorpdfstring{filtration\_list\_to\_spectra\_request()}{filtration\_list\_to\_spectra\_request()}}
+{\footnotesize\ttfamily template$<$typename eigs\+\_\+\+Algorithm  = Persistent\+Laplacians\+::selfadjoint, typename up\+\_\+\+Algorithm  = Persistent\+Laplacians\+::schur$>$ \\
+std\+::vector$<$std\+::tuple$<$int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}$>$ $>$ \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacians\+::\+Persistent\+Laplacian}}$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$\+::filtration\+\_\+list\+\_\+to\+\_\+spectra\+\_\+request (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$}]{filtrations,  }\item[{std\+::vector$<$ int $>$}]{dims }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get tuples (dim, a, b) for all combinations of dimension and successive filtration values\+: a=filtrations\mbox{[}i\mbox{]}, b=filtrations\mbox{[}i+1\mbox{]}. 
+\begin{DoxyParams}{Parameters}
+{\em filtrations} & vector of filtration values \\
+\hline
+{\em dims} & vector of dimensions \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+tuples (dim, a, b) for all combinations of dimension and successive filtration values\+: a=filtrations\mbox{[}i\mbox{]}, b=filtrations\mbox{[}i+1\mbox{]}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPersistentLaplacians_1_1PersistentLaplacian_a454440d87e8ae8ebddfb7229733a4675}\label{classPersistentLaplacians_1_1PersistentLaplacian_a454440d87e8ae8ebddfb7229733a4675}} 
+\index{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}!get\_all\_filtrations@{get\_all\_filtrations}}
+\index{get\_all\_filtrations@{get\_all\_filtrations}!PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}}
+\doxysubsubsection{\texorpdfstring{get\_all\_filtrations()}{get\_all\_filtrations()}}
+{\footnotesize\ttfamily template$<$typename eigs\+\_\+\+Algorithm  = Persistent\+Laplacians\+::selfadjoint, typename up\+\_\+\+Algorithm  = Persistent\+Laplacians\+::schur$>$ \\
+std\+::vector$<$\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}$>$ \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacians\+::\+Persistent\+Laplacian}}$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$\+::get\+\_\+all\+\_\+filtrations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get all unique filtration values in the complex. \mbox{\Hypertarget{classPersistentLaplacians_1_1PersistentLaplacian_ae0f660133fa717d1822f7628bb03fc96}\label{classPersistentLaplacians_1_1PersistentLaplacian_ae0f660133fa717d1822f7628bb03fc96}} 
+\index{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}!get\_down@{get\_down}}
+\index{get\_down@{get\_down}!PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}}
+\doxysubsubsection{\texorpdfstring{get\_down()}{get\_down()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename eigs\+\_\+\+Algorithm  = Persistent\+Laplacians\+::selfadjoint, typename up\+\_\+\+Algorithm  = Persistent\+Laplacians\+::schur$>$ \\
+\mbox{\hyperlink{typedefs_8hpp_a696f33453207d73162f781efad58d040}{Sparse\+Matrix\+\_\+storage}} \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacians\+::\+Persistent\+Laplacian}}$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$\+::get\+\_\+down (\begin{DoxyParamCaption}\item[{int}]{dim,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the down persistent Laplacian (by value).
+
+Warning\+: this does a potentially expensive copy. The primary reason this function exists is to provide reasonable python binding access to the matrix itself. If you do not need this matrix directly in python (e.\+g. you want its eigenvalues) it will be more efficient to compute by reference via \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_aa891f790594c6da1ae402540ebd185d2}{get\+\_\+down(int dim, filtration\+\_\+type a, Sparse\+Matrix\+\_\+storage \&\+L\+\_\+down)}}. 
+\begin{DoxyParams}{Parameters}
+{\em dim} & dimension \\
+\hline
+{\em a} & start filtration value \textbackslash{}return The matrix (by value) of the down presistent Laplacian ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPersistentLaplacians_1_1PersistentLaplacian_aa891f790594c6da1ae402540ebd185d2}\label{classPersistentLaplacians_1_1PersistentLaplacian_aa891f790594c6da1ae402540ebd185d2}} 
+\index{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}!get\_down@{get\_down}}
+\index{get\_down@{get\_down}!PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}}
+\doxysubsubsection{\texorpdfstring{get\_down()}{get\_down()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename eigs\+\_\+\+Algorithm  = Persistent\+Laplacians\+::selfadjoint, typename up\+\_\+\+Algorithm  = Persistent\+Laplacians\+::schur$>$ \\
+void \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacians\+::\+Persistent\+Laplacian}}$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$\+::get\+\_\+down (\begin{DoxyParamCaption}\item[{int}]{dim,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{a,  }\item[{\mbox{\hyperlink{typedefs_8hpp_a696f33453207d73162f781efad58d040}{Sparse\+Matrix\+\_\+storage}} \&}]{L\+\_\+down }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the down persistent Laplacian (by reference). 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em dim} & dimension \\
+\hline
+ & {\em a} & start filtration value \\
+\hline
+\mbox{\texttt{ out}}  & {\em L\+\_\+down} & the matrix (by reference) of the down presistent Laplacian ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPersistentLaplacians_1_1PersistentLaplacian_a2e8b3d1b21217f6bf2970da9bf30c816}\label{classPersistentLaplacians_1_1PersistentLaplacian_a2e8b3d1b21217f6bf2970da9bf30c816}} 
+\index{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}!get\_L@{get\_L}}
+\index{get\_L@{get\_L}!PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}}
+\doxysubsubsection{\texorpdfstring{get\_L()}{get\_L()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename eigs\+\_\+\+Algorithm  = Persistent\+Laplacians\+::selfadjoint, typename up\+\_\+\+Algorithm  = Persistent\+Laplacians\+::schur$>$ \\
+\mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}} \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacians\+::\+Persistent\+Laplacian}}$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$\+::get\+\_\+L (\begin{DoxyParamCaption}\item[{int}]{dim,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{a,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the Persistent Laplacian Matrix (by value).
+
+Warning\+: this does a potentially expensive copy. The primary reason this function exists is to provide reasonable python binding access to the matrix L itself. If you do not need the persistent Laplacian matrix directly in python (e.\+g. you want its eigenvalues) it will be more efficient to compute by reference via \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_a1e23706e72d592f27a108cc7d075d48a}{get\+\_\+\+L(int dim, filtration\+\_\+type a, filtration\+\_\+type b, Dense\+Matrix\+\_\+\+PL \&\+L)}}. 
+\begin{DoxyParams}{Parameters}
+{\em dim} & dimension \\
+\hline
+{\em a} & start filtration value \\
+\hline
+{\em b} & end filtration value (must be $>$= a) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L the persistent Laplacian matrix. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPersistentLaplacians_1_1PersistentLaplacian_a1e23706e72d592f27a108cc7d075d48a}\label{classPersistentLaplacians_1_1PersistentLaplacian_a1e23706e72d592f27a108cc7d075d48a}} 
+\index{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}!get\_L@{get\_L}}
+\index{get\_L@{get\_L}!PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}}
+\doxysubsubsection{\texorpdfstring{get\_L()}{get\_L()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename eigs\+\_\+\+Algorithm  = Persistent\+Laplacians\+::selfadjoint, typename up\+\_\+\+Algorithm  = Persistent\+Laplacians\+::schur$>$ \\
+void \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacians\+::\+Persistent\+Laplacian}}$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$\+::get\+\_\+L (\begin{DoxyParamCaption}\item[{int}]{dim,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{a,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{b,  }\item[{\mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}} \&}]{L }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the Persistent Laplacian Matrix (by reference). 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em dim} & dimension \\
+\hline
+ & {\em a} & start filtration value \\
+\hline
+ & {\em b} & end filtration value (must be $>$= a) \\
+\hline
+\mbox{\texttt{ out}}  & {\em L} & the matrix where the persistent Laplacian will be stored (by reference). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPersistentLaplacians_1_1PersistentLaplacian_ad46319b5bde9cdd9eccb99969a3b465e}\label{classPersistentLaplacians_1_1PersistentLaplacian_ad46319b5bde9cdd9eccb99969a3b465e}} 
+\index{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}!get\_L\_top\_dim\_flipped@{get\_L\_top\_dim\_flipped}}
+\index{get\_L\_top\_dim\_flipped@{get\_L\_top\_dim\_flipped}!PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}}
+\doxysubsubsection{\texorpdfstring{get\_L\_top\_dim\_flipped()}{get\_L\_top\_dim\_flipped()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename eigs\+\_\+\+Algorithm  = Persistent\+Laplacians\+::selfadjoint, typename up\+\_\+\+Algorithm  = Persistent\+Laplacians\+::schur$>$ \\
+\mbox{\hyperlink{typedefs_8hpp_aa0b819682f9cdac0ae1234aed46106e6}{Sparse\+Matrix\+\_\+\+PL}} \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacians\+::\+Persistent\+Laplacian}}$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$\+::get\+\_\+\+L\+\_\+top\+\_\+dim\+\_\+flipped (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a matrix with the same nonzero eigenvalues as the top-\/dimensional Persistent Laplacian Matrix (by value).
+
+Warning\+: this does a potentially expensive copy. The primary reason this function exists is to provide reasonable python binding access to the matrix itself. If you do not need this matrix directly in python (e.\+g. you want its eigenvalues) it will be more efficient to compute by reference via \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_a27163d1d4c3ca3016927695064c1f8d6}{get\+\_\+\+L\+\_\+top\+\_\+dim\+\_\+flipped(filtration\+\_\+type a, Sparse\+Matrix\+\_\+\+PL \&\+L)}}. 
+\begin{DoxyParams}{Parameters}
+{\em a} & start filtration value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A matrix with the same nonzero eigenvalues as the top-\/dimensional persistent Laplacian (but not the persistent Laplacian itself). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPersistentLaplacians_1_1PersistentLaplacian_a27163d1d4c3ca3016927695064c1f8d6}\label{classPersistentLaplacians_1_1PersistentLaplacian_a27163d1d4c3ca3016927695064c1f8d6}} 
+\index{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}!get\_L\_top\_dim\_flipped@{get\_L\_top\_dim\_flipped}}
+\index{get\_L\_top\_dim\_flipped@{get\_L\_top\_dim\_flipped}!PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}}
+\doxysubsubsection{\texorpdfstring{get\_L\_top\_dim\_flipped()}{get\_L\_top\_dim\_flipped()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename eigs\+\_\+\+Algorithm  = Persistent\+Laplacians\+::selfadjoint, typename up\+\_\+\+Algorithm  = Persistent\+Laplacians\+::schur$>$ \\
+void \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacians\+::\+Persistent\+Laplacian}}$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$\+::get\+\_\+\+L\+\_\+top\+\_\+dim\+\_\+flipped (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{a,  }\item[{\mbox{\hyperlink{typedefs_8hpp_aa0b819682f9cdac0ae1234aed46106e6}{Sparse\+Matrix\+\_\+\+PL}} \&}]{L }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a matrix with the same nonzero eigenvalues as the top-\/dimensional Persistent Laplacian Matrix (by reference). 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em a} & start filtration value \\
+\hline
+\mbox{\texttt{ out}}  & {\em L} & the matrix (by reference) that has the same eigenvalues as the top-\/dimensional Persistent Laplacian \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPersistentLaplacians_1_1PersistentLaplacian_a453c5a826140c67cae47df6e14ce1b58}\label{classPersistentLaplacians_1_1PersistentLaplacian_a453c5a826140c67cae47df6e14ce1b58}} 
+\index{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}!get\_up@{get\_up}}
+\index{get\_up@{get\_up}!PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}}
+\doxysubsubsection{\texorpdfstring{get\_up()}{get\_up()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename eigs\+\_\+\+Algorithm  = Persistent\+Laplacians\+::selfadjoint, typename up\+\_\+\+Algorithm  = Persistent\+Laplacians\+::schur$>$ \\
+\mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}} \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacians\+::\+Persistent\+Laplacian}}$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$\+::get\+\_\+up (\begin{DoxyParamCaption}\item[{int}]{dim,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{a,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the up persistent Laplacian (by value). The algorithm used is determined by the template parameter. See \mbox{\hyperlink{up__algorithms_8hpp}{up\+\_\+algorithms.\+hpp}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dim} & dimension \\
+\hline
+{\em a} & start filtration value \\
+\hline
+{\em b} & end filtration value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+up persistent Laplacian 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPersistentLaplacians_1_1PersistentLaplacian_ac660b1a316536cd404fc03e2d6ebc91b}\label{classPersistentLaplacians_1_1PersistentLaplacian_ac660b1a316536cd404fc03e2d6ebc91b}} 
+\index{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}!get\_up@{get\_up}}
+\index{get\_up@{get\_up}!PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}}
+\doxysubsubsection{\texorpdfstring{get\_up()}{get\_up()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename eigs\+\_\+\+Algorithm  = Persistent\+Laplacians\+::selfadjoint, typename up\+\_\+\+Algorithm  = Persistent\+Laplacians\+::schur$>$ \\
+void \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacians\+::\+Persistent\+Laplacian}}$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$\+::get\+\_\+up (\begin{DoxyParamCaption}\item[{int}]{dim,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{a,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{b,  }\item[{\mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}} \&}]{L\+\_\+up }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the up persistent Laplacian (by reference). The algorithm used is determined by the template parameter. See \mbox{\hyperlink{up__algorithms_8hpp}{up\+\_\+algorithms.\+hpp}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em dim} & dimension \\
+\hline
+ & {\em a} & start filtration value \\
+\hline
+ & {\em b} & end filtration value \\
+\hline
+\mbox{\texttt{ out}}  & {\em L\+\_\+up} & up persistent Laplacian (by reference) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPersistentLaplacians_1_1PersistentLaplacian_a240e9d30eb215e1a9cca99381327d28e}\label{classPersistentLaplacians_1_1PersistentLaplacian_a240e9d30eb215e1a9cca99381327d28e}} 
+\index{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}!nonzero\_spectra@{nonzero\_spectra}}
+\index{nonzero\_spectra@{nonzero\_spectra}!PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}}
+\doxysubsubsection{\texorpdfstring{nonzero\_spectra()}{nonzero\_spectra()}}
+{\footnotesize\ttfamily template$<$typename eigs\+\_\+\+Algorithm  = Persistent\+Laplacians\+::selfadjoint, typename up\+\_\+\+Algorithm  = Persistent\+Laplacians\+::schur$>$ \\
+std\+::vector$<$\mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}}$>$ \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacians\+::\+Persistent\+Laplacian}}$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$\+::nonzero\+\_\+spectra (\begin{DoxyParamCaption}\item[{int}]{dim,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{a,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{b,  }\item[{\mbox{\hyperlink{typedefs_8hpp_a36861f68d1eb98f57ea27b47bd45fc37}{Sparse\+Matrix\+Float}}}]{PH\+\_\+basis,  }\item[{bool}]{use\+\_\+dummy\+\_\+harmonic\+\_\+basis }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Compute the nonzero eigenvalues of a persistent Laplacian using Schur restriction with the null space, either given by Persistent Homology representatives or by computing the null space. 
+\begin{DoxyParams}{Parameters}
+{\em dim} & dimension \\
+\hline
+{\em a} & start filtration level \\
+\hline
+{\em b} & end filtration level \\
+\hline
+{\em (optional)} & PH\+\_\+basis Basis for the null space of the Laplacian, possibly obtained through persistent homology \\
+\hline
+{\em use\+\_\+dummy\+\_\+harmonic\+\_\+basis} & Compute the null space of the Laplacian here, then do the same projected as if we had been given the null space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sorted vector of real, positive eigenvalues 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPersistentLaplacians_1_1PersistentLaplacian_af4c865863604dfede94edecd1b9ccf27}\label{classPersistentLaplacians_1_1PersistentLaplacian_af4c865863604dfede94edecd1b9ccf27}} 
+\index{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}!print\_boundaries@{print\_boundaries}}
+\index{print\_boundaries@{print\_boundaries}!PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}}
+\doxysubsubsection{\texorpdfstring{print\_boundaries()}{print\_boundaries()}}
+{\footnotesize\ttfamily template$<$typename eigs\+\_\+\+Algorithm  = Persistent\+Laplacians\+::selfadjoint, typename up\+\_\+\+Algorithm  = Persistent\+Laplacians\+::schur$>$ \\
+void \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacians\+::\+Persistent\+Laplacian}}$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$\+::print\+\_\+boundaries (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Print all boundaries and corresponding filtrations. \mbox{\Hypertarget{classPersistentLaplacians_1_1PersistentLaplacian_ae1d2e11b09e891608b6332f88cfb431d}\label{classPersistentLaplacians_1_1PersistentLaplacian_ae1d2e11b09e891608b6332f88cfb431d}} 
+\index{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}!set\_boundaries\_filtrations@{set\_boundaries\_filtrations}}
+\index{set\_boundaries\_filtrations@{set\_boundaries\_filtrations}!PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}}
+\doxysubsubsection{\texorpdfstring{set\_boundaries\_filtrations()}{set\_boundaries\_filtrations()}}
+{\footnotesize\ttfamily template$<$typename eigs\+\_\+\+Algorithm  = Persistent\+Laplacians\+::selfadjoint, typename up\+\_\+\+Algorithm  = Persistent\+Laplacians\+::schur$>$ \\
+void \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacians\+::\+Persistent\+Laplacian}}$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$\+::set\+\_\+boundaries\+\_\+filtrations (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_af75f469c1ca3f8752d6f67a115e57af4}{Sparse\+Matrix\+Int}} $>$}]{boundaries,  }\item[{std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$$>$}]{filtrations }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the boundaries and filtrations of a complex, particularly if the default constructor was called. 
+\begin{DoxyParams}{Parameters}
+{\em boundaries} & a vector of Eigen\+::\+Sparse\+Matrix of type int. Boundaries must be sorted in order of dimension. \\
+\hline
+{\em filtrations} & a vector of vector of filtrations. filtrations\mbox{[}dim\mbox{]} is a list of all filtrations of simplices in dimension dim. filtrations must be sorted in order of dimension, each filtrations\mbox{[}i\mbox{]} must be sorted in order of filtration. Important Assumptions\+: 1) Boundary matrix has real coefficients stored as integers (but not mod 2!), 2) Boundary matrix dimensions agree with filtrations sizes, 3) Length(filtrations) = Length(boundaries) + 1. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPersistentLaplacians_1_1PersistentLaplacian_acf0f8a6cf4b4b49447871a9b5f04d856}\label{classPersistentLaplacians_1_1PersistentLaplacian_acf0f8a6cf4b4b49447871a9b5f04d856}} 
+\index{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}!set\_flipped@{set\_flipped}}
+\index{set\_flipped@{set\_flipped}!PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}}
+\doxysubsubsection{\texorpdfstring{set\_flipped()}{set\_flipped()}}
+{\footnotesize\ttfamily template$<$typename eigs\+\_\+\+Algorithm  = Persistent\+Laplacians\+::selfadjoint, typename up\+\_\+\+Algorithm  = Persistent\+Laplacians\+::schur$>$ \\
+void \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacians\+::\+Persistent\+Laplacian}}$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$\+::set\+\_\+flipped (\begin{DoxyParamCaption}\item[{bool}]{use\+\_\+flipped }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set flipped 
+\begin{DoxyParams}{Parameters}
+{\em use\+\_\+flipped} & New setting \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPersistentLaplacians_1_1PersistentLaplacian_a9fbc57f868cb9d1c6ec951692f1b71ae}\label{classPersistentLaplacians_1_1PersistentLaplacian_a9fbc57f868cb9d1c6ec951692f1b71ae}} 
+\index{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}!set\_verbose@{set\_verbose}}
+\index{set\_verbose@{set\_verbose}!PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}}
+\doxysubsubsection{\texorpdfstring{set\_verbose()}{set\_verbose()}}
+{\footnotesize\ttfamily template$<$typename eigs\+\_\+\+Algorithm  = Persistent\+Laplacians\+::selfadjoint, typename up\+\_\+\+Algorithm  = Persistent\+Laplacians\+::schur$>$ \\
+void \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacians\+::\+Persistent\+Laplacian}}$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$\+::set\+\_\+verbose (\begin{DoxyParamCaption}\item[{bool}]{verbose }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set verbose 
+\begin{DoxyParams}{Parameters}
+{\em verbose} & New setting. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPersistentLaplacians_1_1PersistentLaplacian_a75744761caf09e38b6b592e75d95d5d0}\label{classPersistentLaplacians_1_1PersistentLaplacian_a75744761caf09e38b6b592e75d95d5d0}} 
+\index{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}!spectra@{spectra}}
+\index{spectra@{spectra}!PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}}
+\doxysubsubsection{\texorpdfstring{spectra()}{spectra()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename eigs\+\_\+\+Algorithm  = Persistent\+Laplacians\+::selfadjoint, typename up\+\_\+\+Algorithm  = Persistent\+Laplacians\+::schur$>$ \\
+std\+::vector$<$std\+::tuple$<$int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, std\+::vector$<$\mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}}$>$ $>$ $>$ \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacians\+::\+Persistent\+Laplacian}}$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$\+::spectra (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get all eigenvalues for all combinations of dimension and successive filtration values\+: a=filtrations\mbox{[}i\mbox{]} and b=filtrations\mbox{[}i+1\mbox{]}. Note\+: the caller does not know what spectra to expect from this. ~\newline
+ \begin{DoxyReturn}{Returns}
+vector of tuples (dim, a, b, eigenvalues) where \char`\"{}eigenvalues\char`\"{} is a sorted vector of real, nonnegative eigenvalues. ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPersistentLaplacians_1_1PersistentLaplacian_a9999ae6549e0e813b87e2f5a6784c803}\label{classPersistentLaplacians_1_1PersistentLaplacian_a9999ae6549e0e813b87e2f5a6784c803}} 
+\index{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}!spectra@{spectra}}
+\index{spectra@{spectra}!PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}}
+\doxysubsubsection{\texorpdfstring{spectra()}{spectra()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename eigs\+\_\+\+Algorithm  = Persistent\+Laplacians\+::selfadjoint, typename up\+\_\+\+Algorithm  = Persistent\+Laplacians\+::schur$>$ \\
+std\+::vector$<$\mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}}$>$ \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacians\+::\+Persistent\+Laplacian}}$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$\+::spectra (\begin{DoxyParamCaption}\item[{int}]{dim,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{a,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the Persistent Laplacian\textquotesingle{}s eigenvalues at a given dimension and filtration. 
+\begin{DoxyParams}{Parameters}
+{\em dim} & dimension \\
+\hline
+{\em a} & start filtration level \\
+\hline
+{\em b} & end filtration level \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sorted vector of real, nonnegative eigenvalues 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPersistentLaplacians_1_1PersistentLaplacian_a6d1df94a4250f2508812de09babaac9a}\label{classPersistentLaplacians_1_1PersistentLaplacian_a6d1df94a4250f2508812de09babaac9a}} 
+\index{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}!spectra@{spectra}}
+\index{spectra@{spectra}!PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}}
+\doxysubsubsection{\texorpdfstring{spectra()}{spectra()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename eigs\+\_\+\+Algorithm  = Persistent\+Laplacians\+::selfadjoint, typename up\+\_\+\+Algorithm  = Persistent\+Laplacians\+::schur$>$ \\
+std\+::vector$<$std\+::tuple$<$int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, std\+::vector$<$\mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}}$>$ $>$ $>$ \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacians\+::\+Persistent\+Laplacian}}$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$\+::spectra (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::tuple$<$ int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$$>$}]{spectra\+\_\+request\+\_\+list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This function essentially just calls spectra(dim, a, b) in a loop. 
+\begin{DoxyParams}{Parameters}
+{\em spectra\+\_\+quest\+\_\+list} & vector of tuples (dim, a, b) to compute the eigenvalues of L\+\_\+\{dim\}$^\wedge$\{a,b\}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector of tuples (dim, a, b, eigenvalues), where eigenvalues it istelf a vector of real, nonnegative eigenvalues. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPersistentLaplacians_1_1PersistentLaplacian_a2279f3ac44df29f3c6296a679c06399b}\label{classPersistentLaplacians_1_1PersistentLaplacian_a2279f3ac44df29f3c6296a679c06399b}} 
+\index{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}!store\_L@{store\_L}}
+\index{store\_L@{store\_L}!PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}}
+\doxysubsubsection{\texorpdfstring{store\_L()}{store\_L()}}
+{\footnotesize\ttfamily template$<$typename eigs\+\_\+\+Algorithm  = Persistent\+Laplacians\+::selfadjoint, typename up\+\_\+\+Algorithm  = Persistent\+Laplacians\+::schur$>$ \\
+void \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacians\+::\+Persistent\+Laplacian}}$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$\+::store\+\_\+L (\begin{DoxyParamCaption}\item[{int}]{dim,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{a,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{b,  }\item[{std\+::string}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Compute and store a persistent Laplacian matrix in a file in matrix market format. 
+\begin{DoxyParams}{Parameters}
+{\em dim} & dimension \\
+\hline
+{\em a} & start filtration value \\
+\hline
+{\em b} & end filtration value \\
+\hline
+{\em filename} & file to store matrix (typically .mtx extension) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPersistentLaplacians_1_1PersistentLaplacian_a13cba8d7973e9512cf12976b57938576}\label{classPersistentLaplacians_1_1PersistentLaplacian_a13cba8d7973e9512cf12976b57938576}} 
+\index{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}!store\_spectra@{store\_spectra}}
+\index{store\_spectra@{store\_spectra}!PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}}
+\doxysubsubsection{\texorpdfstring{store\_spectra()}{store\_spectra()}}
+{\footnotesize\ttfamily template$<$typename eigs\+\_\+\+Algorithm  = Persistent\+Laplacians\+::selfadjoint, typename up\+\_\+\+Algorithm  = Persistent\+Laplacians\+::schur$>$ \\
+void \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacians\+::\+Persistent\+Laplacian}}$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$\+::store\+\_\+spectra (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::tuple$<$ int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}} $>$$>$$>$}]{spectra,  }\item[{std\+::string}]{out\+\_\+prefix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Write spectra to files.
+
+for each dimension dim of the complex, files write \char`\"{}\{out\+\_\+prefix\}\+\_\+spectra\+\_\+\{dim\}.\+txt\char`\"{}. Each line of the file is a space-\/separated list of eigenvalues. Lines may be empty. Note the filtration values are not reported.
+
+
+\begin{DoxyParams}{Parameters}
+{\em spectra} & tuples (dim, a, b, eigenvalues) \\
+\hline
+{\em out\+\_\+prefix} & Eigenvalues will be written to \char`\"{}\{out\+\_\+prefix\}\+\_\+spectra\+\_\+\{dim\}.\+txt\char`\"{} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPersistentLaplacians_1_1PersistentLaplacian_a055a3a3e17b0a6090427ea178140e5d3}\label{classPersistentLaplacians_1_1PersistentLaplacian_a055a3a3e17b0a6090427ea178140e5d3}} 
+\index{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}!store\_spectra\_summary@{store\_spectra\_summary}}
+\index{store\_spectra\_summary@{store\_spectra\_summary}!PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}}
+\doxysubsubsection{\texorpdfstring{store\_spectra\_summary()}{store\_spectra\_summary()}}
+{\footnotesize\ttfamily template$<$typename eigs\+\_\+\+Algorithm  = Persistent\+Laplacians\+::selfadjoint, typename up\+\_\+\+Algorithm  = Persistent\+Laplacians\+::schur$>$ \\
+void \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacians\+::\+Persistent\+Laplacian}}$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$\+::store\+\_\+spectra\+\_\+summary (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::tuple$<$ int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}} $>$$>$$>$}]{spectra,  }\item[{std\+::string}]{out\+\_\+prefix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Write spectra summary to files \char`\"{}\{out\+\_\+prefix\}\+\_\+spectra\+\_\+summary.\+txt\char`\"{}
+
+Each line is a space-\/separated list of filtrations, bettti numbers, and least nonzero eigenvalues\+: (filtration a) (filtration b) (betti 0) ... (betti top\+\_\+dim) (lambda 0) ... (lambda top\+\_\+dim) 
+\begin{DoxyParams}{Parameters}
+{\em spectra} & tuples (dim, a, b, eigenvalues) \\
+\hline
+{\em out\+\_\+prefix} & Eigenvalues will be written to \char`\"{}\{out\+\_\+prefix\}\+\_\+spectra\+\_\+summary.\+txt\char`\"{} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classPersistentLaplacians_1_1PersistentLaplacian_a79e6ff1bde28006145eceaa5674d9020}\label{classPersistentLaplacians_1_1PersistentLaplacian_a79e6ff1bde28006145eceaa5674d9020}} 
+\index{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}!filtered\_boundaries@{filtered\_boundaries}}
+\index{filtered\_boundaries@{filtered\_boundaries}!PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}}
+\doxysubsubsection{\texorpdfstring{filtered\_boundaries}{filtered\_boundaries}}
+{\footnotesize\ttfamily template$<$typename eigs\+\_\+\+Algorithm  = Persistent\+Laplacians\+::selfadjoint, typename up\+\_\+\+Algorithm  = Persistent\+Laplacians\+::schur$>$ \\
+std\+::vector$<$\mbox{\hyperlink{classPersistentLaplacians_1_1FilteredBoundaryMatrix}{Filtered\+Boundary\+Matrix}}$<$\mbox{\hyperlink{typedefs_8hpp_af7d5e90927b3e42d710237198c3582d5}{storage}}$>$ $>$ \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacians\+::\+Persistent\+Laplacian}}$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$\+::filtered\+\_\+boundaries}
+
+
+
+Boundary matrix assuming real (or integer) coefficients. 
+
+\mbox{\Hypertarget{classPersistentLaplacians_1_1PersistentLaplacian_a973c01d03d177e2116f0a1ec173a93be}\label{classPersistentLaplacians_1_1PersistentLaplacian_a973c01d03d177e2116f0a1ec173a93be}} 
+\index{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}!profile@{profile}}
+\index{profile@{profile}!PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}}
+\doxysubsubsection{\texorpdfstring{profile}{profile}}
+{\footnotesize\ttfamily template$<$typename eigs\+\_\+\+Algorithm  = Persistent\+Laplacians\+::selfadjoint, typename up\+\_\+\+Algorithm  = Persistent\+Laplacians\+::schur$>$ \\
+\mbox{\hyperlink{structPersistentLaplacians_1_1Profile}{Profile}} \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacians\+::\+Persistent\+Laplacian}}$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$\+::profile}
+
+
+
+Profiler to track time usage of various steps. 
+
+\mbox{\Hypertarget{classPersistentLaplacians_1_1PersistentLaplacian_a8f319d5a99becc40eccf3c349ba9f6d0}\label{classPersistentLaplacians_1_1PersistentLaplacian_a8f319d5a99becc40eccf3c349ba9f6d0}} 
+\index{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}!top\_dim@{top\_dim}}
+\index{top\_dim@{top\_dim}!PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}}
+\doxysubsubsection{\texorpdfstring{top\_dim}{top\_dim}}
+{\footnotesize\ttfamily template$<$typename eigs\+\_\+\+Algorithm  = Persistent\+Laplacians\+::selfadjoint, typename up\+\_\+\+Algorithm  = Persistent\+Laplacians\+::schur$>$ \\
+int \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacians\+::\+Persistent\+Laplacian}}$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$\+::top\+\_\+dim}
+
+
+
+Top dimension of the complex. 
+
+\mbox{\Hypertarget{classPersistentLaplacians_1_1PersistentLaplacian_af9fb8be1b79c7e75293720cafa6c9a26}\label{classPersistentLaplacians_1_1PersistentLaplacian_af9fb8be1b79c7e75293720cafa6c9a26}} 
+\index{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}!use\_flipped@{use\_flipped}}
+\index{use\_flipped@{use\_flipped}!PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}}
+\doxysubsubsection{\texorpdfstring{use\_flipped}{use\_flipped}}
+{\footnotesize\ttfamily template$<$typename eigs\+\_\+\+Algorithm  = Persistent\+Laplacians\+::selfadjoint, typename up\+\_\+\+Algorithm  = Persistent\+Laplacians\+::schur$>$ \\
+bool \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacians\+::\+Persistent\+Laplacian}}$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$\+::use\+\_\+flipped}
+
+
+
+Compute the top-\/dimensional Laplacian\textquotesingle{}s eigenvalues in spectra function via the eigenvalues of the smaller of B\+\_\+N B\+\_\+\+N$^\wedge$T or B\+\_\+\+N$^\wedge$T B\+\_\+N and possible zero-\/padding. 
+
+\mbox{\Hypertarget{classPersistentLaplacians_1_1PersistentLaplacian_a8da20628a8cd90cf31f86020a6c6fc15}\label{classPersistentLaplacians_1_1PersistentLaplacian_a8da20628a8cd90cf31f86020a6c6fc15}} 
+\index{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}!verbose@{verbose}}
+\index{verbose@{verbose}!PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$@{PersistentLaplacians::PersistentLaplacian$<$ eigs\_Algorithm, up\_Algorithm $>$}}
+\doxysubsubsection{\texorpdfstring{verbose}{verbose}}
+{\footnotesize\ttfamily template$<$typename eigs\+\_\+\+Algorithm  = Persistent\+Laplacians\+::selfadjoint, typename up\+\_\+\+Algorithm  = Persistent\+Laplacians\+::schur$>$ \\
+bool \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian}{Persistent\+Laplacians\+::\+Persistent\+Laplacian}}$<$ eigs\+\_\+\+Algorithm, up\+\_\+\+Algorithm $>$\+::verbose}
+
+
+
+Print progress if \mbox{\hyperlink{classPersistentLaplacians_1_1PersistentLaplacian_a75744761caf09e38b6b592e75d95d5d0}{spectra()}} is called. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jones657/\+Persistent\+Laplacians/cpp/include/\+Persistent\+Laplacians\+\_\+headers/core/\mbox{\hyperlink{PersistentLaplacian_8hpp}{Persistent\+Laplacian.\+hpp}}\end{DoxyCompactItemize}

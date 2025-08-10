@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_7e72c7cf48e3493f8206cd364e6bc9f6" kind="dir">
+    <compoundname>/home/jones657/PersistentLaplacians/cpp/src</compoundname>
+    <innerdir refid="dir_aa999d0ce8e965b4353e6170079285a5">/home/jones657/PersistentLaplacians/cpp/src/variants</innerdir>
+    <innerfile refid="PersistentLaplacians_8cpp">PersistentLaplacians.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jones657/PersistentLaplacians/cpp/src/"/>
+  </compounddef>
+</doxygen>
