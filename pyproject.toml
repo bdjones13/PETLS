@@ -1,5 +1,5 @@
 [build-system]
-requires = ["scikit-build-core>=0.3.3", "pybind11", "pytest"]
+requires = ["scikit-build-core>=0.3.3", "pybind11", "pytest", "pandas"]
 build-backend = "scikit_build_core.build"
 
 [project]
@@ -16,7 +16,8 @@ dependencies = [
   "scipy>= 1.15.2",
   "gudhi>=3.11.0",
   "numpy>=2.2.5",
-  "matplotlib"
+  "matplotlib",
+  "pandas"
 ]
 
 

@@ -29,7 +29,7 @@ jobs:
             dnf install -y boost-devel &&
             dnf install -y CGAL-devel
           CIBW_BUILD: cp39-manylinux_x86_64 cp310-manylinux_x86_64 cp311-manylinux_x86_64 cp312-manylinux_x86_64 cp313-manylinux_x86_64 cp314-manylinux_x86_64
-          CIBW_TEST_REQUIRES: pytest numpy scipy matplotlib
+          CIBW_TEST_REQUIRES: pytest numpy scipy matplotlib pandas
           CIBW_TEST_COMMAND: python -m pytest {project}/tests/core
       - uses: actions/upload-artifact@v4
         with:
