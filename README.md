@@ -1,6 +1,4 @@
-See [the documentation](https://benjones-math.com/software/petls/documentation) for details on requirements, installation, and API usage.
-
-![Build](https://github.com/bdjones13/PersistentLaplacians/actions/workflows/build_wheels.yml/badge.svg?branch=github-action-config)
+See [the documentation](https://benjones-math.com/software/PETLS/) for details on requirements, installation, and API usage.
 
 # Python Dependencies
 
