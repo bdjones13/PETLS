@@ -20,7 +20,7 @@ namespace petls {
     void print_vector_precise(Eigen::VectorXd v);
     void print_vector_precise(Eigen::VectorXf v);
     void print_spectra(std::vector<std::tuple<int, filtration_type, filtration_type, std::vector<spectra_type>>> spectra);
-
+    bool matrix_is_diagonal(DenseMatrix_PL &M);
     void reindex_boundaries(std::vector<std::vector<std::tuple<int,int,int>>> &boundaries_triples,std::vector<SparseMatrixInt> &reindexed_boundaries);
     struct timer{
         public:

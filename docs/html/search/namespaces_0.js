@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['persistentlaplacians_169',['PersistentLaplacians',['../namespacePersistentLaplacians.html',1,'']]]
+  ['petls_152',['petls',['../namespacepetls.html',1,'']]]
 ];

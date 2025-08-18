@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['edge_288',['Edge',['../PersistentAlphaLaplacian_8cpp.html#a059d548004c91470f1bf1df952e0b531',1,'PersistentAlphaLaplacian.cpp']]]
+  ['index_5ftype_284',['index_type',['../typedefs_8hpp.html#aa511d4e3e646072967e8a42dc6c54194',1,'typedefs.hpp']]]
 ];

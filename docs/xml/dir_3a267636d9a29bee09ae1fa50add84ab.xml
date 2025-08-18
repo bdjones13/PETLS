@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_3a267636d9a29bee09ae1fa50add84ab" kind="dir">
+    <compoundname>/home/jones657/PersistentLaplacians/cpp/include/petls_headers/core</compoundname>
+    <innerfile refid="Complex_8hpp">Complex.hpp</innerfile>
+    <innerfile refid="FilteredBoundaryMatrix_8hpp">FilteredBoundaryMatrix.hpp</innerfile>
+    <innerfile refid="up__algorithms_8hpp">up_algorithms.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/core/"/>
+  </compounddef>
+</doxygen>

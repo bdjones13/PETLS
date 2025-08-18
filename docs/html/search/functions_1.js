@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['coface_5findex_187',['coface_index',['../classPersistentLaplacians_1_1sheaf__simplex__tree.html#ab96d531bd1a66382b08c7ecb49acd7fc',1,'PersistentLaplacians::sheaf_simplex_tree']]]
+  ['bdcsvdeigen_175',['BDCSVDEigen',['../namespacepetls.html#a41cfabd7373b6484f4fb624ccbe59cd5',1,'petls']]]
 ];

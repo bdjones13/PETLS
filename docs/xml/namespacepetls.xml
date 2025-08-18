@@ -1,0 +1,432 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacepetls" kind="namespace" language="C++">
+    <compoundname>petls</compoundname>
+    <innerclass refid="classpetls_1_1Complex" prot="public">petls::Complex</innerclass>
+    <innerclass refid="classpetls_1_1FilteredBoundaryMatrix" prot="public">petls::FilteredBoundaryMatrix</innerclass>
+    <innerclass refid="structpetls_1_1timer" prot="public">petls::timer</innerclass>
+    <innerclass refid="structpetls_1_1Profile" prot="public">petls::Profile</innerclass>
+    <innerclass refid="classpetls_1_1Alpha" prot="public">petls::Alpha</innerclass>
+    <innerclass refid="classpetls_1_1dFlag" prot="public">petls::dFlag</innerclass>
+    <innerclass refid="classpetls_1_1PersistentSheafLaplacian" prot="public">petls::PersistentSheafLaplacian</innerclass>
+    <innerclass refid="classpetls_1_1Rips" prot="public">petls::Rips</innerclass>
+    <innerclass refid="classpetls_1_1sheaf__simplex__tree" prot="public">petls::sheaf_simplex_tree</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacepetls_1abff85fdf963aa367e4a0f356a06d2724" prot="public" static="no">
+        <type>int</type>
+        <definition>using petls::storage = typedef int</definition>
+        <argsstring></argsstring>
+        <name>storage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/core/Complex.cpp" line="29" column="5" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/core/Complex.cpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacepetls_1a0f715135d02c269e4dc0029f96b642e1" prot="public" static="no">
+        <type>Gudhi::Simplex_tree&lt; Gudhi::Simplex_tree_options_default &gt;</type>
+        <definition>using petls::Simplex_tree = typedef Gudhi::Simplex_tree&lt;Gudhi::Simplex_tree_options_default&gt;</definition>
+        <argsstring></argsstring>
+        <name>Simplex_tree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/sheaf_simplex_tree.hpp" line="18" column="5" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/sheaf_simplex_tree.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacepetls_1a5e16481eec60166670d7badfe693b488" prot="public" static="no">
+        <type>Simplex_tree::Filtration_value</type>
+        <definition>using petls::Filtration_value = typedef Simplex_tree::Filtration_value</definition>
+        <argsstring></argsstring>
+        <name>Filtration_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/sheaf_simplex_tree.hpp" line="19" column="5" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/sheaf_simplex_tree.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacepetls_1a58e0a96abcfc17a00e13353ac7f0311f" prot="public" static="no">
+        <type>std::vector&lt; std::vector&lt; <ref refid="namespacepetls_1a5e16481eec60166670d7badfe693b488" kindref="member">Filtration_value</ref> &gt; &gt;</type>
+        <definition>using petls::Distance_matrix = typedef std::vector&lt;std::vector&lt;Filtration_value&gt; &gt;</definition>
+        <argsstring></argsstring>
+        <name>Distance_matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/sheaf_simplex_tree.hpp" line="20" column="5" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/sheaf_simplex_tree.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacepetls_1a3ef57c37759951effd7bd3800b2b6c7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename storage</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void petls::schur_algorithm</definition>
+        <argsstring>(petls::FilteredBoundaryMatrix&lt; storage &gt; *fbm, filtration_type a, filtration_type b, DenseMatrix_PL &amp;L_up)</argsstring>
+        <name>schur_algorithm</name>
+        <param>
+          <type><ref refid="classpetls_1_1FilteredBoundaryMatrix" kindref="compound">petls::FilteredBoundaryMatrix</ref>&lt; <ref refid="namespacepetls_1abff85fdf963aa367e4a0f356a06d2724" kindref="member">storage</ref> &gt; *</type>
+          <declname>fbm</declname>
+        </param>
+        <param>
+          <type><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref></type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref> &amp;</type>
+          <declname>L_up</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/core/up_algorithms.cpp" line="17" column="17" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/core/up_algorithms.cpp" bodystart="17" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepetls_1abdd35604f7914d3395c84245a92199d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="typedefs_8hpp_1a27a64e317582fd2a2dbdc95fa84b7ebd" kindref="member">spectra_vec</ref></type>
+        <definition>spectra_vec petls::SelfAdjointEigen</definition>
+        <argsstring>(DenseMatrix_PL &amp;L)</argsstring>
+        <name>SelfAdjointEigen</name>
+        <param>
+          <type><ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref> &amp;</type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/eigenvalues/eigs_algorithms.cpp" line="14" column="17" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/eigenvalues/eigs_algorithms.cpp" bodystart="14" bodyend="29" declfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/eigenvalues/eigs_algorithms.hpp" declline="9" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepetls_1a6e5e04065c7297ebd6096126d4c2a14f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="typedefs_8hpp_1a27a64e317582fd2a2dbdc95fa84b7ebd" kindref="member">spectra_vec</ref></type>
+        <definition>spectra_vec petls::SelfAdjointEigenSparse</definition>
+        <argsstring>(SparseMatrix_PL &amp;L)</argsstring>
+        <name>SelfAdjointEigenSparse</name>
+        <param>
+          <type><ref refid="typedefs_8hpp_1aa0b819682f9cdac0ae1234aed46106e6" kindref="member">SparseMatrix_PL</ref> &amp;</type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/eigenvalues/eigs_algorithms.cpp" line="32" column="17" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/eigenvalues/eigs_algorithms.cpp" bodystart="32" bodyend="45" declfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/eigenvalues/eigs_algorithms.hpp" declline="10" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepetls_1ac90d3577ee199873524a7c8102a9c67a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; <ref refid="typedefs_8hpp_1a27a64e317582fd2a2dbdc95fa84b7ebd" kindref="member">spectra_vec</ref>, <ref refid="typedefs_8hpp_1ab1b02c8ebcde7779bc2d81fedc0a2d35" kindref="member">DenseMatrix_spectra_PL</ref> &gt;</type>
+        <definition>std::pair&lt; spectra_vec, DenseMatrix_spectra_PL &gt; petls::SelfAdjointEigenpairsEigen</definition>
+        <argsstring>(DenseMatrix_PL &amp;L)</argsstring>
+        <name>SelfAdjointEigenpairsEigen</name>
+        <param>
+          <type><ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref> &amp;</type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/eigenvalues/eigs_algorithms.cpp" line="47" column="15" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/eigenvalues/eigs_algorithms.cpp" bodystart="47" bodyend="53" declfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/eigenvalues/eigs_algorithms.hpp" declline="11" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepetls_1aa6d3a91defcbc01ff25251032459d5d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="typedefs_8hpp_1a27a64e317582fd2a2dbdc95fa84b7ebd" kindref="member">spectra_vec</ref></type>
+        <definition>spectra_vec petls::EigensolverEigen</definition>
+        <argsstring>(DenseMatrix_PL &amp;L)</argsstring>
+        <name>EigensolverEigen</name>
+        <param>
+          <type><ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref> &amp;</type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/eigenvalues/eigs_algorithms.cpp" line="55" column="17" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/eigenvalues/eigs_algorithms.cpp" bodystart="55" bodyend="61" declfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/eigenvalues/eigs_algorithms.hpp" declline="12" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepetls_1a41cfabd7373b6484f4fb624ccbe59cd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="typedefs_8hpp_1a27a64e317582fd2a2dbdc95fa84b7ebd" kindref="member">spectra_vec</ref></type>
+        <definition>spectra_vec petls::BDCSVDEigen</definition>
+        <argsstring>(DenseMatrix_PL &amp;L)</argsstring>
+        <name>BDCSVDEigen</name>
+        <param>
+          <type><ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref> &amp;</type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/eigenvalues/eigs_algorithms.cpp" line="63" column="17" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/eigenvalues/eigs_algorithms.cpp" bodystart="63" bodyend="70" declfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/eigenvalues/eigs_algorithms.hpp" declline="13" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepetls_1aa88bc56b45658aa622b22bfa20ef88bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="typedefs_8hpp_1a27a64e317582fd2a2dbdc95fa84b7ebd" kindref="member">spectra_vec</ref></type>
+        <definition>spectra_vec petls::DenseSymSpectra</definition>
+        <argsstring>(DenseMatrix_PL &amp;L)</argsstring>
+        <name>DenseSymSpectra</name>
+        <param>
+          <type><ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref> &amp;</type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/eigenvalues/spectra_algorithms.cpp" line="15" column="17" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/eigenvalues/spectra_algorithms.cpp" bodystart="15" bodyend="53" declfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/eigenvalues/spectra_algorithms.hpp" declline="9" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepetls_1a778933d6c8a8e2ff066cbeb1952dd4cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void petls::round_zeros</definition>
+        <argsstring>(spectra_vec &amp;inout, spectra_type threshold)</argsstring>
+        <name>round_zeros</name>
+        <param>
+          <type><ref refid="typedefs_8hpp_1a27a64e317582fd2a2dbdc95fa84b7ebd" kindref="member">spectra_vec</ref> &amp;</type>
+          <declname>inout</declname>
+        </param>
+        <param>
+          <type><ref refid="typedefs_8hpp_1ac240cc0d46f103fa1a410237a0b8853f" kindref="member">spectra_type</ref></type>
+          <declname>threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/petls.cpp" line="14" column="10" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/petls.cpp" bodystart="14" bodyend="16" declfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/petls.hpp" declline="12" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepetls_1a82c29a3139a7c630afadc4bc856bb1b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void petls::print_full_matrix_precise</definition>
+        <argsstring>(SparseMatrixInt m)</argsstring>
+        <name>print_full_matrix_precise</name>
+        <param>
+          <type><ref refid="typedefs_8hpp_1af75f469c1ca3f8752d6f67a115e57af4" kindref="member">SparseMatrixInt</ref></type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/petls.cpp" line="18" column="10" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/petls.cpp" bodystart="18" bodyend="21" declfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/petls.hpp" declline="13" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepetls_1a13f87c1fe039cd1ee4dd7eeab1529589" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void petls::print_full_matrix_precise</definition>
+        <argsstring>(Eigen::MatrixXf m)</argsstring>
+        <name>print_full_matrix_precise</name>
+        <param>
+          <type>Eigen::MatrixXf</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/petls.cpp" line="23" column="10" declfile="/home/jones657/PersistentLaplacians/cpp/src/petls.cpp" declline="23" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepetls_1a74fe3065b1ac493c4a02c27577828de3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void petls::print_full_matrix_precise</definition>
+        <argsstring>(Eigen::MatrixXi m)</argsstring>
+        <name>print_full_matrix_precise</name>
+        <param>
+          <type>Eigen::MatrixXi</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/petls.cpp" line="25" column="10" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/petls.cpp" bodystart="25" bodyend="28" declfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/petls.hpp" declline="16" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepetls_1af4012d0f979094bc21ba2ebfef7c7df3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void petls::print_full_matrix_precise</definition>
+        <argsstring>(SparseMatrix_PL m)</argsstring>
+        <name>print_full_matrix_precise</name>
+        <param>
+          <type><ref refid="typedefs_8hpp_1aa0b819682f9cdac0ae1234aed46106e6" kindref="member">SparseMatrix_PL</ref></type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/petls.cpp" line="31" column="10" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/petls.cpp" bodystart="31" bodyend="34" declfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/petls.hpp" declline="18" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepetls_1ab7810cffef149bb54f4980e4e1ecefc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void petls::print_full_matrix_precise</definition>
+        <argsstring>(DenseMatrix_PL m)</argsstring>
+        <name>print_full_matrix_precise</name>
+        <param>
+          <type><ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref></type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/petls.cpp" line="36" column="10" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/petls.cpp" bodystart="36" bodyend="39" declfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/petls.hpp" declline="19" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepetls_1ab98e64ef83c354051df7fcc1f04810c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void petls::print_vector_precise</definition>
+        <argsstring>(Eigen::VectorXd v)</argsstring>
+        <name>print_vector_precise</name>
+        <param>
+          <type>Eigen::VectorXd</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/petls.cpp" line="40" column="10" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/petls.cpp" bodystart="40" bodyend="44" declfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/petls.hpp" declline="20" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepetls_1a5cfd07f823eb298c0b630fc443cbd82c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void petls::print_vector_precise</definition>
+        <argsstring>(Eigen::VectorXf v)</argsstring>
+        <name>print_vector_precise</name>
+        <param>
+          <type>Eigen::VectorXf</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/petls.cpp" line="46" column="10" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/petls.cpp" bodystart="46" bodyend="50" declfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/petls.hpp" declline="21" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepetls_1a8ef10ae87f953877b3e165ce1c692113" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool petls::matrix_is_diagonal</definition>
+        <argsstring>(DenseMatrix_PL &amp;M)</argsstring>
+        <name>matrix_is_diagonal</name>
+        <param>
+          <type><ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref> &amp;</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/petls.cpp" line="52" column="10" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/petls.cpp" bodystart="52" bodyend="63" declfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/petls.hpp" declline="23" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepetls_1ad6ad7c05ffc192d0d9a3a2a90f2b2ec8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void petls::print_spectra</definition>
+        <argsstring>(std::vector&lt; std::tuple&lt; int, filtration_type, filtration_type, std::vector&lt; spectra_type &gt;&gt;&gt; spectra)</argsstring>
+        <name>print_spectra</name>
+        <param>
+          <type>std::vector&lt; std::tuple&lt; int, <ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref>, <ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref>, std::vector&lt; <ref refid="typedefs_8hpp_1ac240cc0d46f103fa1a410237a0b8853f" kindref="member">spectra_type</ref> &gt;&gt;&gt;</type>
+          <declname>spectra</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/petls.cpp" line="65" column="10" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/petls.cpp" bodystart="65" bodyend="77" declfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/petls.hpp" declline="22" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepetls_1aa9555d2cbae6050832f4e0e40bc5e8e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void petls::reindex_boundaries</definition>
+        <argsstring>(std::vector&lt; std::vector&lt; std::tuple&lt; int, int, int &gt;&gt;&gt; &amp;boundaries_triples, std::vector&lt; SparseMatrixInt &gt; &amp;reindexed_boundaries)</argsstring>
+        <name>reindex_boundaries</name>
+        <param>
+          <type>std::vector&lt; std::vector&lt; std::tuple&lt; int, int, int &gt;&gt;&gt; &amp;</type>
+          <declname>boundaries_triples</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="typedefs_8hpp_1af75f469c1ca3f8752d6f67a115e57af4" kindref="member">SparseMatrixInt</ref> &gt; &amp;</type>
+          <declname>reindexed_boundaries</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/src/petls.cpp" line="80" column="10" bodyfile="/home/jones657/PersistentLaplacians/cpp/src/petls.cpp" bodystart="80" bodyend="134" declfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/petls.hpp" declline="24" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepetls_1ac21876caadf0bfe0f0b51689fe3134ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classpetls_1_1sheaf__simplex__tree" kindref="compound">petls::sheaf_simplex_tree</ref></type>
+        <definition>petls::sheaf_simplex_tree petls::rips_sheaf_simplex_tree</definition>
+        <argsstring>(std::vector&lt; std::vector&lt; float &gt;&gt; points, Filtration_value max_length, std::function&lt; float(Simplex_tree::Simplex_handle, Simplex_tree::Simplex_handle, sheaf_simplex_tree &amp;)&gt; restriction)</argsstring>
+        <name>rips_sheaf_simplex_tree</name>
+        <param>
+          <type>std::vector&lt; std::vector&lt; float &gt;&gt;</type>
+          <declname>points</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacepetls_1a5e16481eec60166670d7badfe693b488" kindref="member">Filtration_value</ref></type>
+          <declname>max_length</declname>
+        </param>
+        <param>
+          <type>std::function&lt; float(Simplex_tree::Simplex_handle, Simplex_tree::Simplex_handle, <ref refid="classpetls_1_1sheaf__simplex__tree" kindref="compound">sheaf_simplex_tree</ref> &amp;)&gt;</type>
+          <declname>restriction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/sheaf_simplex_tree.hpp" line="160" column="31" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/sheaf_simplex_tree.hpp" bodystart="160" bodyend="207"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jones657/PersistentLaplacians/cpp/src/core/Complex.cpp" line="26" column="1"/>
+  </compounddef>
+</doxygen>

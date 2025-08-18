@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nonzero_5fspectra_205',['nonzero_spectra',['../classPersistentLaplacians_1_1PersistentLaplacian.html#a240e9d30eb215e1a9cca99381327d28e',1,'PersistentLaplacians::PersistentLaplacian']]]
+  ['index_5fof_5ffiltration_196',['index_of_filtration',['../classpetls_1_1FilteredBoundaryMatrix.html#ae85cbb960d7ca3c5601a5661d0a23c82',1,'petls::FilteredBoundaryMatrix']]]
 ];

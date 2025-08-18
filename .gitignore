@@ -1,4 +1,5 @@
 **build/**
+build/
 cpp/build/*
 cpp/tests/build/*
 cpp/tests/bin/*
@@ -15,6 +16,9 @@ cpp/tests/bin/test_cpp
 tests/variants/*_spectra_*.txt
 *.mtx
 *.pyc
+*.mkt
+*.out
+*.csv
 tests/core/__pycache__/*
 tests/variants/__pycache__/*
 .VSCodeCounter/*

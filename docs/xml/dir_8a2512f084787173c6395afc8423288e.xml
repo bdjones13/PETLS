@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_8a2512f084787173c6395afc8423288e" kind="dir">
+    <compoundname>/home/jones657/PersistentLaplacians/cpp/include/petls_headers</compoundname>
+    <innerdir refid="dir_3a267636d9a29bee09ae1fa50add84ab">/home/jones657/PersistentLaplacians/cpp/include/petls_headers/core</innerdir>
+    <innerdir refid="dir_4e2466922ae4083d34f483584e273808">/home/jones657/PersistentLaplacians/cpp/include/petls_headers/eigenvalues</innerdir>
+    <innerdir refid="dir_c1b8c20a8da28e85d0efdbb22217c200">/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants</innerdir>
+    <innerfile refid="petls_8hpp">petls.hpp</innerfile>
+    <innerfile refid="typedefs_8hpp">typedefs.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/"/>
+  </compounddef>
+</doxygen>

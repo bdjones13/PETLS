@@ -4,13 +4,13 @@
 FilteredBoundaryMatrix
 ======================
 
-.. currentmodule:: PersistentLaplacians
+.. currentmodule:: petls
 
 FilteredBoundaryMatrix
 ~~~~~~~~~~~~~~~~~~~~~~
 
 
 
-.. doxygenclass:: PersistentLaplacians::FilteredBoundaryMatrix
-    :project: PersistentLaplacians
+.. doxygenclass:: petls::FilteredBoundaryMatrix
+    :project: petls
     :members:

@@ -8,23 +8,12 @@
 
 namespace petls{
 
-    bool matrix_is_diagonal(DenseMatrix_PL &M){
-        float tol = 1e-4;
-        for (int j = 0; j < M.cols(); j++){
-            for (int i = j+1; i < M.rows(); i++){
-                if (std::abs(M(i,j)) > tol){
-                    // std::cout << "matrix is not diagonal, M(" << i << ", " << j << ")=" << M(i,j) << std::endl;
-                    return false; 
-                }
-            }
-        }
-        return true;
-    }
+    
 
 
     spectra_vec SelfAdjointEigen(DenseMatrix_PL& L) {
         // std::cout << "eigs_algorithms.cpp line: " << __LINE__ << std::endl;
-        if (matrix_is_diagonal(L)){
+        if (petls::matrix_is_diagonal(L)){
             spectra_vec eigs = L.diagonal();
             round_zeros(eigs, 1e-3);
             std::sort(eigs.begin(), eigs.end()); // Diagonal is unsorted

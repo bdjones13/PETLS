@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="Complex_8hpp" kind="file" language="C++">
+    <compoundname>Complex.hpp</compoundname>
+    <includes local="no">vector</includes>
+    <includes refid="typedefs_8hpp" local="yes">../typedefs.hpp</includes>
+    <includes refid="petls_8hpp" local="yes">../petls.hpp</includes>
+    <includes refid="FilteredBoundaryMatrix_8hpp" local="yes">FilteredBoundaryMatrix.hpp</includes>
+    <includedby refid="Complex_8cpp" local="yes">/home/jones657/PersistentLaplacians/cpp/src/core/Complex.cpp</includedby>
+    <includedby refid="Alpha_8hpp" local="yes">/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/Alpha.hpp</includedby>
+    <includedby refid="dFlag_8hpp" local="yes">/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/dFlag.hpp</includedby>
+    <includedby refid="Rips_8hpp" local="yes">/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/Rips.hpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>../typedefs.hpp</label>
+        <link refid="typedefs_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>cassert</label>
+      </node>
+      <node id="6">
+        <label>string</label>
+      </node>
+      <node id="1">
+        <label>/home/jones657/PersistentLaplacians/cpp/include/petls_headers/core/Complex.hpp</label>
+        <link refid="Complex_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>../petls.hpp</label>
+        <link refid="petls_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vector</label>
+      </node>
+      <node id="8">
+        <label>FilteredBoundaryMatrix.hpp</label>
+        <link refid="FilteredBoundaryMatrix_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Eigen/SparseCore</label>
+      </node>
+      <node id="10">
+        <label>iostream</label>
+      </node>
+      <node id="7">
+        <label>chrono</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5">
+        <label>/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/dFlag.hpp</label>
+        <link refid="dFlag_8hpp"/>
+      </node>
+      <node id="6">
+        <label>/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/Rips.hpp</label>
+        <link refid="Rips_8hpp"/>
+      </node>
+      <node id="4">
+        <label>/home/jones657/PersistentLaplacians/cpp/src/variants/Alpha.cpp</label>
+        <link refid="Alpha_8cpp"/>
+      </node>
+      <node id="1">
+        <label>/home/jones657/PersistentLaplacians/cpp/include/petls_headers/core/Complex.hpp</label>
+        <link refid="Complex_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/jones657/PersistentLaplacians/cpp/src/core/Complex.cpp</label>
+        <link refid="Complex_8cpp"/>
+      </node>
+      <node id="3">
+        <label>/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/Alpha.hpp</label>
+        <link refid="Alpha_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classpetls_1_1Complex" prot="public">petls::Complex</innerclass>
+    <innernamespace refid="namespacepetls">petls</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>PL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../typedefs.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../petls.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#include<sp/>&quot;up_algorithms.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#include<sp/>&quot;../eigenvalues/eigs_algorithms.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="FilteredBoundaryMatrix_8hpp" kindref="compound">FilteredBoundaryMatrix.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#include<sp/>&lt;unsupported/Eigen/SparseExtra&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#include<sp/>&lt;numeric&gt;<sp/>//std::iota</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#include<sp/>&lt;set&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#include<sp/>&lt;cassert&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacepetls" kindref="compound">petls</ref>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>template<sp/>&lt;typename<sp/>storage<sp/>=<sp/>int&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="classpetls_1_1Complex" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpetls_1_1Complex" kindref="compound">Complex</ref><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>storage<sp/>=<sp/>int;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Member<sp/>variables<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classpetls_1_1Complex_1a51b323c84f7c4944c796e88538c28824" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classpetls_1_1Complex_1a51b323c84f7c4944c796e88538c28824" kindref="member">top_dim</ref>;<sp/></highlight></codeline>
+<codeline lineno="38" refid="classpetls_1_1Complex_1a0c8eab257d6e54edc37e910921176060" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;FilteredBoundaryMatrix&lt;storage&gt;&gt;<sp/><ref refid="classpetls_1_1Complex_1a0c8eab257d6e54edc37e910921176060" kindref="member">filtered_boundaries</ref>;<sp/></highlight></codeline>
+<codeline lineno="39" refid="classpetls_1_1Complex_1a784b891bd9bf1c68ad22d942d8d8245c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classpetls_1_1Complex_1a784b891bd9bf1c68ad22d942d8d8245c" kindref="member">verbose</ref>;<sp/></highlight></codeline>
+<codeline lineno="40" refid="classpetls_1_1Complex_1acf05fc10d73f8dc5e9a2a1d50a9cd480" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classpetls_1_1Complex_1acf05fc10d73f8dc5e9a2a1d50a9cd480" kindref="member">use_flipped</ref>;<sp/></highlight></codeline>
+<codeline lineno="41" refid="classpetls_1_1Complex_1a09b4983ae83f6978bd2a851cdddf89e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structpetls_1_1Profile" kindref="compound">Profile</ref><sp/><ref refid="classpetls_1_1Complex_1a09b4983ae83f6978bd2a851cdddf89e6" kindref="member">profile</ref>;<sp/></highlight></codeline>
+<codeline lineno="42" refid="classpetls_1_1Complex_1af8409d2c6aa6af1f987987a96000a508" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::function&lt;<ref refid="typedefs_8hpp_1a27a64e317582fd2a2dbdc95fa84b7ebd" kindref="member">spectra_vec</ref>(<ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref>&amp;)&gt;<sp/><ref refid="classpetls_1_1Complex_1af8409d2c6aa6af1f987987a96000a508" kindref="member">eigs_algorithm_func</ref>;</highlight></codeline>
+<codeline lineno="43" refid="classpetls_1_1Complex_1a619425ac85e02a7bcde6d2309adc9dfb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::function&lt;std::pair&lt;spectra_vec,DenseMatrix_PL&gt;(<ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref>&amp;)&gt;<sp/><ref refid="classpetls_1_1Complex_1a619425ac85e02a7bcde6d2309adc9dfb" kindref="member">eigenpairs_algorithm_func</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>std::function&lt;void(FilteredBoundaryMatrix&lt;storage&gt;*,<sp/>filtration_type,<sp/>filtration_type,<sp/>DenseMatrix_PL&amp;)&gt;<sp/>up_algorithm_func;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classpetls_1_1Complex_1a06aa83f406df56a1f06343eb1fc86084" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::function&lt;void(<ref refid="classpetls_1_1FilteredBoundaryMatrix" kindref="compound">FilteredBoundaryMatrix&lt;storage&gt;</ref>*,<sp/><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref>,<sp/><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref>,<sp/><ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref>&amp;)&gt;<sp/><ref refid="classpetls_1_1Complex_1a06aa83f406df56a1f06343eb1fc86084" kindref="member">up_algorithm_func</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//may<sp/>need<sp/>to<sp/>be<sp/>void*<sp/>instead<sp/>of<sp/>FilteredBoundaryMatrix*</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/****************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Constructors<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/****************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classpetls_1_1Complex_1a8cd116efeb41c775846c29a7c09fa5e3" kindref="member">Complex</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classpetls_1_1Complex_1a8cd116efeb41c775846c29a7c09fa5e3" kindref="member">Complex</ref>(std::vector&lt;Eigen::SparseMatrix&lt;storage&gt;&gt;<sp/>boundaries,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::vector&lt;filtration_type&gt;&gt;<sp/>filtrations);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/******************<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Empty<sp/>destructor<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/******************<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="classpetls_1_1Complex_1aa62336bf763bdbf09a50eb8acac8e807" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classpetls_1_1Complex_1aa62336bf763bdbf09a50eb8acac8e807" kindref="member">~Complex</ref>(){}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/***********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Getters<sp/>and<sp/>setters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/***********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpetls_1_1Complex_1a4a65ad47047f0f4703a15f42fcb2c8a4" kindref="member">set_eigs_algorithm_func</ref>(std::function&lt;<ref refid="typedefs_8hpp_1a27a64e317582fd2a2dbdc95fa84b7ebd" kindref="member">spectra_vec</ref>(<ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref>&amp;)&gt;<sp/>_eigs_algorithm_func);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpetls_1_1Complex_1a4a65ad47047f0f4703a15f42fcb2c8a4" kindref="member">set_eigs_algorithm_func</ref>(std::string<sp/>name);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpetls_1_1Complex_1a678471235fe014fb3db216e50114f880" kindref="member">set_up_algorithm_func</ref>(std::function&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">(<ref refid="classpetls_1_1FilteredBoundaryMatrix" kindref="compound">FilteredBoundaryMatrix&lt;int&gt;</ref>*,<sp/><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref>,<sp/><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref>,<sp/><ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref>&amp;)&gt;<sp/>_up_algorithm_func);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpetls_1_1Complex_1a678471235fe014fb3db216e50114f880" kindref="member">set_up_algorithm_func</ref>(std::string<sp/>name);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpetls_1_1Complex_1ad3dc94300ae8ff357c2e73a19977d9f6" kindref="member">set_boundaries_filtrations</ref>(std::vector&lt;Eigen::SparseMatrix&lt;storage&gt;&gt;<sp/>boundaries,</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::vector&lt;filtration_type&gt;&gt;<sp/>filtrations);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="98" refid="classpetls_1_1Complex_1a81608e40257ce40d6ccb2a8fb064ed8b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpetls_1_1Complex_1a81608e40257ce40d6ccb2a8fb064ed8b" kindref="member">set_verbose</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classpetls_1_1Complex_1a784b891bd9bf1c68ad22d942d8d8245c" kindref="member">verbose</ref>){this-&gt;verbose<sp/>=<sp/><ref refid="classpetls_1_1Complex_1a784b891bd9bf1c68ad22d942d8d8245c" kindref="member">verbose</ref>;}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="classpetls_1_1Complex_1ab1aa6d47f79701aa182e1f551203b0bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpetls_1_1Complex_1ab1aa6d47f79701aa182e1f551203b0bb" kindref="member">set_flipped</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classpetls_1_1Complex_1acf05fc10d73f8dc5e9a2a1d50a9cd480" kindref="member">use_flipped</ref>){this-&gt;use_flipped<sp/>=<sp/><ref refid="classpetls_1_1Complex_1acf05fc10d73f8dc5e9a2a1d50a9cd480" kindref="member">use_flipped</ref>;}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/***********************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Primary<sp/>Mathematical<sp/>Operations<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/***********************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpetls_1_1Complex_1a761ea93d4220dfced3b59e04767e6c9e" kindref="member">get_L</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim,<sp/><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref><sp/>a,<sp/><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref><sp/>b,<sp/><ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref><sp/>&amp;L);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref><sp/><ref refid="classpetls_1_1Complex_1a761ea93d4220dfced3b59e04767e6c9e" kindref="member">get_L</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim,<sp/><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref><sp/>a,<sp/><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref><sp/>b);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpetls_1_1Complex_1adfffc8a1b210c8f650e660bb202a9dc9" kindref="member">get_L_top_dim_flipped</ref>(<ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref><sp/>a,<sp/><ref refid="typedefs_8hpp_1aa0b819682f9cdac0ae1234aed46106e6" kindref="member">SparseMatrix_PL</ref><sp/>&amp;L);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="typedefs_8hpp_1aa0b819682f9cdac0ae1234aed46106e6" kindref="member">SparseMatrix_PL</ref><sp/><ref refid="classpetls_1_1Complex_1adfffc8a1b210c8f650e660bb202a9dc9" kindref="member">get_L_top_dim_flipped</ref>(<ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref><sp/>a);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpetls_1_1Complex_1a791969d5e1a55e0db1bd381257062494" kindref="member">get_up</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim,<sp/><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref><sp/>a,<sp/><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref><sp/>b,<sp/><ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref><sp/>&amp;L_up);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref><sp/><ref refid="classpetls_1_1Complex_1a791969d5e1a55e0db1bd381257062494" kindref="member">get_up</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim,<sp/><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref><sp/>a,<sp/><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref><sp/>b);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpetls_1_1Complex_1a2b882abcabbfb35073eb33f7be9d30e9" kindref="member">get_down</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim,<sp/><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref><sp/>a,<sp/>Eigen::SparseMatrix&lt;storage&gt;<sp/>&amp;L_down);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref><sp/><ref refid="classpetls_1_1Complex_1a2b882abcabbfb35073eb33f7be9d30e9" kindref="member">get_down</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim,<sp/><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref><sp/>a);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;spectra_type&gt;<sp/><ref refid="classpetls_1_1Complex_1a75852f8c18c3496d67261f841cd31607" kindref="member">nonzero_spectra</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim,<sp/><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref><sp/>a,<sp/><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref><sp/>b,<sp/><ref refid="typedefs_8hpp_1aa0b819682f9cdac0ae1234aed46106e6" kindref="member">SparseMatrix_PL</ref><sp/>PH_basis,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>use_dummy_harmonic_basis);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/**********************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Driver<sp/>functions<sp/>to<sp/>get<sp/>PL<sp/>and<sp/>eigenvalues<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/**********************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;spectra_type&gt;<sp/><ref refid="classpetls_1_1Complex_1ae90c3fed6769bf36fd6c88465459cefd" kindref="member">spectra</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim,<sp/><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref><sp/>a,<sp/><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref><sp/>b);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::tuple&lt;int,<sp/>filtration_type,<sp/>filtration_type,<sp/>std::vector&lt;spectra_type&gt;&gt;&gt;<sp/><ref refid="classpetls_1_1Complex_1ae90c3fed6769bf36fd6c88465459cefd" kindref="member">spectra</ref>();</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::tuple&lt;int,<sp/>filtration_type,<sp/>filtration_type,<sp/>std::vector&lt;spectra_type&gt;&gt;&gt;<sp/><ref refid="classpetls_1_1Complex_1ae90c3fed6769bf36fd6c88465459cefd" kindref="member">spectra</ref>(std::vector&lt;std::tuple&lt;int,filtration_type,filtration_type&gt;&gt;<sp/>spectra_request_list);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::tuple&lt;int,<sp/>filtration_type,<sp/>filtration_type,<sp/>std::vector&lt;spectra_type&gt;&gt;&gt;<sp/><ref refid="classpetls_1_1Complex_1a073913eac9aeabe8b9063523e1c1e1e4" kindref="member">spectra_allpairs</ref>();</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/***************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Driver<sp/>functions<sp/>to<sp/>get<sp/>PL<sp/>and<sp/>eigenvalues<sp/>and<sp/>eigenvectors<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/***************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::pair&lt;std::vector&lt;spectra_type&gt;,<ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref>&gt;<sp/><ref refid="classpetls_1_1Complex_1acdbea1a9ca32af5cc235e2dd1c28d872" kindref="member">eigenpairs</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim,<sp/><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref><sp/>a,<sp/><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref><sp/>b);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::tuple&lt;int,<sp/>filtration_type,<sp/>filtration_type,<sp/>std::vector&lt;spectra_type&gt;,<ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref>&gt;&gt;<sp/><ref refid="classpetls_1_1Complex_1acdbea1a9ca32af5cc235e2dd1c28d872" kindref="member">eigenpairs</ref>();</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::tuple&lt;int,<sp/>filtration_type,<sp/>filtration_type,<sp/>std::vector&lt;spectra_type&gt;,<sp/><ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref>&gt;&gt;<sp/><ref refid="classpetls_1_1Complex_1acdbea1a9ca32af5cc235e2dd1c28d872" kindref="member">eigenpairs</ref>(std::vector&lt;std::tuple&lt;int,filtration_type,filtration_type&gt;&gt;<sp/>spectra_request_list);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::pair&lt;int,<sp/>spectra_type&gt;<sp/><ref refid="classpetls_1_1Complex_1ae3ac144149db98b2245c13e95c23d12e" kindref="member">eigenvalues_summarize</ref>(std::vector&lt;spectra_type&gt;<sp/>eigenvalues);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/**********************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Helpful<sp/>input/output<sp/>functions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/**********************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpetls_1_1Complex_1a8c3c7f99170a02f218012c2b2348dc6c" kindref="member">store_L</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim,<sp/><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref><sp/>a,<sp/><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref><sp/>b,<sp/>std::string<sp/>filename);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpetls_1_1Complex_1a901288242ec9f4d6db57074755e0a942" kindref="member">print_boundaries</ref>();</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpetls_1_1Complex_1a8f24c27efcf718465238d3bb1586046c" kindref="member">store_spectra</ref>(std::vector&lt;std::tuple&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref>,<sp/><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref>,<sp/>std::vector&lt;spectra_type&gt;&gt;&gt;<sp/><ref refid="classpetls_1_1Complex_1ae90c3fed6769bf36fd6c88465459cefd" kindref="member">spectra</ref>,<sp/>std::string<sp/>out_prefix);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpetls_1_1Complex_1acd5e321056e2ede5b46164f1240ac0e4" kindref="member">store_spectra_summary</ref>(std::vector&lt;std::tuple&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref>,<sp/><ref refid="typedefs_8hpp_1afc86493f3736a9d186d249149b2e5e22" kindref="member">filtration_type</ref>,<sp/>std::vector&lt;spectra_type&gt;&gt;&gt;<sp/><ref refid="classpetls_1_1Complex_1ae90c3fed6769bf36fd6c88465459cefd" kindref="member">spectra</ref>,<sp/>std::string<sp/>out_prefix);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303" refid="classpetls_1_1Complex_1a5ca94422983a0ca1e2f7083f0d7466fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpetls_1_1Complex_1a5ca94422983a0ca1e2f7083f0d7466fe" kindref="member">time_to_csv</ref>(std::string<sp/>filename){<ref refid="classpetls_1_1Complex_1a09b4983ae83f6978bd2a851cdddf89e6" kindref="member">profile</ref>.<ref refid="structpetls_1_1Profile_1ad43adb4becbf6d2b8c19d66971fc1b5b" kindref="member">to_csv</ref>(filename);}</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::tuple&lt;int,<sp/>filtration_type,<sp/>filtration_type&gt;&gt;<sp/><ref refid="classpetls_1_1Complex_1a9e6e6a833a87173157c02391d13af78b" kindref="member">filtration_list_to_spectra_request</ref>(std::vector&lt;filtration_type&gt;<sp/>filtrations,<sp/>std::vector&lt;int&gt;<sp/>dims);</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::tuple&lt;int,<sp/>filtration_type,<sp/>filtration_type&gt;&gt;<sp/><ref refid="classpetls_1_1Complex_1ae8de6f9bffcf4efc584855bd25982752" kindref="member">filtration_list_to_spectra_request_allpairs</ref>(std::vector&lt;filtration_type&gt;<sp/>filtrations,<sp/>std::vector&lt;int&gt;<sp/>dims);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;filtration_type&gt;<sp/><ref refid="classpetls_1_1Complex_1a30fce0a1ba9de451b677012c289aa3e9" kindref="member">get_all_filtrations</ref>();</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classpetls_1_1FilteredBoundaryMatrix" kindref="compound">petls::FilteredBoundaryMatrix&lt;storage&gt;</ref><sp/><ref refid="classpetls_1_1Complex_1af9c9116f42876d80cc78e5662f979bfc" kindref="member">dummy_d0</ref>();</highlight></codeline>
+<codeline lineno="329"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/core/Complex.hpp"/>
+  </compounddef>
+</doxygen>

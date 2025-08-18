@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Getting Started &#8212; PersistentLaplacians 0.0.23 documentation</title>
+    <title>Getting Started &#8212; petls 1.0.0 documentation</title>
   
   
   
@@ -30,7 +30,7 @@
   <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 <link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -40,8 +40,8 @@
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="_static/documentation_options.js?v=3294188c"></script>
-    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/documentation_options.js?v=8d563738"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
@@ -114,7 +114,7 @@
   
   
   
-    <p class="title logo__title">PersistentLaplacians 0.0.23 documentation</p>
+    <p class="title logo__title">petls 1.0.0 documentation</p>
   
 </a></div>
     
@@ -328,13 +328,9 @@
 <h1>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading">#</a></h1>
 <div class="toctree-wrapper compound">
 </div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Using Intel MKL or BLAS offers a speedup by a factor of about 6. This documentation does not currently reflect how to do that.</p>
-</div>
 <section id="python-installation">
 <h2>Python Installation<a class="headerlink" href="#python-installation" title="Link to this heading">#</a></h2>
-<p>If you have a system compatible with any of the binary wheels listed <a class="reference external" href="https://test.pypi.org/project/PersistentLaplacians/">here</a>, you can just install via <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">PersistentLaplacians</span></code>.</p>
+<p>If you have a system compatible with any of the compiled binary wheels listed <a class="reference external" href="https://pypi.org/project/petls/">here</a>, you can just install via <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">petls</span></code>.</p>
 <p>Otherwise, to install from source, there are the following dependencies:</p>
 <ul class="simple">
 <li><p>CMake &gt;= 3.16.3</p></li>
@@ -348,9 +344,9 @@
 </ul>
 <p>There are three ways to install from source:</p>
 <ol class="arabic">
-<li><p>If you do not have a system compatible with any of the binaries on PyPI, then <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">PersistentLaplacians</span></code> should do the job.</p></li>
-<li><p>Clone the <a class="reference external" href="https://github.com/bdjones13/PersistentLaplacians/">GitHub repository</a> and from the project root run <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">.</span></code></p></li>
-<li><p>Clone the <a class="reference external" href="https://github.com/bdjones13/PersistentLaplacians/">GitHub repository</a> and from the project root run:</p>
+<li><p>If you do not have a system compatible with any of the pre-compiled binaries on PyPI, then <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">petls</span></code> should still install from source.</p></li>
+<li><p>Clone the <a class="reference external" href="https://github.com/bdjones13/PETLS/">GitHub repository</a> and from the project root run <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">.</span></code></p></li>
+<li><p>Clone the <a class="reference external" href="https://github.com/bdjones13/PETLS/">GitHub repository</a> and from the project root run:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="n">build</span>
 <span class="n">cd</span> <span class="n">build</span>
 <span class="n">cmake</span> <span class="o">..</span>
@@ -366,11 +362,11 @@
 <p>Dependencies:</p>
 <ul class="simple">
 <li><p>CMake &gt;= 3.16.3</p></li>
-<li><p>Eigen 3</p></li>
+<li><p>Eigen 3.4</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This project downloads and compiles Eigen 3.4 for internal usage (some features new to 3.4 are used), but to call PersistentLaplacian functions you must pass in Eigen matrices, so you must have access to your own version of Eigen 3. You likely do not need Eigen 3.4 to use this library.</p>
+<p>This project downloads and compiles Eigen 3.4 for internal usage (some features new to 3.4 are used), but to call PETLS functions you must pass in Eigen matrices, so you must have access to your own version of Eigen 3. You likely do not need Eigen 3.4 to use this library.</p>
 </div>
 <p>If you intend to use the Alpha complex from Gudhi, you will also need the following dependencies at the time of installation:</p>
 <ul class="simple">
@@ -408,8 +404,8 @@
 </ul>
 <p>You can create the persistent Laplacians and compute the spectra:</p>
 <p><strong>Python</strong></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">PersistentLaplacians</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">petls</span>
 
 
 <span class="c1"># boundary matrices</span>
@@ -423,12 +419,12 @@
                <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span>    <span class="c1"># dim 1 filtrations</span>
                <span class="p">[</span><span class="mi">5</span><span class="p">]]</span>        <span class="c1"># dim 2 filtrations</span>
 
-<span class="n">pl</span> <span class="o">=</span> <span class="n">PersistentLaplacians</span><span class="o">.</span><span class="n">PersistentLaplacian</span><span class="p">(</span><span class="n">boundaries</span><span class="p">,</span> <span class="n">filtrations</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">pl</span><span class="o">.</span><span class="n">spectra</span><span class="p">())</span>
+<span class="nb">complex</span> <span class="o">=</span> <span class="n">petls</span><span class="o">.</span><span class="n">Complex</span><span class="p">(</span><span class="n">boundaries</span><span class="p">,</span> <span class="n">fsiltrations</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">complex</span><span class="o">.</span><span class="n">spectra</span><span class="p">())</span>
 </pre></div>
 </div>
 <p><strong>C++</strong></p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;PersistentLaplacian.hpp&quot;</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;petls.hpp&quot;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Eigen/Dense&gt;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;vector&gt;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
@@ -462,8 +458,8 @@
 <span class="n">filtrations</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">c1_filtrations</span><span class="p">);</span>
 <span class="n">filtrations</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">c2_filtrations</span><span class="p">);</span>
 
-<span class="n">PersistentLaplacians</span><span class="o">::</span><span class="n">PersistentLaplacian</span><span class="w"> </span><span class="nf">pl</span><span class="p">(</span><span class="n">boundaries</span><span class="p">,</span><span class="n">filtrations</span><span class="p">);</span>
-<span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">pl</span><span class="p">.</span><span class="n">spectra</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="n">petls</span><span class="o">::</span><span class="n">Complex</span><span class="w"> </span><span class="nf">complex</span><span class="p">(</span><span class="n">boundaries</span><span class="p">,</span><span class="n">filtrations</span><span class="p">);</span>
+<span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="k">complex</span><span class="p">.</span><span class="n">spectra</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
 </pre></div>
 </div>
 </section>
@@ -556,7 +552,7 @@
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
     <br/>
   </p>
 </div>

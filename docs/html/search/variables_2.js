@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['dims_252',['dims',['../structPersistentLaplacians_1_1Profile.html#adb71605b3344fd4d71b6ce24bbe82485',1,'PersistentLaplacians::Profile']]],
-  ['duration_253',['duration',['../structPersistentLaplacians_1_1timer.html#acff399cee3e0c168bbf4a6cab9348158',1,'PersistentLaplacians::timer']]],
-  ['durations_5fall_254',['durations_all',['../structPersistentLaplacians_1_1Profile.html#a6b8e3b8c92b8cb33c2da32f20b019545',1,'PersistentLaplacians::Profile']]],
-  ['durations_5feigs_255',['durations_eigs',['../structPersistentLaplacians_1_1Profile.html#a30f7a63a1d89020a3cf7215c0ec272e5',1,'PersistentLaplacians::Profile']]],
-  ['durations_5fl_256',['durations_L',['../structPersistentLaplacians_1_1Profile.html#ad927e0f3af19a21fb915f2e12785fc2e',1,'PersistentLaplacians::Profile']]],
-  ['durations_5fl_5fdown_257',['durations_L_down',['../structPersistentLaplacians_1_1Profile.html#a403c1b5f2a4257c16c52cc23b9b848b5',1,'PersistentLaplacians::Profile']]],
-  ['durations_5fl_5fup_258',['durations_L_up',['../structPersistentLaplacians_1_1Profile.html#a304826cf0c22453e164d9213d45744db',1,'PersistentLaplacians::Profile']]],
-  ['durations_5fsum_5fup_5fdown_259',['durations_sum_up_down',['../structPersistentLaplacians_1_1Profile.html#aef222c7fa8771ad5c1f21c426c52c4dc',1,'PersistentLaplacians::Profile']]]
+  ['dims_249',['dims',['../structpetls_1_1Profile.html#a51478027c8eafac01cb57244923c5640',1,'petls::Profile']]],
+  ['duration_250',['duration',['../structpetls_1_1timer.html#ab72e781a40601e219d5788043eb2709c',1,'petls::timer']]],
+  ['durations_5fall_251',['durations_all',['../structpetls_1_1Profile.html#a70a4551fd74ee63f6688efc4ec48747e',1,'petls::Profile']]],
+  ['durations_5feigs_252',['durations_eigs',['../structpetls_1_1Profile.html#ac673f1ac6c59cf0e14e0d88636867628',1,'petls::Profile']]],
+  ['durations_5fl_253',['durations_L',['../structpetls_1_1Profile.html#a1d398d19c16411838f38aef7ed05d7d0',1,'petls::Profile']]],
+  ['durations_5fl_5fdown_254',['durations_L_down',['../structpetls_1_1Profile.html#a77267df8dd9470862d4e8b379d06c7ba',1,'petls::Profile']]],
+  ['durations_5fl_5fup_255',['durations_L_up',['../structpetls_1_1Profile.html#aeb7f6df7a299b7d7e01043a8e61767f9',1,'petls::Profile']]],
+  ['durations_5fsum_5fup_5fdown_256',['durations_sum_up_down',['../structpetls_1_1Profile.html#af546a345a964f882b4973a310dcf8c45',1,'petls::Profile']]]
 ];

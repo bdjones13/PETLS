@@ -6,7 +6,7 @@
 
 attribute
 
-.. auto{{ objtype }}:: {{ fullname | replace("PersistentLaplacians.", "PersistentLaplacians::") }}
+.. auto{{ objtype }}:: {{ fullname | replace("petls.", "petls::") }}
 
 {# In the fullname (e.g. `numpy.ma.MaskedArray.methodname`), the module name
 is ambiguous. Using a `::` separator (e.g. `numpy::ma.MaskedArray.methodname`)

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PersistentLaplacians: /home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/PersistentSheafLaplacian.hpp File Reference</title>
+<title>PETLS: /home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/PersistentSheafLaplacian.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">PersistentLaplacians
+   <div id="projectname">PETLS
    </div>
   </td>
  </tr>
@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_df511e5bd85cec96854b39d5e1c27aa8.html">cpp</a></li><li class="navelem"><a class="el" href="dir_07f37e320deb3031a60f4b23b9c60eb5.html">include</a></li><li class="navelem"><a class="el" href="dir_f4dafedda50505565fc59033b655396b.html">PersistentLaplacians_headers</a></li><li class="navelem"><a class="el" href="dir_0ad7e41f04d98acb148714f84d2f044e.html">variants</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_df511e5bd85cec96854b39d5e1c27aa8.html">cpp</a></li><li class="navelem"><a class="el" href="dir_07f37e320deb3031a60f4b23b9c60eb5.html">include</a></li><li class="navelem"><a class="el" href="dir_8a2512f084787173c6395afc8423288e.html">petls_headers</a></li><li class="navelem"><a class="el" href="dir_c1b8c20a8da28e85d0efdbb22217c200.html">variants</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -72,19 +72,31 @@ $(function() {
 <div class="title">PersistentSheafLaplacian.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="PersistentLaplacian_8hpp_source.html">../core/PersistentLaplacian.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;<a class="el" href="typedefs_8hpp_source.html">../typedefs.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="petls_8hpp_source.html">../petls.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="up__algorithms_8hpp_source.html">../core/up_algorithms.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="eigs__algorithms_8hpp_source.html">../eigenvalues/eigs_algorithms.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="FilteredBoundaryMatrix_8hpp_source.html">FilteredBoundaryMatrix.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sheaf__simplex__tree_8hpp_source.html">sheaf_simplex_tree.hpp</a>&quot;</code><br />
+<code>#include &lt;unsupported/Eigen/SparseExtra&gt;</code><br />
+<code>#include &lt;Eigen/Dense&gt;</code><br />
+<code>#include &lt;chrono&gt;</code><br />
+<code>#include &lt;numeric&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
+<code>#include &lt;set&gt;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
 </div>
 <p><a href="PersistentSheafLaplacian_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPersistentLaplacians_1_1PersistentSheafLaplacian.html">PersistentLaplacians::PersistentSheafLaplacian&lt; eigs_Algorithm, up_Algorithm &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpetls_1_1PersistentSheafLaplacian.html">petls::PersistentSheafLaplacian</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespacePersistentLaplacians"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePersistentLaplacians.html">PersistentLaplacians</a></td></tr>
+<tr class="memitem:namespacepetls"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepetls.html">petls</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

@@ -1,0 +1,134 @@
+\hypertarget{classpetls_1_1FilteredBoundaryMatrix}{}\doxysection{petls\+::Filtered\+Boundary\+Matrix$<$ FBMcoeff $>$ Class Template Reference}
+\label{classpetls_1_1FilteredBoundaryMatrix}\index{petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$@{petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$}}
+
+
+{\ttfamily \#include $<$Filtered\+Boundary\+Matrix.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpetls_1_1FilteredBoundaryMatrix_a24c183bc301a0aa9028d2fb6e7f48a80}{Filtered\+Boundary\+Matrix}} (Eigen\+::\+Sparse\+Matrix$<$ FBMcoeff, Eigen\+::\+Col\+Major $>$ \+\_\+matrix, std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$ \+\_\+domain\+\_\+filtrations, std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$ \+\_\+range\+\_\+filtrations)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$ \mbox{\hyperlink{classpetls_1_1FilteredBoundaryMatrix_ab7c06b568de5786b5e9ae21677f05c02}{get\+\_\+domain\+\_\+filtrations}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$ \mbox{\hyperlink{classpetls_1_1FilteredBoundaryMatrix_a8803d08dfff84de36546098fe4bbf5c1}{get\+\_\+range\+\_\+filtrations}} ()
+\item 
+\mbox{\hyperlink{classpetls_1_1FilteredBoundaryMatrix}{Filtered\+Boundary\+Matrix}} \mbox{\hyperlink{classpetls_1_1FilteredBoundaryMatrix_ae9b9e697d6913b173473fd17195bf691}{transpose}} ()
+\item 
+int \mbox{\hyperlink{classpetls_1_1FilteredBoundaryMatrix_ae85cbb960d7ca3c5601a5661d0a23c82}{index\+\_\+of\+\_\+filtration}} (bool use\+\_\+domain\+\_\+filtrations, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} a)
+\item 
+void \mbox{\hyperlink{classpetls_1_1FilteredBoundaryMatrix_a281c680fa29c17c348e89bbe3daa58c3}{submatrix\+\_\+at\+\_\+filtration}} (\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} a, Eigen\+::\+Sparse\+Matrix$<$ FBMcoeff, Eigen\+::\+Col\+Major $>$ \&M)
+\item 
+void \mbox{\hyperlink{classpetls_1_1FilteredBoundaryMatrix_a4ca6ac0481d5a4979bfae81e97bbcdb2}{print\+\_\+range\+\_\+filtration}} ()
+\item 
+void \mbox{\hyperlink{classpetls_1_1FilteredBoundaryMatrix_af3baae8c31410ff076d8d08ee279b886}{print\+\_\+domain\+\_\+filtration}} ()
+\item 
+void \mbox{\hyperlink{classpetls_1_1FilteredBoundaryMatrix_a48ee0ee9c2cbe5601546e61e554fbfc6}{print}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename FBMcoeff = int$>$\newline
+class petls\+::\+Filtered\+Boundary\+Matrix$<$ FBMcoeff $>$}
+
+Class for storing, manipulating, and retrieving the boundary matrix at different filtration levels 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpetls_1_1FilteredBoundaryMatrix_a24c183bc301a0aa9028d2fb6e7f48a80}\label{classpetls_1_1FilteredBoundaryMatrix_a24c183bc301a0aa9028d2fb6e7f48a80}} 
+\index{petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$@{petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$}!FilteredBoundaryMatrix@{FilteredBoundaryMatrix}}
+\index{FilteredBoundaryMatrix@{FilteredBoundaryMatrix}!petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$@{petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$}}
+\doxysubsubsection{\texorpdfstring{FilteredBoundaryMatrix()}{FilteredBoundaryMatrix()}}
+{\footnotesize\ttfamily template$<$typename FBMcoeff  = int$>$ \\
+\mbox{\hyperlink{classpetls_1_1FilteredBoundaryMatrix}{petls\+::\+Filtered\+Boundary\+Matrix}}$<$ FBMcoeff $>$\+::\mbox{\hyperlink{classpetls_1_1FilteredBoundaryMatrix}{Filtered\+Boundary\+Matrix}} (\begin{DoxyParamCaption}\item[{Eigen\+::\+Sparse\+Matrix$<$ FBMcoeff, Eigen\+::\+Col\+Major $>$}]{\+\_\+matrix,  }\item[{std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$}]{\+\_\+domain\+\_\+filtrations,  }\item[{std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$}]{\+\_\+range\+\_\+filtrations }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor. Note\+: dimensions of filtrations and matrix must match. 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+matrix} & boundary matrix d\+\_\+n \\
+\hline
+{\em \+\_\+domain\+\_\+filtrations} & filtrations of n-\/simplices \\
+\hline
+{\em \+\_\+range\+\_\+filtrations} & filtrations of (n-\/1)-\/simplices \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpetls_1_1FilteredBoundaryMatrix_ab7c06b568de5786b5e9ae21677f05c02}\label{classpetls_1_1FilteredBoundaryMatrix_ab7c06b568de5786b5e9ae21677f05c02}} 
+\index{petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$@{petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$}!get\_domain\_filtrations@{get\_domain\_filtrations}}
+\index{get\_domain\_filtrations@{get\_domain\_filtrations}!petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$@{petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$}}
+\doxysubsubsection{\texorpdfstring{get\_domain\_filtrations()}{get\_domain\_filtrations()}}
+{\footnotesize\ttfamily template$<$typename FBMcoeff  = int$>$ \\
+std\+::vector$<$\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}$>$ \mbox{\hyperlink{classpetls_1_1FilteredBoundaryMatrix}{petls\+::\+Filtered\+Boundary\+Matrix}}$<$ FBMcoeff $>$\+::get\+\_\+domain\+\_\+filtrations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the filtration values of n-\/simplices \mbox{\Hypertarget{classpetls_1_1FilteredBoundaryMatrix_a8803d08dfff84de36546098fe4bbf5c1}\label{classpetls_1_1FilteredBoundaryMatrix_a8803d08dfff84de36546098fe4bbf5c1}} 
+\index{petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$@{petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$}!get\_range\_filtrations@{get\_range\_filtrations}}
+\index{get\_range\_filtrations@{get\_range\_filtrations}!petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$@{petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$}}
+\doxysubsubsection{\texorpdfstring{get\_range\_filtrations()}{get\_range\_filtrations()}}
+{\footnotesize\ttfamily template$<$typename FBMcoeff  = int$>$ \\
+std\+::vector$<$\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}$>$ \mbox{\hyperlink{classpetls_1_1FilteredBoundaryMatrix}{petls\+::\+Filtered\+Boundary\+Matrix}}$<$ FBMcoeff $>$\+::get\+\_\+range\+\_\+filtrations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the filtration values of (n-\/1)-\/simplices \mbox{\Hypertarget{classpetls_1_1FilteredBoundaryMatrix_ae85cbb960d7ca3c5601a5661d0a23c82}\label{classpetls_1_1FilteredBoundaryMatrix_ae85cbb960d7ca3c5601a5661d0a23c82}} 
+\index{petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$@{petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$}!index\_of\_filtration@{index\_of\_filtration}}
+\index{index\_of\_filtration@{index\_of\_filtration}!petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$@{petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$}}
+\doxysubsubsection{\texorpdfstring{index\_of\_filtration()}{index\_of\_filtration()}}
+{\footnotesize\ttfamily template$<$typename FBMcoeff  = int$>$ \\
+int \mbox{\hyperlink{classpetls_1_1FilteredBoundaryMatrix}{petls\+::\+Filtered\+Boundary\+Matrix}}$<$ FBMcoeff $>$\+::index\+\_\+of\+\_\+filtration (\begin{DoxyParamCaption}\item[{bool}]{use\+\_\+domain\+\_\+filtrations,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the largest index where the corresponding filtration value is not more than a. If there are multiple simplices with the same filtration highest value, it will return the largest index. 
+\begin{DoxyParams}{Parameters}
+{\em use\+\_\+domain\+\_\+filtrations} & if true, iterate over the domain filtrations (n-\/simplices), if false over the range filtrations (n-\/1)-\/simplices \\
+\hline
+{\em a} & filtration value ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The largest index where the corresponding filtration value is not more than a. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpetls_1_1FilteredBoundaryMatrix_a48ee0ee9c2cbe5601546e61e554fbfc6}\label{classpetls_1_1FilteredBoundaryMatrix_a48ee0ee9c2cbe5601546e61e554fbfc6}} 
+\index{petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$@{petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$}!print@{print}}
+\index{print@{print}!petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$@{petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily template$<$typename FBMcoeff  = int$>$ \\
+void \mbox{\hyperlink{classpetls_1_1FilteredBoundaryMatrix}{petls\+::\+Filtered\+Boundary\+Matrix}}$<$ FBMcoeff $>$\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Print the underlying matrix for d\+\_\+n. \mbox{\Hypertarget{classpetls_1_1FilteredBoundaryMatrix_af3baae8c31410ff076d8d08ee279b886}\label{classpetls_1_1FilteredBoundaryMatrix_af3baae8c31410ff076d8d08ee279b886}} 
+\index{petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$@{petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$}!print\_domain\_filtration@{print\_domain\_filtration}}
+\index{print\_domain\_filtration@{print\_domain\_filtration}!petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$@{petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$}}
+\doxysubsubsection{\texorpdfstring{print\_domain\_filtration()}{print\_domain\_filtration()}}
+{\footnotesize\ttfamily template$<$typename FBMcoeff  = int$>$ \\
+void \mbox{\hyperlink{classpetls_1_1FilteredBoundaryMatrix}{petls\+::\+Filtered\+Boundary\+Matrix}}$<$ FBMcoeff $>$\+::print\+\_\+domain\+\_\+filtration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Print the filtration values of (n-\/1)-\/simplices. \mbox{\Hypertarget{classpetls_1_1FilteredBoundaryMatrix_a4ca6ac0481d5a4979bfae81e97bbcdb2}\label{classpetls_1_1FilteredBoundaryMatrix_a4ca6ac0481d5a4979bfae81e97bbcdb2}} 
+\index{petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$@{petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$}!print\_range\_filtration@{print\_range\_filtration}}
+\index{print\_range\_filtration@{print\_range\_filtration}!petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$@{petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$}}
+\doxysubsubsection{\texorpdfstring{print\_range\_filtration()}{print\_range\_filtration()}}
+{\footnotesize\ttfamily template$<$typename FBMcoeff  = int$>$ \\
+void \mbox{\hyperlink{classpetls_1_1FilteredBoundaryMatrix}{petls\+::\+Filtered\+Boundary\+Matrix}}$<$ FBMcoeff $>$\+::print\+\_\+range\+\_\+filtration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Print the filtration values of (n-\/1)-\/simplices. \mbox{\Hypertarget{classpetls_1_1FilteredBoundaryMatrix_a281c680fa29c17c348e89bbe3daa58c3}\label{classpetls_1_1FilteredBoundaryMatrix_a281c680fa29c17c348e89bbe3daa58c3}} 
+\index{petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$@{petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$}!submatrix\_at\_filtration@{submatrix\_at\_filtration}}
+\index{submatrix\_at\_filtration@{submatrix\_at\_filtration}!petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$@{petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$}}
+\doxysubsubsection{\texorpdfstring{submatrix\_at\_filtration()}{submatrix\_at\_filtration()}}
+{\footnotesize\ttfamily template$<$typename FBMcoeff  = int$>$ \\
+void \mbox{\hyperlink{classpetls_1_1FilteredBoundaryMatrix}{petls\+::\+Filtered\+Boundary\+Matrix}}$<$ FBMcoeff $>$\+::submatrix\+\_\+at\+\_\+filtration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{a,  }\item[{Eigen\+::\+Sparse\+Matrix$<$ FBMcoeff, Eigen\+::\+Col\+Major $>$ \&}]{M }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the largest submatrix (by reference) that does not have corresponding filtration values greater than a. 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em a} & filtration value \\
+\hline
+\mbox{\texttt{ out}}  & {\em M} & the submatrix. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpetls_1_1FilteredBoundaryMatrix_ae9b9e697d6913b173473fd17195bf691}\label{classpetls_1_1FilteredBoundaryMatrix_ae9b9e697d6913b173473fd17195bf691}} 
+\index{petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$@{petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$}!transpose@{transpose}}
+\index{transpose@{transpose}!petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$@{petls::FilteredBoundaryMatrix$<$ FBMcoeff $>$}}
+\doxysubsubsection{\texorpdfstring{transpose()}{transpose()}}
+{\footnotesize\ttfamily template$<$typename FBMcoeff  = int$>$ \\
+\mbox{\hyperlink{classpetls_1_1FilteredBoundaryMatrix}{Filtered\+Boundary\+Matrix}} \mbox{\hyperlink{classpetls_1_1FilteredBoundaryMatrix}{petls\+::\+Filtered\+Boundary\+Matrix}}$<$ FBMcoeff $>$\+::transpose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the transpose of the boundary matrix, which swaps the domain and range filtrations 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jones657/\+Persistent\+Laplacians/cpp/include/petls\+\_\+headers/core/\mbox{\hyperlink{FilteredBoundaryMatrix_8hpp}{Filtered\+Boundary\+Matrix.\+hpp}}\end{DoxyCompactItemize}

@@ -54,6 +54,8 @@ if(NOT eigen_POPULATED)
     include_directories(${Eigen_SOURCE_DIR} ${Eigen_BINARY_DIR} )
 endif()
 
+include_directories(${CMAKE_CURRENT_LIST_DIR}/include/spectra/include)
+
 if (PETLS_USE_ALPHA_COMPLEX)
   include(alpha.cmake)
 endif()
@@ -76,7 +78,7 @@ set(SOURCE_FILES
     ${PROJECT_SOURCE_DIR}/petls.cpp
     ${PROJECT_SOURCE_DIR}/core/Complex.cpp
     ${PROJECT_SOURCE_DIR}/eigenvalues/eigs_algorithms.cpp
-
+    ${PROJECT_SOURCE_DIR}/eigenvalues/spectra_algorithms.cpp
     ${PROJECT_SOURCE_DIR}/variants/Alpha.cpp
 )
 
@@ -87,12 +89,11 @@ set(HEADER_FILES
     ${PROJECT_INCLUDE_DIR}/core/up_algorithms.hpp
     
     ${PROJECT_INCLUDE_DIR}/eigenvalues/eigs_algorithms.hpp
-
+    ${PROJECT_INCLUDE_DIR}/eigenvalues/spectra_algorithms.hpp
     ${PROJECT_INCLUDE_DIR}/variants/Alpha.hpp # Alpha Complex depends on CGAL
     ${PROJECT_INCLUDE_DIR}/variants/dFlag.hpp
     ${PROJECT_INCLUDE_DIR}/variants/Rips.hpp
     
-    ${PROJECT_INCLUDE_DIR}/variants/newPSL.hpp
     ${PROJECT_INCLUDE_DIR}/variants/PersistentSheafLaplacian.hpp
     ${PROJECT_INCLUDE_DIR}/variants/sheaf_simplex_tree.hpp
 )

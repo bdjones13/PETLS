@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Welcome to PersistentLaplacians’s documentation! &#8212; PersistentLaplacians 0.0.23 documentation</title>
+    <title>PETLS: PErsistent Topological Laplacian Software &#8212; petls 1.0.0 documentation</title>
   
   
   
@@ -30,7 +30,7 @@
   <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 <link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -40,8 +40,8 @@
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="_static/documentation_options.js?v=3294188c"></script>
-    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/documentation_options.js?v=8d563738"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
@@ -114,7 +114,7 @@
   
   
   
-    <p class="title logo__title">PersistentLaplacians 0.0.23 documentation</p>
+    <p class="title logo__title">petls 1.0.0 documentation</p>
   
 </a></div>
     
@@ -293,48 +293,32 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="welcome-to-persistentlaplacians-s-documentation">
-<h1>Welcome to PersistentLaplacians’s documentation!<a class="headerlink" href="#welcome-to-persistentlaplacians-s-documentation" title="Link to this heading">#</a></h1>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This project is under active development as of January 2025. For developing it, I have restricted some of the configurations for usage and installation to my environment. If you want a minor change to setup (e.g. build wheels for Python 3.11), just ask!</p>
-</div>
+  <section id="petls-persistent-topological-laplacian-software">
+<h1>PETLS: PErsistent Topological Laplacian Software<a class="headerlink" href="#petls-persistent-topological-laplacian-software" title="Link to this heading">#</a></h1>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
 <p>Persistent Laplacians are a persistent version of combinatorial Laplacians, which generalize the well-studied graph Laplacian to simplicial and other complexes, such as path complexes. As with graph Laplacians, we study persistent Laplacians largely through their eigenvalues.</p>
 <p>This is a <strong>C++ library</strong> with <strong>Python bindings</strong> that computes Persistent Laplacians extremely quickly (orders of magnitude faster than other tools) for a variety of simplicial and non-simplicial complexes. Most importantly, it will compute the persistent Laplacian given any collection of (filtered) boundary matrices.</p>
-<p>This project is intended to be user-friendly for two audiences:</p>
+<p>This project is intended for two audiences:</p>
 <ol class="arabic simple">
 <li><p>Researchers in Topological Data Analysis (TDA), who develop and analyze both theoretical and computational tools.</p></li>
 <li><p>Researchers with data that could be analyzed with topology. If you use Persistent Homology, it is likely that Persistent Laplacians will be of interest to you!</p></li>
 </ol>
-<p>Source code is available on <a class="reference external" href="https://github.com/bdjones13/PersistentLaplacians/">GitHub</a>.</p>
+<p>Source code is available on <a class="reference external" href="https://github.com/bdjones13/PETLS/">GitHub</a>.</p>
 <p>This project is written and maintained by <a class="reference external" href="https://www.benjones-math.com/">Ben Jones</a> at Michigan State University.</p>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-header docutils">
-<p class="sd-card-text">Python Documentation</p>
-</div>
 <div class="sd-card-body docutils">
-<p class="sd-card-text">Python</p>
-</div>
-<div class="sd-card-footer docutils">
-<p class="sd-card-text"><span class="sd-d-grid"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-secondary sd-stretched-link reference internal" href="python/index.html#python"><span class="std std-ref">To the python docs</span></a></span></p>
+<p class="sd-card-text"><span class="sd-d-grid"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-secondary sd-stretched-link reference internal" href="python/index.html#python"><span class="std std-ref">Click here for Python documentation</span></a></span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-header docutils">
-<p class="sd-card-text">C++ Documentation</p>
-</div>
 <div class="sd-card-body docutils">
-<p class="sd-card-text">Documentation for C++</p>
-</div>
-<div class="sd-card-footer docutils">
-<p class="sd-card-text"><span class="sd-d-grid"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-secondary sd-stretched-link reference internal" href="cpp/index.html#cpp"><span class="std std-ref">To the C++ docs</span></a></span></p>
+<p class="sd-card-text"><span class="sd-d-grid"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-secondary sd-stretched-link reference internal" href="cpp/index.html#cpp"><span class="std std-ref">Click here for C++ documentation</span></a></span></p>
 </div>
 </div>
 </div>
@@ -343,8 +327,23 @@
 </section>
 <section id="acknowledgements">
 <h2>Acknowledgements:<a class="headerlink" href="#acknowledgements" title="Link to this heading">#</a></h2>
-<p>This project is partially supported by grants xxx.</p>
+<p>This work was supported in part by NIH grant R35GM148196, NSF grant DMS-2052983, and MSU Research Foundation.</p>
 <div class="toctree-wrapper compound">
+</div>
+</section>
+<section id="citation">
+<h2>Citation<a class="headerlink" href="#citation" title="Link to this heading">#</a></h2>
+<p>Please use the following bibtex entry to cite this work:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@misc</span><span class="p">{</span><span class="n">jones2025petlspersistenttopologicallaplacian</span><span class="p">,</span>
+    <span class="n">title</span><span class="o">=</span><span class="p">{</span><span class="n">PETLS</span><span class="p">:</span> <span class="n">PErsistent</span> <span class="n">Topological</span> <span class="n">Laplacian</span> <span class="n">Software</span><span class="p">},</span>
+    <span class="n">author</span><span class="o">=</span><span class="p">{</span><span class="n">Benjamin</span> <span class="n">Jones</span> <span class="ow">and</span> <span class="n">Guo</span><span class="o">-</span><span class="n">Wei</span> <span class="n">Wei</span><span class="p">},</span>
+    <span class="n">year</span><span class="o">=</span><span class="p">{</span><span class="mi">2025</span><span class="p">},</span>
+    <span class="n">eprint</span><span class="o">=</span><span class="p">{</span><span class="mf">2508.11560</span><span class="p">},</span>
+    <span class="n">archivePrefix</span><span class="o">=</span><span class="p">{</span><span class="n">arXiv</span><span class="p">},</span>
+    <span class="n">primaryClass</span><span class="o">=</span><span class="p">{</span><span class="n">math</span><span class="o">.</span><span class="n">AT</span><span class="p">},</span>
+    <span class="n">url</span><span class="o">=</span><span class="p">{</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">arxiv</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="nb">abs</span><span class="o">/</span><span class="mf">2508.11560</span><span class="p">},</span>
+<span class="p">}</span>
+</pre></div>
 </div>
 </section>
 </section>
@@ -389,6 +388,7 @@
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acknowledgements">Acknowledgements:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citation">Citation</a></li>
 </ul>
   </nav></div>
 
@@ -435,7 +435,7 @@
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
     <br/>
   </p>
 </div>

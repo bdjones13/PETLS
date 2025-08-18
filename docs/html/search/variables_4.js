@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['filtered_5fboundaries_262',['filtered_boundaries',['../classPersistentLaplacians_1_1PersistentLaplacian.html#a79e6ff1bde28006145eceaa5674d9020',1,'PersistentLaplacians::PersistentLaplacian']]],
-  ['filtration_5fa_263',['filtration_a',['../structPersistentLaplacians_1_1Profile.html#a89701f8f5a3d05b91598b3a2f8d699ec',1,'PersistentLaplacians::Profile']]],
-  ['filtration_5fb_264',['filtration_b',['../structPersistentLaplacians_1_1Profile.html#a175ae62343ee0e593757f0289f1ad3ba',1,'PersistentLaplacians::Profile']]]
+  ['filtered_5fboundaries_261',['filtered_boundaries',['../classpetls_1_1Complex.html#a0c8eab257d6e54edc37e910921176060',1,'petls::Complex::filtered_boundaries()'],['../classpetls_1_1PersistentSheafLaplacian.html#a8f74b9353b074775534dda04bcdee626',1,'petls::PersistentSheafLaplacian::filtered_boundaries()']]],
+  ['filtration_5fa_262',['filtration_a',['../structpetls_1_1Profile.html#ae35cd96312431c772b2313c15dbd0067',1,'petls::Profile']]],
+  ['filtration_5fb_263',['filtration_b',['../structpetls_1_1Profile.html#a6aea868016b998379db6252024563994',1,'petls::Profile']]]
 ];

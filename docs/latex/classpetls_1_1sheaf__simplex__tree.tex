@@ -1,0 +1,74 @@
+\hypertarget{classpetls_1_1sheaf__simplex__tree}{}\doxysection{petls\+::sheaf\+\_\+simplex\+\_\+tree Class Reference}
+\label{classpetls_1_1sheaf__simplex__tree}\index{petls::sheaf\_simplex\_tree@{petls::sheaf\_simplex\_tree}}
+
+
+{\ttfamily \#include $<$sheaf\+\_\+simplex\+\_\+tree.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpetls_1_1sheaf__simplex__tree_a50629bea4d4eea4a636da439bbc24fec}{sheaf\+\_\+simplex\+\_\+tree}} (\mbox{\hyperlink{namespacepetls_a0f715135d02c269e4dc0029f96b642e1}{Simplex\+\_\+tree}} \+\_\+st, std\+::unordered\+\_\+map$<$ Simplex\+\_\+tree\+::\+Simplex\+\_\+key, std\+::vector$<$ float $>$$>$ \+\_\+extra\+\_\+data, std\+::function$<$ float(Simplex\+\_\+tree\+::\+Simplex\+\_\+handle, Simplex\+\_\+tree\+::\+Simplex\+\_\+handle, \mbox{\hyperlink{classpetls_1_1sheaf__simplex__tree}{sheaf\+\_\+simplex\+\_\+tree}} \&)$>$ \+\_\+restriction)
+\item 
+int \mbox{\hyperlink{classpetls_1_1sheaf__simplex__tree_a2abafa4fda3888b581f8b22b873e28ed}{coface\+\_\+index}} (Simplex\+\_\+tree\+::\+Simplex\+\_\+handle simplex, Simplex\+\_\+tree\+::\+Simplex\+\_\+handle coface)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classpetls_1_1FilteredBoundaryMatrix}{Filtered\+Boundary\+Matrix}}$<$ float $>$ $>$ \mbox{\hyperlink{classpetls_1_1sheaf__simplex__tree_ad78a578952c80523055457cbf67928c2}{apply\+\_\+restriction\+\_\+function}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepetls_a0f715135d02c269e4dc0029f96b642e1}{Simplex\+\_\+tree}} \mbox{\hyperlink{classpetls_1_1sheaf__simplex__tree_a3f4cbcfd83ad01d449048d77eff0b58b}{st}}
+\item 
+std\+::unordered\+\_\+map$<$ Simplex\+\_\+tree\+::\+Simplex\+\_\+key, std\+::vector$<$ float $>$ $>$ \mbox{\hyperlink{classpetls_1_1sheaf__simplex__tree_ab7d18d04121e278cbbd17d6e7766493a}{extra\+\_\+data}}
+\item 
+std\+::function$<$ float(Simplex\+\_\+tree\+::\+Simplex\+\_\+handle, Simplex\+\_\+tree\+::\+Simplex\+\_\+handle, \mbox{\hyperlink{classpetls_1_1sheaf__simplex__tree}{sheaf\+\_\+simplex\+\_\+tree}} \&)$>$ \mbox{\hyperlink{classpetls_1_1sheaf__simplex__tree_ab8b01ba101fe31cc9e94bf7cfecefb2f}{restriction}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpetls_1_1sheaf__simplex__tree_a50629bea4d4eea4a636da439bbc24fec}\label{classpetls_1_1sheaf__simplex__tree_a50629bea4d4eea4a636da439bbc24fec}} 
+\index{petls::sheaf\_simplex\_tree@{petls::sheaf\_simplex\_tree}!sheaf\_simplex\_tree@{sheaf\_simplex\_tree}}
+\index{sheaf\_simplex\_tree@{sheaf\_simplex\_tree}!petls::sheaf\_simplex\_tree@{petls::sheaf\_simplex\_tree}}
+\doxysubsubsection{\texorpdfstring{sheaf\_simplex\_tree()}{sheaf\_simplex\_tree()}}
+{\footnotesize\ttfamily petls\+::sheaf\+\_\+simplex\+\_\+tree\+::sheaf\+\_\+simplex\+\_\+tree (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacepetls_a0f715135d02c269e4dc0029f96b642e1}{Simplex\+\_\+tree}}}]{\+\_\+st,  }\item[{std\+::unordered\+\_\+map$<$ Simplex\+\_\+tree\+::\+Simplex\+\_\+key, std\+::vector$<$ float $>$$>$}]{\+\_\+extra\+\_\+data,  }\item[{std\+::function$<$ float(Simplex\+\_\+tree\+::\+Simplex\+\_\+handle, Simplex\+\_\+tree\+::\+Simplex\+\_\+handle, \mbox{\hyperlink{classpetls_1_1sheaf__simplex__tree}{sheaf\+\_\+simplex\+\_\+tree}} \&)$>$}]{\+\_\+restriction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpetls_1_1sheaf__simplex__tree_ad78a578952c80523055457cbf67928c2}\label{classpetls_1_1sheaf__simplex__tree_ad78a578952c80523055457cbf67928c2}} 
+\index{petls::sheaf\_simplex\_tree@{petls::sheaf\_simplex\_tree}!apply\_restriction\_function@{apply\_restriction\_function}}
+\index{apply\_restriction\_function@{apply\_restriction\_function}!petls::sheaf\_simplex\_tree@{petls::sheaf\_simplex\_tree}}
+\doxysubsubsection{\texorpdfstring{apply\_restriction\_function()}{apply\_restriction\_function()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classpetls_1_1FilteredBoundaryMatrix}{Filtered\+Boundary\+Matrix}}$<$float$>$ $>$ petls\+::sheaf\+\_\+simplex\+\_\+tree\+::apply\+\_\+restriction\+\_\+function (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classpetls_1_1sheaf__simplex__tree_a2abafa4fda3888b581f8b22b873e28ed}\label{classpetls_1_1sheaf__simplex__tree_a2abafa4fda3888b581f8b22b873e28ed}} 
+\index{petls::sheaf\_simplex\_tree@{petls::sheaf\_simplex\_tree}!coface\_index@{coface\_index}}
+\index{coface\_index@{coface\_index}!petls::sheaf\_simplex\_tree@{petls::sheaf\_simplex\_tree}}
+\doxysubsubsection{\texorpdfstring{coface\_index()}{coface\_index()}}
+{\footnotesize\ttfamily int petls\+::sheaf\+\_\+simplex\+\_\+tree\+::coface\+\_\+index (\begin{DoxyParamCaption}\item[{Simplex\+\_\+tree\+::\+Simplex\+\_\+handle}]{simplex,  }\item[{Simplex\+\_\+tree\+::\+Simplex\+\_\+handle}]{coface }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpetls_1_1sheaf__simplex__tree_ab7d18d04121e278cbbd17d6e7766493a}\label{classpetls_1_1sheaf__simplex__tree_ab7d18d04121e278cbbd17d6e7766493a}} 
+\index{petls::sheaf\_simplex\_tree@{petls::sheaf\_simplex\_tree}!extra\_data@{extra\_data}}
+\index{extra\_data@{extra\_data}!petls::sheaf\_simplex\_tree@{petls::sheaf\_simplex\_tree}}
+\doxysubsubsection{\texorpdfstring{extra\_data}{extra\_data}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$Simplex\+\_\+tree\+::\+Simplex\+\_\+key, std\+::vector$<$float$>$ $>$ petls\+::sheaf\+\_\+simplex\+\_\+tree\+::extra\+\_\+data}
+
+\mbox{\Hypertarget{classpetls_1_1sheaf__simplex__tree_ab8b01ba101fe31cc9e94bf7cfecefb2f}\label{classpetls_1_1sheaf__simplex__tree_ab8b01ba101fe31cc9e94bf7cfecefb2f}} 
+\index{petls::sheaf\_simplex\_tree@{petls::sheaf\_simplex\_tree}!restriction@{restriction}}
+\index{restriction@{restriction}!petls::sheaf\_simplex\_tree@{petls::sheaf\_simplex\_tree}}
+\doxysubsubsection{\texorpdfstring{restriction}{restriction}}
+{\footnotesize\ttfamily std\+::function$<$float(Simplex\+\_\+tree\+::\+Simplex\+\_\+handle, Simplex\+\_\+tree\+::\+Simplex\+\_\+handle, \mbox{\hyperlink{classpetls_1_1sheaf__simplex__tree}{sheaf\+\_\+simplex\+\_\+tree}}\&)$>$ petls\+::sheaf\+\_\+simplex\+\_\+tree\+::restriction}
+
+\mbox{\Hypertarget{classpetls_1_1sheaf__simplex__tree_a3f4cbcfd83ad01d449048d77eff0b58b}\label{classpetls_1_1sheaf__simplex__tree_a3f4cbcfd83ad01d449048d77eff0b58b}} 
+\index{petls::sheaf\_simplex\_tree@{petls::sheaf\_simplex\_tree}!st@{st}}
+\index{st@{st}!petls::sheaf\_simplex\_tree@{petls::sheaf\_simplex\_tree}}
+\doxysubsubsection{\texorpdfstring{st}{st}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacepetls_a0f715135d02c269e4dc0029f96b642e1}{Simplex\+\_\+tree}} petls\+::sheaf\+\_\+simplex\+\_\+tree\+::st}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jones657/\+Persistent\+Laplacians/cpp/include/petls\+\_\+headers/variants/\mbox{\hyperlink{sheaf__simplex__tree_8hpp}{sheaf\+\_\+simplex\+\_\+tree.\+hpp}}\end{DoxyCompactItemize}

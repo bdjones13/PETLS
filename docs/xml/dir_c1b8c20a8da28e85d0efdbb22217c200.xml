@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_c1b8c20a8da28e85d0efdbb22217c200" kind="dir">
+    <compoundname>/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants</compoundname>
+    <innerfile refid="Alpha_8hpp">Alpha.hpp</innerfile>
+    <innerfile refid="dFlag_8hpp">dFlag.hpp</innerfile>
+    <innerfile refid="PersistentSheafLaplacian_8hpp">PersistentSheafLaplacian.hpp</innerfile>
+    <innerfile refid="Rips_8hpp">Rips.hpp</innerfile>
+    <innerfile refid="sheaf__simplex__tree_8hpp">sheaf_simplex_tree.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_9c662aa3ceb912954d2f0626ff5ad75c" kind="dir">
+    <compoundname>/home/jones657/PersistentLaplacians/cpp/src/core</compoundname>
+    <innerfile refid="Complex_8cpp">Complex.cpp</innerfile>
+    <innerfile refid="up__algorithms_8cpp">up_algorithms.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jones657/PersistentLaplacians/cpp/src/core/"/>
+  </compounddef>
+</doxygen>

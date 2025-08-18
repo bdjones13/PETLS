@@ -14,11 +14,11 @@ def compare_spectra_multiple(ref, test):
         compare_spectra(ref[i],test[i])
 
 
-def get_pl(alg = petls.eigs_Algorithms.selfadjoint):
+def get_pl(alg = "eigvalsh"):
     d1 = np.array([[-1,0,-1],
                 [1,-1,0],
                 [0,1,1]])
-    d2 = np.array([[1],[1],[-1]]) 
+    d2 = np.array([[1],[1],[-1]])
     boundaries = [d1,d2]
     filtrations = [[0,1,2],[3,4,5],[5]]
 
@@ -27,32 +27,31 @@ def get_pl(alg = petls.eigs_Algorithms.selfadjoint):
 
 def test_specific():
     pl = get_pl()
-    compare_spectra(pl.spectra(1,4,5), [1,3])
+    assert pl.spectra(1,4,5) == pytest.approx([1,3])
 
-    pl2 = get_pl(alg = petls.eigs_Algorithms.bdcsvd)
-    compare_spectra(pl2.spectra(1,4,5), [1,3])
+    pl2 = get_pl(alg = "bdcsvd")
+    assert pl2.spectra(1,4,5) == pytest.approx([1,3])
 
-    pl3 = get_pl(alg = petls.eigs_Algorithms.eigensolver)
-    compare_spectra(pl3.spectra(1,4,5), [1,3])
+    pl3 = get_pl(alg = "eigensolver")
+    assert pl3.spectra(1,4,5) == pytest.approx([1,3])
 
 def test_all():
-    pl = get_pl(petls.eigs_Algorithms.selfadjoint)
+    pl = get_pl("selfadjoint")
     s = pl.spectra()
     expected = [
-        (0, 0, 3, [0]),
-        (1, 0, 3, []),
-        (2, 0, 3, []),
-        (0, 3, 4, [0, 1, 3]),
-        (1, 3, 4, [2]),
-        (2, 3, 4, []),
-        (0, 4, 5, [0, 3, 3]),
-        (1, 4, 5, [1, 3]),
-        (2, 4, 5, []),
-        (0, 5, 5, [0, 3, 3]),
-        (1, 5, 5, [3, 3, 3]),
-        (2, 5, 5, [3])
+        (0, 0, 3, np.array([0])),
+        (1, 0, 3, np.array([])),
+        (2, 0, 3, np.array([])),
+        (0, 3, 4, np.array([0, 1, 3])),
+        (1, 3, 4, np.array([2])),
+        (2, 3, 4, np.array([])),
+        (0, 4, 5, np.array([0, 3, 3])),
+        (1, 4, 5, np.array([1, 3])),
+        (2, 4, 5, np.array([])),
+        (0, 5, 5, np.array([0, 3, 3])),
+        (1, 5, 5, np.array([3, 3, 3])),
+        (2, 5, 5, np.array([3]))
     ]
-    print(s)
     pl.store_L(1,4,5,"myprefix")
     compare_spectra_multiple(expected, s)
     

@@ -1,4 +1,4 @@
-from petls import sheaf_simplex_tree, NewPersistentSheafLaplacian
+from petls import sheaf_simplex_tree, PersistentSheafLaplacian
 from test_sst import get_sst
 import pytest
 import numpy as np
@@ -15,7 +15,7 @@ def test_psl():
 
     sst = get_sst(points, charges) # see test_sst.py for details    
 
-    psl = NewPersistentSheafLaplacian(sst)
+    psl = PersistentSheafLaplacian(sst)
     
     q0 = charges[0]
     q1 = charges[1]

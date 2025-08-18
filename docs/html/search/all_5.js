@@ -1,14 +1,14 @@
 var searchData=
 [
-  ['facet_34',['Facet',['../PersistentAlphaLaplacian_8cpp.html#ab757b57094db65647a1f51c793464240',1,'PersistentAlphaLaplacian.cpp']]],
-  ['fb_35',['Fb',['../PersistentAlphaLaplacian_8cpp.html#afdf57fbb60e4a96e14e05b5be7e08d45',1,'PersistentAlphaLaplacian.cpp']]],
-  ['filtered_5fboundaries_36',['filtered_boundaries',['../classPersistentLaplacians_1_1PersistentLaplacian.html#a79e6ff1bde28006145eceaa5674d9020',1,'PersistentLaplacians::PersistentLaplacian']]],
-  ['filteredboundarymatrix_37',['FilteredBoundaryMatrix',['../classPersistentLaplacians_1_1FilteredBoundaryMatrix.html#a1a5a7334e3704767c0a7d1ddf0f4f4a8',1,'PersistentLaplacians::FilteredBoundaryMatrix::FilteredBoundaryMatrix()'],['../classPersistentLaplacians_1_1FilteredBoundaryMatrix.html',1,'PersistentLaplacians::FilteredBoundaryMatrix&lt; FBMcoeff &gt;']]],
+  ['filtered_5fboundaries_36',['filtered_boundaries',['../classpetls_1_1Complex.html#a0c8eab257d6e54edc37e910921176060',1,'petls::Complex::filtered_boundaries()'],['../classpetls_1_1PersistentSheafLaplacian.html#a8f74b9353b074775534dda04bcdee626',1,'petls::PersistentSheafLaplacian::filtered_boundaries()']]],
+  ['filteredboundarymatrix_37',['FilteredBoundaryMatrix',['../classpetls_1_1FilteredBoundaryMatrix.html#a24c183bc301a0aa9028d2fb6e7f48a80',1,'petls::FilteredBoundaryMatrix::FilteredBoundaryMatrix()'],['../classpetls_1_1FilteredBoundaryMatrix.html',1,'petls::FilteredBoundaryMatrix&lt; FBMcoeff &gt;']]],
   ['filteredboundarymatrix_2ehpp_38',['FilteredBoundaryMatrix.hpp',['../FilteredBoundaryMatrix_8hpp.html',1,'']]],
-  ['filtration_5fa_39',['filtration_a',['../structPersistentLaplacians_1_1Profile.html#a89701f8f5a3d05b91598b3a2f8d699ec',1,'PersistentLaplacians::Profile']]],
-  ['filtration_5fb_40',['filtration_b',['../structPersistentLaplacians_1_1Profile.html#a175ae62343ee0e593757f0289f1ad3ba',1,'PersistentLaplacians::Profile']]],
-  ['filtration_5flist_5fto_5fspectra_5frequest_41',['filtration_list_to_spectra_request',['../classPersistentLaplacians_1_1PersistentLaplacian.html#ad76f65268220edd384945c5f40835615',1,'PersistentLaplacians::PersistentLaplacian']]],
-  ['filtration_5ftype_42',['filtration_type',['../typedefs_8hpp.html#afc86493f3736a9d186d249149b2e5e22',1,'typedefs.hpp']]],
-  ['filtration_5fvalue_43',['Filtration_value',['../namespacePersistentLaplacians.html#a58c490a6ba7bc8547c4d686ce660e806',1,'PersistentLaplacians']]],
-  ['from_44',['from',['../namespacePersistentLaplacians.html#a06d02bd9fe76eee39b28d8b672df0ca3',1,'PersistentLaplacians::from(const Cell_handle &amp;ch)'],['../namespacePersistentLaplacians.html#a1a687cbb13d72b6c94ff1e6a7414648a',1,'PersistentLaplacians::from(const Facet &amp;fct)'],['../namespacePersistentLaplacians.html#a1ccbae2ac3385b0b00fbcf791101763c',1,'PersistentLaplacians::from(const Edge &amp;edg)'],['../namespacePersistentLaplacians.html#a8b6dc89cc0afd68c219f8ebdaaa490f2',1,'PersistentLaplacians::from(const Alpha_shape_3::Vertex_handle &amp;vh)']]]
+  ['filtration_5fa_39',['filtration_a',['../structpetls_1_1Profile.html#ae35cd96312431c772b2313c15dbd0067',1,'petls::Profile']]],
+  ['filtration_5fb_40',['filtration_b',['../structpetls_1_1Profile.html#a6aea868016b998379db6252024563994',1,'petls::Profile']]],
+  ['filtration_5flist_5fto_5fspectra_5frequest_41',['filtration_list_to_spectra_request',['../classpetls_1_1Complex.html#a9e6e6a833a87173157c02391d13af78b',1,'petls::Complex::filtration_list_to_spectra_request()'],['../classpetls_1_1PersistentSheafLaplacian.html#a1a43736e6fd04dc53d0943cd6ea0f234',1,'petls::PersistentSheafLaplacian::filtration_list_to_spectra_request()']]],
+  ['filtration_5flist_5fto_5fspectra_5frequest_5fallpairs_42',['filtration_list_to_spectra_request_allpairs',['../classpetls_1_1Complex.html#ae8de6f9bffcf4efc584855bd25982752',1,'petls::Complex']]],
+  ['filtration_5ftype_43',['filtration_type',['../typedefs_8hpp.html#afc86493f3736a9d186d249149b2e5e22',1,'typedefs.hpp']]],
+  ['filtration_5fvalue_44',['Filtration_value',['../namespacepetls.html#a5e16481eec60166670d7badfe693b488',1,'petls']]],
+  ['from_5fdistances_45',['from_distances',['../classpetls_1_1Rips.html#a2d80ecade7fc6669fd7d94b7e3d5cc6e',1,'petls::Rips::from_distances(DenseMatrix_PL distances, int max_dim)'],['../classpetls_1_1Rips.html#a98c5d30e59b696d30afd4235aec623c1',1,'petls::Rips::from_distances(DenseMatrix_PL distances, int max_dim, float threshold)']]],
+  ['frompoints_46',['FromPoints',['../classpetls_1_1Rips.html#a02986ed3a7c50b14444169c84d3bee2e',1,'petls::Rips::FromPoints(std::vector&lt; std::vector&lt; double &gt;&gt; points, int max_dim)'],['../classpetls_1_1Rips.html#a2f3c086eacc3a4c8a365fd6e598eee06',1,'petls::Rips::FromPoints(std::vector&lt; std::vector&lt; double &gt;&gt; points, int max_dim, float threshold)']]]
 ];

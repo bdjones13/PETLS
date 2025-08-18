@@ -4,7 +4,7 @@
 sheaf_simplex_tree
 ==================
 
-.. currentmodule:: PersistentLaplacians
+.. currentmodule:: petls
 
 sheaf_simplex_tree
 ~~~~~~~~~~~~~~~~~~

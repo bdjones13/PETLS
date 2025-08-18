@@ -1,4 +1,4 @@
-# on HPCC to install library locall use the cmake command
+# on HPCC to install library locally use the cmake command
 # cmake -DCMAKE_INSTALL_PREFIX=/mnt/home/jones657/customlib .. && make all install
 
 # make sure the following modules are loaded:
@@ -51,6 +51,7 @@ pl_add_test(flipped variants)
 pl_add_test(reduction core)
 # pl_add_test(eigenvectors core)
 pl_add_test(eigs_algs core)
+pl_add_test(up_algs core)
 pl_add_test(psl_new variants)
 
 

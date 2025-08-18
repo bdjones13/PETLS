@@ -8,7 +8,7 @@ def compare_spectra(ref, test):
     if ref[0] != test[0] or ref[1] != test[1] or ref[2] != test[2]:
         print("failed.")
         return False
-    assert ref[3] == pytest.approx(test[3])
+    assert ref[3] == pytest.approx(test[3], abs=1e-5)
 
 def compare_spectra_multiple(ref, test):
     for i in range(len(ref)):

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['cell_5fhandle_282',['Cell_handle',['../PersistentAlphaLaplacian_8cpp.html#a29ee975320b9ec3b14074ce336d7b88c',1,'PersistentAlphaLaplacian.cpp']]],
-  ['coefficient_5ftype_283',['coefficient_type',['../typedefs_8hpp.html#a09e36216a82b7355c90a8d6bdde28b10',1,'typedefs.hpp']]]
+  ['densematrix_5fpl_279',['DenseMatrix_PL',['../typedefs_8hpp.html#a260197b742c38462952d018c69ff535a',1,'typedefs.hpp']]],
+  ['densematrix_5fspectra_5fpl_280',['DenseMatrix_spectra_PL',['../typedefs_8hpp.html#ab1b02c8ebcde7779bc2d81fedc0a2d35',1,'typedefs.hpp']]],
+  ['distance_5fmatrix_281',['Distance_matrix',['../namespacepetls.html#a58e0a96abcfc17a00e13353ac7f0311f',1,'petls']]]
 ];

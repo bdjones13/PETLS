@@ -1,11 +1,8 @@
 var searchData=
 [
-  ['all_0',['all',['../structPersistentLaplacians_1_1Profile.html#a93fdfa3ebf795554d497250f95570e6c',1,'PersistentLaplacians::Profile']]],
-  ['alpha_5foff_1',['alpha_OFF',['../namespacePersistentLaplacians.html#aa8578e00f53b31867376ac329cd8b9eb',1,'PersistentLaplacians']]],
-  ['alpha_5fpoints_2',['alpha_points',['../namespacePersistentLaplacians.html#ae854648cbdf91ceb16c6fe07a6801989',1,'PersistentLaplacians']]],
-  ['alpha_5fshape_5f3_3',['Alpha_shape_3',['../PersistentAlphaLaplacian_8cpp.html#ac15590d23eadee07a338251318bb07c5',1,'PersistentAlphaLaplacian.cpp']]],
-  ['alpha_5fshape_5fsimplex_5ftree_5fmap_4',['Alpha_shape_simplex_tree_map',['../PersistentAlphaLaplacian_8cpp.html#a0f64464490a47368d40dacca1058c6fd',1,'PersistentAlphaLaplacian.cpp']]],
-  ['alpha_5fshape_5fsimplex_5ftree_5fpair_5',['Alpha_shape_simplex_tree_pair',['../PersistentAlphaLaplacian_8cpp.html#ae0d79f0749827b256acd7ef64da29e4d',1,'PersistentAlphaLaplacian.cpp']]],
-  ['alpha_5fvalue_5ftype_6',['Alpha_value_type',['../PersistentAlphaLaplacian_8cpp.html#a9985cbec50dee4788ae578cd5680058f',1,'PersistentAlphaLaplacian.cpp']]],
-  ['apply_5frestriction_5ffunction_7',['apply_restriction_function',['../classPersistentLaplacians_1_1sheaf__simplex__tree.html#ab950d0672d2d3f747e60df61b15c8ea4',1,'PersistentLaplacians::sheaf_simplex_tree']]]
+  ['all_0',['all',['../structpetls_1_1Profile.html#aaeb354652cdd295a397fbc8120978513',1,'petls::Profile']]],
+  ['alpha_1',['Alpha',['../classpetls_1_1Alpha.html#aa9e3d5a424fecc54949a8295d58cc80f',1,'petls::Alpha::Alpha(const char *filename, int max_dim)'],['../classpetls_1_1Alpha.html#a1ae957aef2e8d8330f79bb109cfdc52b',1,'petls::Alpha::Alpha(std::vector&lt; std::tuple&lt; double, double, double &gt;&gt; points, int max_dim)'],['../classpetls_1_1Alpha.html',1,'petls::Alpha']]],
+  ['alpha_2ecpp_2',['Alpha.cpp',['../Alpha_8cpp.html',1,'']]],
+  ['alpha_2ehpp_3',['Alpha.hpp',['../Alpha_8hpp.html',1,'']]],
+  ['apply_5frestriction_5ffunction_4',['apply_restriction_function',['../classpetls_1_1sheaf__simplex__tree.html#ad78a578952c80523055457cbf67928c2',1,'petls::sheaf_simplex_tree']]]
 ];

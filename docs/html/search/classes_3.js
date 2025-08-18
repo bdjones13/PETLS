@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ortho_156',['ortho',['../classPersistentLaplacians_1_1ortho.html',1,'PersistentLaplacians']]]
+  ['filteredboundarymatrix_146',['FilteredBoundaryMatrix',['../classpetls_1_1FilteredBoundaryMatrix.html',1,'petls']]]
 ];

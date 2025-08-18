@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bdcsvd_153',['bdcsvd',['../classPersistentLaplacians_1_1bdcsvd.html',1,'PersistentLaplacians']]]
+  ['alpha_143',['Alpha',['../classpetls_1_1Alpha.html',1,'petls']]]
 ];

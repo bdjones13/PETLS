@@ -1,4 +1,4 @@
-from ._petls import *
+from ._petls import * # import the pybind11-generated classes
 
 import enum
 
@@ -6,13 +6,16 @@ import enum
 #  for sst
 import gudhi.simplex_tree
 from scipy.sparse import coo_matrix
+import scipy
+# from scipy.sparse.linalg import eigsh
+from scipy.linalg import eigvalsh
 from collections.abc import Callable # for the type hint of the restriction function
 import numpy as np
 ########################
-from .PLutil import simplex_tree_boundaries_filtrations, summaries, plot_summary
-
+from .PLutil import simplex_tree_boundaries_filtrations, summaries, plot_summary, Profile
+import time
 # Define the behavior of "import petls" and options for "from petls import X"
-__all__ = ["Complex", "Rips", "Alpha", "dFlag", "sheaf_simplex_tree", "PersistentSheafLaplacian","NewPersistentSheafLaplacian", "summaries", "plot_summary"]
+__all__ = ["Complex", "Rips", "Alpha", "dFlag", "sheaf_simplex_tree", "PersistentSheafLaplacian","PersistentSheafLaplacian", "summaries", "plot_summary"]
 
 
 # The petls library is written primarily in C++.
@@ -22,24 +25,52 @@ __all__ = ["Complex", "Rips", "Alpha", "dFlag", "sheaf_simplex_tree", "Persisten
 # The "first" Python layer is defined in  src/_petls.cpp, src/core/Complex.cpp, and src/variants/*.
 
 
-class eigs_Algorithms(enum.Enum):
-    """
-    Enum to choose which eigenvalue algorithm to use.
-    """
-    selfadjoint = 1
-    eigensolver = 2
-    bdcsvd = 3
+# Using the method from https://stackoverflow.com/a/43885215/3727807
+# which tested faster on Laplacian matrices than looping over indices
+def matrix_is_diagonal(L):
+    i, j = L.shape
+    assert i == j 
+    test = L.reshape(-1)[:-1].reshape(i-1, j+1)
+    return ~np.any(test[:, 1:])
+
+
+
+def sparse_wrapper(L, num_eigs = 10, which_eigs = "SM", ncv = 20):
+    if matrix_is_diagonal(L):
+        return np.array(sorted(np.diag(L)))
+    num_rows = L.shape[0]
+    num_eigs = min(num_rows-1, num_eigs) # algorithm requires  1 < nev <= L.rows()-1
+    ncv = min(max(2*num_eigs, ncv), num_rows) # Try to make ncv >= 2*nev, but not larger than the size of the matrix
+    try: # scipy.sparse.linalg.eigsh might fail
+        eigs = np.array(sorted(scipy.sparse.linalg.eigs(L, k=num_eigs, ncv=ncv, which=which_eigs,return_eigenvectors=False).real))
+        return eigs
+    except:
+        # if it fails to converge, still try to compute the expected amount of eigenvalues
+        all_eigs = eigvalsh(L)
+        if which_eigs in ["SM", "SA"]: # arpack "Smallest (Magnitude/Algebraic)" eigs
+            return np.array(all_eigs[0:num_eigs])  
+        # scipy.linalg.eigvalsh
+        elif which_eigs in ["LM","LA"]: # arpack "Largest (Magnitude/Algebraic)" eigs
+            return all_eigs[-num_eigs:]
+        elif which_eigs == "BE": # arpack "Both Ends" eigs
+            lowest = all_eigs[0:num_eigs/2]
+            if num_eigs % 2 == 1: # if odd, scipy returns an extra (k/2+1 total) from the high end
+                highest = all_eigs[-num_eigs/2-1:]
+            else:
+                highest = all_eigs[-num_eigs/2:]
+            return np.concatenate((lowest,highest))
+
+def eigvalsh_wrapper(L):
+    if matrix_is_diagonal(L):
+        return np.array(sorted(np.diag(L)))
+    return eigvalsh(L)
 
 class up_Algorithms(enum.Enum):
     """
-    Enum to choose which up-Laplacian algorithm to use
+    Enum to choose which up-Laplacian algorithm to use for PersistentSheafLaplacian only. 
     """
     schur = 1
 
-
-class storage(enum.Enum):
-    int = 1
-    float = 2
 
 
 class Complex(object):
@@ -50,12 +81,16 @@ class Complex(object):
     verbose : boolean
         Print progress if spectra() is called
     flipped : boolean
-        Compute the top-dimensional Laplacian's eigenvalues via the eigenvalues of the smaller of B_N B_N^T or B_N^T B_N and possible zero-padding
-        
+        Compute the top-dimensional Laplacian's eigenvalues via the eigenvalues of the smaller of B_N B_N^T or B_N^T B_N and possible zero-padding        
+
     Methods
     -------
     set_boundaries_filtrations(boundaries, filtrations)
         If the boundaries and filtrations were not set in the constructor, set them here.
+    set_eigs_Algorithm(eigs_Algorithm, num_eigenvalues, eigenvalue_order)
+        Set the eigenvalue algorithm to use.
+    set_up_Algorithm(up_Algorithm)
+        Set the up-Laplacian algorithm to use. Currently only "schur" is available in Python. Passing a callable function is only available in C++.
     get_L(dim, a, b)
         Get the persistent Laplacian matrix.
     get_up(dim, a, b)
@@ -84,24 +119,39 @@ class Complex(object):
         Get a sorted list of all filtration values that occur in the complex.
     """
 
+    cpp_algorithms_list = ["selfadjoint", "eigensolver", "bdcsvd", "spectra"]
 
-    def __init__(self, boundaries = None, filtrations = None, eigs_Algorithm = eigs_Algorithms.selfadjoint, up_Algorithm = up_Algorithms.schur, simplex_tree = None, storage = None):
-        if storage is not None:
-            pl_class = getattr(_petls, "Complex")
-        else:
-            pl_class = getattr(_petls, "Complex")
+
+    def __init__(self, boundaries = None, filtrations = None, eigs_Algorithm = "eigvalsh", up_Algorithm = "schur", simplex_tree = None):
+        """
+        Constructor for the Complex class.
+
+
+        """
+        # Get the pybind11-generated class name for the C++ wrapper 
+        pl_class = getattr(_petls, "Complex")
         
+        # Construct the pybind11-generated class
         if boundaries is None and filtrations is None:
             self.pl = pl_class()
         else:
             self.pl = pl_class(boundaries, filtrations)
-        self.verbose = False
-        self.flipped = False
 
+        # If using a Gudhi simplex tree, get and store boundary matrices
         if simplex_tree is not None:
             boundaries, filtrations = simplex_tree_boundaries_filtrations(simplex_tree)
             self.set_boundaries_filtrations(boundaries, filtrations)
 
+
+        self.verbose = False
+        self.flipped = False
+        self.use_cpp_eigs = True
+        
+        self.set_eigs_Algorithm(eigs_Algorithm)
+        self.set_up_Algorithm(up_Algorithm)
+        self.profile = Profile()
+
+        
     def set_boundaries_filtrations(self, boundaries, filtrations):
         """ If the boundaries and filtrations were not set in the constructor, set them here.
 
@@ -148,8 +198,41 @@ class Complex(object):
         self._flipped = flipped
         self.pl.set_flipped(flipped)
 
-    def set_flipped(self, flipped=True):
-        self.pl.set_flipped(flipped)
+    def set_eigs_Algorithm(self, eigs_Algorithm, num_eigenvalues = 10, eigenvalue_order = "SM"):
+
+        valid_algorithms = self.cpp_algorithms_list + ["eigvalsh", "sparse"]
+        # use cpp built-in algorithms
+        if eigs_Algorithm in self.cpp_algorithms_list:
+            self.use_cpp_eigs = True
+            self.pl.set_eigs_algorithm_func(eigs_Algorithm)
+            
+        # use built-in wrapper of scipy.linalg.eigvalsh
+        elif eigs_Algorithm == "eigvalsh":
+            self.use_cpp_eigs = False
+            self.eigs_Algorithm = eigvalsh_wrapper
+
+        # use built-in wrapper of scipy.sparse.linalg.eigvals
+        elif eigs_Algorithm == "sparse":
+            self.use_cpp_eigs = False
+            self.eigs_Algorithm = lambda L: sparse_wrapper(L,num_eigenvalues, eigenvalue_order)       
+
+        # use the passed function as callable algorithm 
+        elif type(eigs_Algorithm) == str:
+            raise ValueError(f"""eigs_Algorithm must be a callable function or a string in {valid_algorithms}. Got {eigs_Algorithm}.""")
+        else:
+            self.use_cpp_eigs = False
+            self.eigs_Algorithm = eigs_Algorithm   
+
+    def set_up_Algorithm(self, up_Algorithm):
+
+        valid_algorithms = ["schur"]
+        if up_Algorithm in valid_algorithms:
+            self.use_cpp_up = True
+            self.pl.set_up_algorithm_func(up_Algorithm)
+        elif type(up_Algorithm) == str:
+            raise ValueError(f"""up_Algorithm must be a string in {valid_algorithms}. Got {up_Algorithm}.""")
+        else:
+            raise ValueError(f"""up_Algorithm must be a string in {valid_algorithms}. Got {up_Algorithm}. Passable up_Algorithm functions is currently only available in C++.""")
 
     def get_L(self, dim, a, b):
         return self.pl.get_L(dim, a, b)
@@ -202,19 +285,56 @@ class Complex(object):
         >>> pl.spectra()
         [(0, 0.0, 3.0, [0.0]), (1, 0.0, 3.0, []), (2, 0.0, 3.0, []), (0, 3.0, 4.0, [0.0, 0.9999998807907104, 3.0]), (1, 3.0, 4.0, [2.0]), (2, 3.0, 4.0, []), (0, 4.0, 5.0, [0.0, 2.999999761581421, 3.0]), (1, 4.0, 5.0, [0.9999999403953552, 2.999999761581421]), (2, 4.0, 5.0, []), (0, 5.0, 5.0, [0.0, 2.999999761581421, 3.0]), (1, 5.0, 5.0, [3.0, 3.0, 3.0]), (2, 5.0, 5.0, [3.0])]
         """
-        # print("__init__.py pl.spectra",flush=True)
-        
-        if request_list is not None:
-            # print("request_list is not none")
-            return self.pl.spectra(request_list)
-        elif dim is not None and a is not None and b is not None:
-            # print("dim, a, b is not none")
-            return self.pl.spectra(dim, a, b)
-        elif allpairs:
-            return self.pl.spectra_allpairs()
+        # if using a cpp eigenvalue algorithm, call the corresponding cpp function
+
+        if self.use_cpp_eigs:
+            if request_list is not None:
+                return self.pl.spectra(request_list)
+            elif dim is not None and a is not None and b is not None:
+                return self.pl.spectra(dim, a, b)
+            elif allpairs:
+                return self.pl.spectra_allpairs()
+            else:
+                return self.pl.spectra()
+            
+        # if using a python eigenvalue algorithm, get the appropriate PL matrix using cpp then apply the python algorithm to it 
         else:
-            # print("call self.pl.spectra()")
-            return self.pl.spectra()
+            if dim is not None and a is not None and b is not None:
+                request_list = [[dim, a, b]]
+            elif allpairs == True:
+                dims = list(range(self.pl.top_dim + 1))
+                request_list = self.filtration_list_to_spectra_request(self.get_all_filtrations(),dims=dims, allpairs=True)
+            else:
+                dims = list(range(self.pl.top_dim + 1))
+                request_list = self.filtration_list_to_spectra_request(self.get_all_filtrations(),dims=dims , allpairs=False)
+            
+            responses = []
+            for dim, a, b in request_list:
+            # start timers
+                self.profile.start_all()
+                self.profile.start_L()
+                
+                # get L
+                L = self.get_L(dim, a, b)
+
+                # stop/start timers
+                self.profile.stop_L()
+                self.profile.start_eigs()
+
+                # apply eigs algorithms
+                if L.shape[0] == 0:
+                    eigs = np.array([])
+                elif L.shape[0] == 1:
+                    eigs = L[0]
+                else:
+                    eigs = self.eigs_Algorithm(L)
+                # stop timers, save times in Profile
+                self.profile.wrap_up(dim, a, b, L.shape[0], eigs)
+                responses.append([dim,a,b,eigs])
+            if len(responses) == 1: # call was just spectra(dim, a, b), just return the eigenvalues
+                return responses[0][3]  
+            return responses
+
         
     def eigenpairs(self,dim = None, a = None, b = None, request_list = None, allpairs = False):
         """ Compute the eigenvalues and eigenvectors of L_{dim}^{a,b} or for every tuple (dim, a, b) in request_list.
@@ -287,7 +407,10 @@ class Complex(object):
         self.pl.store_spectra_summary(spectra_list, file_prefix)
 
     def time_to_csv(self, filename):
-        self.pl.time_to_csv(filename)
+        if self.use_cpp_eigs:
+            self.pl.time_to_csv(filename)
+        else:
+            self.profile.to_csv(filename)
 
     def filtration_list_to_spectra_request(self, filtrations, dims, allpairs = False):
         if allpairs:
@@ -300,12 +423,18 @@ class Complex(object):
 
 
 class dFlag(Complex):
-    def __init__(self, filename, max_dim, eigs_Algorithm = eigs_Algorithms.selfadjoint, up_Algorithm = up_Algorithms.schur):
+    """Directed flag complex from a directed graph read from a file, using "flagser" by Daniel Lütgehetmann.
+    """
+    def __init__(self, filename, max_dim, eigs_Algorithm = "eigvalsh", up_Algorithm = "schur"):
         pl_class = getattr(_petls, "dFlag")
         self.pl = pl_class(filename, max_dim)
+        self.set_eigs_Algorithm(eigs_Algorithm)
+        self.set_up_Algorithm(up_Algorithm)
 
 class Rips(Complex):
-    def __init__(self, filename = None, points = None, distances = None, max_dim=3, threshold = None, eigs_Algorithm = eigs_Algorithms.selfadjoint, up_Algorithm = up_Algorithms.schur):
+    """ Rips complex from a point cloud or distance matrix, using "ripser" by Ulrich Bauer.
+    """
+    def __init__(self, filename = None, points = None, distances = None, max_dim=3, threshold = None, eigs_Algorithm = "eigvalsh", up_Algorithm = "schur"):
         pl_class = getattr(_petls, "Rips")
         
         if threshold is None:
@@ -326,8 +455,14 @@ class Rips(Complex):
                 self.pl = pl_class.from_distances(distances, max_dim, threshold)
             else:
                 raise ValueError('Rips requires either filename or point set as input')
-            
+        self.set_eigs_Algorithm(eigs_Algorithm)
+        self.set_up_Algorithm(up_Algorithm)
+        self.profile = Profile()
+        self.use_cpp_eigs = False
+        
 class Alpha(Complex):
+    """ Alpha complex from a point cloud, using Gudhi's AlphaComplex.
+    """
     def __init__(self, filename = None, points = None, max_dim=3):
         pl_class = getattr(_petls, "Alpha")
         if filename is not None:
@@ -336,6 +471,10 @@ class Alpha(Complex):
             self.pl = pl_class(points, max_dim)
         else:
             raise ValueError("Alpha complex requires filename or point set as input")
+        self.set_eigs_Algorithm("eigvalsh")
+        self.set_up_Algorithm("schur")
+        self.profile = Profile()
+        self.use_cpp_eigs = False
 
 
 class sheaf_simplex_tree():
@@ -504,13 +643,13 @@ class PersistentSheafLaplacian(Complex):
     """ Persistent Laplacian made with a cellular sheaf. The information is encoded in the sheaf_simplex_tree argument.
     
     """
-    def __init__(self, sst: sheaf_simplex_tree, eigs_Algorithm = eigs_Algorithms.selfadjoint, up_Algorithm = up_Algorithms.schur):
+    def __init__(self, sst: sheaf_simplex_tree, eigs_Algorithm = "eigvalsh", up_Algorithm = "schur"):
         coboundaries, filtrations = sst.apply_restriction_function()
         boundaries = [x.T for x in coboundaries]    
         super().__init__(boundaries, filtrations, eigs_Algorithm, up_Algorithm,  storage = storage.float)
 
 
-class NewPersistentSheafLaplacian(object):
+class PersistentSheafLaplacian(object):
     """ Persistent Laplacian made with a cellular sheaf. The information is encoded in the sheaf_simplex_tree argument.
     
     
@@ -556,11 +695,11 @@ class NewPersistentSheafLaplacian(object):
         # boundaries = [x.T for x in coboundaries]    
         # super().__init__(boundaries, filtrations, eigs_Algorithm, up_Algorithm,  storage = storage.float)
 
-    def __init__(self,sst: sheaf_simplex_tree = None, boundaries = None, filtrations = None, eigs_Algorithm = eigs_Algorithms.selfadjoint, up_Algorithm = up_Algorithms.schur, simplex_tree = None, storage = None):
-        pl_class = getattr(_petls, "NewPersistentSheafLaplacian")
+    def __init__(self,sst: sheaf_simplex_tree = None, boundaries = None, filtrations = None, eigs_Algorithm = None, up_Algorithm = up_Algorithms.schur, simplex_tree = None, storage = None):
+        pl_class = getattr(_petls, "PersistentSheafLaplacian")
 
         if sst is None and boundaries is None and filtrations is None:
-            raise TypeError("NewPersistentSheafLaplacian requires either (a) a sheaf_simplex_tree or (b) boundaries and filtrations. All were None.")
+            raise TypeError("PersistentSheafLaplacian requires either (a) a sheaf_simplex_tree or (b) boundaries and filtrations. All were None.")
 
         if sst is not None:
             coboundaries, filtrations = sst.apply_restriction_function()
@@ -569,6 +708,7 @@ class NewPersistentSheafLaplacian(object):
         self.pl = pl_class(boundaries,filtrations)
         self.verbose = False
         self.flipped = False
+        # self.eigs_Algorithm = eigs_Algorithm
 
 
     def set_boundaries_filtrations(self, boundaries, filtrations):
@@ -615,9 +755,6 @@ class NewPersistentSheafLaplacian(object):
     @flipped.setter
     def flipped(self, flipped):
         self._flipped = flipped
-        self.pl.set_flipped(flipped)
-
-    def set_flipped(self, flipped=True):
         self.pl.set_flipped(flipped)
 
     def get_L(self, dim, a, b):

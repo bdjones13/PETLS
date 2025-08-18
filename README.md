@@ -1,6 +1,6 @@
 See [the documentation](https://benjones-math.com/software/petls/documentation) for details on requirements, installation, and API usage.
 
-![Build](https://github.com/bdjones13/petls/actions/workflows/build_wheels.yml/badge.svg?branch=github-action-config)
+![Build](https://github.com/bdjones13/PersistentLaplacians/actions/workflows/build_wheels.yml/badge.svg?branch=github-action-config)
 
 # Python Dependencies
 
@@ -25,7 +25,7 @@ After that, you're all set:
    $ python
    >>> from petls import Rips
    >>> import numpy as np
-   >>> points = np.array([[0,0], [1,0], [0,1], [1,1]])
+   >>> points = np.array([[0, 0], [0, 3], [4, 0], [4, 3]])
    >>> complex = Rips(points, max_dim=3)
    >>> complex.spectra(dim=1, a=3, b=4)
    [2.0, 2.0]
@@ -56,3 +56,20 @@ If you do not have root access (e.g. on an HPC):
 Usually ```CMAKE_INSTALL_PREFIX``` is something like ```~/custom_libraries/```. 
 
 For examples of how to include the library, see the ```examples``` directory, e.g. ```examples/basic_cpp/```.
+
+# Acknowledgements
+This work was supported in part by NIH grant R35GM148196, NSF grant DMS-2052983, and MSU Research Foundation.
+
+# Citation
+If you wish to cite this work, please use the following citation:
+```
+@misc{jones2025petlspersistenttopologicallaplacian,
+      title={PETLS: PErsistent Topological Laplacian Software}, 
+      author={Benjamin Jones and Guo-Wei Wei},
+      year={2025},
+      eprint={2508.11560},
+      archivePrefix={arXiv},
+      primaryClass={math.AT},
+      url={https://arxiv.org/abs/2508.11560}, 
+}
+```

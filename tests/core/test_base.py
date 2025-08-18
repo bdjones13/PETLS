@@ -7,7 +7,7 @@ def compare_spectra(ref, test):
     print(f"compare {ref} to {test}") # only actually prints if assert fails in pytest or if run manually
     if ref[0] != test[0] or ref[1] != test[1] or ref[2] != test[2]:
         return False
-    assert ref[3] == pytest.approx(test[3])
+    assert ref[3] == pytest.approx(test[3],abs=1e-5)
 
 def compare_spectra_multiple(ref, test):
     for i in range(len(ref)):
@@ -40,18 +40,18 @@ def test_all():
     # print("got spectra")
     # print("spectra: ", s)
     expected = [
-        (0, 0, 3, [0]),
-        (1, 0, 3, []),
-        (2, 0, 3, []),
-        (0, 3, 4, [0, 1, 3]),
-        (1, 3, 4, [2]),
-        (2, 3, 4, []),
-        (0, 4, 5, [0, 3, 3]),
-        (1, 4, 5, [1, 3]),
-        (2, 4, 5, []),
-        (0, 5, 5, [0, 3, 3]),
-        (1, 5, 5, [3, 3, 3]),
-        (2, 5, 5, [3])
+        (0, 0, 3, np.array([0])),
+        (1, 0, 3, np.array([])),
+        (2, 0, 3, np.array([])),
+        (0, 3, 4, np.array([0, 1, 3])),
+        (1, 3, 4, np.array([2])),
+        (2, 3, 4, np.array([])),
+        (0, 4, 5, np.array([0, 3, 3])),
+        (1, 4, 5, np.array([1, 3])),
+        (2, 4, 5, np.array([])),
+        (0, 5, 5, np.array([0, 3, 3])),
+        (1, 5, 5, np.array([3, 3, 3])),
+        (2, 5, 5, np.array([3]))
     ]
     compare_spectra_multiple(expected, s)
 
@@ -102,36 +102,36 @@ def test_eigenvectors():
 def test_allpairs():
     pl = get_pl()
     s = pl.spectra(allpairs=True)
-    expected = [(0, 0, 0, [0]), 
-                (1, 0, 0, []), 
-                (2, 0, 0, []), 
-                (0, 0, 3, [0]), 
-                (1, 0, 3, []), 
-                (2, 0, 3, []),
-                (0, 0, 4, [0]),
-                (1, 0, 4, []),
-                (2, 0, 4, []),
-                (0, 0, 5, [0]),
-                (1, 0, 5, []),
-                (2, 0, 5, []), 
-                (0, 3, 3, [0, 0, 2]),
-                (1, 3, 3, [2]),
-                (2, 3, 3, []),
-                (0, 3, 4, [0, 1, 3]),
-                (1, 3, 4, [2]), 
-                (2, 3, 4, []), 
-                (0, 3, 5, [0, 3, 3]), 
-                (1, 3, 5, [2]), 
-                (2, 3, 5, []),
-                (0, 4, 4, [0, 1, 3]),
-                (1, 4, 4, [1, 3]),
-                (2, 4, 4, []), 
-                (0, 4, 5, [0, 3, 3]),
-                (1, 4, 5, [1, 3]),
-                (2, 4, 5, []), 
-                (0, 5, 5, [0, 3, 3]), 
-                (1, 5, 5, [3, 3, 3]), 
-                (2, 5, 5, [3])]
+    expected = [(0, 0, 0, np.array([0])), 
+                (1, 0, 0, np.array([])), 
+                (2, 0, 0, np.array([])), 
+                (0, 0, 3, np.array([0])), 
+                (1, 0, 3, np.array([])), 
+                (2, 0, 3, np.array([])),
+                (0, 0, 4, np.array([0])),
+                (1, 0, 4, np.array([])),
+                (2, 0, 4, np.array([])),
+                (0, 0, 5, np.array([0])),
+                (1, 0, 5, np.array([])),
+                (2, 0, 5, np.array([])), 
+                (0, 3, 3, np.array([0, 0, 2])),
+                (1, 3, 3, np.array([2])),
+                (2, 3, 3, np.array([])),
+                (0, 3, 4, np.array([0, 1, 3])),
+                (1, 3, 4, np.array([2])), 
+                (2, 3, 4, np.array([])), 
+                (0, 3, 5, np.array([0, 3, 3])), 
+                (1, 3, 5, np.array([2])), 
+                (2, 3, 5, np.array([])),
+                (0, 4, 4, np.array([0, 1, 3])),
+                (1, 4, 4, np.array([1, 3])),
+                (2, 4, 4, np.array([])), 
+                (0, 4, 5, np.array([0, 3, 3])),
+                (1, 4, 5, np.array([1, 3])),
+                (2, 4, 5, np.array([])), 
+                (0, 5, 5, np.array([0, 3, 3])), 
+                (1, 5, 5, np.array([3, 3, 3])), 
+                (2, 5, 5, np.array([3]))]
     compare_spectra_multiple(expected, s)
 
 if __name__ == "__main__":

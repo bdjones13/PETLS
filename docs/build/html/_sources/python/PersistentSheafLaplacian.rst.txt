@@ -4,7 +4,7 @@
 PersistentSheafLaplacian
 ========================
 
-.. currentmodule:: PersistentLaplacians
+.. currentmodule:: petls
 
 Persistent Sheaf Laplacian
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -21,7 +21,6 @@ Methods
 
 .. autosummary::
     :toctree: generated/
-    :show-inheritance:
 
     PersistentSheafLaplacian.set_boundaries_filtrations
     PersistentSheafLaplacian.spectra

@@ -12,6 +12,7 @@
 
 
 #include "petls_headers/eigenvalues/eigs_algorithms.hpp"
+#include "petls_headers/eigenvalues/spectra_algorithms.hpp"
 #include "petls_headers/core/up_algorithms.hpp"
 
 

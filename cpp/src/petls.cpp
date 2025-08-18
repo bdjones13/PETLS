@@ -49,6 +49,19 @@ namespace petls {
         std::cout << v.format(HeavyFmt) <<std::endl;
     }
 
+    bool matrix_is_diagonal(DenseMatrix_PL &M){
+        float tol = 1e-4;
+        for (int j = 0; j < M.cols(); j++){
+            for (int i = j+1; i < M.rows(); i++){
+                if (std::abs(M(i,j)) > tol){
+                    // std::cout << "matrix is not diagonal, M(" << i << ", " << j << ")=" << M(i,j) << std::endl;
+                    return false; 
+                }
+            }
+        }
+        return true;
+    }
+
     void print_spectra(std::vector<std::tuple<int, filtration_type, filtration_type, std::vector<spectra_type>>> spectra){
         for (int i = 0; i < (int) spectra.size(); i++){
             int dim = std::get<0>(spectra[i]);

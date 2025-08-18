@@ -76,7 +76,9 @@ class Complex {
 
         void set_eigs_algorithm_func(std::function<spectra_vec(DenseMatrix_PL&)> _eigs_algorithm_func);
         void set_eigs_algorithm_func(std::string name);
-        void set_up_func(std::function<void(FilteredBoundaryMatrix<int>*, filtration_type, filtration_type, DenseMatrix_PL&)> _up_algorithm_func);
+        void set_up_algorithm_func(std::function<void(FilteredBoundaryMatrix<int>*, filtration_type, filtration_type, DenseMatrix_PL&)> _up_algorithm_func);
+        void set_up_algorithm_func(std::string name);
+        
         /**
          * Set the boundaries and filtrations of a complex, particularly if the default constructor was called.
          * @param boundaries a vector of Eigen::SparseMatrix of type int. Boundaries must be sorted in order of dimension.

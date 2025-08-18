@@ -1,8 +1,11 @@
 var searchData=
 [
-  ['reduce_219',['reduce',['../classPersistentLaplacians_1_1FilteredBoundaryMatrix.html#aea5c25d4fe9dd8c031700327724fb436',1,'PersistentLaplacians::FilteredBoundaryMatrix']]],
-  ['reindex_5fboundaries_220',['reindex_boundaries',['../namespacePersistentLaplacians.html#a2c6b429935449ff2010770034b5e9ff2',1,'PersistentLaplacians']]],
-  ['reindex_5fboundaries_5fmap_221',['reindex_boundaries_map',['../namespacePersistentLaplacians.html#ac97e07389e2c5d1f9dec664e271cd59b',1,'PersistentLaplacians']]],
-  ['rips_5fsheaf_5fsimplex_5ftree_222',['rips_sheaf_simplex_tree',['../namespacePersistentLaplacians.html#a723613a2af1a0651a29f8f34a44b3f1f',1,'PersistentLaplacians']]],
-  ['round_5fzeros_223',['round_zeros',['../namespacePersistentLaplacians.html#a5e90134767fdfde516979022489d8202',1,'PersistentLaplacians']]]
+  ['persistentsheaflaplacian_199',['PersistentSheafLaplacian',['../classpetls_1_1PersistentSheafLaplacian.html#aa91f6713ba3911df1f726c87ec7374c5',1,'petls::PersistentSheafLaplacian::PersistentSheafLaplacian(sheaf_simplex_tree &amp;sst)'],['../classpetls_1_1PersistentSheafLaplacian.html#a3869796e39140fdcb75096cba9c1999f',1,'petls::PersistentSheafLaplacian::PersistentSheafLaplacian(std::vector&lt; Eigen::SparseMatrix&lt; storage &gt;&gt; boundaries, std::vector&lt; std::vector&lt; filtration_type &gt;&gt; filtrations)']]],
+  ['print_200',['print',['../classpetls_1_1FilteredBoundaryMatrix.html#a48ee0ee9c2cbe5601546e61e554fbfc6',1,'petls::FilteredBoundaryMatrix']]],
+  ['print_5fboundaries_201',['print_boundaries',['../classpetls_1_1Complex.html#a901288242ec9f4d6db57074755e0a942',1,'petls::Complex::print_boundaries()'],['../classpetls_1_1PersistentSheafLaplacian.html#aaa6127847a0ecc7c22b25073d5ae0c18',1,'petls::PersistentSheafLaplacian::print_boundaries()']]],
+  ['print_5fdomain_5ffiltration_202',['print_domain_filtration',['../classpetls_1_1FilteredBoundaryMatrix.html#af3baae8c31410ff076d8d08ee279b886',1,'petls::FilteredBoundaryMatrix']]],
+  ['print_5ffull_5fmatrix_5fprecise_203',['print_full_matrix_precise',['../namespacepetls.html#a82c29a3139a7c630afadc4bc856bb1b1',1,'petls::print_full_matrix_precise(SparseMatrixInt m)'],['../namespacepetls.html#a13f87c1fe039cd1ee4dd7eeab1529589',1,'petls::print_full_matrix_precise(Eigen::MatrixXf m)'],['../namespacepetls.html#a74fe3065b1ac493c4a02c27577828de3',1,'petls::print_full_matrix_precise(Eigen::MatrixXi m)'],['../namespacepetls.html#af4012d0f979094bc21ba2ebfef7c7df3',1,'petls::print_full_matrix_precise(SparseMatrix_PL m)'],['../namespacepetls.html#ab7810cffef149bb54f4980e4e1ecefc9',1,'petls::print_full_matrix_precise(DenseMatrix_PL m)']]],
+  ['print_5frange_5ffiltration_204',['print_range_filtration',['../classpetls_1_1FilteredBoundaryMatrix.html#a4ca6ac0481d5a4979bfae81e97bbcdb2',1,'petls::FilteredBoundaryMatrix']]],
+  ['print_5fspectra_205',['print_spectra',['../namespacepetls.html#ad6ad7c05ffc192d0d9a3a2a90f2b2ec8',1,'petls']]],
+  ['print_5fvector_5fprecise_206',['print_vector_precise',['../namespacepetls.html#ab98e64ef83c354051df7fcc1f04810c6',1,'petls::print_vector_precise(Eigen::VectorXd v)'],['../namespacepetls.html#a5cfd07f823eb298c0b630fc443cbd82c',1,'petls::print_vector_precise(Eigen::VectorXf v)']]]
 ];

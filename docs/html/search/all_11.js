@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['vb_149',['Vb',['../PersistentAlphaLaplacian_8cpp.html#abf1f39bf535adfc15531969495d26ab7',1,'PersistentAlphaLaplacian.cpp']]],
-  ['verbose_150',['verbose',['../classPersistentLaplacians_1_1PersistentLaplacian.html#a8da20628a8cd90cf31f86020a6c6fc15',1,'PersistentLaplacians::PersistentLaplacian']]],
-  ['vertex_5flist_151',['Vertex_list',['../PersistentAlphaLaplacian_8cpp.html#a35b212c9d8294610f52745b5a555c5ed',1,'PersistentAlphaLaplacian.cpp']]]
+  ['_7ecomplex_141',['~Complex',['../classpetls_1_1Complex.html#aa62336bf763bdbf09a50eb8acac8e807',1,'petls::Complex']]],
+  ['_7epersistentsheaflaplacian_142',['~PersistentSheafLaplacian',['../classpetls_1_1PersistentSheafLaplacian.html#ae9bd3794cb99a3d04fcedd7f4a7e68af',1,'petls::PersistentSheafLaplacian']]]
 ];

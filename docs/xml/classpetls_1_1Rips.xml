@@ -1,0 +1,374 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classpetls_1_1Rips" kind="class" language="C++" prot="public">
+    <compoundname>petls::Rips</compoundname>
+    <basecompoundref refid="classpetls_1_1Complex" prot="public" virt="non-virtual">petls::Complex</basecompoundref>
+    <includes refid="Rips_8hpp" local="no">Rips.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpetls_1_1Rips_1a3d4aaa6501cf7a7e69ea6bba8d96d5b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>petls::Rips::Rips</definition>
+        <argsstring>(const char *filename, int max_dim)</argsstring>
+        <name>Rips</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_dim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/Rips.hpp" line="16" column="13" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/Rips.hpp" bodystart="16" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classpetls_1_1Rips_1aa62888921b0094b53dea6dec8d4789f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>petls::Rips::Rips</definition>
+        <argsstring>(const char *filename, int max_dim, float threshold)</argsstring>
+        <name>Rips</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_dim</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/Rips.hpp" line="28" column="13" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/Rips.hpp" bodystart="28" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classpetls_1_1Rips_1ad27f187f17f4777997a460efa1669b03" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>petls::Rips::Rips</definition>
+        <argsstring>(DenseMatrix_PL distances, int max_dim)</argsstring>
+        <name>Rips</name>
+        <param>
+          <type><ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref></type>
+          <declname>distances</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_dim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/Rips.hpp" line="40" column="13" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/Rips.hpp" bodystart="40" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classpetls_1_1Rips_1ab5cc701e0b2f57ba766127940e320e2b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>petls::Rips::Rips</definition>
+        <argsstring>(DenseMatrix_PL distances, int max_dim, float threshold)</argsstring>
+        <name>Rips</name>
+        <param>
+          <type><ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref></type>
+          <declname>distances</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_dim</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/Rips.hpp" line="62" column="13" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/Rips.hpp" bodystart="62" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classpetls_1_1Rips_1a8c54d511a789827e235ab13ae741f619" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>petls::Rips::Rips</definition>
+        <argsstring>(std::vector&lt; std::vector&lt; double &gt;&gt; points, int max_dim)</argsstring>
+        <name>Rips</name>
+        <param>
+          <type>std::vector&lt; std::vector&lt; double &gt;&gt;</type>
+          <declname>points</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_dim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/Rips.hpp" line="85" column="13" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/Rips.hpp" bodystart="85" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classpetls_1_1Rips_1a70128dd90d76d7203396de15a911427a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>petls::Rips::Rips</definition>
+        <argsstring>(std::vector&lt; std::vector&lt; double &gt;&gt; points, int max_dim, float threshold)</argsstring>
+        <name>Rips</name>
+        <param>
+          <type>std::vector&lt; std::vector&lt; double &gt;&gt;</type>
+          <declname>points</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_dim</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/Rips.hpp" line="98" column="13" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/Rips.hpp" bodystart="98" bodyend="107"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classpetls_1_1Rips_1a2d80ecade7fc6669fd7d94b7e3d5cc6e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classpetls_1_1Rips" kindref="compound">Rips</ref></type>
+        <definition>static Rips petls::Rips::from_distances</definition>
+        <argsstring>(DenseMatrix_PL distances, int max_dim)</argsstring>
+        <name>from_distances</name>
+        <param>
+          <type><ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref></type>
+          <declname>distances</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_dim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/Rips.hpp" line="111" column="25" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/Rips.hpp" bodystart="111" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classpetls_1_1Rips_1a98c5d30e59b696d30afd4235aec623c1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classpetls_1_1Rips" kindref="compound">Rips</ref></type>
+        <definition>static Rips petls::Rips::from_distances</definition>
+        <argsstring>(DenseMatrix_PL distances, int max_dim, float threshold)</argsstring>
+        <name>from_distances</name>
+        <param>
+          <type><ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref></type>
+          <declname>distances</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_dim</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/Rips.hpp" line="115" column="25" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/Rips.hpp" bodystart="115" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classpetls_1_1Rips_1a02986ed3a7c50b14444169c84d3bee2e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classpetls_1_1Rips" kindref="compound">Rips</ref></type>
+        <definition>static Rips petls::Rips::FromPoints</definition>
+        <argsstring>(std::vector&lt; std::vector&lt; double &gt;&gt; points, int max_dim)</argsstring>
+        <name>FromPoints</name>
+        <param>
+          <type>std::vector&lt; std::vector&lt; double &gt;&gt;</type>
+          <declname>points</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_dim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/Rips.hpp" line="119" column="25" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/Rips.hpp" bodystart="119" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classpetls_1_1Rips_1a2f3c086eacc3a4c8a365fd6e598eee06" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classpetls_1_1Rips" kindref="compound">Rips</ref></type>
+        <definition>static Rips petls::Rips::FromPoints</definition>
+        <argsstring>(std::vector&lt; std::vector&lt; double &gt;&gt; points, int max_dim, float threshold)</argsstring>
+        <name>FromPoints</name>
+        <param>
+          <type>std::vector&lt; std::vector&lt; double &gt;&gt;</type>
+          <declname>points</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_dim</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/Rips.hpp" line="122" column="25" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/Rips.hpp" bodystart="122" bodyend="124"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classpetls_1_1Rips_1ad0d9137d87f3a3cb1d9c3cfe9dd5dfc0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void petls::Rips::boundaries_eigen</definition>
+        <argsstring>(std::vector&lt; std::vector&lt; std::tuple&lt; int64_t, int64_t, int &gt;&gt;&gt; &amp;boundaries_triples, std::vector&lt; SparseMatrixInt &gt; &amp;boundaries, std::vector&lt; std::vector&lt; value_t &gt;&gt; &amp;filtrations)</argsstring>
+        <name>boundaries_eigen</name>
+        <param>
+          <type>std::vector&lt; std::vector&lt; std::tuple&lt; int64_t, int64_t, int &gt;&gt;&gt; &amp;</type>
+          <declname>boundaries_triples</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="typedefs_8hpp_1af75f469c1ca3f8752d6f67a115e57af4" kindref="member">SparseMatrixInt</ref> &gt; &amp;</type>
+          <declname>boundaries</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; value_t &gt;&gt; &amp;</type>
+          <declname>filtrations</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/Rips.hpp" line="128" column="18" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/Rips.hpp" bodystart="128" bodyend="146"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>petls::Rips</label>
+        <link refid="classpetls_1_1Rips"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>petls::Complex</label>
+        <link refid="classpetls_1_1Complex"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>petls::Profile</label>
+        <link refid="structpetls_1_1Profile"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+L</edgelabel>
+          <edgelabel>+L_down</edgelabel>
+          <edgelabel>+L_up</edgelabel>
+          <edgelabel>+all</edgelabel>
+          <edgelabel>+eigs</edgelabel>
+          <edgelabel>+sum_up_down</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>petls::Rips</label>
+        <link refid="classpetls_1_1Rips"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>petls::Complex</label>
+        <link refid="classpetls_1_1Complex"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+profile</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>petls::timer</label>
+        <link refid="structpetls_1_1timer"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/Rips.hpp" line="12" column="5" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/Rips.hpp" bodystart="12" bodyend="147"/>
+    <listofallmembers>
+      <member refid="classpetls_1_1Rips_1ad0d9137d87f3a3cb1d9c3cfe9dd5dfc0" prot="private" virt="non-virtual"><scope>petls::Rips</scope><name>boundaries_eigen</name></member>
+      <member refid="classpetls_1_1Complex_1a8cd116efeb41c775846c29a7c09fa5e3" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>Complex</name></member>
+      <member refid="classpetls_1_1Complex_1ab2c3d07024b1b2b2843ea4f146fc9b18" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>Complex</name></member>
+      <member refid="classpetls_1_1Complex_1af9c9116f42876d80cc78e5662f979bfc" prot="protected" virt="non-virtual"><scope>petls::Rips</scope><name>dummy_d0</name></member>
+      <member refid="classpetls_1_1Complex_1ac131d729c705f46ff3e16458335c7001" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>eigenpairs</name></member>
+      <member refid="classpetls_1_1Complex_1acdbea1a9ca32af5cc235e2dd1c28d872" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>eigenpairs</name></member>
+      <member refid="classpetls_1_1Complex_1a7460d3368941c911624f99a24d741f19" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>eigenpairs</name></member>
+      <member refid="classpetls_1_1Complex_1a619425ac85e02a7bcde6d2309adc9dfb" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>eigenpairs_algorithm_func</name></member>
+      <member refid="classpetls_1_1Complex_1ae3ac144149db98b2245c13e95c23d12e" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>eigenvalues_summarize</name></member>
+      <member refid="classpetls_1_1Complex_1af8409d2c6aa6af1f987987a96000a508" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>eigs_algorithm_func</name></member>
+      <member refid="classpetls_1_1Complex_1a0c8eab257d6e54edc37e910921176060" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>filtered_boundaries</name></member>
+      <member refid="classpetls_1_1Complex_1a9e6e6a833a87173157c02391d13af78b" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>filtration_list_to_spectra_request</name></member>
+      <member refid="classpetls_1_1Complex_1ae8de6f9bffcf4efc584855bd25982752" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>filtration_list_to_spectra_request_allpairs</name></member>
+      <member refid="classpetls_1_1Rips_1a2d80ecade7fc6669fd7d94b7e3d5cc6e" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>from_distances</name></member>
+      <member refid="classpetls_1_1Rips_1a98c5d30e59b696d30afd4235aec623c1" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>from_distances</name></member>
+      <member refid="classpetls_1_1Rips_1a02986ed3a7c50b14444169c84d3bee2e" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>FromPoints</name></member>
+      <member refid="classpetls_1_1Rips_1a2f3c086eacc3a4c8a365fd6e598eee06" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>FromPoints</name></member>
+      <member refid="classpetls_1_1Complex_1a30fce0a1ba9de451b677012c289aa3e9" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>get_all_filtrations</name></member>
+      <member refid="classpetls_1_1Complex_1a2b882abcabbfb35073eb33f7be9d30e9" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>get_down</name></member>
+      <member refid="classpetls_1_1Complex_1ac94f36cfa806dc9df9a2f4fef203f1d9" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>get_down</name></member>
+      <member refid="classpetls_1_1Complex_1a761ea93d4220dfced3b59e04767e6c9e" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>get_L</name></member>
+      <member refid="classpetls_1_1Complex_1a6cc2484c3864671287d5518793dcff6c" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>get_L</name></member>
+      <member refid="classpetls_1_1Complex_1adfffc8a1b210c8f650e660bb202a9dc9" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>get_L_top_dim_flipped</name></member>
+      <member refid="classpetls_1_1Complex_1aa257917af744abb7a94a7713a05c4f8c" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>get_L_top_dim_flipped</name></member>
+      <member refid="classpetls_1_1Complex_1a791969d5e1a55e0db1bd381257062494" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>get_up</name></member>
+      <member refid="classpetls_1_1Complex_1a49e79d7991ce0602bc02997bafb584b6" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>get_up</name></member>
+      <member refid="classpetls_1_1Complex_1a75852f8c18c3496d67261f841cd31607" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>nonzero_spectra</name></member>
+      <member refid="classpetls_1_1Complex_1a901288242ec9f4d6db57074755e0a942" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>print_boundaries</name></member>
+      <member refid="classpetls_1_1Complex_1a09b4983ae83f6978bd2a851cdddf89e6" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>profile</name></member>
+      <member refid="classpetls_1_1Rips_1a3d4aaa6501cf7a7e69ea6bba8d96d5b6" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>Rips</name></member>
+      <member refid="classpetls_1_1Rips_1aa62888921b0094b53dea6dec8d4789f3" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>Rips</name></member>
+      <member refid="classpetls_1_1Rips_1ad27f187f17f4777997a460efa1669b03" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>Rips</name></member>
+      <member refid="classpetls_1_1Rips_1ab5cc701e0b2f57ba766127940e320e2b" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>Rips</name></member>
+      <member refid="classpetls_1_1Rips_1a8c54d511a789827e235ab13ae741f619" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>Rips</name></member>
+      <member refid="classpetls_1_1Rips_1a70128dd90d76d7203396de15a911427a" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>Rips</name></member>
+      <member refid="classpetls_1_1Complex_1ad3dc94300ae8ff357c2e73a19977d9f6" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>set_boundaries_filtrations</name></member>
+      <member refid="classpetls_1_1Complex_1a4a65ad47047f0f4703a15f42fcb2c8a4" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>set_eigs_algorithm_func</name></member>
+      <member refid="classpetls_1_1Complex_1a1ace6ce7f6d9d9728754e010410c60cc" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>set_eigs_algorithm_func</name></member>
+      <member refid="classpetls_1_1Complex_1ab1aa6d47f79701aa182e1f551203b0bb" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>set_flipped</name></member>
+      <member refid="classpetls_1_1Complex_1a678471235fe014fb3db216e50114f880" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>set_up_algorithm_func</name></member>
+      <member refid="classpetls_1_1Complex_1a6ee6e39d415176902ccfa9ce2205e30b" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>set_up_algorithm_func</name></member>
+      <member refid="classpetls_1_1Complex_1a81608e40257ce40d6ccb2a8fb064ed8b" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>set_verbose</name></member>
+      <member refid="classpetls_1_1Complex_1aa573eb40a05d28db6271ec74615fb6a6" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>spectra</name></member>
+      <member refid="classpetls_1_1Complex_1ae90c3fed6769bf36fd6c88465459cefd" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>spectra</name></member>
+      <member refid="classpetls_1_1Complex_1ac8ae478fd15f6f3ff59bc7c3862f832b" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>spectra</name></member>
+      <member refid="classpetls_1_1Complex_1a073913eac9aeabe8b9063523e1c1e1e4" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>spectra_allpairs</name></member>
+      <member refid="classpetls_1_1Complex_1a8c3c7f99170a02f218012c2b2348dc6c" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>store_L</name></member>
+      <member refid="classpetls_1_1Complex_1a8f24c27efcf718465238d3bb1586046c" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>store_spectra</name></member>
+      <member refid="classpetls_1_1Complex_1acd5e321056e2ede5b46164f1240ac0e4" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>store_spectra_summary</name></member>
+      <member refid="classpetls_1_1Complex_1a5ca94422983a0ca1e2f7083f0d7466fe" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>time_to_csv</name></member>
+      <member refid="classpetls_1_1Complex_1a51b323c84f7c4944c796e88538c28824" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>top_dim</name></member>
+      <member refid="classpetls_1_1Complex_1a06aa83f406df56a1f06343eb1fc86084" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>up_algorithm_func</name></member>
+      <member refid="classpetls_1_1Complex_1acf05fc10d73f8dc5e9a2a1d50a9cd480" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>use_flipped</name></member>
+      <member refid="classpetls_1_1Complex_1a784b891bd9bf1c68ad22d942d8d8245c" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>verbose</name></member>
+      <member refid="classpetls_1_1Complex_1aa62336bf763bdbf09a50eb8acac8e807" prot="public" virt="non-virtual"><scope>petls::Rips</scope><name>~Complex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

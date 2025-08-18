@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structpetls_1_1timer" kind="struct" language="C++" prot="public">
+    <compoundname>petls::timer</compoundname>
+    <includes refid="petls_8hpp" local="no">petls.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpetls_1_1timer_1ab72e781a40601e219d5788043eb2709c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int petls::timer::duration</definition>
+        <argsstring></argsstring>
+        <name>duration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/petls.hpp" line="27" column="17" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/petls.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpetls_1_1timer_1a5cbfcce1a8dcca1517ac557ba8273e00" prot="public" static="no" mutable="no">
+        <type>std::chrono::_V2::steady_clock::time_point</type>
+        <definition>std::chrono::_V2::steady_clock::time_point petls::timer::start_t</definition>
+        <argsstring></argsstring>
+        <name>start_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/petls.hpp" line="28" column="56" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/petls.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structpetls_1_1timer_1a89f1356a78c56ff0e4319ced1dfbce3b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void petls::timer::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/petls.hpp" line="29" column="18" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/petls.hpp" bodystart="29" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="structpetls_1_1timer_1a1b20df3ba0a524a3ec77a57f3fe8f805" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void petls::timer::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/petls.hpp" line="32" column="18" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/petls.hpp" bodystart="32" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>petls::timer</label>
+        <link refid="structpetls_1_1timer"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/petls.hpp" line="25" column="5" bodyfile="/home/jones657/PersistentLaplacians/cpp/include/petls_headers/petls.hpp" bodystart="25" bodyend="36"/>
+    <listofallmembers>
+      <member refid="structpetls_1_1timer_1ab72e781a40601e219d5788043eb2709c" prot="public" virt="non-virtual"><scope>petls::timer</scope><name>duration</name></member>
+      <member refid="structpetls_1_1timer_1a89f1356a78c56ff0e4319ced1dfbce3b" prot="public" virt="non-virtual"><scope>petls::timer</scope><name>start</name></member>
+      <member refid="structpetls_1_1timer_1a5cbfcce1a8dcca1517ac557ba8273e00" prot="public" virt="non-virtual"><scope>petls::timer</scope><name>start_t</name></member>
+      <member refid="structpetls_1_1timer_1a1b20df3ba0a524a3ec77a57f3fe8f805" prot="public" virt="non-virtual"><scope>petls::timer</scope><name>stop</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

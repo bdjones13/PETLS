@@ -46,7 +46,7 @@ include(cpp/gudhi.cmake) # this is a fix to make sure gudhi_SOURCE_DIR and gudhi
 
 include_directories("${CMAKE_SOURCE_DIR}/cpp/include/petls_headers")
 include_directories("${CMAKE_SOURCE_DIR}/python")
-
+include_directories("${CMAKE_SOURCE_DIR}/cpp/include/spectra/include")
 
 set(PROJECT_SOURCE_DIR "cpp/src")
 set(PROJECT_INCLUDE_DIR "cpp/include/petls_headers")
@@ -56,6 +56,7 @@ set(SOURCE_FILES
     ${PROJECT_SOURCE_DIR}/petls.cpp
     ${PROJECT_SOURCE_DIR}/core/Complex.cpp
     ${PROJECT_SOURCE_DIR}/eigenvalues/eigs_algorithms.cpp
+    ${PROJECT_SOURCE_DIR}/eigenvalues/spectra_algorithms.cpp
     ${PROJECT_SOURCE_DIR}/variants/PersistentSheafLaplacian.cpp
     ${PROJECT_SOURCE_DIR}/variants/Alpha.cpp
 )
@@ -67,11 +68,12 @@ set(HEADER_FILES
     ${PROJECT_INCLUDE_DIR}/core/Complex.hpp
 
     ${PROJECT_INCLUDE_DIR}/eigenvalues/eigs_algorithms.hpp
+    ${PROJECT_INCLUDE_DIR}/eigenvalues/spectra_algorithms.hpp
     ${PROJECT_INCLUDE_DIR}/core/up_algorithms.hpp
     ${PROJECT_INCLUDE_DIR}/variants/Alpha.hpp # Note - Alpha included above if CGAL + Gudhi installed
     ${PROJECT_INCLUDE_DIR}/variants/dFlag.hpp
     ${PROJECT_INCLUDE_DIR}/variants/Rips.hpp
-    ${PROJECT_INCLUDE_DIR}/variants/newPSL.hpp
+    ${PROJECT_INCLUDE_DIR}/variants/PersistentSheafLaplacian.hpp
 )
 
 
@@ -80,7 +82,7 @@ set(PYTHON_FILES
     ${PYTHON_INCLUDE_DIR}/variants/Alpha.cpp
     ${PYTHON_INCLUDE_DIR}/variants/dFlag.cpp
     ${PYTHON_INCLUDE_DIR}/variants/Rips.cpp
-    ${PYTHON_INCLUDE_DIR}/variants/NewPersistentSheafLaplacian.cpp
+    ${PYTHON_INCLUDE_DIR}/variants/PersistentSheafLaplacian.cpp
     ${PYTHON_INCLUDE_DIR}/_petls.cpp    
 )
 

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_fc38fd881dbaa8ab88934a7baaa8858d" kind="dir">
+    <compoundname>/home/jones657/PersistentLaplacians/cpp/src/eigenvalues</compoundname>
+    <innerfile refid="eigs__algorithms_8cpp">eigs_algorithms.cpp</innerfile>
+    <innerfile refid="spectra__algorithms_8cpp">spectra_algorithms.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jones657/PersistentLaplacians/cpp/src/eigenvalues/"/>
+  </compounddef>
+</doxygen>

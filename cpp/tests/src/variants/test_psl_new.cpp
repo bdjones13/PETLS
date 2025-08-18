@@ -2,13 +2,13 @@
 // #include "Complex.hpp"
 // #include "typedefs.hpp"
 // #include "petls.hpp"
-#include "newPSL.hpp"
+#include "PersistentSheafLaplacian.hpp"
 #include "sheaf_simplex_tree.hpp"
 #include <iostream>
 // #include "../helpers.hpp"
 
 
-bool test_sample(petls::NewPersistentSheafLaplacian &complex, std::vector<spectra_type> reference_spectra, int dim, double a, double b){
+bool test_sample(petls::PersistentSheafLaplacian &complex, std::vector<spectra_type> reference_spectra, int dim, double a, double b){
     spectra_vec ref_spectra_eigen = Eigen::Map<spectra_vec, Eigen::Unaligned>(reference_spectra.data(),reference_spectra.size());
     std::vector<spectra_type> spectra_std_vec = complex.spectra(dim,a,b);
     spectra_vec spectra = Eigen::Map<spectra_vec, Eigen::Unaligned>(spectra_std_vec.data(),spectra_std_vec.size());
@@ -160,7 +160,7 @@ bool test_sst(std::vector<std::vector<float>> points, std::vector<float> charges
 
 bool test_psl(std::vector<std::vector<float>> points, std::vector<float> charges){
     petls::sheaf_simplex_tree sst = get_sst(points, charges);
-    petls::NewPersistentSheafLaplacian psl = petls::NewPersistentSheafLaplacian(sst);
+    petls::PersistentSheafLaplacian psl = petls::PersistentSheafLaplacian(sst);
     float q0 = charges[0];
     float q1 = charges[1];
     float q2 = charges[2];

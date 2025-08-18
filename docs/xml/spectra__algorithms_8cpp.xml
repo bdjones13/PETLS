@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="spectra__algorithms_8cpp" kind="file" language="C++">
+    <compoundname>spectra_algorithms.cpp</compoundname>
+    <includes refid="spectra__algorithms_8hpp" local="yes">../../include/petls_headers/eigenvalues/spectra_algorithms.hpp</includes>
+    <includes local="yes">Eigen/Eigenvalues</includes>
+    <includes local="yes">Eigen/SVD</includes>
+    <includes refid="petls_8hpp" local="yes">../../include/petls_headers/petls.hpp</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">cmath</includes>
+    <includes local="no">Spectra/SymEigsSolver.h</includes>
+    <includes local="no">Spectra/MatOp/SparseSymMatProd.h</includes>
+    <includes local="no">Spectra/GenEigsSolver.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>../typedefs.hpp</label>
+        <link refid="typedefs_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/jones657/PersistentLaplacians/cpp/src/eigenvalues/spectra_algorithms.cpp</label>
+        <link refid="spectra__algorithms_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>cmath</label>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>Eigen/Eigenvalues</label>
+      </node>
+      <node id="15">
+        <label>Spectra/GenEigsSolver.h</label>
+      </node>
+      <node id="14">
+        <label>Spectra/MatOp/SparseSymMatProd.h</label>
+      </node>
+      <node id="13">
+        <label>Spectra/SymEigsSolver.h</label>
+      </node>
+      <node id="7">
+        <label>../../include/petls_headers/petls.hpp</label>
+        <link refid="petls_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vector</label>
+      </node>
+      <node id="2">
+        <label>../../include/petls_headers/eigenvalues/spectra_algorithms.hpp</label>
+        <link refid="spectra__algorithms_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Eigen/SparseCore</label>
+      </node>
+      <node id="11">
+        <label>iostream</label>
+      </node>
+      <node id="10">
+        <label>chrono</label>
+      </node>
+      <node id="6">
+        <label>Eigen/SVD</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacepetls">petls</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;../../include/petls_headers/eigenvalues/spectra_algorithms.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Eigen/Eigenvalues&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Eigen/SVD&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../include/petls_headers/petls.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>std::abs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Spectra/SymEigsSolver.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Spectra/MatOp/SparseSymMatProd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Spectra/GenEigsSolver.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacepetls" kindref="compound">petls</ref>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="typedefs_8hpp_1a27a64e317582fd2a2dbdc95fa84b7ebd" kindref="member">spectra_vec</ref><sp/><ref refid="namespacepetls_1aa88bc56b45658aa622b22bfa20ef88bc" kindref="member">DenseSymSpectra</ref>(<ref refid="typedefs_8hpp_1a260197b742c38462952d018c69ff535a" kindref="member">DenseMatrix_PL</ref><sp/>&amp;L){</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="namespacepetls_1a8ef10ae87f953877b3e165ce1c692113" kindref="member">petls::matrix_is_diagonal</ref>(L)){</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="typedefs_8hpp_1a27a64e317582fd2a2dbdc95fa84b7ebd" kindref="member">spectra_vec</ref><sp/>eigs<sp/>=<sp/>L.diagonal();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacepetls_1a778933d6c8a8e2ff066cbeb1952dd4cb" kindref="member">round_zeros</ref>(eigs,<sp/>1e-3);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::sort(eigs.begin(),<sp/>eigs.end());<sp/></highlight><highlight class="comment">//<sp/>Diagonal<sp/>is<sp/>unsorted</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>eigs;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Spectra::DenseSymMatProd&lt;coefficient_type&gt;<sp/>op(L);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Construct<sp/>eigen<sp/>solver<sp/>object,<sp/>requesting<sp/>the<sp/>largest<sp/>three<sp/>eigenvalues</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nev<sp/>=<sp/>10;<sp/></highlight><highlight class="comment">//<sp/>Number<sp/>of<sp/>eigenvalues<sp/>to<sp/>compute</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ncv<sp/>=<sp/>20;<sp/></highlight><highlight class="comment">//<sp/>Dimension<sp/>of<sp/>the<sp/>Krylov<sp/>subspace,<sp/>should<sp/>be<sp/>larger<sp/>than<sp/>nev</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nev<sp/>=<sp/>std::min(nev,<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<sp/>L.rows()-1);<sp/></highlight><highlight class="comment">//<sp/>algorithm<sp/>requires<sp/><sp/>1<sp/>&lt;<sp/>nev<sp/>&lt;=<sp/>M.rows()-1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ncv<sp/>=<sp/>std::min(std::max(ncv,<sp/>2*nev),<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<sp/>L.rows());</highlight><highlight class="comment">//<sp/>Try<sp/>to<sp/>make<sp/>ncv<sp/>&gt;=<sp/>2*nev,<sp/>but<sp/>not<sp/>larger<sp/>than<sp/>the<sp/>size<sp/>of<sp/>the<sp/>matrix</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Spectra::SymEigsSolver&lt;Spectra::DenseSymMatProd&lt;coefficient_type&gt;&gt;<sp/>eigensolver(op,<sp/>nev,<sp/>ncv);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Initialize<sp/>and<sp/>compute</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eigensolver.init();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nconv<sp/>=<sp/>eigensolver.compute(Spectra::SortRule::SmallestMagn);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(eigensolver.info()<sp/>!=<sp/>Spectra::CompInfo::Successful)<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Eigenvalue<sp/>computation<sp/>failed&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;nev=&quot;</highlight><highlight class="normal">&lt;&lt;nev<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>ncv=&quot;</highlight><highlight class="normal">&lt;&lt;ncv<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>nconv=&quot;</highlight><highlight class="normal">&lt;&lt;nconv<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>rows=&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;L.rows()<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Fall<sp/>back<sp/>to<sp/>Eigen<sp/>if<sp/>Spectra<sp/>fails</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Eigen::SelfAdjointEigenSolver&lt;DenseMatrix_PL&gt;<sp/>es<sp/>=<sp/>Eigen::SelfAdjointEigenSolver&lt;DenseMatrix_PL&gt;(L,<sp/>Eigen::EigenvaluesOnly);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="typedefs_8hpp_1a27a64e317582fd2a2dbdc95fa84b7ebd" kindref="member">spectra_vec</ref><sp/>eigs<sp/>=<sp/>es.eigenvalues();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacepetls_1a778933d6c8a8e2ff066cbeb1952dd4cb" kindref="member">round_zeros</ref>(eigs,<sp/>1e-3);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>eigs;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>throw<sp/>std::runtime_error(&quot;Eigenvalue<sp/>computation<sp/>failed<sp/>using<sp/>Spectra.<sp/>This<sp/>can<sp/>happen<sp/>if<sp/>the<sp/>matrix<sp/>has<sp/>a<sp/>large<sp/>null-space<sp/>(high<sp/>betti-number).&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="typedefs_8hpp_1a27a64e317582fd2a2dbdc95fa84b7ebd" kindref="member">spectra_vec</ref><sp/>eigs<sp/>=<sp/>eigensolver.eigenvalues();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacepetls_1a778933d6c8a8e2ff066cbeb1952dd4cb" kindref="member">round_zeros</ref>(eigs,<sp/>1e-3);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>eigs;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>std::pair&lt;spectra_vec,DenseMatrix_spectra_PL&gt;<sp/>SelfAdjointEigenpairsEigen(DenseMatrix_PL<sp/>&amp;L){</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>Eigen::SelfAdjointEigenSolver&lt;DenseMatrix_PL&gt;<sp/>es<sp/>=<sp/>Eigen::SelfAdjointEigenSolver&lt;DenseMatrix_PL&gt;(L);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>spectra_vec<sp/>eigs<sp/>=<sp/>es.eigenvalues();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>DenseMatrix_spectra_PL<sp/>eigvs<sp/>=<sp/>es.eigenvectors();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>round_zeros(eigs,<sp/>1e-3);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>return<sp/>std::pair&lt;spectra_vec,DenseMatrix_spectra_PL&gt;(eigs,<sp/>eigvs);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/jones657/PersistentLaplacians/cpp/src/eigenvalues/spectra_algorithms.cpp"/>
+  </compounddef>
+</doxygen>

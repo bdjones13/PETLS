@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operator_28_29_206',['operator()',['../classPersistentLaplacians_1_1schur.html#ad21460c921bd6e8c646578a0c6df6ca6',1,'PersistentLaplacians::schur::operator()()'],['../classPersistentLaplacians_1_1ortho.html#a7a675131615c18037e056c7f7c142815',1,'PersistentLaplacians::ortho::operator()()']]]
+  ['matrix_5fis_5fdiagonal_197',['matrix_is_diagonal',['../namespacepetls.html#a8ef10ae87f953877b3e165ce1c692113',1,'petls']]]
 ];

@@ -2,7 +2,8 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="dir_aa999d0ce8e965b4353e6170079285a5" kind="dir">
     <compoundname>/home/jones657/PersistentLaplacians/cpp/src/variants</compoundname>
-    <innerfile refid="PersistentAlphaLaplacian_8cpp">PersistentAlphaLaplacian.cpp</innerfile>
+    <innerfile refid="Alpha_8cpp">Alpha.cpp</innerfile>
+    <innerfile refid="PersistentSheafLaplacian_8cpp">PersistentSheafLaplacian.cpp</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

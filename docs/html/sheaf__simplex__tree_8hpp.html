@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PersistentLaplacians: /home/jones657/PersistentLaplacians/cpp/include/PersistentLaplacians_headers/variants/sheaf_simplex_tree.hpp File Reference</title>
+<title>PETLS: /home/jones657/PersistentLaplacians/cpp/include/petls_headers/variants/sheaf_simplex_tree.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">PersistentLaplacians
+   <div id="projectname">PETLS
    </div>
   </td>
  </tr>
@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_df511e5bd85cec96854b39d5e1c27aa8.html">cpp</a></li><li class="navelem"><a class="el" href="dir_07f37e320deb3031a60f4b23b9c60eb5.html">include</a></li><li class="navelem"><a class="el" href="dir_f4dafedda50505565fc59033b655396b.html">PersistentLaplacians_headers</a></li><li class="navelem"><a class="el" href="dir_0ad7e41f04d98acb148714f84d2f044e.html">variants</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_df511e5bd85cec96854b39d5e1c27aa8.html">cpp</a></li><li class="navelem"><a class="el" href="dir_07f37e320deb3031a60f4b23b9c60eb5.html">include</a></li><li class="navelem"><a class="el" href="dir_8a2512f084787173c6395afc8423288e.html">petls_headers</a></li><li class="navelem"><a class="el" href="dir_c1b8c20a8da28e85d0efdbb22217c200.html">variants</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -83,32 +83,33 @@ $(function() {
 <code>#include &lt;unordered_map&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
 </div>
 <p><a href="sheaf__simplex__tree_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPersistentLaplacians_1_1sheaf__simplex__tree.html">PersistentLaplacians::sheaf_simplex_tree</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpetls_1_1sheaf__simplex__tree.html">petls::sheaf_simplex_tree</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespacePersistentLaplacians"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePersistentLaplacians.html">PersistentLaplacians</a></td></tr>
+<tr class="memitem:namespacepetls"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepetls.html">petls</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:af5a05e44b87981109cce88070677b6f1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePersistentLaplacians.html#af5a05e44b87981109cce88070677b6f1">PersistentLaplacians::Simplex_tree</a> = Gudhi::Simplex_tree&lt; Gudhi::Simplex_tree_options_default &gt;</td></tr>
-<tr class="separator:af5a05e44b87981109cce88070677b6f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58c490a6ba7bc8547c4d686ce660e806"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePersistentLaplacians.html#a58c490a6ba7bc8547c4d686ce660e806">PersistentLaplacians::Filtration_value</a> = Simplex_tree::Filtration_value</td></tr>
-<tr class="separator:a58c490a6ba7bc8547c4d686ce660e806"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a751679cfa9745a7e47c310947521b59e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePersistentLaplacians.html#a751679cfa9745a7e47c310947521b59e">PersistentLaplacians::Distance_matrix</a> = std::vector&lt; std::vector&lt; Filtration_value &gt; &gt;</td></tr>
-<tr class="separator:a751679cfa9745a7e47c310947521b59e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f715135d02c269e4dc0029f96b642e1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepetls.html#a0f715135d02c269e4dc0029f96b642e1">petls::Simplex_tree</a> = Gudhi::Simplex_tree&lt; Gudhi::Simplex_tree_options_default &gt;</td></tr>
+<tr class="separator:a0f715135d02c269e4dc0029f96b642e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e16481eec60166670d7badfe693b488"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepetls.html#a5e16481eec60166670d7badfe693b488">petls::Filtration_value</a> = Simplex_tree::Filtration_value</td></tr>
+<tr class="separator:a5e16481eec60166670d7badfe693b488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58e0a96abcfc17a00e13353ac7f0311f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepetls.html#a58e0a96abcfc17a00e13353ac7f0311f">petls::Distance_matrix</a> = std::vector&lt; std::vector&lt; Filtration_value &gt; &gt;</td></tr>
+<tr class="separator:a58e0a96abcfc17a00e13353ac7f0311f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a723613a2af1a0651a29f8f34a44b3f1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPersistentLaplacians_1_1sheaf__simplex__tree.html">PersistentLaplacians::sheaf_simplex_tree</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePersistentLaplacians.html#a723613a2af1a0651a29f8f34a44b3f1f">PersistentLaplacians::rips_sheaf_simplex_tree</a> (std::vector&lt; std::vector&lt; float &gt;&gt; points, Filtration_value max_length, std::function&lt; float(Simplex_tree::Simplex_handle, Simplex_tree::Simplex_handle, sheaf_simplex_tree &amp;)&gt; restriction)</td></tr>
-<tr class="separator:a723613a2af1a0651a29f8f34a44b3f1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac21876caadf0bfe0f0b51689fe3134ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpetls_1_1sheaf__simplex__tree.html">petls::sheaf_simplex_tree</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepetls.html#ac21876caadf0bfe0f0b51689fe3134ac">petls::rips_sheaf_simplex_tree</a> (std::vector&lt; std::vector&lt; float &gt;&gt; points, Filtration_value max_length, std::function&lt; float(Simplex_tree::Simplex_handle, Simplex_tree::Simplex_handle, sheaf_simplex_tree &amp;)&gt; restriction)</td></tr>
+<tr class="separator:ac21876caadf0bfe0f0b51689fe3134ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

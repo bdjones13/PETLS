@@ -7,6 +7,7 @@
 // #include "../../include/petls_headers/petls.hpp"
 #include "../../include/petls_headers/core/up_algorithms.hpp"
 #include "../../include/petls_headers/eigenvalues/eigs_algorithms.hpp"
+#include "../../include/petls_headers/eigenvalues/spectra_algorithms.hpp"
 // #include "../../include/petls_headers/core/FilteredBoundaryMatrix.hpp"
 
 #include <Eigen/IterativeLinearSolvers>
@@ -86,11 +87,25 @@ namespace petls{
                 eigs_algorithm_func = petls::EigensolverEigen;
             } else if (name == "bdcsvd"){
                 eigs_algorithm_func = petls::BDCSVDEigen;
+            } else if (name == "spectra"){
+                eigs_algorithm_func = petls::DenseSymSpectra;
+            } else {
+                std::cout << "Unknown eigs_algorithm_func name: " << name << std::endl;
+                throw std::invalid_argument("Unknown eigs_algorithm_func name");
             }
         }
 
-        void Complex::set_up_func(std::function<void(FilteredBoundaryMatrix<int>*, filtration_type, filtration_type, DenseMatrix_PL&)> _up_algorithm_func){
+        void Complex::set_up_algorithm_func(std::function<void(FilteredBoundaryMatrix<int>*, filtration_type, filtration_type, DenseMatrix_PL&)> _up_algorithm_func){
             up_algorithm_func = _up_algorithm_func;
+        }
+
+        void Complex::set_up_algorithm_func(std::string name){
+            if (name == "schur"){
+                up_algorithm_func = petls::schur_algorithm<storage>;
+            } else {
+                std::cout << "Unknown up_algorithm_func name: " << name << std::endl;
+                throw std::invalid_argument("Unknown up_algorithm_func name");
+            }
         }
 
         /**
@@ -466,6 +481,8 @@ namespace petls{
                 this->profile.stop_L();
                 profile.L_rows.push_back(betti0);
                 this->profile.stop_all();
+                this->profile.bettis.push_back(betti0);
+                this->profile.lambdas.push_back(0);
                 return std::vector<spectra_type>(betti0,0.0);
             }
 
@@ -499,6 +516,8 @@ namespace petls{
                         profile.durations_sum_up_down.push_back(0);
                         profile.durations_L_up.push_back(0);
                         this->profile.stop_all();
+                        this->profile.bettis.push_back(0);
+                        this->profile.lambdas.push_back(0);
                         return std::vector<spectra_type>();
                     }
 
@@ -516,6 +535,9 @@ namespace petls{
                         profile.durations_sum_up_down.push_back(0);
                         profile.durations_L_up.push_back(0);
                         this->profile.stop_all();
+                        std::pair<int, spectra_type> summary = eigenvalues_summarize(std_eigs_flipped);
+                        this->profile.bettis.push_back(summary.first);
+                        this->profile.lambdas.push_back(summary.second);
                         return std_eigs_flipped;
                     }
 
@@ -528,6 +550,9 @@ namespace petls{
                     profile.durations_sum_up_down.push_back(0);
                     profile.durations_L_up.push_back(0);
                     this->profile.stop_all();
+                    std::pair<int, spectra_type> summary = eigenvalues_summarize(zero_pad);
+                    this->profile.bettis.push_back(summary.first);
+                    this->profile.lambdas.push_back(summary.second);
                     return zero_pad;                    
                 } 
             }
@@ -542,6 +567,8 @@ namespace petls{
                 eigenvalues.setZero(0);
                 profile.durations_eigs.push_back(0);
                 this->profile.stop_all();
+                this->profile.bettis.push_back(0);
+                this->profile.lambdas.push_back(0);
                 return std::vector<spectra_type>();
             }
 
@@ -552,6 +579,9 @@ namespace petls{
 
             std::vector<spectra_type> std_eigenvalues(eigenvalues.data(), eigenvalues.data() + eigenvalues.size());
             this->profile.stop_all();
+            std::pair<int, spectra_type> summary = eigenvalues_summarize(std_eigenvalues);
+            this->profile.bettis.push_back(summary.first);
+            this->profile.lambdas.push_back(summary.second);
             return std_eigenvalues;
         }
 

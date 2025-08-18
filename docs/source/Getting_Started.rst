@@ -6,12 +6,9 @@ Getting Started
    :maxdepth: 2
    :caption: Contents:
 
-.. Note::
-   Using Intel MKL or BLAS offers a speedup by a factor of about 6. This documentation does not currently reflect how to do that.
-
 Python Installation
 *******************
-If you have a system compatible with any of the binary wheels listed `here <https://test.pypi.org/project/PersistentLaplacians/>`_, you can just install via ``pip install PersistentLaplacians``.
+If you have a system compatible with any of the compiled binary wheels listed `here <https://pypi.org/project/petls/>`_, you can just install via ``pip install petls``.
 
 Otherwise, to install from source, there are the following dependencies:
 
@@ -26,9 +23,9 @@ If you intend to use the Alpha complex from Gudhi, you will also need the follow
 
 There are three ways to install from source:
 
-1. If you do not have a system compatible with any of the binaries on PyPI, then ``pip install PersistentLaplacians`` should do the job.
-2. Clone the `GitHub repository <https://github.com/bdjones13/PersistentLaplacians/>`_ and from the project root run ``pip install .``
-3. Clone the `GitHub repository <https://github.com/bdjones13/PersistentLaplacians/>`_ and from the project root run:: 
+1. If you do not have a system compatible with any of the pre-compiled binaries on PyPI, then ``pip install petls`` should still install from source.
+2. Clone the `GitHub repository <https://github.com/bdjones13/PETLS/>`_ and from the project root run ``pip install .``
+3. Clone the `GitHub repository <https://github.com/bdjones13/PETLS/>`_ and from the project root run:: 
 
       mkdir build
       cd build
@@ -42,11 +39,11 @@ C++ Installation
 Dependencies:
 
 - CMake >= 3.16.3 
-- Eigen 3 
+- Eigen 3.4
 
 .. note::
    
-   This project downloads and compiles Eigen 3.4 for internal usage (some features new to 3.4 are used), but to call PersistentLaplacian functions you must pass in Eigen matrices, so you must have access to your own version of Eigen 3. You likely do not need Eigen 3.4 to use this library.
+   This project downloads and compiles Eigen 3.4 for internal usage (some features new to 3.4 are used), but to call PETLS functions you must pass in Eigen matrices, so you must have access to your own version of Eigen 3. You likely do not need Eigen 3.4 to use this library.
 
 If you intend to use the Alpha complex from Gudhi, you will also need the following dependencies at the time of installation:
 
@@ -91,7 +88,7 @@ You can create the persistent Laplacians and compute the spectra:
 .. code-block:: python
 
    import numpy as np
-   import PersistentLaplacians
+   import petls
 
 
    # boundary matrices
@@ -105,15 +102,15 @@ You can create the persistent Laplacians and compute the spectra:
                   [3,4,5],    # dim 1 filtrations
                   [5]]        # dim 2 filtrations
 
-   pl = PersistentLaplacians.PersistentLaplacian(boundaries, filtrations)
-   print(pl.spectra())
+   complex = petls.Complex(boundaries, fsiltrations)
+   print(complex.spectra())
 
 
 **C++**
 
 .. code-block:: c
 
-   #include "PersistentLaplacian.hpp"
+   #include "petls.hpp"
    #include <Eigen/Dense>
    #include <vector>
    #include <iostream>
@@ -147,8 +144,8 @@ You can create the persistent Laplacians and compute the spectra:
    filtrations.push_back(c1_filtrations);
    filtrations.push_back(c2_filtrations);
    
-   PersistentLaplacians::PersistentLaplacian pl(boundaries,filtrations);
-   std::cout << pl.spectra() << std::endl;
+   petls::Complex complex(boundaries,filtrations);
+   std::cout << complex.spectra() << std::endl;
 
 
 

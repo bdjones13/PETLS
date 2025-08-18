@@ -21,13 +21,9 @@ typedef Eigen::SparseMatrix<double, Eigen::ColMajor> SparseMatrixDouble;
 typedef Eigen::SparseMatrix<float, Eigen::ColMajor> SparseMatrixFloat;
 
 
-typedef double filtration_type; // TODO: single precision
-typedef int index_type; // TODO: change from int to uint
+typedef double filtration_type;
+typedef int index_type;
 
-
-
-//TODO: remove PRUNE_CONSTANT or determine a justified value
-#define PRUNE_CONSTANT 0.0000001
 
 
 #endif

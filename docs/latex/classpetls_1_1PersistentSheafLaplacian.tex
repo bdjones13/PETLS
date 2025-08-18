@@ -1,0 +1,582 @@
+\hypertarget{classpetls_1_1PersistentSheafLaplacian}{}\doxysection{petls\+::Persistent\+Sheaf\+Laplacian Class Reference}
+\label{classpetls_1_1PersistentSheafLaplacian}\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+
+
+{\ttfamily \#include $<$Persistent\+Sheaf\+Laplacian.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_aa91f6713ba3911df1f726c87ec7374c5}{Persistent\+Sheaf\+Laplacian}} (\mbox{\hyperlink{classpetls_1_1sheaf__simplex__tree}{sheaf\+\_\+simplex\+\_\+tree}} \&sst)
+\item 
+\mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_a3869796e39140fdcb75096cba9c1999f}{Persistent\+Sheaf\+Laplacian}} (std\+::vector$<$ Eigen\+::\+Sparse\+Matrix$<$ storage $>$$>$ boundaries, std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$$>$ filtrations)
+\item 
+\mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_ae9bd3794cb99a3d04fcedd7f4a7e68af}{$\sim$\+Persistent\+Sheaf\+Laplacian}} ()
+\item 
+void \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_a92568ef07cfd668688d19ff0d5593309}{set\+\_\+eigs\+\_\+algorithm\+\_\+func}} (std\+::function$<$ \mbox{\hyperlink{typedefs_8hpp_a27a64e317582fd2a2dbdc95fa84b7ebd}{spectra\+\_\+vec}}(\mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}} \&)$>$ \+\_\+eigs\+\_\+algorithm\+\_\+func)
+\item 
+void \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_aec579f5c9e74979f0eefdfff7171ad50}{set\+\_\+eigs\+\_\+algorithm\+\_\+func}} (std\+::string name)
+\item 
+void \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_a33cb800a0dfafb915d7f86fd8113b4ac}{set\+\_\+up\+\_\+func}} (std\+::function$<$ void(\mbox{\hyperlink{classpetls_1_1FilteredBoundaryMatrix}{Filtered\+Boundary\+Matrix}}$<$ float $>$ $\ast$, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}} \&)$>$ \+\_\+up\+\_\+algorithm\+\_\+func)
+\item 
+void \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_addced39b388372233038322e587d323c}{set\+\_\+boundaries\+\_\+filtrations}} (std\+::vector$<$ Eigen\+::\+Sparse\+Matrix$<$ storage $>$$>$ boundaries, std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$$>$ filtrations)
+\item 
+void \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_afddbfca690826173849d098abc0faa39}{set\+\_\+verbose}} (bool \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_ae51b445ea6eff709df1436358e3e1f6f}{verbose}})
+\item 
+void \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_a0efa5ad790980fdcdfe2f2aca8c7a3a2}{set\+\_\+flipped}} (bool \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_a3a2fa45aace835e5573ba83c89334c9c}{use\+\_\+flipped}})
+\item 
+void \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_a326442edf3708d99f59b54866930cf7c}{get\+\_\+L}} (int dim, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} a, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} b, \mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}} \&L)
+\item 
+\mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}} \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_a7e3d3c2bbe15c902ed8bf3eb023657f2}{get\+\_\+L}} (int dim, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} a, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} b)
+\item 
+void \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_a9654fec3af26aa958293987030a40b9d}{get\+\_\+\+L\+\_\+top\+\_\+dim\+\_\+flipped}} (\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} a, \mbox{\hyperlink{typedefs_8hpp_aa0b819682f9cdac0ae1234aed46106e6}{Sparse\+Matrix\+\_\+\+PL}} \&L)
+\item 
+\mbox{\hyperlink{typedefs_8hpp_aa0b819682f9cdac0ae1234aed46106e6}{Sparse\+Matrix\+\_\+\+PL}} \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_a0090a4aa54b23f5983cac437be81ad86}{get\+\_\+\+L\+\_\+top\+\_\+dim\+\_\+flipped}} (\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} a)
+\item 
+void \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_a5378f9579678ed3c58eccbd4af8a6dd7}{get\+\_\+up}} (int dim, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} a, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} b, \mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}} \&L\+\_\+up)
+\item 
+\mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}} \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_af9fcdfd727bb598cdb39c4dbc6a47392}{get\+\_\+up}} (int dim, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} a, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} b)
+\item 
+void \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_a59cdeab2418508ea7b537318ae71f203}{get\+\_\+down}} (int dim, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} a, Eigen\+::\+Sparse\+Matrix$<$ storage $>$ \&L\+\_\+down)
+\item 
+Eigen\+::\+Sparse\+Matrix$<$ storage $>$ \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_a28ea525d437916101a6ed7984e9f7786}{get\+\_\+down}} (int dim, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} a)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}} $>$ \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_ad9bd916b4d263a47409a074c0c7aa8d0}{spectra}} (int dim, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} a, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} b)
+\item 
+std\+::vector$<$ std\+::tuple$<$ int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}} $>$ $>$ $>$ \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_a98615eec3cc54b423206fb5cfafc18c6}{spectra}} ()
+\item 
+std\+::vector$<$ std\+::tuple$<$ int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}} $>$ $>$ $>$ \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_ab2bb19fae77700b2cadbc8ef9d0c336a}{spectra}} (std\+::vector$<$ std\+::tuple$<$ int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$$>$ spectra\+\_\+request\+\_\+list)
+\item 
+std\+::pair$<$ std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}} $>$, \mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}} $>$ \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_a8ab1309466bae9424dd7d044d45e8782}{eigenpairs}} (int dim, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} a, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} b)
+\item 
+std\+::vector$<$ std\+::tuple$<$ int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}} $>$, \mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}} $>$ $>$ \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_a4733756efade0f90f7a691147f53093e}{eigenpairs}} ()
+\item 
+std\+::vector$<$ std\+::tuple$<$ int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}} $>$, \mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}} $>$ $>$ \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_a5b0b78e78e6576b5e9b955a44ed0bd0b}{eigenpairs}} (std\+::vector$<$ std\+::tuple$<$ int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$$>$ spectra\+\_\+request\+\_\+list)
+\item 
+std\+::pair$<$ int, \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}} $>$ \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_a677857a799c781e9aa6e889a1acb65ef}{eigenvalues\+\_\+summarize}} (std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}} $>$ eigenvalues)
+\item 
+void \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_af020e626144e0b5c1070a7924ec3ea3a}{store\+\_\+L}} (int dim, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} a, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} b, std\+::string filename)
+\item 
+void \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_aaa6127847a0ecc7c22b25073d5ae0c18}{print\+\_\+boundaries}} ()
+\item 
+void \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_a1f771bcabaff3ca9c65f18dc20264700}{store\+\_\+spectra}} (std\+::vector$<$ std\+::tuple$<$ int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}} $>$$>$$>$ \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_ad9bd916b4d263a47409a074c0c7aa8d0}{spectra}}, std\+::string out\+\_\+prefix)
+\item 
+void \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_a785b7f661b8047c2debcbd127589a206}{store\+\_\+spectra\+\_\+summary}} (std\+::vector$<$ std\+::tuple$<$ int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}} $>$$>$$>$ \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_ad9bd916b4d263a47409a074c0c7aa8d0}{spectra}}, std\+::string out\+\_\+prefix)
+\item 
+std\+::vector$<$ std\+::tuple$<$ int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$ $>$ \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_a1a43736e6fd04dc53d0943cd6ea0f234}{filtration\+\_\+list\+\_\+to\+\_\+spectra\+\_\+request}} (std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$ filtrations, std\+::vector$<$ int $>$ dims)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$ \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_af9d7ff87d59c4097d571a37c112f81dc}{get\+\_\+all\+\_\+filtrations}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_a4c010a4e28b7a20faf2cd5d04ead6fa1}{top\+\_\+dim}}
+\begin{DoxyCompactList}\small\item\em Top dimension of the complex. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classpetls_1_1FilteredBoundaryMatrix}{Filtered\+Boundary\+Matrix}}$<$ storage $>$ $>$ \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_a8f74b9353b074775534dda04bcdee626}{filtered\+\_\+boundaries}}
+\begin{DoxyCompactList}\small\item\em Boundary matrix assuming real (or integer) coefficients. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_ae51b445ea6eff709df1436358e3e1f6f}{verbose}}
+\begin{DoxyCompactList}\small\item\em Print progress if \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_a98615eec3cc54b423206fb5cfafc18c6}{spectra()}} is called. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_a3a2fa45aace835e5573ba83c89334c9c}{use\+\_\+flipped}}
+\begin{DoxyCompactList}\small\item\em Compute the top-\/dimensional Laplacian\textquotesingle{}s eigenvalues in spectra function via the eigenvalues of the smaller of B\+\_\+N B\+\_\+\+N$^\wedge$T or B\+\_\+\+N$^\wedge$T B\+\_\+N and possible zero-\/padding. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpetls_1_1Profile}{Profile}} \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_a9a8802da3c168b2d236c9f3841aef2c7}{profile}}
+\begin{DoxyCompactList}\small\item\em Profiler to track time usage of various steps. \end{DoxyCompactList}\item 
+std\+::function$<$ \mbox{\hyperlink{typedefs_8hpp_a27a64e317582fd2a2dbdc95fa84b7ebd}{spectra\+\_\+vec}}(\mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}} \&)$>$ \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_a593df210a45c5c3bd907818082ad170a}{eigs\+\_\+algorithm\+\_\+func}}
+\item 
+std\+::function$<$ std\+::pair$<$ \mbox{\hyperlink{typedefs_8hpp_a27a64e317582fd2a2dbdc95fa84b7ebd}{spectra\+\_\+vec}}, \mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}} $>$\mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}} \&)$>$ \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_a34df5759a37ff2a3153b3963d3229574}{eigenpairs\+\_\+algorithm\+\_\+func}}
+\item 
+std\+::function$<$ void(\mbox{\hyperlink{classpetls_1_1FilteredBoundaryMatrix}{Filtered\+Boundary\+Matrix}}$<$ float $>$ $\ast$, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}} \&)$>$ \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_afe949d7e94ce8836a538d6c950969796}{up\+\_\+algorithm\+\_\+func}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpetls_1_1FilteredBoundaryMatrix}{petls\+::\+Filtered\+Boundary\+Matrix}}$<$ storage $>$ \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_a217c0bb3e0e0254cde469edbcfd17835}{dummy\+\_\+d0}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Primary class for computing persistent Laplacians 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em eigs\+\_\+\+Algorithm} & Algorithm wrapper class to use for computing eigenvalues of the Laplacian in the spectra family of functions. Default is a wrapper for Eigen\+::\+Self\+Adjoint\+Eigen\+Solver. \\
+\hline
+{\em up\+\_\+\+Algorithm} & Algorithm wrapper class to use for computing the up-\/\+Laplacian. Default is the Schur complement algorithm presented in Memoli, Wan, and Wang 2020. //\+TODO\+: \textbackslash{}see up\+\_\+algorithms and eigs\+\_\+algorithms \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_aa91f6713ba3911df1f726c87ec7374c5}\label{classpetls_1_1PersistentSheafLaplacian_aa91f6713ba3911df1f726c87ec7374c5}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!PersistentSheafLaplacian@{PersistentSheafLaplacian}}
+\index{PersistentSheafLaplacian@{PersistentSheafLaplacian}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{PersistentSheafLaplacian()}{PersistentSheafLaplacian()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily petls\+::\+Persistent\+Sheaf\+Laplacian\+::\+Persistent\+Sheaf\+Laplacian (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpetls_1_1sheaf__simplex__tree}{sheaf\+\_\+simplex\+\_\+tree}} \&}]{sst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_a3869796e39140fdcb75096cba9c1999f}\label{classpetls_1_1PersistentSheafLaplacian_a3869796e39140fdcb75096cba9c1999f}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!PersistentSheafLaplacian@{PersistentSheafLaplacian}}
+\index{PersistentSheafLaplacian@{PersistentSheafLaplacian}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{PersistentSheafLaplacian()}{PersistentSheafLaplacian()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily petls\+::\+Persistent\+Sheaf\+Laplacian\+::\+Persistent\+Sheaf\+Laplacian (\begin{DoxyParamCaption}\item[{std\+::vector$<$ Eigen\+::\+Sparse\+Matrix$<$ storage $>$$>$}]{boundaries,  }\item[{std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$$>$}]{filtrations }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em boundaries} & a vector of Eigen\+::\+Sparse\+Matrix of type float. Boundaries must be sorted in order of dimension. \\
+\hline
+{\em filtrations} & a vector of vector of filtrations. filtrations\mbox{[}dim\mbox{]} is a list of all filtrations of simplices in dimension dim. filtrations must be sorted in order of dimension, each filtrations\mbox{[}i\mbox{]} must be sorted in order of filtration\\
+\hline
+\end{DoxyParams}
+Primary constructor. Important Assumptions\+: 1) Boundary matrix has real coefficients stored as integers (but not mod 2!) 2) Boundary matrix dimensions agree with filtrations sizes 3) Length(filtrations) = Length(boundaries) + 1 \mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_ae9bd3794cb99a3d04fcedd7f4a7e68af}\label{classpetls_1_1PersistentSheafLaplacian_ae9bd3794cb99a3d04fcedd7f4a7e68af}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!````~PersistentSheafLaplacian@{$\sim$PersistentSheafLaplacian}}
+\index{````~PersistentSheafLaplacian@{$\sim$PersistentSheafLaplacian}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{$\sim$PersistentSheafLaplacian()}{~PersistentSheafLaplacian()}}
+{\footnotesize\ttfamily petls\+::\+Persistent\+Sheaf\+Laplacian\+::$\sim$\+Persistent\+Sheaf\+Laplacian (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_a217c0bb3e0e0254cde469edbcfd17835}\label{classpetls_1_1PersistentSheafLaplacian_a217c0bb3e0e0254cde469edbcfd17835}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!dummy\_d0@{dummy\_d0}}
+\index{dummy\_d0@{dummy\_d0}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{dummy\_d0()}{dummy\_d0()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpetls_1_1FilteredBoundaryMatrix}{petls\+::\+Filtered\+Boundary\+Matrix}}$<$storage$>$ petls\+::\+Persistent\+Sheaf\+Laplacian\+::dummy\+\_\+d0 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_a4733756efade0f90f7a691147f53093e}\label{classpetls_1_1PersistentSheafLaplacian_a4733756efade0f90f7a691147f53093e}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!eigenpairs@{eigenpairs}}
+\index{eigenpairs@{eigenpairs}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{eigenpairs()}{eigenpairs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::tuple$<$int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, std\+::vector$<$\mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}}$>$,\mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}}$>$ $>$ petls\+::\+Persistent\+Sheaf\+Laplacian\+::eigenpairs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get all eigenvalues for all combinations of dimension and successive filtration values\+: a=filtrations\mbox{[}i\mbox{]} and b=filtrations\mbox{[}i+1\mbox{]}. Note\+: the caller does not know what spectra to expect from this. ~\newline
+ \begin{DoxyReturn}{Returns}
+vector of tuples (dim, a, b, eigenvalues, eigenvectors) where \char`\"{}eigenvalues\char`\"{} is a sorted vector of real, nonnegative eigenvalues and \char`\"{}eigenvectors\char`\"{} is an Eigen\+::\+Matrix\+Xf where column i is the eigenvector for eigenvalue i 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_a8ab1309466bae9424dd7d044d45e8782}\label{classpetls_1_1PersistentSheafLaplacian_a8ab1309466bae9424dd7d044d45e8782}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!eigenpairs@{eigenpairs}}
+\index{eigenpairs@{eigenpairs}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{eigenpairs()}{eigenpairs()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily std\+::pair$<$std\+::vector$<$\mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}}$>$,\mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}}$>$ petls\+::\+Persistent\+Sheaf\+Laplacian\+::eigenpairs (\begin{DoxyParamCaption}\item[{int}]{dim,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{a,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the Persistent Laplacian\textquotesingle{}s eigenvalues and eigenvectors at a given dimension and filtration. 
+\begin{DoxyParams}{Parameters}
+{\em dim} & dimension \\
+\hline
+{\em a} & start filtration level \\
+\hline
+{\em b} & end filtration level \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sorted pair of\+: vector of real, nonnegative eigenvalues and Eigen matrix where column i is the eigenvector for eigenvalue i 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_a5b0b78e78e6576b5e9b955a44ed0bd0b}\label{classpetls_1_1PersistentSheafLaplacian_a5b0b78e78e6576b5e9b955a44ed0bd0b}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!eigenpairs@{eigenpairs}}
+\index{eigenpairs@{eigenpairs}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{eigenpairs()}{eigenpairs()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::tuple$<$int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, std\+::vector$<$\mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}}$>$, \mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}}$>$ $>$ petls\+::\+Persistent\+Sheaf\+Laplacian\+::eigenpairs (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::tuple$<$ int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$$>$}]{spectra\+\_\+request\+\_\+list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This function essentially just calls eigenpairs(dim, a, b) in a loop. 
+\begin{DoxyParams}{Parameters}
+{\em spectra\+\_\+quest\+\_\+list} & vector of tuples (dim, a, b) to compute the eigenvalues of L\+\_\+\{dim\}$^\wedge$\{a,b\}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector of tuples (dim, a, b, eigenvalues, eigenvalues), where eigenvalues it istelf a vector of real, nonnegative eigenvalues and \char`\"{}eigenvectors\char`\"{} is an Eigen\+::\+Matrix\+Xf where column i is the eigenvector for eigenvalue i. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_a677857a799c781e9aa6e889a1acb65ef}\label{classpetls_1_1PersistentSheafLaplacian_a677857a799c781e9aa6e889a1acb65ef}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!eigenvalues\_summarize@{eigenvalues\_summarize}}
+\index{eigenvalues\_summarize@{eigenvalues\_summarize}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{eigenvalues\_summarize()}{eigenvalues\_summarize()}}
+{\footnotesize\ttfamily std\+::pair$<$int, \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}}$>$ petls\+::\+Persistent\+Sheaf\+Laplacian\+::eigenvalues\+\_\+summarize (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}} $>$}]{eigenvalues }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Utility function to get the Betti number and least nonzero eigenvalue form a vector of eigenvalues. 
+\begin{DoxyParams}{Parameters}
+{\em eigenvalues} & eigenvalues \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pair of (Betti number, least nonzero eigenvalue) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_a1a43736e6fd04dc53d0943cd6ea0f234}\label{classpetls_1_1PersistentSheafLaplacian_a1a43736e6fd04dc53d0943cd6ea0f234}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!filtration\_list\_to\_spectra\_request@{filtration\_list\_to\_spectra\_request}}
+\index{filtration\_list\_to\_spectra\_request@{filtration\_list\_to\_spectra\_request}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{filtration\_list\_to\_spectra\_request()}{filtration\_list\_to\_spectra\_request()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::tuple$<$int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}$>$ $>$ petls\+::\+Persistent\+Sheaf\+Laplacian\+::filtration\+\_\+list\+\_\+to\+\_\+spectra\+\_\+request (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$}]{filtrations,  }\item[{std\+::vector$<$ int $>$}]{dims }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get tuples (dim, a, b) for all combinations of dimension and successive filtration values\+: a=filtrations\mbox{[}i\mbox{]}, b=filtrations\mbox{[}i+1\mbox{]}. 
+\begin{DoxyParams}{Parameters}
+{\em filtrations} & vector of filtration values \\
+\hline
+{\em dims} & vector of dimensions \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+tuples (dim, a, b) for all combinations of dimension and successive filtration values\+: a=filtrations\mbox{[}i\mbox{]}, b=filtrations\mbox{[}i+1\mbox{]}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_af9d7ff87d59c4097d571a37c112f81dc}\label{classpetls_1_1PersistentSheafLaplacian_af9d7ff87d59c4097d571a37c112f81dc}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!get\_all\_filtrations@{get\_all\_filtrations}}
+\index{get\_all\_filtrations@{get\_all\_filtrations}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{get\_all\_filtrations()}{get\_all\_filtrations()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}$>$ petls\+::\+Persistent\+Sheaf\+Laplacian\+::get\+\_\+all\+\_\+filtrations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get all unique filtration values in the complex. \mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_a28ea525d437916101a6ed7984e9f7786}\label{classpetls_1_1PersistentSheafLaplacian_a28ea525d437916101a6ed7984e9f7786}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!get\_down@{get\_down}}
+\index{get\_down@{get\_down}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{get\_down()}{get\_down()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Eigen\+::\+Sparse\+Matrix$<$storage$>$ petls\+::\+Persistent\+Sheaf\+Laplacian\+::get\+\_\+down (\begin{DoxyParamCaption}\item[{int}]{dim,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the down persistent Laplacian (by value).
+
+Warning\+: this does a potentially expensive copy. The primary reason this function exists is to provide reasonable python binding access to the matrix itself. If you do not need this matrix directly in python (e.\+g. you want its eigenvalues) it will be more efficient to compute by reference via \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_a59cdeab2418508ea7b537318ae71f203}{get\+\_\+down(int dim, filtration\+\_\+type a, Eigen\+::\+Sparse\+Matrix$<$storage$>$ \&\+L\+\_\+down)}}. 
+\begin{DoxyParams}{Parameters}
+{\em dim} & dimension \\
+\hline
+{\em a} & start filtration value \textbackslash{}return The matrix (by value) of the down presistent Laplacian ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_a59cdeab2418508ea7b537318ae71f203}\label{classpetls_1_1PersistentSheafLaplacian_a59cdeab2418508ea7b537318ae71f203}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!get\_down@{get\_down}}
+\index{get\_down@{get\_down}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{get\_down()}{get\_down()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void petls\+::\+Persistent\+Sheaf\+Laplacian\+::get\+\_\+down (\begin{DoxyParamCaption}\item[{int}]{dim,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{a,  }\item[{Eigen\+::\+Sparse\+Matrix$<$ storage $>$ \&}]{L\+\_\+down }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the down persistent Laplacian (by reference). 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em dim} & dimension \\
+\hline
+ & {\em a} & start filtration value \\
+\hline
+\mbox{\texttt{ out}}  & {\em L\+\_\+down} & the matrix (by reference) of the down presistent Laplacian ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_a7e3d3c2bbe15c902ed8bf3eb023657f2}\label{classpetls_1_1PersistentSheafLaplacian_a7e3d3c2bbe15c902ed8bf3eb023657f2}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!get\_L@{get\_L}}
+\index{get\_L@{get\_L}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{get\_L()}{get\_L()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}} petls\+::\+Persistent\+Sheaf\+Laplacian\+::get\+\_\+L (\begin{DoxyParamCaption}\item[{int}]{dim,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{a,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the Persistent Laplacian Matrix (by value).
+
+Warning\+: this does a potentially expensive copy. The primary reason this function exists is to provide reasonable python binding access to the matrix L itself. If you do not need the persistent Laplacian matrix directly in python (e.\+g. you want its eigenvalues) it will be more efficient to compute by reference via \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_a326442edf3708d99f59b54866930cf7c}{get\+\_\+\+L(int dim, filtration\+\_\+type a, filtration\+\_\+type b, Dense\+Matrix\+\_\+\+PL \&\+L)}}. 
+\begin{DoxyParams}{Parameters}
+{\em dim} & dimension \\
+\hline
+{\em a} & start filtration value \\
+\hline
+{\em b} & end filtration value (must be $>$= a) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L the persistent Laplacian matrix. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_a326442edf3708d99f59b54866930cf7c}\label{classpetls_1_1PersistentSheafLaplacian_a326442edf3708d99f59b54866930cf7c}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!get\_L@{get\_L}}
+\index{get\_L@{get\_L}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{get\_L()}{get\_L()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void petls\+::\+Persistent\+Sheaf\+Laplacian\+::get\+\_\+L (\begin{DoxyParamCaption}\item[{int}]{dim,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{a,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{b,  }\item[{\mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}} \&}]{L }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the Persistent Laplacian Matrix (by reference). 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em dim} & dimension \\
+\hline
+ & {\em a} & start filtration value \\
+\hline
+ & {\em b} & end filtration value (must be $>$= a) \\
+\hline
+\mbox{\texttt{ out}}  & {\em L} & the matrix where the persistent Laplacian will be stored (by reference). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_a0090a4aa54b23f5983cac437be81ad86}\label{classpetls_1_1PersistentSheafLaplacian_a0090a4aa54b23f5983cac437be81ad86}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!get\_L\_top\_dim\_flipped@{get\_L\_top\_dim\_flipped}}
+\index{get\_L\_top\_dim\_flipped@{get\_L\_top\_dim\_flipped}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{get\_L\_top\_dim\_flipped()}{get\_L\_top\_dim\_flipped()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{typedefs_8hpp_aa0b819682f9cdac0ae1234aed46106e6}{Sparse\+Matrix\+\_\+\+PL}} petls\+::\+Persistent\+Sheaf\+Laplacian\+::get\+\_\+\+L\+\_\+top\+\_\+dim\+\_\+flipped (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a matrix with the same nonzero eigenvalues as the top-\/dimensional Persistent Laplacian Matrix (by value).
+
+Warning\+: this does a potentially expensive copy. The primary reason this function exists is to provide reasonable python binding access to the matrix itself. If you do not need this matrix directly in python (e.\+g. you want its eigenvalues) it will be more efficient to compute by reference via \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_a9654fec3af26aa958293987030a40b9d}{get\+\_\+\+L\+\_\+top\+\_\+dim\+\_\+flipped(filtration\+\_\+type a, Sparse\+Matrix\+\_\+\+PL \&\+L)}}. 
+\begin{DoxyParams}{Parameters}
+{\em a} & start filtration value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A matrix with the same nonzero eigenvalues as the top-\/dimensional persistent Laplacian (but not the persistent Laplacian itself). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_a9654fec3af26aa958293987030a40b9d}\label{classpetls_1_1PersistentSheafLaplacian_a9654fec3af26aa958293987030a40b9d}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!get\_L\_top\_dim\_flipped@{get\_L\_top\_dim\_flipped}}
+\index{get\_L\_top\_dim\_flipped@{get\_L\_top\_dim\_flipped}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{get\_L\_top\_dim\_flipped()}{get\_L\_top\_dim\_flipped()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void petls\+::\+Persistent\+Sheaf\+Laplacian\+::get\+\_\+\+L\+\_\+top\+\_\+dim\+\_\+flipped (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{a,  }\item[{\mbox{\hyperlink{typedefs_8hpp_aa0b819682f9cdac0ae1234aed46106e6}{Sparse\+Matrix\+\_\+\+PL}} \&}]{L }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a matrix with the same nonzero eigenvalues as the top-\/dimensional Persistent Laplacian Matrix (by reference). 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em a} & start filtration value \\
+\hline
+\mbox{\texttt{ out}}  & {\em L} & the matrix (by reference) that has the same eigenvalues as the top-\/dimensional Persistent Laplacian \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_af9fcdfd727bb598cdb39c4dbc6a47392}\label{classpetls_1_1PersistentSheafLaplacian_af9fcdfd727bb598cdb39c4dbc6a47392}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!get\_up@{get\_up}}
+\index{get\_up@{get\_up}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{get\_up()}{get\_up()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}} petls\+::\+Persistent\+Sheaf\+Laplacian\+::get\+\_\+up (\begin{DoxyParamCaption}\item[{int}]{dim,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{a,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the up persistent Laplacian (by value). The algorithm used is determined by the template parameter. See \mbox{\hyperlink{up__algorithms_8hpp}{up\+\_\+algorithms.\+hpp}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dim} & dimension \\
+\hline
+{\em a} & start filtration value \\
+\hline
+{\em b} & end filtration value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+up persistent Laplacian 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_a5378f9579678ed3c58eccbd4af8a6dd7}\label{classpetls_1_1PersistentSheafLaplacian_a5378f9579678ed3c58eccbd4af8a6dd7}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!get\_up@{get\_up}}
+\index{get\_up@{get\_up}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{get\_up()}{get\_up()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void petls\+::\+Persistent\+Sheaf\+Laplacian\+::get\+\_\+up (\begin{DoxyParamCaption}\item[{int}]{dim,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{a,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{b,  }\item[{\mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}} \&}]{L\+\_\+up }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the up persistent Laplacian (by reference). The algorithm used is determined by the template parameter. See \mbox{\hyperlink{up__algorithms_8hpp}{up\+\_\+algorithms.\+hpp}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em dim} & dimension \\
+\hline
+ & {\em a} & start filtration value \\
+\hline
+ & {\em b} & end filtration value \\
+\hline
+\mbox{\texttt{ out}}  & {\em L\+\_\+up} & up persistent Laplacian (by reference) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_aaa6127847a0ecc7c22b25073d5ae0c18}\label{classpetls_1_1PersistentSheafLaplacian_aaa6127847a0ecc7c22b25073d5ae0c18}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!print\_boundaries@{print\_boundaries}}
+\index{print\_boundaries@{print\_boundaries}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{print\_boundaries()}{print\_boundaries()}}
+{\footnotesize\ttfamily void petls\+::\+Persistent\+Sheaf\+Laplacian\+::print\+\_\+boundaries (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Print all boundaries and corresponding filtrations. \mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_addced39b388372233038322e587d323c}\label{classpetls_1_1PersistentSheafLaplacian_addced39b388372233038322e587d323c}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!set\_boundaries\_filtrations@{set\_boundaries\_filtrations}}
+\index{set\_boundaries\_filtrations@{set\_boundaries\_filtrations}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{set\_boundaries\_filtrations()}{set\_boundaries\_filtrations()}}
+{\footnotesize\ttfamily void petls\+::\+Persistent\+Sheaf\+Laplacian\+::set\+\_\+boundaries\+\_\+filtrations (\begin{DoxyParamCaption}\item[{std\+::vector$<$ Eigen\+::\+Sparse\+Matrix$<$ storage $>$$>$}]{boundaries,  }\item[{std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$$>$}]{filtrations }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the boundaries and filtrations of a complex, particularly if the default constructor was called. 
+\begin{DoxyParams}{Parameters}
+{\em boundaries} & a vector of Eigen\+::\+Sparse\+Matrix of type int. Boundaries must be sorted in order of dimension. \\
+\hline
+{\em filtrations} & a vector of vector of filtrations. filtrations\mbox{[}dim\mbox{]} is a list of all filtrations of simplices in dimension dim. filtrations must be sorted in order of dimension, each filtrations\mbox{[}i\mbox{]} must be sorted in order of filtration. Important Assumptions\+: 1) Boundary matrix has real coefficients stored as integers (but not mod 2!), 2) Boundary matrix dimensions agree with filtrations sizes, 3) Length(filtrations) = Length(boundaries) + 1. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_a92568ef07cfd668688d19ff0d5593309}\label{classpetls_1_1PersistentSheafLaplacian_a92568ef07cfd668688d19ff0d5593309}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!set\_eigs\_algorithm\_func@{set\_eigs\_algorithm\_func}}
+\index{set\_eigs\_algorithm\_func@{set\_eigs\_algorithm\_func}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{set\_eigs\_algorithm\_func()}{set\_eigs\_algorithm\_func()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void petls\+::\+Persistent\+Sheaf\+Laplacian\+::set\+\_\+eigs\+\_\+algorithm\+\_\+func (\begin{DoxyParamCaption}\item[{std\+::function$<$ \mbox{\hyperlink{typedefs_8hpp_a27a64e317582fd2a2dbdc95fa84b7ebd}{spectra\+\_\+vec}}(\mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}} \&)$>$}]{\+\_\+eigs\+\_\+algorithm\+\_\+func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_aec579f5c9e74979f0eefdfff7171ad50}\label{classpetls_1_1PersistentSheafLaplacian_aec579f5c9e74979f0eefdfff7171ad50}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!set\_eigs\_algorithm\_func@{set\_eigs\_algorithm\_func}}
+\index{set\_eigs\_algorithm\_func@{set\_eigs\_algorithm\_func}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{set\_eigs\_algorithm\_func()}{set\_eigs\_algorithm\_func()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void petls\+::\+Persistent\+Sheaf\+Laplacian\+::set\+\_\+eigs\+\_\+algorithm\+\_\+func (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_a0efa5ad790980fdcdfe2f2aca8c7a3a2}\label{classpetls_1_1PersistentSheafLaplacian_a0efa5ad790980fdcdfe2f2aca8c7a3a2}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!set\_flipped@{set\_flipped}}
+\index{set\_flipped@{set\_flipped}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{set\_flipped()}{set\_flipped()}}
+{\footnotesize\ttfamily void petls\+::\+Persistent\+Sheaf\+Laplacian\+::set\+\_\+flipped (\begin{DoxyParamCaption}\item[{bool}]{use\+\_\+flipped }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set flipped 
+\begin{DoxyParams}{Parameters}
+{\em use\+\_\+flipped} & New setting \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_a33cb800a0dfafb915d7f86fd8113b4ac}\label{classpetls_1_1PersistentSheafLaplacian_a33cb800a0dfafb915d7f86fd8113b4ac}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!set\_up\_func@{set\_up\_func}}
+\index{set\_up\_func@{set\_up\_func}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{set\_up\_func()}{set\_up\_func()}}
+{\footnotesize\ttfamily void petls\+::\+Persistent\+Sheaf\+Laplacian\+::set\+\_\+up\+\_\+func (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(\mbox{\hyperlink{classpetls_1_1FilteredBoundaryMatrix}{Filtered\+Boundary\+Matrix}}$<$ float $>$ $\ast$, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}} \&)$>$}]{\+\_\+up\+\_\+algorithm\+\_\+func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_afddbfca690826173849d098abc0faa39}\label{classpetls_1_1PersistentSheafLaplacian_afddbfca690826173849d098abc0faa39}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!set\_verbose@{set\_verbose}}
+\index{set\_verbose@{set\_verbose}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{set\_verbose()}{set\_verbose()}}
+{\footnotesize\ttfamily void petls\+::\+Persistent\+Sheaf\+Laplacian\+::set\+\_\+verbose (\begin{DoxyParamCaption}\item[{bool}]{verbose }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set verbose 
+\begin{DoxyParams}{Parameters}
+{\em verbose} & New setting. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_a98615eec3cc54b423206fb5cfafc18c6}\label{classpetls_1_1PersistentSheafLaplacian_a98615eec3cc54b423206fb5cfafc18c6}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!spectra@{spectra}}
+\index{spectra@{spectra}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{spectra()}{spectra()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::tuple$<$int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, std\+::vector$<$\mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}}$>$ $>$ $>$ petls\+::\+Persistent\+Sheaf\+Laplacian\+::spectra (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get all eigenvalues for all combinations of dimension and successive filtration values\+: a=filtrations\mbox{[}i\mbox{]} and b=filtrations\mbox{[}i+1\mbox{]}. Note\+: the caller does not know what spectra to expect from this. ~\newline
+ \begin{DoxyReturn}{Returns}
+vector of tuples (dim, a, b, eigenvalues) where \char`\"{}eigenvalues\char`\"{} is a sorted vector of real, nonnegative eigenvalues. ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_ad9bd916b4d263a47409a074c0c7aa8d0}\label{classpetls_1_1PersistentSheafLaplacian_ad9bd916b4d263a47409a074c0c7aa8d0}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!spectra@{spectra}}
+\index{spectra@{spectra}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{spectra()}{spectra()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}}$>$ petls\+::\+Persistent\+Sheaf\+Laplacian\+::spectra (\begin{DoxyParamCaption}\item[{int}]{dim,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{a,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the Persistent Laplacian\textquotesingle{}s eigenvalues at a given dimension and filtration. 
+\begin{DoxyParams}{Parameters}
+{\em dim} & dimension \\
+\hline
+{\em a} & start filtration level \\
+\hline
+{\em b} & end filtration level \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sorted vector of real, nonnegative eigenvalues 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_ab2bb19fae77700b2cadbc8ef9d0c336a}\label{classpetls_1_1PersistentSheafLaplacian_ab2bb19fae77700b2cadbc8ef9d0c336a}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!spectra@{spectra}}
+\index{spectra@{spectra}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{spectra()}{spectra()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::tuple$<$int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, std\+::vector$<$\mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}}$>$ $>$ $>$ petls\+::\+Persistent\+Sheaf\+Laplacian\+::spectra (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::tuple$<$ int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}} $>$$>$}]{spectra\+\_\+request\+\_\+list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This function essentially just calls spectra(dim, a, b) in a loop. 
+\begin{DoxyParams}{Parameters}
+{\em spectra\+\_\+quest\+\_\+list} & vector of tuples (dim, a, b) to compute the eigenvalues of L\+\_\+\{dim\}$^\wedge$\{a,b\}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector of tuples (dim, a, b, eigenvalues), where eigenvalues it istelf a vector of real, nonnegative eigenvalues. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_af020e626144e0b5c1070a7924ec3ea3a}\label{classpetls_1_1PersistentSheafLaplacian_af020e626144e0b5c1070a7924ec3ea3a}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!store\_L@{store\_L}}
+\index{store\_L@{store\_L}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{store\_L()}{store\_L()}}
+{\footnotesize\ttfamily void petls\+::\+Persistent\+Sheaf\+Laplacian\+::store\+\_\+L (\begin{DoxyParamCaption}\item[{int}]{dim,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{a,  }\item[{\mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}}]{b,  }\item[{std\+::string}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Compute and store a persistent Laplacian matrix in a file in matrix market format. 
+\begin{DoxyParams}{Parameters}
+{\em dim} & dimension \\
+\hline
+{\em a} & start filtration value \\
+\hline
+{\em b} & end filtration value \\
+\hline
+{\em filename} & file to store matrix (typically .mtx extension) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_a1f771bcabaff3ca9c65f18dc20264700}\label{classpetls_1_1PersistentSheafLaplacian_a1f771bcabaff3ca9c65f18dc20264700}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!store\_spectra@{store\_spectra}}
+\index{store\_spectra@{store\_spectra}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{store\_spectra()}{store\_spectra()}}
+{\footnotesize\ttfamily void petls\+::\+Persistent\+Sheaf\+Laplacian\+::store\+\_\+spectra (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::tuple$<$ int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}} $>$$>$$>$}]{spectra,  }\item[{std\+::string}]{out\+\_\+prefix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Write spectra to files.
+
+for each dimension dim of the complex, files write \char`\"{}\{out\+\_\+prefix\}\+\_\+spectra\+\_\+\{dim\}.\+txt\char`\"{}. Each line of the file is a space-\/separated list of eigenvalues. Lines may be empty. Note the filtration values are not reported.
+
+
+\begin{DoxyParams}{Parameters}
+{\em spectra} & tuples (dim, a, b, eigenvalues) \\
+\hline
+{\em out\+\_\+prefix} & Eigenvalues will be written to \char`\"{}\{out\+\_\+prefix\}\+\_\+spectra\+\_\+\{dim\}.\+txt\char`\"{} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_a785b7f661b8047c2debcbd127589a206}\label{classpetls_1_1PersistentSheafLaplacian_a785b7f661b8047c2debcbd127589a206}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!store\_spectra\_summary@{store\_spectra\_summary}}
+\index{store\_spectra\_summary@{store\_spectra\_summary}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{store\_spectra\_summary()}{store\_spectra\_summary()}}
+{\footnotesize\ttfamily void petls\+::\+Persistent\+Sheaf\+Laplacian\+::store\+\_\+spectra\+\_\+summary (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::tuple$<$ int, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, std\+::vector$<$ \mbox{\hyperlink{typedefs_8hpp_ac240cc0d46f103fa1a410237a0b8853f}{spectra\+\_\+type}} $>$$>$$>$}]{spectra,  }\item[{std\+::string}]{out\+\_\+prefix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Write spectra summary to files \char`\"{}\{out\+\_\+prefix\}\+\_\+spectra\+\_\+summary.\+txt\char`\"{}
+
+Each line is a space-\/separated list of filtrations, bettti numbers, and least nonzero eigenvalues\+: (filtration a) (filtration b) (betti 0) ... (betti top\+\_\+dim) (lambda 0) ... (lambda top\+\_\+dim) 
+\begin{DoxyParams}{Parameters}
+{\em spectra} & tuples (dim, a, b, eigenvalues) \\
+\hline
+{\em out\+\_\+prefix} & Eigenvalues will be written to \char`\"{}\{out\+\_\+prefix\}\+\_\+spectra\+\_\+summary.\+txt\char`\"{} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_a34df5759a37ff2a3153b3963d3229574}\label{classpetls_1_1PersistentSheafLaplacian_a34df5759a37ff2a3153b3963d3229574}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!eigenpairs\_algorithm\_func@{eigenpairs\_algorithm\_func}}
+\index{eigenpairs\_algorithm\_func@{eigenpairs\_algorithm\_func}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{eigenpairs\_algorithm\_func}{eigenpairs\_algorithm\_func}}
+{\footnotesize\ttfamily std\+::function$<$std\+::pair$<$\mbox{\hyperlink{typedefs_8hpp_a27a64e317582fd2a2dbdc95fa84b7ebd}{spectra\+\_\+vec}},\mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}}$>$\mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}}\&)$>$ petls\+::\+Persistent\+Sheaf\+Laplacian\+::eigenpairs\+\_\+algorithm\+\_\+func}
+
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_a593df210a45c5c3bd907818082ad170a}\label{classpetls_1_1PersistentSheafLaplacian_a593df210a45c5c3bd907818082ad170a}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!eigs\_algorithm\_func@{eigs\_algorithm\_func}}
+\index{eigs\_algorithm\_func@{eigs\_algorithm\_func}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{eigs\_algorithm\_func}{eigs\_algorithm\_func}}
+{\footnotesize\ttfamily std\+::function$<$\mbox{\hyperlink{typedefs_8hpp_a27a64e317582fd2a2dbdc95fa84b7ebd}{spectra\+\_\+vec}}(\mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}}\&)$>$ petls\+::\+Persistent\+Sheaf\+Laplacian\+::eigs\+\_\+algorithm\+\_\+func}
+
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_a8f74b9353b074775534dda04bcdee626}\label{classpetls_1_1PersistentSheafLaplacian_a8f74b9353b074775534dda04bcdee626}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!filtered\_boundaries@{filtered\_boundaries}}
+\index{filtered\_boundaries@{filtered\_boundaries}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{filtered\_boundaries}{filtered\_boundaries}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classpetls_1_1FilteredBoundaryMatrix}{Filtered\+Boundary\+Matrix}}$<$storage$>$ $>$ petls\+::\+Persistent\+Sheaf\+Laplacian\+::filtered\+\_\+boundaries}
+
+
+
+Boundary matrix assuming real (or integer) coefficients. 
+
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_a9a8802da3c168b2d236c9f3841aef2c7}\label{classpetls_1_1PersistentSheafLaplacian_a9a8802da3c168b2d236c9f3841aef2c7}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!profile@{profile}}
+\index{profile@{profile}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{profile}{profile}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpetls_1_1Profile}{Profile}} petls\+::\+Persistent\+Sheaf\+Laplacian\+::profile}
+
+
+
+Profiler to track time usage of various steps. 
+
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_a4c010a4e28b7a20faf2cd5d04ead6fa1}\label{classpetls_1_1PersistentSheafLaplacian_a4c010a4e28b7a20faf2cd5d04ead6fa1}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!top\_dim@{top\_dim}}
+\index{top\_dim@{top\_dim}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{top\_dim}{top\_dim}}
+{\footnotesize\ttfamily int petls\+::\+Persistent\+Sheaf\+Laplacian\+::top\+\_\+dim}
+
+
+
+Top dimension of the complex. 
+
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_afe949d7e94ce8836a538d6c950969796}\label{classpetls_1_1PersistentSheafLaplacian_afe949d7e94ce8836a538d6c950969796}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!up\_algorithm\_func@{up\_algorithm\_func}}
+\index{up\_algorithm\_func@{up\_algorithm\_func}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{up\_algorithm\_func}{up\_algorithm\_func}}
+{\footnotesize\ttfamily std\+::function$<$void(\mbox{\hyperlink{classpetls_1_1FilteredBoundaryMatrix}{Filtered\+Boundary\+Matrix}}$<$float$>$$\ast$, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_afc86493f3736a9d186d249149b2e5e22}{filtration\+\_\+type}}, \mbox{\hyperlink{typedefs_8hpp_a260197b742c38462952d018c69ff535a}{Dense\+Matrix\+\_\+\+PL}}\&)$>$ petls\+::\+Persistent\+Sheaf\+Laplacian\+::up\+\_\+algorithm\+\_\+func}
+
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_a3a2fa45aace835e5573ba83c89334c9c}\label{classpetls_1_1PersistentSheafLaplacian_a3a2fa45aace835e5573ba83c89334c9c}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!use\_flipped@{use\_flipped}}
+\index{use\_flipped@{use\_flipped}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{use\_flipped}{use\_flipped}}
+{\footnotesize\ttfamily bool petls\+::\+Persistent\+Sheaf\+Laplacian\+::use\+\_\+flipped}
+
+
+
+Compute the top-\/dimensional Laplacian\textquotesingle{}s eigenvalues in spectra function via the eigenvalues of the smaller of B\+\_\+N B\+\_\+\+N$^\wedge$T or B\+\_\+\+N$^\wedge$T B\+\_\+N and possible zero-\/padding. 
+
+\mbox{\Hypertarget{classpetls_1_1PersistentSheafLaplacian_ae51b445ea6eff709df1436358e3e1f6f}\label{classpetls_1_1PersistentSheafLaplacian_ae51b445ea6eff709df1436358e3e1f6f}} 
+\index{petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}!verbose@{verbose}}
+\index{verbose@{verbose}!petls::PersistentSheafLaplacian@{petls::PersistentSheafLaplacian}}
+\doxysubsubsection{\texorpdfstring{verbose}{verbose}}
+{\footnotesize\ttfamily bool petls\+::\+Persistent\+Sheaf\+Laplacian\+::verbose}
+
+
+
+Print progress if \mbox{\hyperlink{classpetls_1_1PersistentSheafLaplacian_a98615eec3cc54b423206fb5cfafc18c6}{spectra()}} is called. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jones657/\+Persistent\+Laplacians/cpp/include/petls\+\_\+headers/variants/\mbox{\hyperlink{PersistentSheafLaplacian_8hpp}{Persistent\+Sheaf\+Laplacian.\+hpp}}\end{DoxyCompactItemize}

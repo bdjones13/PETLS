@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['restriction_271',['restriction',['../classPersistentLaplacians_1_1sheaf__simplex__tree.html#a204374a03b3336ee01b709329f04c0fc',1,'PersistentLaplacians::sheaf_simplex_tree']]]
+  ['restriction_270',['restriction',['../classpetls_1_1sheaf__simplex__tree.html#ab8b01ba101fe31cc9e94bf7cfecefb2f',1,'petls::sheaf_simplex_tree']]]
 ];

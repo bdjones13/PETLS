@@ -6,10 +6,10 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'PersistentLaplacians'
+project = 'petls'
 copyright = '2025, Benjamin Jones'
 author = 'Benjamin Jones'
-release = '0.0.23'
+release = '1.0.0'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -24,11 +24,13 @@ extensions = [
     'numpydoc',
     'sphinx_copybutton',
     'sphinx_design',
-    'breathe'
+    'breathe',
 ]
 
-breathe_projects = {"PersistentLaplacians": "/home/jones657/PersistentLaplacians/docs/xml/"}
-breathe_default_project = "PersistentLaplacians"
+import sys
+sys.path.append("/home/jones657/petls/docs/breathe/")
+breathe_projects = {"petls": "/home/jones657/petls/docs/xml/"}
+breathe_default_project = "petls"
 
 templates_path = ['_templates']
 exclude_patterns = []

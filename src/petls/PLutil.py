@@ -3,8 +3,10 @@ from scipy.sparse import coo_matrix
 import pytest
 import numpy as np
 import matplotlib.pyplot as plt
+import pandas as pd
+import time
 
-def summaries(spectra, func):
+def summaries(spectra, func, lower_triangle=np.nan):
     """ Apply a function to the eigenvalues of L_{dim}^{a,b} for all (dim, a, b, eigs) in spectra.
 
         Parameters
@@ -13,6 +15,9 @@ def summaries(spectra, func):
             List of (dim, a, b, eigs) to apply func.
         func : Callable
             Function to apply to the eigenvalues of L_{dim}^{a,b} o for every tuple (dim, a, b) in spectra.
+        lower_triangle : float, optional
+            Value to set the "lower triangle" of the summary arrays to. Default is np.nan, which
+            makes the lower triangle invisible in imshow.
 
         Returns
         -------
@@ -49,9 +54,19 @@ def summaries(spectra, func):
     num_filtrations = len(all_filtrations)
     summaries = [np.zeros((num_filtrations,num_filtrations)) for _ in range(len(dims))]
 
+    # set lower-triangular values
+    for dim in range(len(indexed_dims)):
+        for i in range(num_filtrations):
+            for j in range(i+1, num_filtrations):
+                summaries[indexed_dims[dim]][i,j] = lower_triangle
+
+
     for dim, a, b, eigs in spectra:
-        summaries[indexed_dims[dim]][indexed_filtrations[b], indexed_filtrations[a]] += func(eigs) # addition modifies actual matrix, not just a view of it
+        summaries[indexed_dims[dim]][indexed_filtrations[b], indexed_filtrations[a]] += func(eigs) # addition modifies in place (setting equal modifies a view)
     
+
+
+
     return summaries, all_filtrations, sorted(dims)
 
 def plot_summary(ax, summary, **kwargs):
@@ -148,3 +163,72 @@ def compare_spectra(ref, test):
 def compare_spectra_multiple(ref, test):
     for i in range(len(ref)):
         compare_spectra(ref[i],test[i])
+
+class timer():
+
+    def __init__(self):
+        pass
+    def start(self):
+        self.start_t = time.perf_counter()
+    def stop(self):
+        self.duration = time.perf_counter() - self.start_t
+        return self.duration
+
+
+
+class Profile():
+    def __init__(self):
+        self.all = timer()
+        self.eigs = timer()
+        self.L = timer()
+        self.durations_all = []
+        self.durations_eigs = []
+        self.durations_L = []
+        self.dims = []
+        self.filtration_a = []
+        self.filtration_b = []
+        self.L_rows = []
+        self.bettis = []
+        self.lambdas = []
+    
+    def start_all(self):
+        self.all.start()
+    def start_eigs(self):
+        self.eigs.start()
+    def start_L(self):
+        self.L.start()
+
+    def stop_all(self):
+        self.durations_all.append(self.all.stop())
+    def stop_eigs(self):
+        self.durations_eigs.append(self.eigs.stop())
+    def stop_L(self):
+        self.durations_L.append(self.L.stop())
+
+    def to_csv(self, filename):
+        df = pd.concat([pd.Series(self.dims),
+                        pd.Series(self.filtration_a),
+                        pd.Series(self.filtration_b),
+                        pd.Series(self.durations_all), 
+                        pd.Series(self.durations_eigs), 
+                        pd.Series(self.durations_L),
+                        pd.Series(self.L_rows),
+                        pd.Series(self.bettis),
+                        pd.Series(self.lambdas)],axis=1)
+        df.columns=["dim","filtration_a","filtration_b",
+                            "duration_all","duration_eigs","duration_L",
+                            "L_rows","betti","lambda"]
+        df.to_csv(filename,index=False)
+
+    def wrap_up(self, dim, a, b, L_rows, eigs):
+        self.stop_eigs()
+        self.stop_all()
+        self.filtration_a.append(a)
+        self.filtration_b.append(b)
+        self.dims.append(dim)
+        tol = 1e-3
+        self.bettis.append(len(np.where(eigs < tol)))
+        nonzeros = eigs[np.where(eigs > tol)] 
+        min_nonzero = min(nonzeros) if len(nonzeros) > 0 else 0 
+        self.lambdas.append(min_nonzero)
+        self.L_rows.append(L_rows)

@@ -14,12 +14,15 @@ void define_pl(py::module &m){
     // Each python class will be Complex_EigsAlgorithm_UpAlgorithm
     // e.g. Complex_selfadjoint_schur
     py::class_<petls::Complex>(m,"Complex")
+    .def_readwrite("top_dim", &petls::Complex::top_dim)
     .def(py::init<>())    // default constructor                                                          
     .def(py::init< std::vector<Eigen::SparseMatrix<storage>>, std::vector<std::vector<double>> >()) // Complex(std::vector<SparseMatrixInt> boundaries,
                                                                                     //    std::vector<std::vector<filtration_type>> filtrations);
     
     .def("set_eigs_algorithm_func",py::overload_cast<std::string>(&petls::Complex::set_eigs_algorithm_func), "Set eigenvalue algorithm by name")
     .def("set_eigs_algorithm_func",py::overload_cast<std::function<spectra_vec(DenseMatrix_PL&)>>(&petls::Complex::set_eigs_algorithm_func), "Set eigenvalue algorithm to the function pointer")
+    .def("set_up_algorithm_func",py::overload_cast<std::string>(&petls::Complex::set_up_algorithm_func), "Set up algorithm by name")
+    .def("set_up_algorithm_func",py::overload_cast<std::function<void(petls::FilteredBoundaryMatrix<int>* fbm, filtration_type a, filtration_type b, DenseMatrix_PL &L_up)>>(&petls::Complex::set_up_algorithm_func), "Set up algorithm to the function pointer")
     .def("set_boundaries_filtrations",
         py::overload_cast<std::vector<Eigen::SparseMatrix<storage>>, std::vector<std::vector<double>> >( &petls::Complex::set_boundaries_filtrations), "Set the boundary matrices and filtrations of the Persistent Laplacian")
     .def("set_verbose",py::overload_cast<bool>(&petls::Complex::set_verbose))
