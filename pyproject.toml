@@ -4,7 +4,7 @@ build-backend = "scikit_build_core.build"
 
 [project]
 name = "petls"
-version = "1.0.0"
+version = "1.0.1"
 description="PErsistent Topological Laplacian Software: a Python Library to Compute Persistent Topological Laplacians"
 readme = "README.md"
 authors = [
